@@ -1,0 +1,622 @@
+<Vulns>   <Vulnerability addData="2011-09-13" gvid="GVID-102308" id="102308" modifyDate="2018-03-29">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>MS06-033: ASP.NET存在漏洞可允许信息披露(917283)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此信息泄露漏洞可能允许攻击者在应用程序中通过名字明确的文件夹中绕过ASP.Net的安全机制和非法访问的对象。请注意，此漏洞不允许攻击者直接执行代码或提升他们的用户权限，但它可以用于产生用于试图进一步危及受影响的系统的可能的有用的信息。</Description>      <cnnvd>CNNVD-200607-133</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2006-1300</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://www.microsoft.com/downloads/details.aspx?familyid=56A1777B-9758-489F-8BE8-5177AAF488D1</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+      	               <Component name="ASP.NET"/>               
+                       <version>                  <range>                     <low>5.0</low>                     <high>7.0</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2006-07-12" gvid="GVID-102309" id="102309" modifyDate="2015-02-13">      <cvsscode>6.5</cvsscode>      <severity>Severe</severity>      <name>MS06-034: 使用动态服务器页面的Microsoft网络信息服务存在漏洞可允许远程代码执行(917537)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此更新可解决一个新发现的、公开披露的漏洞。该漏洞被记录在本公告的&amp;quot;漏洞详情&amp;quot;部分。成功利用此漏洞的攻击者可以完全控制受影响的系统。攻击者可随后安装程序，查看、更改或删除数据，或者创建有完整用户权限的新帐户。</Description>      <cnnvd>CNNVD-200607-145</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2006-0026</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://www.microsoft.com/technet/security/bulletin/ms06-034.mspx</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               <version>                  <range>                     <low>5.0</low>                     <high inclusive="1">6.0</high>                  </range>               </version>            </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2008-02-13" gvid="GVID-102310" id="102310" modifyDate="2015-06-26">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>MS08-006: Internet Information Services 中的漏洞可能允许远程执行代码 (942830)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此重要更新解决 Internet Information Services (IIS) 中的一个秘密报告的漏洞。 IIS 处理 ASP 网页输入的方式中存在一个远程执行代码漏洞。 成功利用此漏洞的攻击者然后能够使用与工作进程标识 (WPI) 同样的权限在 IIS 服务器上执行任何操作。 默认情况下，WPI 使用网络服务帐户权限进行配置。 如果带有 ASP 页的 IIS 服务器的应用程序池使用 WPI 进行配置，而 WPI 使用具有管理权限的帐户，这些 IIS 服务器与应用程序池使用默认 WPI 设置进行配置的 IIS 服务器相比，受到的影响更为严重。</Description>      <cnnvd>CNNVD-200802-228</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-0075</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://www.microsoft.com/technet/security/Bulletin/MS08-006.mspx?pf=true</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               <version>                  <range>                     <low>5.1</low>                     <high>7.0</high>                  </range>               </version>            </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102312" id="102312" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS分块传输编码堆溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>涉及分块编码操作的缓冲超限漏洞通过 IIS 4.0 和 5.0 中的活动服务器页面传输机制。利用此漏洞的攻击者可在系统上溢出堆内存，从而导致 IIS 服务失败或允许在服务器上运行代码。
+存在于ASP 数据传输机制内的其他地方的漏洞变体是由微软发现的。可用之前利用安全漏洞的相似方式来利用此漏洞，会有相同的适用范围。然而，它会影响 IIS 4.0版本、 5.0版本 和 5.1版本。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0147,CVE-2002-0079</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="IIS">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">6.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+                <Product name="PWS"/>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-08-06" gvid="GVID-102316" id="102316" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Microsoft IIS&quot;500-100.asp&quot;源代码公开</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软IIS 5.0和5.1版本包含一个漏洞，此漏洞允许攻击者通过伪造SERVER_NAME服务器变量 &amp;quot;localhost&amp;quot;值来查看某些文件的内容。</Description>      <cnnvd>CNNVD-200508-237</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-2678</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.support.microsoft.com/kb/906910</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  <range>                     <low>5.0</low>                     <high>6.0</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102323" id="102323" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS可执行文件解析漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当 Microsoft IIS 接收到一个可执行文件的有效请求时，随后文件名传递到下面执行该文件的操作系统。
+事件中 IIS 接收到依次输入操作系统命令可执行文件的特殊格式的请求，IIS 将继续处理整个字符串，而不是拒绝它。因此，恶意用户可能通过IUSR_machinename 帐户上下文下的cmd.exe来执行系统命令，可能会导致文件的特权升级、 删除、 添加和修改或完全破坏服务器。
+为成功利用此漏洞，所请求的文件必须是现存的.bat 或.cmd 文件，在用户具有可执行权限的文件夹中。</Description>      <cnnvd>CNNVD-200012-113</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2000-0886</id>      </AlternateIds>      <Solutions>Microsoft has released patches which eliminate the vulnerability (they also rectify the vulnerability described in MS00-086, 
+http://www.microsoft.com/technet/security/bulletin/MS00-078.asp). This patch does not address the new variants discovered by Georgi Guninski on November 27, 2000. 
+Those who applied the IIS 5.0 released before November 30, 2000 are recommended to install the patch below. It rectifies regression errors that existed in prior versions of the patch. 
+Microsoft IIS 4.0 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q277873 
+&lt;a href=&quot; 
+http://download.microsoft.com/download/winntsp/Patch/q277873/NT4/EN-US/arbexei.exe&quot;&gt; 
+http://download.microsoft.com/download/winntsp/Patch/q277873/NT4/EN-US 
+/arbexei.exe&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Microsoft Q277873Both patches for IIS 4.0 should be installed. 
+&lt;a href=&quot; 
+http://download.microsoft.com/download/winntsp/Patch/q277873/NT4/EN-US/arbexeis.exe&quot;&gt; 
+http://download.microsoft.com/download/winntsp/Patch/q277873/NT4/EN-US 
+/arbexeis.exe&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft IIS 5.0 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q277873Simplified Chinese 
+&lt;a href=&quot; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/NT5/CN/Q277873_W2K_sp2_x86_CN.EXE&quot;&gt; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/N 
+T5/CN/Q277873_W2K_sp2_x86_CN.EXE&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Microsoft Q277873German 
+&lt;a href=&quot; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/NT5/DE/Q277873_W2K_sp2_x86_DE.EXE&quot;&gt; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/N 
+T5/DE/Q277873_W2K_sp2_x86_DE.EXE&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Microsoft Q277873 
+&lt;a href=&quot; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/NT5/EN-US/Q277873_W2K_SP2_x86_en.EXE&quot;&gt; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/N 
+T5/EN-US/Q277873_W2K_SP2_x86_en.EXE&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Microsoft Q277873English 
+&lt;a href=&quot; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/NT5/EN-US/Q277873_W2K_SP2_x86_en.EXE&quot;&gt; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/N 
+T5/EN-US/Q277873_W2K_SP2_x86_en.EXE&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Microsoft Q277873Japanese 
+&lt;a href=&quot; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/NT5/JA/Q277873_W2K_sp2_x86_JA.EXE&quot;&gt; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/N 
+T5/JA/Q277873_W2K_sp2_x86_JA.EXE&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Microsoft Q277873Traditional Chinese 
+&lt;a href=&quot; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/NT5/TW/Q277873_W2K_sp2_x86_TW.EXE&quot;&gt; 
+http://download.microsoft.com/download/win2000platform/Patch/Q277873/N 
+T5/TW/Q277873_W2K_sp2_x86_TW.EXE&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <high>5.1</high>                     
+                                    <low>4.0</low>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="PWS"/>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102326" id="102326" modifyDate="2012-07-31">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Microsoft首页服务器扩展MS-DOS设备名DoS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>可能远程导致运行Microsoft FrontPage Server Extensions的系统崩溃，其方式是通过shtml.exe对MS-DOS设备执行URL请求。比如，以下URL请求将导致FrontPage Server Extensions崩溃：&lt;ul&gt;
+&lt;li&gt;http://target/_vti_bin/shtml.exe/comX.htm (X称为1, 2 ,3或4其中的一个; 设备必须在目标机器上)&lt;/li&gt;
+&lt;li&gt;http://target/_vti_bin/shtml.exe/prn.htm&lt;/li&gt;
+&lt;li&gt;http://target/_vti_bin/shtml.exe/aux.htm&lt;/li&gt;&lt;/ul&gt;
+    
+设备名必须添加扩展使利用生效。除了HTML扩展之外，ASP也将运行。重启IIS或要求的系统来恢复正常功能。测试表明它可能要求固定的请求流来渲染无效的服务器。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2000-0710,CVE-2000-0709</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="FrontPage">               
+                        <version>                  <range>                     
+                                 <high>4.0.2.4317</high>                     
+                           </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102328" id="102328" modifyDate="2012-07-31">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS IIS FrontPage 98 扩展缓冲区溢出漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>IISFrontPage 98 扩展中附带的dvwssr.dll和部分NT选项包中存在一个可远程利用的缓冲区溢出。这种攻击将导致服务不再接受连接。</Description>      <cnnvd>CNNVD-200004-032</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2000-0260</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 手工删除dvwssr.dll和mtd2lv.dll程序。 
+注意：安装Office 2000 Server Extensions或FrontPage 2000 Server Extensions会自动移除该后门。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS00-025): 
+MS00-025：Procedure Available to Eliminate &quot;Link View Server-Side Component&quot; Vulnerability 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS00-025.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS00-025.asp&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="IIS">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">5.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+                <Product name="PWS"/>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102335" id="102335" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS HTR分块传输编码堆溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>通过IIS 4.0和5.0中的 HTR脚本，涉及操作分块编码传输机制的缓冲区溢出漏洞。利用此漏洞的攻击者可能使堆内存系统中的堆内存溢出,导致IIS服务失败或允许代码在服务器上运行。</Description>      <cnnvd>CNNVD-200207-013</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0364</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 您应该立刻删除&quot;.htr&quot;脚本映射。 
+ 可以参考如下步骤删除上述脚本映射： 
+ 1. 打开Internet 服务管理器 
+ 2. 右击你的服务器(例如 &quot;* nsfocus&quot;)，在菜单中选择&quot;属性&quot;栏 
+ 3. 选择&quot;主属性&quot; 
+ 4. 选择 WWW 服务 | 编辑 | 主目录 | 配置 
+ 5. 在扩展名列表中删除&quot;.htr&quot;项。 
+ 6. 保存设置,然后重启IIS服务。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-028)以及相应补丁: 
+MS02-028：Heap Overrun in HTR Chunked Encoding Could Enable Web Server Compromise(Q321599) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-028.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-028.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft IIS 4.0: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=39579&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=39579&lt;/a&gt; 
+ * Microsoft IIS 5.0: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=39217&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=39217&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="IIS">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">6.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+                <Product name="PWS"/>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102358" id="102358" modifyDate="2012-07-31">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Microsoft IIS 4.0/5.0错误文件扩展名DoS漏洞性</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>发送包含错误文件扩展名信息的特制的URL到
+Microsoft IIS 4.0/5.0中，将消耗CPU使用量。重启应用程序或等到URL处理完毕以恢复正常功能。</Description>      <cnnvd>CNNVD-200005-046</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2000-0408</id>      </AlternateIds>      <Solutions>Microsoft has released the following patches which rectifies this issue: 
+Microsoft IIS 4.0 alpha 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q260205 
+&lt;a href=&quot; 
+http://download.microsoft.com/download/iis40/Patch/Q260205/NT4ALPHA/EN-US/myrdot4a.exe&quot;&gt; 
+http://download.microsoft.com/download/iis40/Patch/Q260205/NT4ALPHA/EN 
+-US/myrdot4a.exe&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft IIS 4.0 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q260205 
+&lt;a href=&quot; 
+http://download.microsoft.com/download/iis40/Patch/Q260205/NT4ALPHA/EN-US/myrdot4i.exe&quot;&gt; 
+http://download.microsoft.com/download/iis40/Patch/Q260205/NT4ALPHA/EN 
+-US/myrdot4i.exe&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft IIS 5.0 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q260205 
+&lt;a href=&quot; 
+http://download.microsoft.com/download/win2000platform/Patch/Q260205/NT5/EN-US/Q260205_W2K_SP1_x86_en.EXE&quot;&gt; 
+http://download.microsoft.com/download/win2000platform/Patch/Q260205/N 
+T5/EN-US/Q260205_W2K_SP1_x86_en.EXE&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="IIS">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">6.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+                <Product name="PWS"/>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-07-10" gvid="GVID-102364" id="102364" modifyDate="2015-02-13">      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <name>MS07-040: .NET Framework存在漏洞可允许远程代码执行(931212)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此更新解决了三个未公开报告的漏洞。其中两个漏洞可以允许用安装的.NET Framework在客户端系统上执行远程代码，另一个漏洞可能会导致运行ASP.NET的Web服务器上的信息被泄露。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-0043,CVE-2007-0042,CVE-2007-0041</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <Component name="ASP.NET">                  
+                              <version>                     <range>                        <low>1.0.0</low>                        <high inclusive="1">2.0.50727</high>                     </range>                  </version>                  
+                        </Component>               
+                        <!-- both the version AND asp.net have to match -->               
+                        <version>                  <range>                     <low>5</low>                     <high>7</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2008-02-13" gvid="GVID-102365" id="102365" modifyDate="2018-03-23">      <cvsscode>7.2</cvsscode>      <severity>Severe</severity>      <name>MS08-005: Internet Information Services 中的漏洞可能允许特权提升 (942831)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此重要更新解决 Internet Information Services (IIS) 中的一个秘密报告的漏洞。 成功利用此漏洞的本地攻击者可以完全控制受影响的系统。 攻击者可随后安装程序；查看、更改或删除数据；或者创建新帐户。 那些帐户被配置为拥有较少系统用户权限的用户比具有管理用户权限的用户受到的影响要小。</Description>      <cnnvd>CNNVD-200802-227</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-0074</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://www.microsoft.com/technet/security/Bulletin/MS08-005.mspx?pf=true</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="IIS">               
+                     <version>                  
+                          <range>                     
+                               <low inclusive="1">5.0</low>                     
+                               <high inclusive="1">7.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2010-08-25" gvid="GVID-102366" id="102366" modifyDate="2016-09-09">      <cvsscode>2.6</cvsscode>      <severity>Moderate</severity>      <name>MS09-036: Microsoft Windows 中的 ASP.NET 中的漏洞可能允许拒绝服务 (970957)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此安全更新解决了 Microsoft Windows 的 Microsoft .NET Framework 组件中的一个秘密报告的拒绝服务漏洞。 只有在受影响的 Microsoft Windows 版本上安装了 Internet Information Services (IIS) 7.0，且 ASP.NET 配置为使用集成模式时，此漏洞才会被利用。 攻击者可以创建特制的匿名 HTTP 请求，可能导致受影响的 Web 服务器无响应，直到相关的应用程序池重新启动。 在经典模式中运行 IIS 7.0 应用程序池的客户不受此漏洞的影响。</Description>      <cnnvd>CNNVD-200908-131</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2009-1536</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://www.microsoft.com/technet/security/bulletin/MS09-036.mspx?pf=true 
+临时解决方法： 
+* 使用以下两种方法之一配置IIS 7.0使用原始线程池处理进程。 
+ 
+方法1：在注册表中指定maxConcurrentRequestsPerCPU值。 
+方法2：在ASPNET.Config文件的ASP.NET配置部分，指定应用池的maxConcurrentRequestsPerCPU值。 
+</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <Component name="ASP.NET">                  
+                              <version>                     <range>                        <low>2.0.0</low>                        <high inclusive="1">2.0.50727</high>                     </range>                  </version>                  
+                        </Component>               
+                        <version>                  <range>                     <low>7.0</low>                     <high>8.0</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-08-06" gvid="GVID-102368" id="102368" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft ASP.Net DOS设备拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软的IIS 6.0版本包含一个漏洞，可能允许攻击者通过指定GET请求内的DOS设备名称造成拒绝服务状况（服务挂起）或读取任意物理设备流（COM，LPT），此GET请求包含一个&amp;#39;/&amp;#39;字符之前和之后的DOS设备名称。
+根据微软安全响应中心（MSRC），II 6.0/ASP.NET Microsoft中的&amp;quot;Non漏洞已经完成调查公开的概念验证，声称证实IIS 6.0中的漏洞。我们的调查发现，该说法是不正确的，概念验证代码未利用在IIS 6.0中的漏洞。此外，讨论中的代码错误声称使用IIS 6.0。我们的调查显示讨论中的代码实际上使用ASP.NET。我们的调查显示，该代码对运行ASP.NET 2.0的系统没有影响。运行ASP.NET 1.1的系统可能会在接收大量包含此代码的并发请求时临时中断。然而，只要请求是不再提交，系统就会恢复正常运行。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-2897</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <Component name="ASP.NET">                  
+                              <version>                     <range>                        <low>1.0</low>                        <high>2.0</high>                     </range>                  </version>                  
+                        </Component>               
+                        <version>                  <range>                     <low>6.0</low>                     <high>7.0</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2015-04-14" gvid="GVID-102373" id="102373" modifyDate="2017-01-04">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>MS15-034: HTTP.sys 中的漏洞可能允许远程执行代码 (3042553)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>远程执行代码漏洞存在于HTTP协议堆栈 (HTTP.sys) 中，当HTTP.sys未正确分析经特殊设计的HTTP请求时会导致此漏洞。成功利用此漏洞的攻击者可以在系统帐户的上下文中执行任意代码。</Description>      <cnnvd>CNNVD-201504-257</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-1635</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://technet.microsoft.com/library/security/ms15-034</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="IIS">               
+                     <version>                  
+                          <range>                     
+                               <low>7.5</low>                     
+                               <high inclusive="1">8.5</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102398" id="102398" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS WebDAV缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软互联网信息服务器的(IIS)WebDAV解析逻辑中存在缓冲区溢出。成功利用此漏洞，远程攻击者可访问收益率系统。应该注意的是,此漏洞已在外界被广泛利用。</Description>      <cnnvd>CNNVD-200303-079</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0109</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 使用微软提供的IIS Lockdown工具可能可以防止该漏洞被利用。 
+* WebDAV在IIS 5.0 WEB服务器上的实现Httpext.dll完成，默认安装，但是简单更改Httpext.dll不能修正此漏洞，因为WINDOWS 2000的WFP功能会防止系统重要文件破坏或删除。要完全关闭WebDAV包括的PUT和DELETE请求，可对注册表进行如下更改： 
+1、启动注册表编辑器(Regedt32.exe)。 
+2、搜索注册表中的如下键： 
+ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters 
+ 
+3、点击'编辑'菜单，点增加值，然后增加如下注册表键值： 
+Value name: DisableWebDAV 
+Data type: DWORD 
+Value data: 1 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS03-007)以及相应补丁: 
+MS03-007：Unchecked Buffer In Windows Component Could Cause Web Server Compromise(815021) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&lt;/a&gt; 
+补丁下载： 
+Microsoft Windows 2000: 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <high>6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-102385" id="102385" modifyDate="2014-03-18">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS02-062: Internet信息服务累积补丁(Q327696)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要Microsoft提供的一个或多个安全修补程序或修补程序。
+  
+
+此修补程序是一个累积修补程序，其中包括自Windows NT 4.0 Service Pack 6a以来为IIS 4.0发布的所有安全修补程序的功能，以及迄今为止针对IIS 5.0和5.1发布的所有安全修补程序。此修补程序取代的修补程序的完整列表在下面的标题为有关此修补程序的附加信息的部分中提供。在应用补丁之前，系统管理员应该注意同一部分中讨论的警告。除了包含以前发布的安全修补程序之外，此修补程序还包括针对以下新发现的影响IIS 4.0,5.0和/或5.1的安全漏洞的修复程序：影响IIS 4.0,5.0或5.1服务器启动ISAPI的方式的权限提升漏洞被配置为在进程外运行它们。按照设计，托管进程（dllhost.exe）应仅在IWAM_computername帐户的安全上下文中运行;但是，实际上可以在某些情况下获取LocalSystem权限，从而使ISAPI也可以这样做。由于IIS 5.0和5.1为WebDAV请求分配内存的方式存在缺陷而导致的拒绝服务漏洞。如果WebDAV请求以特定方式格式错误，IIS将在服务器上分配极大量的内存。通过发送多个此类请求，攻击者可能会导致服务器失败。涉及IIS 5.0中脚本源访问权限操作的漏洞。此权限除了对虚拟目录的正常读/写权限外，还可以控制脚本，.ASP文件和可执行文件类型是否可以上载到启用写入的虚拟目录。表中定义受此权限约束的文件类型的印刷错误具有从受权限限制的文件列表中省略.COM文件的效果。结果，用户仅需要写访问权来上载这样的文件。一对影响IIS 4.0,5.0和5.1的跨站点脚本（CSS）漏洞，涉及管理网页。这些漏洞中的每一个都具有相同的范围和效果：能够诱使用户点击其网站上的链接的攻击者可以将包含脚本的请求转发到运行IIS的第三方网站，从而导致第三方siteâs响应（仍包括脚本）将发送给用户。然后，该脚本将使用第三方站点的安全设置而不是攻击者进行渲染。此外，补丁程序会导致5.0和5.1更改套接字积压列表的频率，当分配服务器上的所有连接时，清除挂起的连接请求列表。该补丁更改IIS以更频繁地清除列表，以使其更容易抵御洪水攻击。 IIS 4.0中不存在积压监视功能。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1182,CVE-2002-1181,CVE-2002-1180,CVE-2002-0869</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <low>5.0</low>                     
+                                    <high>6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-102386" id="102386" modifyDate="2014-03-18">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>MS03-018: Internet信息服务累积补丁(811114)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要Microsoft提供的一个或多个安全修补程序或修补程序。
+  
+
+此修补程序是一个累积修补程序，其中包括自Windows NT 4.0 Service Pack 6a以来为IIS 4.0发布的所有安全修补程序的功能，以及自Windows 2000 Service Pack 2和IIS 5.1以来针对IIS 5.0发布的所有安全修补程序。下面在标题为的部分中提供了此修补程序取代的修补程序的完整列表。有关此修补程序的其他信息除了以前发布的所有安全补丁之外，此补丁还包括针对以下新发现的影响IIS 4.0,5.0和5.1的安全漏洞的修复：影响IIS 4.0,5.0和5.1的跨站点脚本（CSS）漏洞，其中包含错误消息。返回以告知已重定向请求的URL。能够诱使用户点击其网站上的链接的攻击者可以将包含脚本的请求转发到运行IIS的第三方网站，从而导致第三方网站的响应（仍包括脚本）被发送给用户。然后，该脚本将使用第三方站点的安全设置而不是攻击者进行渲染。由于IIS 5.0未正确验证对称为服务器端包含的某些类型的网页的请求，因此导致缓冲区溢出。攻击者需要能够将服务器端包含页面上载到易受攻击的IIS服务器。如果攻击者随后请求此页面，则可能导致缓冲区溢出，这将允许攻击者使用用户级权限在服务器上执行他们选择的代码。由于IIS 4.0和5.0在构造要返回到Web客户端的标头时分配内存请求的方式存在缺陷而导致的拒绝服务漏洞。攻击者需要能够将ASP页面上载到易受攻击的IIS服务器。当攻击者调用此ASP页面时，它会尝试将非常大的标头返回给调用的Web客户端。因为IIS不限制在这种情况下可以使用的内存量，这可能会导致IIS由于本地内存耗尽而失败。导致拒绝服务的漏洞，因为当向其传递过长的WebDAV请求时，IIS 5.0和5.1无法正确处理错误情况。因此，攻击者可能导致IIS失败，但IIS 5.0和5.1默认情况下会在此失败后立即重新启动。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0226,CVE-2003-0225,CVE-2003-0224,CVE-2003-0223</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <low>5.0</low>                     
+                                    <high>6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-102387" id="102387" modifyDate="2014-03-18">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>MS04-030: WebDAV XML消息处理器存在漏洞可引起拒绝服务(824151)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此更新可解决一个新发现、秘密报告的漏洞。该漏洞记录在本公告的漏洞细节部分。
+成功利用此漏洞的攻击者可能导致WebDAV将消耗受影响服务器上所有可用的内存和CPU时间。这种行为可能导致拒绝服务。 IIS服务将不得不重启以恢复功能。</Description>      <cnnvd>CNNVD-200411-017</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0718</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 关闭WEBDAV服务。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS04-030)以及相应补丁: 
+MS04-030：Vulnerability in WebDAV XML Message Handler Could Lead to a Denial of Service (824151) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS04-030.mspx&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS04-030.mspx&lt;/a&gt; 
+补丁下载： 
+Microsoft Windows 2000 Service Pack 3 and Microsoft Windows 2000 Service Pack 4 
+&lt;a href=&quot; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=D2C632A7-CD43-466C-A624-D841905CE181&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=D2C632A7-CD43-466C-A624-D841905CE181&lt;/a&gt; 
+ 
+Microsoft Windows XP and Microsoft Windows XP Service Pack 1 
+&lt;a href=&quot; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=6A338C59-3693-4A25-B823-431A5C21A4B7&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=6A338C59-3693-4A25-B823-431A5C21A4B7&lt;/a&gt; 
+ 
+Microsoft Windows XP 64-Bit Edition Service Pack 1 
+&lt;a href=&quot; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=0412A361-28C5-45F7-9853-BCDC9D7B2B97&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=0412A361-28C5-45F7-9853-BCDC9D7B2B97&lt;/a&gt; 
+ 
+Microsoft Windows XP 64-Bit Edition Version 2003 
+&lt;a href=&quot; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=1F9CA027-B0B8-47DC-BB96-8709E3DB0DF2&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=1F9CA027-B0B8-47DC-BB96-8709E3DB0DF2&lt;/a&gt; 
+ 
+Microsoft Windows Server? 2003 
+&lt;a href=&quot; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=81CE104D-5257-447C-A2CD-D4D149581D71&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=81CE104D-5257-447C-A2CD-D4D149581D71&lt;/a&gt; 
+ 
+Microsoft Windows Server 2003 64-Bit Edition 
+&lt;a href=&quot; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=1F9CA027-B0B8-47DC-BB96-8709E3DB0DF2&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=1F9CA027-B0B8-47DC-BB96-8709E3DB0DF2&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <low>5.0</low>                     
+                                    <high inclusive="1">6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102398" id="102398" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS WebDAV缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软互联网信息服务器的(IIS)WebDAV解析逻辑中存在缓冲区溢出。成功利用此漏洞，远程攻击者可访问收益率系统。应该注意的是,此漏洞已在外界被广泛利用。</Description>      <cnnvd>CNNVD-200303-079</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0109</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 使用微软提供的IIS Lockdown工具可能可以防止该漏洞被利用。 
+* WebDAV在IIS 5.0 WEB服务器上的实现Httpext.dll完成，默认安装，但是简单更改Httpext.dll不能修正此漏洞，因为WINDOWS 2000的WFP功能会防止系统重要文件破坏或删除。要完全关闭WebDAV包括的PUT和DELETE请求，可对注册表进行如下更改： 
+1、启动注册表编辑器(Regedt32.exe)。 
+2、搜索注册表中的如下键： 
+ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters 
+ 
+3、点击'编辑'菜单，点增加值，然后增加如下注册表键值： 
+Value name: DisableWebDAV 
+Data type: DWORD 
+Value data: 1 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS03-007)以及相应补丁: 
+MS03-007：Unchecked Buffer In Windows Component Could Cause Web Server Compromise(815021) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&lt;/a&gt; 
+补丁下载： 
+Microsoft Windows 2000: 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <high>6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="PWS"/>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102398" id="102398" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS WebDAV缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软互联网信息服务器的(IIS)WebDAV解析逻辑中存在缓冲区溢出。成功利用此漏洞，远程攻击者可访问收益率系统。应该注意的是,此漏洞已在外界被广泛利用。</Description>      <cnnvd>CNNVD-200303-079</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0109</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 使用微软提供的IIS Lockdown工具可能可以防止该漏洞被利用。 
+* WebDAV在IIS 5.0 WEB服务器上的实现Httpext.dll完成，默认安装，但是简单更改Httpext.dll不能修正此漏洞，因为WINDOWS 2000的WFP功能会防止系统重要文件破坏或删除。要完全关闭WebDAV包括的PUT和DELETE请求，可对注册表进行如下更改： 
+1、启动注册表编辑器(Regedt32.exe)。 
+2、搜索注册表中的如下键： 
+ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters 
+ 
+3、点击'编辑'菜单，点增加值，然后增加如下注册表键值： 
+Value name: DisableWebDAV 
+Data type: DWORD 
+Value data: 1 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS03-007)以及相应补丁: 
+MS03-007：Unchecked Buffer In Windows Component Could Cause Web Server Compromise(815021) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&lt;/a&gt; 
+补丁下载： 
+Microsoft Windows 2000: 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <high>6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="PWS"/>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102398" id="102398" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS WebDAV缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软互联网信息服务器的(IIS)WebDAV解析逻辑中存在缓冲区溢出。成功利用此漏洞，远程攻击者可访问收益率系统。应该注意的是,此漏洞已在外界被广泛利用。</Description>      <cnnvd>CNNVD-200303-079</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0109</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 使用微软提供的IIS Lockdown工具可能可以防止该漏洞被利用。 
+* WebDAV在IIS 5.0 WEB服务器上的实现Httpext.dll完成，默认安装，但是简单更改Httpext.dll不能修正此漏洞，因为WINDOWS 2000的WFP功能会防止系统重要文件破坏或删除。要完全关闭WebDAV包括的PUT和DELETE请求，可对注册表进行如下更改： 
+1、启动注册表编辑器(Regedt32.exe)。 
+2、搜索注册表中的如下键： 
+ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters 
+ 
+3、点击'编辑'菜单，点增加值，然后增加如下注册表键值： 
+Value name: DisableWebDAV 
+Data type: DWORD 
+Value data: 1 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS03-007)以及相应补丁: 
+MS03-007：Unchecked Buffer In Windows Component Could Cause Web Server Compromise(815021) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&lt;/a&gt; 
+补丁下载： 
+Microsoft Windows 2000: 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <high>6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="PWS"/>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102398" id="102398" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS WebDAV缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软互联网信息服务器的(IIS)WebDAV解析逻辑中存在缓冲区溢出。成功利用此漏洞，远程攻击者可访问收益率系统。应该注意的是,此漏洞已在外界被广泛利用。</Description>      <cnnvd>CNNVD-200303-079</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0109</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 使用微软提供的IIS Lockdown工具可能可以防止该漏洞被利用。 
+* WebDAV在IIS 5.0 WEB服务器上的实现Httpext.dll完成，默认安装，但是简单更改Httpext.dll不能修正此漏洞，因为WINDOWS 2000的WFP功能会防止系统重要文件破坏或删除。要完全关闭WebDAV包括的PUT和DELETE请求，可对注册表进行如下更改： 
+1、启动注册表编辑器(Regedt32.exe)。 
+2、搜索注册表中的如下键： 
+ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters 
+ 
+3、点击'编辑'菜单，点增加值，然后增加如下注册表键值： 
+Value name: DisableWebDAV 
+Data type: DWORD 
+Value data: 1 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS03-007)以及相应补丁: 
+MS03-007：Unchecked Buffer In Windows Component Could Cause Web Server Compromise(815021) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&lt;/a&gt; 
+补丁下载： 
+Microsoft Windows 2000: 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <high>6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="PWS"/>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102398" id="102398" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS WebDAV缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软互联网信息服务器的(IIS)WebDAV解析逻辑中存在缓冲区溢出。成功利用此漏洞，远程攻击者可访问收益率系统。应该注意的是,此漏洞已在外界被广泛利用。</Description>      <cnnvd>CNNVD-200303-079</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0109</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 使用微软提供的IIS Lockdown工具可能可以防止该漏洞被利用。 
+* WebDAV在IIS 5.0 WEB服务器上的实现Httpext.dll完成，默认安装，但是简单更改Httpext.dll不能修正此漏洞，因为WINDOWS 2000的WFP功能会防止系统重要文件破坏或删除。要完全关闭WebDAV包括的PUT和DELETE请求，可对注册表进行如下更改： 
+1、启动注册表编辑器(Regedt32.exe)。 
+2、搜索注册表中的如下键： 
+ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters 
+ 
+3、点击'编辑'菜单，点增加值，然后增加如下注册表键值： 
+Value name: DisableWebDAV 
+Data type: DWORD 
+Value data: 1 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS03-007)以及相应补丁: 
+MS03-007：Unchecked Buffer In Windows Component Could Cause Web Server Compromise(815021) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&lt;/a&gt; 
+补丁下载： 
+Microsoft Windows 2000: 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <high>6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="PWS"/>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102398" id="102398" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS WebDAV缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软互联网信息服务器的(IIS)WebDAV解析逻辑中存在缓冲区溢出。成功利用此漏洞，远程攻击者可访问收益率系统。应该注意的是,此漏洞已在外界被广泛利用。</Description>      <cnnvd>CNNVD-200303-079</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0109</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 使用微软提供的IIS Lockdown工具可能可以防止该漏洞被利用。 
+* WebDAV在IIS 5.0 WEB服务器上的实现Httpext.dll完成，默认安装，但是简单更改Httpext.dll不能修正此漏洞，因为WINDOWS 2000的WFP功能会防止系统重要文件破坏或删除。要完全关闭WebDAV包括的PUT和DELETE请求，可对注册表进行如下更改： 
+1、启动注册表编辑器(Regedt32.exe)。 
+2、搜索注册表中的如下键： 
+ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters 
+ 
+3、点击'编辑'菜单，点增加值，然后增加如下注册表键值： 
+Value name: DisableWebDAV 
+Data type: DWORD 
+Value data: 1 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS03-007)以及相应补丁: 
+MS03-007：Unchecked Buffer In Windows Component Could Cause Web Server Compromise(815021) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&lt;/a&gt; 
+补丁下载： 
+Microsoft Windows 2000: 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <high>6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="PWS"/>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102398" id="102398" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS WebDAV缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软互联网信息服务器的(IIS)WebDAV解析逻辑中存在缓冲区溢出。成功利用此漏洞，远程攻击者可访问收益率系统。应该注意的是,此漏洞已在外界被广泛利用。</Description>      <cnnvd>CNNVD-200303-079</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0109</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 使用微软提供的IIS Lockdown工具可能可以防止该漏洞被利用。 
+* WebDAV在IIS 5.0 WEB服务器上的实现Httpext.dll完成，默认安装，但是简单更改Httpext.dll不能修正此漏洞，因为WINDOWS 2000的WFP功能会防止系统重要文件破坏或删除。要完全关闭WebDAV包括的PUT和DELETE请求，可对注册表进行如下更改： 
+1、启动注册表编辑器(Regedt32.exe)。 
+2、搜索注册表中的如下键： 
+ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters 
+ 
+3、点击'编辑'菜单，点增加值，然后增加如下注册表键值： 
+Value name: DisableWebDAV 
+Data type: DWORD 
+Value data: 1 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS03-007)以及相应补丁: 
+MS03-007：Unchecked Buffer In Windows Component Could Cause Web Server Compromise(815021) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&lt;/a&gt; 
+补丁下载： 
+Microsoft Windows 2000: 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <high>6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="PWS"/>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102398" id="102398" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft IIS WebDAV缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软互联网信息服务器的(IIS)WebDAV解析逻辑中存在缓冲区溢出。成功利用此漏洞，远程攻击者可访问收益率系统。应该注意的是,此漏洞已在外界被广泛利用。</Description>      <cnnvd>CNNVD-200303-079</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0109</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 使用微软提供的IIS Lockdown工具可能可以防止该漏洞被利用。 
+* WebDAV在IIS 5.0 WEB服务器上的实现Httpext.dll完成，默认安装，但是简单更改Httpext.dll不能修正此漏洞，因为WINDOWS 2000的WFP功能会防止系统重要文件破坏或删除。要完全关闭WebDAV包括的PUT和DELETE请求，可对注册表进行如下更改： 
+1、启动注册表编辑器(Regedt32.exe)。 
+2、搜索注册表中的如下键： 
+ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters 
+ 
+3、点击'编辑'菜单，点增加值，然后增加如下注册表键值： 
+Value name: DisableWebDAV 
+Data type: DWORD 
+Value data: 1 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS03-007)以及相应补丁: 
+MS03-007：Unchecked Buffer In Windows Component Could Cause Web Server Compromise(815021) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS03-007.asp&lt;/a&gt; 
+补丁下载： 
+Microsoft Windows 2000: 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=C9A38D45-5145-4844-B62E-C69D32AC929B&amp;displaylang=en&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="IIS">               
+                        <version>                  
+                              <range>                     
+                                    <high>6.0</high>                     
+                              </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="PWS"/>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-04-04" gvid="GVID-102399" id="102399" modifyDate="2015-02-13">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft Windows媒体服务缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Microsoft Windows媒体服务的某些版本包含一个有缺陷的&amp;#39;nsiislog.dll&amp;#39;包含一个远程利用缓冲区溢出的文件。如果成功地利用，攻击者可获取系统权限。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0349,CVE-2003-0227</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP">            
+                <Product name="IIS">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">6.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability></Vulns>

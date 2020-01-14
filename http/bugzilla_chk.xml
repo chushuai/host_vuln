@@ -1,0 +1,187 @@
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="GVID-101912" id="101912" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Bugzilla创建SQL注入漏洞 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>创建新账户时，Bugzilla将其融入SQL查询前未充分清理用户输入。因此，远程攻击者可从数据库获取敏感信息或损坏数据。</Description>      <cnnvd>CNNVD-200210-297</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1198</id>      </AlternateIds>      <Solutions>This issue was introduced in Bugzilla 2.16 and has been addressed in Bugzilla 2.16.1. 
+Mozilla Bugzilla 2.16 
+&lt;ul&gt;&lt;li&gt; 
+Mozilla bugzilla-2.16.1.tar.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.16.1.tar.gz&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.16.1.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Bugzilla">               
+                        <version>                  <range>                     <low>2.16</low>                     <high>2.16.1</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-101913" id="101913" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Bugzilla命令执行漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Bugzilla数据包中的&amp;#39;bugzilla_email_append.pl&amp;#39;脚本未充分地过滤用户输入。因此用户可能插入恶意词条到Bugzilla数据库中并可能执行任意指令。</Description>      <cnnvd>CNNVD-200210-308</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1197</id>      </AlternateIds>      <Solutions>Fixes available: 
+Mozilla Bugzilla 2.14 
+&lt;ul&gt;&lt;li&gt; 
+Mozilla bugzilla-2.14.4.tar.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Mozilla Bugzilla 2.14.1 
+&lt;ul&gt;&lt;li&gt; 
+Mozilla bugzilla-2.14.4.tar.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Mozilla Bugzilla 2.14.2 
+&lt;ul&gt;&lt;li&gt; 
+Mozilla bugzilla-2.14.4.tar.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Mozilla Bugzilla 2.14.3 
+&lt;ul&gt;&lt;li&gt; 
+Mozilla bugzilla-2.14.4.tar.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Mozilla Bugzilla 2.16 
+&lt;ul&gt;&lt;li&gt; 
+Mozilla bugzilla-2.16.1.tar.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.16.1.tar.gz&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.16.1.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Bugzilla">               
+                        <version>                  
+                              <range>                     <low>2.14</low>                     <high>2.14.4</high>                  </range>                  
+                              <range>                     <low>2.16</low>                     <high>2.16.1</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-101914" id="101914" modifyDate="2013-12-04">      <cvsscode>2.1</cvsscode>      <severity>Moderate</severity>      <name>Bugzilla数据挖掘不安全的目录权限漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Bugzilla包中的数据收集脚本，其目的是作为一个cron作业运行，设置数据/挖掘目录上的不安全权限。所以本地攻击者可利用此争用条件来修改目录内容。</Description>      <cnnvd>CNNVD-200301-021</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0012</id>      </AlternateIds>      <Solutions>厂商补丁： 
+Mozilla 
+------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+Mozilla Bugzilla 2.14: 
+Bugzilla Upgrade Bugzilla 2.14.5 
+&lt;a href=&quot; 
+http://www.bugzilla.org/download.html&quot; target=&quot;_blank&quot;&gt; 
+http://www.bugzilla.org/download.html&lt;/a&gt; 
+Mozilla Bugzilla 2.14.1: 
+Bugzilla Upgrade Bugzilla 2.14.5 
+&lt;a href=&quot; 
+http://www.bugzilla.org/download.html&quot; target=&quot;_blank&quot;&gt; 
+http://www.bugzilla.org/download.html&lt;/a&gt; 
+Mozilla Bugzilla 2.14.2: 
+Bugzilla Upgrade Bugzilla 2.14.5 
+&lt;a href=&quot; 
+http://www.bugzilla.org/download.html&quot; target=&quot;_blank&quot;&gt; 
+http://www.bugzilla.org/download.html&lt;/a&gt; 
+Mozilla Bugzilla 2.14.3: 
+Bugzilla Upgrade Bugzilla 2.14.5 
+&lt;a href=&quot; 
+http://www.bugzilla.org/download.html&quot; target=&quot;_blank&quot;&gt; 
+http://www.bugzilla.org/download.html&lt;/a&gt; 
+Mozilla Bugzilla 2.14.4: 
+Bugzilla Upgrade Bugzilla 2.14.5 
+&lt;a href=&quot; 
+http://www.bugzilla.org/download.html&quot; target=&quot;_blank&quot;&gt; 
+http://www.bugzilla.org/download.html&lt;/a&gt; 
+Bugzilla Patch bugzilla-2.14.4-to-2.14.5.diff.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4-to-2.14.5.diff.gz&quot; target=&quot;_blank&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4-to-2.14.5.diff.gz&lt;/a&gt; 
+Mozilla Bugzilla 2.16: 
+Bugzilla Upgrade Bugzilla 2.16.2 
+&lt;a href=&quot; 
+http://www.bugzilla.org/download.html&quot; target=&quot;_blank&quot;&gt; 
+http://www.bugzilla.org/download.html&lt;/a&gt; 
+Mozilla Bugzilla 2.16.1: 
+Bugzilla Upgrade Bugzilla 2.16.2 
+&lt;a href=&quot; 
+http://www.bugzilla.org/download.html&quot; target=&quot;_blank&quot;&gt; 
+http://www.bugzilla.org/download.html&lt;/a&gt; 
+Bugzilla Patch bugzilla-2.16.1-to-2.16.2.diff.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.16.1-to-2.16.2.diff.gz&quot; target=&quot;_blank&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.16.1-to-2.16.2.diff.gz&lt;/a&gt; 
+Mozilla Bugzilla 2.17: 
+Bugzilla Upgrade Bugzilla 2.17.3 
+&lt;a href=&quot; 
+http://www.bugzilla.org/download.html&quot; target=&quot;_blank&quot;&gt; 
+http://www.bugzilla.org/download.html&lt;/a&gt; 
+Mozilla Bugzilla 2.17.1: 
+Bugzilla Upgrade Bugzilla 2.17.3 
+&lt;a href=&quot; 
+http://www.bugzilla.org/download.html&quot; target=&quot;_blank&quot;&gt; 
+http://www.bugzilla.org/download.html&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Bugzilla">               
+                        <version>                  
+                              <range>                     <low>2.14</low>                     <high>2.14.5</high>                  </range>                  
+                              <range>                     <low>2.16</low>                     <high>2.16.2</high>                  </range>                  
+                              <range>                     <low>2.17</low>                     <high>2.17.3</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-101916" id="101916" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Bugzilla组的创建权提升漏洞性</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>利用&amp;#39;usebuggroups&amp;#39;功能的Bugzilla 装置易受到特权升级问题的影响。当新产品添加到包含多个 bug 组的网站时，新组将在额外特权中被自动创建。因此，添加到此组的任何新用户将获得这些额外的特权。</Description>      <cnnvd>CNNVD-200210-301</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1196</id>      </AlternateIds>      <Solutions>Fixes are available: 
+Mozilla Bugzilla 2.14 
+&lt;ul&gt;&lt;li&gt; 
+Mozilla bugzilla-2.14.4.tar.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Mozilla Bugzilla 2.14.1 
+&lt;ul&gt;&lt;li&gt; 
+Mozilla bugzilla-2.14.4.tar.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Mozilla Bugzilla 2.14.2 
+&lt;ul&gt;&lt;li&gt; 
+Debian bugzilla-doc_2.14.2-0woody2_all.debDebian GNU/Linux 3.0 architecture independent package. 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/b/bugzilla/bugzilla-doc_2.14.2-0woody2_all.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/b/bugzilla/bugzilla-doc_2 
+.14.2-0woody2_all.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Debian bugzilla_2.14.2-0woody2_all.debDebian GNU/Linux 3.0 architecture independent package. 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/b/bugzilla/bugzilla_2.14.2-0woody2_all.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/b/bugzilla/bugzilla_2.14. 
+2-0woody2_all.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Mozilla bugzilla-2.14.4.tar.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Mozilla Bugzilla 2.14.3 
+&lt;ul&gt;&lt;li&gt; 
+Mozilla bugzilla-2.14.4.tar.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.14.4.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Mozilla Bugzilla 2.16 
+&lt;ul&gt;&lt;li&gt; 
+Mozilla bugzilla-2.16.1.tar.gz 
+&lt;a href=&quot; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.16.1.tar.gz&quot;&gt; 
+http://ftp.mozilla.org/pub/webtools/bugzilla-2.16.1.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Bugzilla">               
+                        <version>                  
+                              <range>                     <low>2.14</low>                     <high>2.14.4</high>                  </range>                  
+                              <range>                     <low>2.16</low>                     <high>2.16.1</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-101917" id="101917" modifyDate="2012-07-31">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>Bugzilla不安全的文件名的跨站脚本漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Bugzilla在全局可写的目录中创建临时文件而无需验证文件名是无用的。因此，本地攻击者可使用一个符号链接覆盖web服务器访问系统上的其他文件。
+此外，在Bugzilla几个脚本易受到Cross-Site脚本（XSS）的攻击。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0603,CVE-2003-0602</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Bugzilla">               
+                        <version>                  
+                              <range>                     <low>2.16</low>                     <high>2.16.3</high>                  </range>                  
+                              <range>                     <low>2.17</low>                     <high>2.17.4</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-16" gvid="GVID-101918" id="101918" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Bugzilla的多个漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Bugzilla的某些版本容易受到多种问题的影响。用 &amp;#39;grant membership&amp;#39;权限的特权身份验证的用户可执行任意SQL代码或获取通过“editusers.cgi&amp;#39;界面来访问不想关的群体。此外，发现用户和数据库口令在某些情况下泄露。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-0707,CVE-2004-0706,CVE-2004-0705,CVE-2004-0704,CVE-2004-0703,CVE-2004-0702</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Bugzilla">               
+                        <version>                  
+                              <range>                     <low>2.16.0</low>                     <high>2.16.6</high>                  </range>                  
+                              <range>                     <low>2.17.1</low>                     <high>2.17.8</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

@@ -1,0 +1,144 @@
+<Vulns>   <Vulnerability addData="2005-01-17" gvid="GVID-102297" id="102297" modifyDate="2012-07-31">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>RealNetworks Helix Administration Service POST缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当发送特制的HTTP POST请求到管理服务时，某些版本的RealNetworks Helix Universal服务器易受远程利用的缓冲区溢出条件影响。注意:恶意用户必须有效登录到Helix管理服务以利用此漏洞。</Description>      <cnnvd>CNNVD-200402-084</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-0049</id>      </AlternateIds>      <Solutions>厂商补丁： 
+Real Networks 
+------------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+Helix Universal Server &amp; Gateway 9 
+Compaq 
+&lt;a href=&quot; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=Compaq+Tru64+5.1+%26+5.1A&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&quot; target=&quot;_blank&quot;&gt; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=Compaq+Tru64+5.1+%26+5.1A&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&lt;/a&gt; 
+FreeBSD 
+&lt;a href=&quot; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=FreeBSD+4.0+%26+4.5&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&quot; target=&quot;_blank&quot;&gt; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=FreeBSD+4.0+%26+4.5&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&lt;/a&gt; 
+HP UX 
+&lt;a href=&quot; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=HP+UX+11.0+%26+11.i&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&quot; target=&quot;_blank&quot;&gt; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=HP+UX+11.0+%26+11.i&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&lt;/a&gt; 
+IBM AIX 
+&lt;a href=&quot; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=IBM+AIX+4.3+%26+5L&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&quot; target=&quot;_blank&quot;&gt; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=IBM+AIX+4.3+%26+5L&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&lt;/a&gt; 
+Linux 
+&lt;a href=&quot; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=Linux+version+2.4.18&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&quot; target=&quot;_blank&quot;&gt; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=Linux+version+2.4.18&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&lt;/a&gt; 
+Sun Solaris 2.7 
+&lt;a href=&quot; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=Sun+Solaris+2.7&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&quot; target=&quot;_blank&quot;&gt; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=Sun+Solaris+2.7&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&lt;/a&gt; 
+Sun Solaris 2.8 
+&lt;a href=&quot; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=Sun+Solaris+2.8&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&quot; target=&quot;_blank&quot;&gt; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=Sun+Solaris+2.8&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&lt;/a&gt; 
+Windows 
+&lt;a href=&quot; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=Windows+NT+4.0+%26+2000&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&quot; target=&quot;_blank&quot;&gt; 
+http://forms.real.com/rnforms/products/servers/download/download.final.html?platform=Windows+NT+4.0+%26+2000&amp;product=Helix+Universal+Server&amp;program=basic&amp;version=Helix+Universal+Server&lt;/a&gt; 
+Helix Universal Mobile &amp; Gateway 10： 
+通过在/Plugins目录中用如下文件代替即可： 
+Solaris 2.8 
+&lt;a href=&quot; 
+http://docs.real.com/docs/022604_pluginupdate/solaris/adminfs.so_sunos-58.gz&quot; target=&quot;_blank&quot;&gt; 
+http://docs.real.com/docs/022604_pluginupdate/solaris/adminfs.so_sunos-58.gz&lt;/a&gt; 
+Linux 
+&lt;a href=&quot; 
+http://docs.real.com/docs/022604_pluginupdate/linux/adminfs.so_linux.gz&quot; target=&quot;_blank&quot;&gt; 
+http://docs.real.com/docs/022604_pluginupdate/linux/adminfs.so_linux.gz&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Helix Server">               
+                        <version>                  
+                              <range>                     <low>9.0.0.0</low>                     <high>9.0.2.882</high>                  </range>                  
+                        </version>               
+                        <version>                  
+                              <range>                     <low>10.0.0.0</low>                     <high>10.1.1.121</high>                  </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="Helix DNA Server">               
+                        <version>                  
+                              <range>                     <low>9.0.0.0</low>                     <high>9.0.2.882</high>                  </range>                  
+                        </version>               
+                        <version>                  
+                              <range>                     <low>10.0.0.0</low>                     <high>10.1.1.121</high>                  </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="RealServer">               
+                        <version>                  
+                              <range>                     <low>9.0.0.0</low>                     <high>9.0.2.882</high>                  </range>                  
+                        </version>               
+                        <version>                  
+                              <range>                     <low>10.0.0.0</low>                     <high>10.1.1.121</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-01-17" gvid="GVID-102299" id="102299" modifyDate="2012-07-31">      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <name>Helix Negative Content Length 拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Helix Server易受到拒绝服务攻击，甚至可能是一个遥远的root破坏。此问题源于不正确解析消极的HTT；Content-Length&amp;#39;文件，这可能是由未经身份验证的远程攻击者提出.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Helix Server">               
+                        <version>                  
+                              <range>                     <low>0.0.0.0</low>                     <high>9.0.4.960</high>                  </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="Helix DNA Server">               
+                        <version>                  
+                              <range>                     <low>0.0.0.0</low>                     <high>9.0.4.960</high>                  </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="RealServer">               
+                        <version>                  
+                              <range>                     <low>0.0.0.0</low>                     <high>9.0.4.960</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-01-18" gvid="GVID-102301" id="102301" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>RealNetworks RealServer和Helix DESCRIBE缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当发送特制的DESCRIBE请求到服务器时，RealNetworks公司的Helix Universal Server的某些版本易受到远程可利用的缓冲区溢出条件请求的影响。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0725,CVE-2002-1643</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Helix Server">               
+                        <version>                  
+                              <range>                     <low>9.0.0.0</low>                     <high>9.0.2.802</high>                  </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="Helix DNA Server">               
+                        <version>                  
+                              <range>                     <low>9.0.0.0</low>                     <high>9.0.2.802</high>                  </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="RealServer">               
+                        <version>                  
+                              <range>                     <low>9.0.0.0</low>                     <high>9.0.2.802</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-01-18" gvid="GVID-102303" id="102303" modifyDate="2015-02-13">      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <name>RealNetworks Helix Universal服务器的请求拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当发送有错误的GET_PARAMETER和DESCRIBE请求时，某些版本的RealNetworks Helix Universal服务器易受到拒绝服务攻击。</Description>      <cnnvd>CNNVD-200406-023</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-0389</id>      </AlternateIds>      <Solutions>厂商补丁： 
+Real Networks 
+------------- 
+目前厂商还没有提供补丁或者升级程序，我们建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+&lt;a href=&quot; 
+http://www.real.com&quot; target=&quot;_blank&quot;&gt; 
+http://www.real.com&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Helix Server">               
+                        <version>                  
+                              <range>                     <low>9.0.0.0</low>                     <high>9.0.3.916</high>                  </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="Helix DNA Server">               
+                        <version>                  
+                              <range>                     <low>9.0.0.0</low>                     <high>9.0.3.916</high>                  </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="RealServer">               
+                        <version>                  
+                              <range>                     <low>9.0.0.0</low>                     <high>9.0.3.916</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-01-18" gvid="GVID-102304" id="102304" modifyDate="2012-07-31">      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <name>RealNetworks RealServeer和Helix Universal Server服务器节点，RTSP URI缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当检查一个RTSP请求的URI时，某些版本的RealNetworks RealServer和Helix Universal Server易受到远程利用缓冲区溢出条件的影响。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Helix Server">               
+                        <version>                  
+                              <range>                     <low>0.0.0.0</low>                     <high>8.0.2.471</high>                  </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="Helix DNA Server">               
+                        <version>                  
+                              <range>                     <low>0.0.0.0</low>                     <high>8.0.2.471</high>                  </range>                  
+                        </version>               
+                  </Product>            
+                  <Product name="RealServer">               
+                        <version>                  
+                              <range>                     <low>0.0.0.0</low>                     <high>8.0.2.471</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

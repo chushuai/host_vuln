@@ -1,0 +1,283 @@
+<Vulns>   <Vulnerability addData="2007-01-26" gvid="GVID-102715" id="102715" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>THTTPD任意文件披露</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>thttpd2.04之前的版本允许任意文件通过获取访问多个 &amp;#39;/&amp;#39;在文件名中显示。</Description>      <cnnvd>CNNVD-199912-143</cnnvd>      <AlternateIds>         <id name="CVE">CVE-1999-1456</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="thttpd">               
+                        <version>                  <range>                     <high inclusive="1">2.03</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-01-29" gvid="GVID-102716" id="102716" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>THTTPD基本验证缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>THTTPD 1.95至2.21版本容易受到一个off-by-one缓冲区溢出的影响，这可能允许攻击者在目标机器上便于拒绝服务。</Description>      <cnnvd>CNNVD-200112-237</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-1496</id>      </AlternateIds>      <Solutions>Updated versions of thttpd have been made available.</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="thttpd">               
+                        <version>                  <range>                     <low>1.95</low>                     <high inclusive="1">2.21</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-01-26" gvid="GVID-102718" id="102718" modifyDate="2015-02-13">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>THTTPD defang() 缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>THTTPD 2.21至2.23版本的Beta 3易受defang（）函数中的缓冲区溢出影响,它用&amp;#39;&amp;amp;gt;&amp;#39; 和&amp;#39;&amp;amp;lt;&amp;#39;替换 &amp;#39;&amp;gt;&amp;#39; 和 &amp;#39;&amp;lt;&amp;#39;。攻击者可通过提供有过长数字或上述字符的特制的HTTP请求强制thttpd服务崩溃。</Description>      <cnnvd>CNNVD-200311-007</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0899</id>      </AlternateIds>      <Solutions>厂商补丁： 
+Debian 
+------ 
+&lt;a href=&quot; 
+http://www.debian.org/security/2003/dsa-396&quot; target=&quot;_blank&quot;&gt; 
+http://www.debian.org/security/2003/dsa-396&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="thttpd">               
+                        <version>                  <range>                     <low>2.21</low>                     <high>2.24</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-01-29" gvid="GVID-102719" id="102719" modifyDate="2013-12-04">      <cvsscode>7.2</cvsscode>      <severity>Severe</severity>      <name>多个THTTPD htpasswd漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>THTTPD 2.25 b版本及其之前版本包含一个htpasswd分布，它容易受到(1)缓冲区溢出和(2)可能允许本地攻击者破坏机器的任意命令执行漏洞
+&lt;ol&gt;
+&lt;li&gt;THTTPD/htpasswd未能在复制信息到内部缓冲区之前在用户提供的输入上进行适当的边界检查,这允许攻击者运行任意代码。&lt;/li&gt;
+&lt;li&gt;THTTPD/htpasswd未正确处理用户输入,这将允许攻击者在主机上运行任意命令。&lt;/li&gt;&lt;/ol&gt;</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2006-1079,CVE-2006-1078</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="thttpd">               
+                        <version>                  <range>                     <high inclusive="1">2.25b</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-04-04" gvid="GVID-102720" id="102720" modifyDate="2017-12-18">      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <name>THTTPD 废弃版</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>早于2.27的THTTPD版本是过时的。后续版本包含关键的安全性，性能和兼容性增强功能。建议您将THTTPD安装升级到最新版本。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP">            
+		            <Product name="thttpd">               
+			               <version>                  
+				                  <range>                     <high>2.27</high>                  </range>                  
+			               </version>               
+		            </Product>            
+	         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-01-29" gvid="GVID-102721" id="102721" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>THTTPD World 可读文件泄露</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>THTTPD 2.16至2.19版本包含一个文件披露漏洞,攻击者可通过附加&amp;quot;..&amp;quot;到包含cgi-脚本的ssi中的文件路径来查看服务器上的任意文件。</Description>      <cnnvd>CNNVD-200012-114</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2000-0900</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="thttpd">               
+                        <version>                  <range>                     <low>2.16</low>                     <high inclusive="1">2.19</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-01-29" gvid="GVID-102722" id="102722" modifyDate="2015-02-13">      <cvsscode>2.1</cvsscode>      <severity>Moderate</severity>      <name>THTTPD symlink任意文件写入</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>THTTPD 2.23之前版本允许本地用户通过&amp;quot;start_thttpd&amp;quot;临时文件上的一个符号链接攻击来创建或访问任意文件。</Description>      <cnnvd>CNNVD-200511-149</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-3124</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.debian.org/security/2005/dsa-883 
+</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="thttpd">               
+                        <version>                  <range>                     <high>2.23</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-01-29" gvid="GVID-102723" id="102723" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>THTTPD tdate_parse()缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>THTTPD 1.90a -2.04版本很容易受到tdate_parse()函数中的缓冲区溢出攻击。
+攻击者可通过发送带有HTTP服务器的特制的&amp;quot;If-Modified-Since&amp;quot; 标头执行任意代码。</Description>      <cnnvd>CNNVD-199911-054</cnnvd>      <AlternateIds>         <id name="CVE">CVE-1999-1457</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="thttpd">               
+                        <version>                  <range>                     <low>1.90a</low>                     <high inclusive="1">2.04</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-01-29" gvid="GVID-102724" id="102724" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>THTTPD VHOST主机名目录遍历漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>2.23之前版本的THTTPD易受目录遍历漏洞的影响。通过在启用vhost选项(-v)的thttpd服务器上指定http请求中的Host标头中的&amp;quot;../..&amp;quot;,攻击者可查看web服务器根路径的所有文件。</Description>      <cnnvd>CNNVD-200305-039</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1562</id>      </AlternateIds>      <Solutions>SuSE has released an advisory (SuSE-SA:2003:044) to address this issue in SuSE Linux platforms. Affected users are advised to apply fixes as soon as possible. Further information regarding obtaining and applying these fixes can be found in the referenced advisory. 
+Debian has released an advisory (DSA 396-1) and fixes to address this issue in thttpd. 
+Conectiva has released a security advisory (CLA-2003:777) which contains fixes to address this issue. Users are advised to upgrade as soon as possible. 
+This issue has been addressed in thttpd 2.24 and mini_httpd 1.18. 
+Acme mini_httpd 1.0 0 
+&lt;ul&gt;&lt;li&gt; 
+Acme mini_httpd-1.18.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&quot;&gt; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme mini_httpd 1.0 1 
+&lt;ul&gt;&lt;li&gt; 
+Acme mini_httpd-1.18.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&quot;&gt; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 1.0 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme mini_httpd 1.10 0 
+&lt;ul&gt;&lt;li&gt; 
+Acme mini_httpd-1.18.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&quot;&gt; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme mini_httpd 1.11 
+&lt;ul&gt;&lt;li&gt; 
+Acme mini_httpd-1.18.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&quot;&gt; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme mini_httpd 1.12 
+&lt;ul&gt;&lt;li&gt; 
+Acme mini_httpd-1.18.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&quot;&gt; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme mini_httpd 1.13 
+&lt;ul&gt;&lt;li&gt; 
+Acme mini_httpd-1.18.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&quot;&gt; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme mini_httpd 1.14 
+&lt;ul&gt;&lt;li&gt; 
+Acme mini_httpd-1.18.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&quot;&gt; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme mini_httpd 1.15 b 
+&lt;ul&gt;&lt;li&gt; 
+Acme mini_httpd-1.18.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&quot;&gt; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme mini_httpd 1.15 c 
+&lt;ul&gt;&lt;li&gt; 
+Acme mini_httpd-1.18.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&quot;&gt; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme mini_httpd 1.15 
+&lt;ul&gt;&lt;li&gt; 
+Acme mini_httpd-1.18.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&quot;&gt; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme mini_httpd 1.16 
+&lt;ul&gt;&lt;li&gt; 
+Acme mini_httpd-1.18.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&quot;&gt; 
+http://www.acme.com/software/mini_httpd/mini_httpd-1.18.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 1.90 a 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 1.95 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.0 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.0.1 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.0.2 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.0.3 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.0.4 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.0.5 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.0.6 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.0.7 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.0.8 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.0.9 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.10 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.11 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.12 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.13 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.14 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.15 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.16 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.17 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;&gt; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Acme thttpd 2.18 
+&lt;ul&gt;&lt;li&gt; 
+Acme thttpd-2.24.tar.gz 
+&lt;a href=&quot; 
+http://www.acme.com/software/thttpd/thttpd-2.24.tar.gz&quot;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="thttpd">               
+                        <version>                  <range>                     <high>2.23</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

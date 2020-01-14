@@ -1,0 +1,37 @@
+<Vulns>   <Vulnerability addData="2014-12-22" gvid="GVID-102689" id="102689" modifyDate="2014-12-22">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Allegro Software RomPager格式错误的URL请求拒绝服务 (CVE-2000-0470)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Allegro RomPager HTTP服务器允许远程攻击者通过错误的身份验证请求导致拒绝服务。</Description>      <cnnvd>CNNVD-200006-006</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2000-0470</id>      </AlternateIds>      <Solutions>RomPager 2.20 was released in December 1998 and is not susceptible to this problem. Users of affected equipment should contact the vendor of that equipment for fix information. Manufacturers of affected equipment should contact Allegro. Contact information for Allegro is available at 
+http://www.allegrosoft.com</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                 <Product name="RomPager" vendor="Allegro Software">               
+                      <version>                  
+                           <range>                     
+                                <high inclusive="1">2.20</high>                     
+                           </range>                  
+                      </version>               
+                 </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-22" gvid="GVID-102690" id="102690" modifyDate="2014-12-22">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>Allegro Software RomPager HTTP Referer跨站点脚本(CVE-2013-6786)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>如用在ZyXEL P660HW-D1, Huawei MT882, Sitecom WL-174, TP-LINK TD-8816, D-Link DSL-2640R 和DSL-2641R中，Allegro RomPager 4.51之前版本的跨网站脚本(XSS)漏洞在&amp;quot;forbidden author header&amp;quot;保护机制被绕过时，允许远程攻击者通过请求一个不存在的URL和没有被404页正确处理的特定HTTP Referer头部来注入任意web脚本或HTML。注:&amp;quot;URL 重定向&amp;quot;分别列出资源的问题没有CVE。</Description>      <cnnvd>CNNVD-201311-215</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2013-6786</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.allegrosoft.com/embedded-web-server</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                 <Product name="RomPager" vendor="Allegro Software">               
+                      <version>                  
+                           <range>                     
+                                <high inclusive="0">4.51</high>                     
+                           </range>                  
+                      </version>               
+                 </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-22" gvid="GVID-102691" id="102691" modifyDate="2015-04-08">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Allegro Software RomPager &amp;#39;Fortune Cookie&amp;#39; 未指明的HTTP认证绕过(CVE-2014-9222)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>4.34之前，Allegro Software的RomPager嵌入式HTTP服务器版本包含漏洞，该漏洞允许远程，未经验证的攻击者绕过身份验证和登录作为管理用户。</Description>      <cnnvd>CNNVD-201412-484</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-9222</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://www.allegrosoft.com/embedded-web-server?utm_expid=16278828-4.gt_tg2OQQrSsovx7F9OupA.0&amp;utm_referrer=https%3A%2F%2Fwww.allegrosoft.com%2F</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                 <Product name="RomPager" vendor="Allegro Software">               
+                      <version>                  
+                           <range>                     
+                                <high inclusive="0">4.34</high>                     
+                           </range>                  
+                      </version>               
+                 </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-22" gvid="GVID-102692" id="102692" modifyDate="2015-04-08">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>HTTP处理中的Allegro Software RomPager不明缓冲区溢出(CVE-2014-9223)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>4.34之前，Allegro Software的RomPager嵌入式HTTP服务器版本包含未指定的缓冲区溢出漏洞，该漏洞可以允许远程代码执行。</Description>      <cnnvd>CNNVD-201412-498</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-9223</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://www.allegrosoft.com/embedded-web-server?utm_expid=16278828-4.gt_tg2OQQrSsovx7F9OupA.0&amp;utm_referrer=https%3A%2F%2Fwww.allegrosoft.com%2F</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                 <Product name="RomPager" vendor="Allegro Software">               
+                      <version>                  
+                           <range>                     
+                                <high inclusive="0">4.34</high>                     
+                           </range>                  
+                      </version>               
+                 </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

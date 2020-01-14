@@ -1,0 +1,951 @@
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="GVID-102693" id="102693" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理认证信息转发</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在某些条件下，Squid proxy服务器可能转发
+      用户名和密码的代理访问远程网站。该认证
+      信息是由客户端浏览器发送的HTTP标头当一个请求是
+      通过代理进行。认证信息是指为代理
+      本身和它不应该被转发。这可能会导致内部
+      用户名和密码信息发送到远程任意网站。</Description>      <cnnvd>CNNVD-200207-099</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0715</id>      </AlternateIds>      <Solutions>FreeBSD has released a Security Notice FreeBSD-SN-02:05. Users of FreeBSD systems are strongly urged to upgrade their ports tree to fix various reported issues. Further information can be found in the referenced Security Notice. 
+SCO has released advisory CSSA-2003-SCO.9 to address this issue. 
+Updates are available: 
+National Science Foundation Squid Web Proxy 2.2 
+&lt;ul&gt;&lt;li&gt; 
+National Science Foundation squid-2.4.STABLE7-src.tar.gz 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar 
+.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+National Science Foundation Squid Web Proxy 2.2 STABLE5 
+&lt;ul&gt;&lt;li&gt; 
+National Science Foundation squid-2.4.STABLE7-src.tar.gz 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar 
+.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.3.STABLE4-162.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-2.3.STABLE4-162.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-2.3.STABLE4-162.i 
+386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.3.STABLE4-162.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-2.3.STABLE4-162.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-2.3.STABLE4-162.i 
+386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.4.STABLE6-2.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-2.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-2.i38 
+6.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.4.STABLE6-9.i386.patch.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i386.patch.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i38 
+6.patch.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.4.STABLE6-9.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i38 
+6.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-beta-2.4.STABLE1-105.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-beta-2.4.STABLE1-105.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-beta-2.4.STABLE1- 
+105.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-beta-2.4.STABLE2-99.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-beta-2.4.STABLE2-99.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-beta-2.4.STABLE2- 
+99.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid2-2.2.STABLE5-223.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid2-2.2.STABLE5-223.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid2-2.2.STABLE5-223. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid2-2.2.STABLE5-223.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid2-2.2.STABLE5-223.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid2-2.2.STABLE5-223. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid2-2.2.STABLE5-224.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid2-2.2.STABLE5-224.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid2-2.2.STABLE5-224. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid23-2.3.STABLE4-81.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid23-2.3.STABLE4-81.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid23-2.3.STABLE4-81. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid23-2.3.STABLE4-81.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid23-2.3.STABLE4-81.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid23-2.3.STABLE4-81. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid23-2.3.STABLE4-82.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid23-2.3.STABLE4-82.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid23-2.3.STABLE4-82. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+National Science Foundation Squid Web Proxy 2.3 STABLE3 
+&lt;ul&gt;&lt;li&gt; 
+National Science Foundation squid-2.4.STABLE7-src.tar.gz 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar 
+.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+National Science Foundation Squid Web Proxy 2.3 STABLE4 
+&lt;ul&gt;&lt;li&gt; 
+National Science Foundation squid-2.4.STABLE7-src.tar.gz 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar 
+.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.3.STABLE4-162.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-2.3.STABLE4-162.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-2.3.STABLE4-162.i 
+386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.3.STABLE4-162.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-2.3.STABLE4-162.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-2.3.STABLE4-162.i 
+386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.4.STABLE6-2.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-2.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-2.i38 
+6.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.4.STABLE6-9.i386.patch.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i386.patch.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i38 
+6.patch.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.4.STABLE6-9.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i38 
+6.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-beta-2.4.STABLE1-105.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-beta-2.4.STABLE1-105.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-beta-2.4.STABLE1- 
+105.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-beta-2.4.STABLE2-99.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-beta-2.4.STABLE2-99.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-beta-2.4.STABLE2- 
+99.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid2-2.2.STABLE5-223.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid2-2.2.STABLE5-223.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid2-2.2.STABLE5-223. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid2-2.2.STABLE5-223.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid2-2.2.STABLE5-223.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid2-2.2.STABLE5-223. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid2-2.2.STABLE5-224.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid2-2.2.STABLE5-224.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid2-2.2.STABLE5-224. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid23-2.3.STABLE4-81.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid23-2.3.STABLE4-81.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid23-2.3.STABLE4-81. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid23-2.3.STABLE4-81.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid23-2.3.STABLE4-81.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid23-2.3.STABLE4-81. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid23-2.3.STABLE4-82.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid23-2.3.STABLE4-82.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid23-2.3.STABLE4-82. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+National Science Foundation Squid Web Proxy 2.3 
+&lt;ul&gt;&lt;li&gt; 
+National Science Foundation squid-2.4.STABLE7-src.tar.gz 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar 
+.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE s</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.4.STABLE7</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-04-14" gvid="GVID-102694" id="102694" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理服务器连接中断拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>由于有缺陷的分析和发布请求，Squid 代理服务器很容易拒绝服务。因此，如果连接过早中止，远程攻击者可导致代理服务器崩溃。</Description>      <cnnvd>CNNVD-200504-039</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0718</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+Turbolinux Appliance Server Hosting Edition 1.0 
+Turbolinux squid-2.5.STABLE6-21.i586.rpm 
+Turbolinux Appliance Server 1.0 Hosting Edition 
+ftp://ftp.turbolinux.co.jp/pub/TurboLinux/ 
+Turbolinux Turbolinux Server 10.0 
+Turbolinux squid-2.5.STABLE6-21.i586.rpm 
+Turbolinux 10 Server 
+ftp://ftp.turbolinux.co.jp/pub/TurboLinux/TurboLinux/ia32/Server/10/up dates/RPMS/squid-2.5.STABLE6-21.i586.rpm 
+Turbolinux squid-debug-2.5.STABLE6-21.i586.rpm 
+Turbolinux 10 Server 
+ftp://ftp.turbolinux.co.jp/pub/TurboLinux/TurboLinux/ia32/Server/10/up dates/RPMS/squid-debug-2.5.STABLE6-21.i586.rpm 
+Squid Web Proxy Cache 2.4 .STABLE6 
+RedHat squid-2.4.STABLE7-0.73.3.legacy.i386.rpm 
+Red Hat Linux 7.3: 
+http://download.fedoralegacy.org/redhat/7.3/updates/i386/squid-2.4.STA BLE7-0.73.3.legacy.i386.rpm 
+Squid Web Proxy Cache 2.5 .STABLE3 
+RedHat squid-2.5.STABLE3-2.fc1.6.legacy.i386.rpm 
+Fedora Core 1: 
+http://download.fedoralegacy.org/fedora/1/updates/i386/squid-2.5.STABL E3-2.fc1.6.legacy.i386.rpm 
+Squid Web Proxy Cache 2.5 .STABLE7 
+Squid squid-2.5.STABLE7-post.patch 
+http://www1.uk.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7- post.patch 
+Squid Web Proxy Cache 2.5 .STABLE1 
+RedHat squid-2.5.STABLE1-9.10.legacy.i386.rpm 
+Red Hat Linux 9: 
+http://download.fedoralegacy.org/redhat/9/updates/i386/squid-2.5.STABL E1-9.10.legacy.i386.rpm 
+Squid Web Proxy Cache 2.5 .STABLE5 
+Conectiva squid-2.5.5-63116U10_8cl.i386.rpm 
+ftp://atualizacoes.conectiva.com.br/10/RPMS/squid-2.5.5-63116U10_8cl.i 386.rpm 
+Conectiva squid-2.5.5-76327U90_10cl.i386.rpm 
+ftp://atualizacoes.conectiva.com.br/9/RPMS/squid-2.5.5-76327U90_10cl.i 386.rpm 
+Conectiva squid-auth-2.5.5-63116U10_8cl.i386.rpm 
+ftp://atualizacoes.conectiva.com.br/10/RPMS/squid-auth-2.5.5-63116U10_ 8cl.i386.rpm 
+Conectiva squid-auth-2.5.5-76327U90_10cl.i386.rpm 
+ftp://atualizacoes.conectiva.com.br/9/RPMS/squid-auth-2.5.5-76327U90_1 0cl.i386.rpm 
+Conectiva squid-extra-templates-2.5.5-63116U10_8cl.i386.rpm 
+ftp://atualizacoes.conectiva.com.br/10/RPMS/squid-extra-templates-2.5. 5-63116U10_8cl.i386.rpm 
+Conectiva squid-extra-templates-2.5.5-76327U90_10cl.i386.rpm 
+ftp://atualizacoes.conectiva.com.br/9/RPMS/squid-extra-templates-2.5.5 -76327U90_10cl.i386.rpm 
+RedHat squid-2.5.STABLE9-1.FC2.4.legacy.i386.rpm 
+Fedora Core 2: 
+http://download.fedoralegacy.org/fedora/2/updates/i386/squid-2.5.STABL E9-1.FC2.4.legacy.i386.rpm 
+Ubuntu squid-cgi_2.5.5-6ubuntu0.7_amd64.deb 
+Ubuntu 4.10 (Warty Warthog) 
+http://security.ubuntu.com/ubuntu/pool/universe/s/squid/squid-cgi_2.5. 5-6ubuntu0.7_amd64.deb 
+Ubuntu squid-cgi_2.5.5-6ubuntu0.7_i386.deb 
+Ubuntu 4.10 (Warty Warthog) 
+http://security.ubuntu.com/ubuntu/pool/universe/s/squid/squid-cgi_2.5. 5-6ubuntu0.7_i386.deb 
+Ubuntu squid-cgi_2.5.5-6ubuntu0.7_powerpc.deb 
+Ubuntu 4.10 (Warty Warthog) 
+http://security.ubuntu.com/ubuntu/pool/universe/s/squid/squid-cgi_2.5. 5-6ubuntu0.7_powerpc.deb 
+Ubuntu squid-common_2.5.5-6ubuntu0.7_all.deb 
+Ubuntu 4.10 (Warty Warthog) 
+http://security.ubuntu.com/ubuntu/pool/main/s/squid/squid-common_2.5.5 -6ubuntu0.7_all.deb 
+Ubuntu squid_2.5.5-6ubuntu0.7_amd64.deb 
+Ubuntu 4.10 (Warty Warthog) 
+http://security.ubuntu.com/ubuntu/pool/main/s/squid/squid_2.5.5-6ubunt u0.7_amd64.deb 
+Ubuntu squid_2.5.5-6ubuntu0.7_i386.deb 
+Ubuntu 4.10 (Warty Warthog) 
+http://security.ubuntu.com/ubuntu/pool/main/s/squid/squid_2.5.5-6ubunt u0.7_i386.deb 
+Ubuntu squid_2.5.5-6ubuntu0.7_powerpc.deb 
+Ubuntu 4.10 (Warty Warthog) 
+http://security.ubuntu.com/ubuntu/pool/main/s/squid/squid_2.5.5-6ubunt u0.7_powerpc.deb 
+Ubuntu squidclient_2.5.5-6ubuntu0.7_amd64.deb 
+Ubuntu 4.10 (Warty Warthog) 
+http://security.ubuntu.com/ubuntu/pool/universe/s/squid/squidclient_2. 5.5-6ubuntu0.7_amd64.deb 
+Ubuntu squidclient_2.5.5-6ubuntu0.7_i386.deb 
+Ubuntu 4.10 (Warty Warthog) 
+http://security.ubuntu.com/ubuntu/pool/universe/s/squid/squidclient_2. 5.5-6ubuntu0.7_i386.deb 
+Ubuntu squidclient_2.5.5-6ubuntu0.7_powerpc.deb 
+Ubuntu 4.10 (Warty Warthog) 
+http://security.ubuntu.com/ubuntu/pool/universe/s/squid/squidclient_2. 5.5-6ubuntu0.7_powerpc.deb 
+Turbolinux Turbolinux Workstation 7.0 
+Turbolinux squid-2.5.STABLE6-21.i586.rpm 
+Turbolinux 7 Workstation 
+ftp://ftp.turbolinux.co.jp/pub/TurboLinux/TurboLinux/ia32/Workstation/ 7/updates/RPMS/squid-2.5.STABLE6-21.i586.rpm 
+</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.5.STABLE8</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-09-21" gvid="GVID-102695" id="102695" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理连接中止拒绝服务漏洞2</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>由于有缺陷处理中止连接，Squid的代理服务器易受到拒绝服务攻击的攻击。
+因此，如果连接到它的过早中止，
+如果过早中止连接，远程攻击者可导致代理服务器崩溃。</Description>      <cnnvd>CNNVD-200509-046</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-2794</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.5.STABLE11</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102696" id="102696" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>squid代理压缩DNS回复缓冲区溢出 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid 代理服务器易被恶意的远程 DNS 服务器利用的缓冲区溢出漏洞影响。如果Squid服务器接收特制的压缩DNS包作为主机名查找的响应，此缓冲区溢出可被触发并在Squid服务器上执行任意代码。这有可能使攻击者完全控制Squid服务器。</Description>      <cnnvd>CNNVD-200203-100</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0163</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 以 --disable-internal-dns 参数重新编译Squid，使用外部DNS。 
+厂商补丁： 
+FreeBSD 
+------- 
+FreeBSD已经为此发布了一个安全公告(FreeBSD-SA-02:19)以及相应补丁: 
+FreeBSD-SA-02:19：squid heap buffer overflow in DNS handling 
+链接：&lt;a href=&quot;ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-02:19.squid.asc&quot; target=&quot;_blank&quot;&gt;ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-02:19.squid.asc&lt;/a&gt; 
+补丁下载： 
+&lt;a href=&quot;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-4-stable/Latest/portcheckout.tgz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-4-stable/Latest/portcheckout.tgz&lt;/a&gt; 
+&lt;a href=&quot;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-5-current/Latest/portcheckout.tgz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-5-current/Latest/portcheckout.tgz&lt;/a&gt; 
+National Science Foundation 
+--------------------------- 
+National Science Foundation已经为此发布了一个安全公告(SQUID-2002:2)以及相应补丁: 
+SQUID-2002:2：Squid Proxy Cache Security Update Advisory SQUID-2002:2 
+链接：&lt;a href=&quot; 
+http://www.squid-cache.org/Advisories/SQUID-2002_2.txt&quot; target=&quot;_blank&quot;&gt; 
+http://www.squid-cache.org/Advisories/SQUID-2002_2.txt&lt;/a&gt; 
+补丁下载： 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/&quot; target=&quot;_blank&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/&lt;/a&gt; 
+&lt;a href=&quot; 
+http://www.squid-cache.org/Versions/v2/2.4/&quot; target=&quot;_blank&quot;&gt; 
+http://www.squid-cache.org/Versions/v2/2.4/&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.4.STABLE6</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102697" id="102697" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>squid代理DNS解决拒绝服务漏洞 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>squid代理服务器容易受到拒绝服务攻击是由于有缺陷的解析完全限定域名(FQDN)。因此,远程攻击者可以控制其FQDN导致守护进程崩溃。</Description>      <cnnvd>CNNVD-200505-077</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0446</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://download.fedora.redhat.com/pub/fedora/linux/core/updates/3/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <low>2.5.STABLE5</low>                     <high>2.5.STABLE9</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102698" id="102698" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid Proxy DNS请求失败内存泄漏</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>如果DNS系列请求失败，可通过Squid代理服务器可揭露释放内存。因此，远程攻击者可能会访问守护进程空间中的敏感信息。</Description>      <cnnvd>CNNVD-200412-1176</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-2479</id>      </AlternateIds>      <Solutions>Please see the referenced vendor advisories for more information and fixes. 
+ 
+Squid Web Proxy Cache 2.5 .STABLE6 
+&lt;ul&gt;&lt;li&gt; 
+Squid squid-2.5.STABLE7-dothost.patch 
+&lt;a href=&quot; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-dothost.patch&quot;&gt; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-doth 
+ost.patch&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Squid Web Proxy Cache 2.5 .STABLE4 
+&lt;ul&gt;&lt;li&gt; 
+Squid squid-2.5.STABLE7-dothost.patch 
+&lt;a href=&quot; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-dothost.patch&quot;&gt; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-doth 
+ost.patch&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Squid Web Proxy Cache 2.5 .STABLE1 
+&lt;ul&gt;&lt;li&gt; 
+RedHat squid-2.5.STABLE1-9.10.legacy.i386.rpmRed Hat Linux 9: 
+&lt;a href=&quot; 
+http://download.fedoralegacy.org/redhat/9/updates/i386/squid-2.5.STABLE1-9.10.legacy.i386.rpm&quot;&gt; 
+http://download.fedoralegacy.org/redhat/9/updates/i386/squid-2.5.STABL 
+E1-9.10.legacy.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Squid squid-2.5.STABLE7-dothost.patch 
+&lt;a href=&quot; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-dothost.patch&quot;&gt; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-doth 
+ost.patch&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Squid Web Proxy Cache 2.5 .STABLE3 
+&lt;ul&gt;&lt;li&gt; 
+RedHat squid-2.5.STABLE3-2.fc1.6.legacy.i386.rpmFedora Core 1: 
+&lt;a href=&quot; 
+http://download.fedoralegacy.org/fedora/1/updates/i386/squid-2.5.STABLE3-2.fc1.6.legacy.i386.rpm&quot;&gt; 
+http://download.fedoralegacy.org/fedora/1/updates/i386/squid-2.5.STABL 
+E3-2.fc1.6.legacy.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Squid squid-2.5.STABLE7-dothost.patch 
+&lt;a href=&quot; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-dothost.patch&quot;&gt; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-doth 
+ost.patch&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Squid Web Proxy Cache 2.5 .STABLE7 
+&lt;ul&gt;&lt;li&gt; 
+Squid squid-2.5.STABLE7-dothost.patch 
+&lt;a href=&quot; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-dothost.patch&quot;&gt; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-doth 
+ost.patch&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Squid Web Proxy Cache 2.5 .STABLE5 
+&lt;ul&gt;&lt;li&gt; 
+RedHat squid-2.5.STABLE9-1.FC2.4.legacy.i386.rpmFedora Core 2: 
+&lt;a href=&quot; 
+http://download.fedoralegacy.org/fedora/2/updates/i386/squid-2.5.STABLE9-1.FC2.4.legacy.i386.rpm&quot;&gt; 
+http://download.fedoralegacy.org/fedora/2/updates/i386/squid-2.5.STABL 
+E9-1.FC2.4.legacy.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Squid squid-2.5.STABLE7-dothost.patch 
+&lt;a href=&quot; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-dothost.patch&quot;&gt; 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-doth 
+ost.patch&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <low>2.5.STABLE1</low>                     <high>2.5.STABLE8</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102699" id="102699" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid Proxy FTP数据通道劫持</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器不执行足够的完整性检查传入的FTP数据连接的源地址远程FTP服务器。它可能允许远程攻击者劫持代理FTP的数据部分
+会话,以他自己的数据代替真正的服务器的数据。这将创建的代理用户下载木马病毒，而不是真正的文件。
+成功开发需要攻击者能够监控(&quot;sniff&quot;)即将离任的FTP连接从Squid代理。因为FTP不是一个加密的协议,任何访问中间路由器可能利用此漏洞。
+因为FTP数据连接入站,成功的开发可能会允许攻击者绕过你的代理，连接到您的网络。</Description>      <cnnvd>CNNVD-200207-090</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0714</id>      </AlternateIds>      <Solutions>Sanity checks have been introduced into Squid as a default configuration option. The checks will prevent any attempt to carry out these attacks. If support for different control/data addresses is required, disabling the ftp_sanitycheck directive will remove the sanity checking. 
+FreeBSD has released a Security Notice FreeBSD-SN-02:05. Users of FreeBSD systems are strongly urged to upgrade their ports tree to fix various reported issues. Further information can be found in the referenced Security Notice. 
+Updated packages are available. 
+National Science Foundation Squid Web Proxy 2.2 
+&lt;ul&gt;&lt;li&gt; 
+National Science Foundation squid-2.4.STABLE7-src.tar.gz 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar 
+.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+National Science Foundation Squid Web Proxy 2.2 STABLE5 
+&lt;ul&gt;&lt;li&gt; 
+National Science Foundation squid-2.4.STABLE7-src.tar.gz 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar 
+.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.3.STABLE4-162.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-2.3.STABLE4-162.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-2.3.STABLE4-162.i 
+386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.3.STABLE4-162.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-2.3.STABLE4-162.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-2.3.STABLE4-162.i 
+386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.4.STABLE6-2.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-2.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-2.i38 
+6.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.4.STABLE6-9.i386.patch.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i386.patch.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i38 
+6.patch.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-2.4.STABLE6-9.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i38 
+6.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-beta-2.4.STABLE1-105.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-beta-2.4.STABLE1-105.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/squid-beta-2.4.STABLE1- 
+105.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid-beta-2.4.STABLE2-99.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-beta-2.4.STABLE2-99.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/squid-beta-2.4.STABLE2- 
+99.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid2-2.2.STABLE5-223.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid2-2.2.STABLE5-223.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid2-2.2.STABLE5-223. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid2-2.2.STABLE5-223.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid2-2.2.STABLE5-223.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid2-2.2.STABLE5-223. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid2-2.2.STABLE5-224.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid2-2.2.STABLE5-224.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid2-2.2.STABLE5-224. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid23-2.3.STABLE4-81.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid23-2.3.STABLE4-81.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/6.4/n1/squid23-2.3.STABLE4-81. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid23-2.3.STABLE4-81.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid23-2.3.STABLE4-81.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.0/n1/squid23-2.3.STABLE4-81. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+SuSE squid23-2.3.STABLE4-82.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid23-2.3.STABLE4-82.i386.rpm&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.1/n2/squid23-2.3.STABLE4-82. 
+i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+National Science Foundation Squid Web Proxy 2.3 STABLE3 
+&lt;ul&gt;&lt;li&gt; 
+National Science Foundation squid-2.4.STABLE7-src.tar.gz 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar 
+.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+National Science Foundation Squid Web Proxy 2.3 STABLE4 
+&lt;ul&gt;&lt;li&gt; 
+National Science Foundation squid-2.4.STABLE7-src.tar.gz 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar 
+.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.6.2.alpha.rpmRed Hat Linux 6.2 Alpha. 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/alpha/squid-2.4.STABLE6-6.6.2.alpha.rpm&quot;&gt;ftp://updates.redhat.com/6.2/en/os/alpha/squid-2.4.STABLE6-6.6.2.alpha 
+.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.6.2.i386.rpmRed Hat Linux 6.2 i386. 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/i386/squid-2.4.STABLE6-6.6.2.i386.rpm&quot;&gt;ftp://updates.redhat.com/6.2/en/os/i386/squid-2.4.STABLE6-6.6.2.i386.r 
+pm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.6.2.sparc.rpmRed Hat Linux 6.2 sparc. 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/sparc/squid-2.4.STABLE6-6.6.2.sparc.rpm&quot;&gt;ftp://updates.redhat.com/6.2/en/os/sparc/squid-2.4.STABLE6-6.6.2.sparc 
+.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.6.2.src.rpmRed Hat Linux 6.2 source RPM. 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/SRPMS/squid-2.4.STABLE6-6.6.2.src.rpm&quot;&gt;ftp://updates.redhat.com/6.2/en/os/SRPMS/squid-2.4.STABLE6-6.6.2.src.r 
+pm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.7.0.alpha.rpmRed Hat Linux 7.0 Alpha. 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/alpha/squid-2.4.STABLE6-6.7.0.alpha.rpm&quot;&gt;ftp://updates.redhat.com/7.0/en/os/alpha/squid-2.4.STABLE6-6.7.0.alpha 
+.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.7.0.i386.rpmRed Hat Linux 7.0 i386. 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/i386/squid-2.4.STABLE6-6.7.0.i386.rpm&quot;&gt;ftp://updates.redhat.com/7.0/en/os/i386/squid-2.4.STABLE6-6.7.0.i386.r 
+pm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.7.0.src.rpmRed Hat Linux 7.0 source RPM. 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/SRPMS/squid-2.4.STABLE6-6.7.0.src.rpm&quot;&gt;ftp://updates.redhat.com/7.0/en/os/SRPMS/squid-2.4.STABLE6-6.7.0.src.r 
+pm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.7.1.alpha.rpmRed Hat Linux 7.1 Alpha. 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/alpha/squid-2.4.STABLE6-6.7.1.alpha.rpm&quot;&gt;ftp://updates.redhat.com/7.1/en/os/alpha/squid-2.4.STABLE6-6.7.1.alpha 
+.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.7.1.i386.rpmRed Hat Linux 7.1 i386. 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/i386/squid-2.4.STABLE6-6.7.1.i386.rpm&quot;&gt;ftp://updates.redhat.com/7.1/en/os/i386/squid-2.4.STABLE6-6.7.1.i386.r 
+pm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.7.1.src.rpmRed Hat Linux 7.1 source RPM. 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/SRPMS/squid-2.4.STABLE6-6.7.1.src.rpm&quot;&gt;ftp://updates.redhat.com/7.1/en/os/SRPMS/squid-2.4.STABLE6-6.7.1.src.r 
+pm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.7.3.i386.rpmRed Hat Linux 7.2 i386. 
+&lt;a href=&quot;ftp://updates.redhat.com/7.2/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.rpm&quot;&gt;ftp://updates.redhat.com/7.2/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.r 
+pm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat squid-2.4.STABLE6-6.7.3.i386.rpmRed Hat Linux 7.3 i386. 
+&lt;a href=&quot;ftp://updates.redhat.com/7.3/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.rpm&quot;&gt;ftp://updates.redhat.com/7.3/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.r 
+pm&lt;/a&gt;&lt;/li&gt; 
+&lt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.4.STABLE7</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-10-20" gvid="GVID-102700" id="102700" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid Proxy FTP拒绝响应服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的代理不妥善处理从FTP服务器产生的所有可能的反应。因此，用户可以连接到一个恶意服务器，使Squid守护进程崩溃。</Description>      <cnnvd>CNNVD-200510-159</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-3258</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+IPCop IPCop 1.4.1 
+IPCop ipcop-sources-1.4.10.tgz 
+http://prdownloads.sourceforge.net/ipcop/ipcop-sources-1.4.10.tgz?download 
+IPCop IPCop 1.4.2 
+IPCop ipcop-sources-1.4.10.tgz 
+http://prdownloads.sourceforge.net/ipcop/ipcop-sources-1.4.10.tgz?download 
+IPCop IPCop 1.4.4 
+IPCop ipcop-sources-1.4.10.tgz 
+http://prdownloads.sourceforge.net/ipcop/ipcop-sources-1.4.10.tgz?download 
+IPCop IPCop 1.4.5 
+IPCop ipcop-sources-1.4.10.tgz 
+http://prdownloads.sourceforge.net/ipcop/ipcop-sources-1.4.10.tgz?download 
+IPCop IPCop 1.4.6 
+IPCop ipcop-sources-1.4.10.tgz 
+http://prdownloads.sourceforge.net/ipcop/ipcop-sources-1.4.10.tgz?download 
+IPCop IPCop 1.4.8 
+IPCop ipcop-sources-1.4.10.tgz 
+http://prdownloads.sourceforge.net/ipcop/ipcop-sources-1.4.10.tgz?download 
+IPCop IPCop 1.4.9 
+IPCop ipcop-sources-1.4.10.tgz 
+http://prdownloads.sourceforge.net/ipcop/ipcop-sources-1.4.10.tgz?download 
+Squid Web Proxy Cache 2.5 .STABLE5 
+Conectiva squid-2.5.5-77559U10_13cl.i386.rpm 
+Version: 10.0 
+ftp://atualizacoes.conectiva.com.br/10/RPMS/squid-2.5.5-77559U10_13cl.i386.rpm 
+Conectiva squid-auth-2.5.5-77559U10_13cl.i386.rpm 
+ftp://atualizacoes.conectiva.com.br/10/RPMS/squid-auth-2.5.5-77559U10_13cl.i386.rpm 
+Conectiva squid-auth-2.5.5-77559U10_13cl.i386.rpm 
+Version: 10.0 
+ftp://atualizacoes.conectiva.com.br/10/RPMS/squid-auth-2.5.5-77559U10_13cl.i386.rpm 
+Conectiva squid-extra-templates-2.5.5-77559U10_13cl.i386.rpm 
+ftp://atualizacoes.conectiva.com.br/10/RPMS/squid-extra-templates-2.5.5-77559U10_13cl.i386.rpm 
+Conectiva squid-extra-templates-2.5.5-77559U10_13cl.i386.rpm 
+Version: 10.0 
+ftp://atualizacoes.conectiva.com.br/10/RPMS/squid-extra-templates-2.5.5-77559U10_13cl.i386.rpm 
+Conectiva squid-2.5.5-77559U10_13cl.i386.rpm 
+ftp://atualizacoes.conectiva.com.br/10/RPMS/squid-2.5.5-77559U10_13cl.i386.rpm</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.5.STABLE12</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102701" id="102701" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理FTP URL缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Squid代理服务器才会容易受到缓冲区溢出的
+      //网址：可通过一个过长的FTP触发。攻击者可能
+      通过Squid代理并触发请求特制的FTP URL
+      缓冲区溢出，这可能允许攻击者执行任意
+      Squid服务器上的代码，并完全控制。</Description>      <cnnvd>CNNVD-200203-014</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0068</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 拒绝Squid代理匿名ftp服务，在squid.conf文件的前面加入如下两行： 
+acl non-anonymous-ftp url_regex -i ^ftp://[^/@]*@ 
+http_access deny non-anonymous-ftp 
+厂商补丁： 
+Conectiva 
+--------- 
+Conectiva已经为此发布了一个安全公告(CLA-2002:464)以及相应补丁: 
+CLA-2002:464：squid 
+链接： 
+补丁下载： 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.0/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.0/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.0/i386/squid-2.3.5-1U50_1cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.0/i386/squid-2.3.5-1U50_1cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.1/SRPMS/squid-2.3.5-1U51_1cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.1/SRPMS/squid-2.3.5-1U51_1cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.1/i386/squid-2.3.5-1U51_1cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.1/i386/squid-2.3.5-1U51_1cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/6.0/SRPMS/squid-2.3.5-1U60_1cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/6.0/SRPMS/squid-2.3.5-1U60_1cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/squid-2.3.5-1U60_1cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/squid-2.3.5-1U60_1cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/SRPMS/squid-2.4.1-4U70_2cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/SRPMS/squid-2.4.1-4U70_2cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-templates-2.4.1-4U70_2cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-templates-2.4.1-4U70_2cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-doc-2.4.1-4U70_2cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-doc-2.4.1-4U70_2cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-auth-2.4.1-4U70_2cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-auth-2.4.1-4U70_2cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-2.4.1-4U70_2cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-2.4.1-4U70_2cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/i386/squid-2.3.5-1U50_1cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/i386/squid-2.3.5-1U50_1cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/i386/squid-2.3.5-1U50_1cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/i386/squid-2.3.5-1U50_1cl.i386.rpm&lt;/a&gt; 
+FreeBSD 
+------- 
+FreeBSD已经为此发布了一个安全公告(FreeBSD-SA-02:12)以及相应补丁: 
+FreeBSD-SA-02:12：multiple security vulnerabilities in squid port 
+链接：&lt;a href=&quot;ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-02:12.squid.asc&quot; target=&quot;_blank&quot;&gt;ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-02:12.squid.asc&lt;/a&gt; 
+补丁下载： 
+&lt;a href=&quot;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-4-stable/www/squid-2.4_8.tgz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-4-stable/www/squid-2.4_8.tgz&lt;/a&gt; 
+&lt;a href=&quot;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-5-current/www/squid-2.4_8.tgz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-5-current/www/squid-2.4_8.tgz&lt;/a&gt; 
+MandrakeSoft 
+------------ 
+MandrakeSoft已经为此发布了一个安全公告(MDKSA-2002:016-1)以及相应补丁: 
+MDKSA-2002:016-1：squid 
+链接：&lt;a href=&quot; 
+http://www.linux-mandrake.com/en/security/2002/MDKSA-2002-016-1.php3&quot; target=&quot;_blank&quot;&gt; 
+http://www.linux-mandrake.com/en/security/2002/MDKSA-2002-016-1.php3&lt;/a&gt; 
+补丁下载： 
+_______________________________________________________________________ 
+Updated Packages: 
+Linux-Mandrake 7.1: 
+60bb70afa95f2b43727bc8c9794fb0f9 7.1/RPMS/squid-2.4.STABLE4-1.5mdk.i586.rpm 
+a46c4bf51883fcfee529de2812f55458 7.1/SRPMS/squid-2.4.STABLE4-1.5mdk.src.rpm 
+Linux-Mandrake 7.2: 
+0c3cfdf038650a8c85e703c8859df8d7 7.2/RPMS/squid-2.4.STABLE4-1.5mdk.i586.rpm 
+a46c4bf51883fcfee529de2812f55458 7.2/SRPMS/squid-2.4.STABLE4-1.5mdk.src.rpm 
+Mandrake Linux 8.0: 
+174eaf577cfde553ee0b8eb301792cba 8.0/RPMS/squid-2.4.STABLE4-1.6mdk.i586.rpm 
+e1d0df4fe930669e3ba12b90caefeca3 8.0/SRPMS/squid-2.4.STABLE4-1.6mdk.src.rpm 
+Mandrake Linux 8.0/ppc: 
+375ecbfec5947e9f47be3ada5084fc88 ppc/8.0/RPMS/squid-2.4.STABLE4-1.6mdk.ppc.rpm 
+e1d0df4fe930669e3ba12b90caefeca3 ppc/8.0/SRPMS/squid-2.4.STABLE4-1.6mdk.src.rpm 
+Corporate Server 1.0.1: 
+60bb70afa95f2b43727bc8c9794fb0f9 1.0.1/RPMS/squid-2.4.STABLE4-1.5mdk.i586.rpm 
+a46c4bf51883fcfee529de2812f55458 1.0.1/SRPMS/squid-2.4.STABLE4-1.5mdk.src.rpm 
+Single Network Firewall 7.2: 
+0c3cfdf038650a8c85e703c8859df8d7 snf7.2/RPMS/squid-2.4.STABLE4-1.5mdk.i586.rpm 
+a46c4bf51883fcfee529de2812f55458 snf7.2/SRPMS/squid-2.4.STABLE4-1.5mdk.src.rpm 
+________________________________________________________________________ 
+上述升级软件可以在下列地址中的任意一个镜像ftp服务器上下载： 
+&lt;a href=&quot; 
+http://www.mandrakesecure.net/en/ftp.php&quot; target=&quot;_blank&quot;&gt; 
+http://www.mandrakesecure.net/en/ftp.php&lt;/a&gt; 
+RedHat 
+------ 
+RedHat已经为此发布了一个安全公告(RHSA-2002:029-09)以及相应补丁: 
+RHSA-2002:029-09：New squid packages available 
+链接：&lt;a href=&quot;https://www.redhat.com/support/errata/RHSA-2002-029.html&quot; target=&quot;_blank&quot;&gt;https://www.redhat.com/support/errata/RHSA-2002-029.html&lt;/a&gt; 
+补丁下载： 
+Red Hat Linux 6.2: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/SRPMS/squid-2.4.STABLE3-1.6.2.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/SRPMS/squid-2.4.STABLE3-1.6.2.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/alpha/squid-2.4.STABLE3-1.6.2.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/alpha/squid-2.4.STABLE3-1.6.2.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/i386/squid-2.4.STABLE3-1.6.2.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/i386/squid-2.4.STABLE3-1.6.2.i386.rpm&lt;/a&gt; 
+sparc: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/sparc/squid-2.4.STABLE3-1.6.2.sparc.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/sparc/squid-2.4.STABLE3-1.6.2.sparc.rpm&lt;/a&gt; 
+Red Hat Linux 7.0: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/SRPMS/squid-2.4.STABLE3-1.7.0.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/SRPMS/squid-2.4.STABLE3-1.7.0.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/alpha/squid-2.4.STABLE3-1.7.0.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/alpha/squid-2.4.STABLE3-1.7.0.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/i386/squid-2.4.STABLE3-1.7.0.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/i386/squid-2.4.STABLE3-1.7.0.i386.rpm&lt;/a&gt; 
+Red Hat Linux 7.1: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/SRPMS/squid-2.4.STABLE3-1.7.1.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/SRPMS/squid-2.4.STABLE3-1.7.1.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/alpha/squid-2.4.STABLE3-1.7.1.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/alpha/squid-2.4.STABLE3-1.7.1.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/i386/squid-2.4.STABLE3-1.7.1.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/i386/squid-2.4.STABLE3-1.7.1.i386.rpm&lt;/a&gt; 
+ia64: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/ia64/squid-2.4.STABLE3-1.7.1.ia64.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/ia64/squid-2.4.STABLE3-1</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.4.STABLE4</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102702" id="102702" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid Proxy Gopher的缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器很容易受到缓冲区溢出漏洞的攻击。远程、恶意gopher服务器可发送格式错误的gopher响应并在Squid服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200207-093</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0713</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 暂时没有合适的临时解决方法。 
+厂商补丁： 
+Conectiva 
+--------- 
+Conectiva已经为此发布了一个安全公告(CLA-2002:506)以及相应补丁: 
+CLA-2002:506：squid 
+链接：&lt;a href=&quot; 
+http://distro.conectiva.com.br/atualizacoes/?id=a&amp;anuncio=000506&quot; target=&quot;_blank&quot;&gt; 
+http://distro.conectiva.com.br/atualizacoes/?id=a&amp;anuncio=000506&lt;/a&gt; 
+补丁下载： 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/squid-2.4.7-1U60_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/squid-2.4.7-1U60_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/6.0/SRPMS/squid-2.4.7-1U60_3cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/6.0/SRPMS/squid-2.4.7-1U60_3cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-2.4.7-1U70_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-2.4.7-1U70_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-auth-2.4.7-1U70_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-auth-2.4.7-1U70_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-doc-2.4.7-1U70_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-doc-2.4.7-1U70_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-templates-2.4.7-1U70_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-templates-2.4.7-1U70_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/SRPMS/squid-2.4.7-1U70_3cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/SRPMS/squid-2.4.7-1U70_3cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-2.4.7-1U8_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-2.4.7-1U8_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-auth-2.4.7-1U8_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-auth-2.4.7-1U8_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-doc-2.4.7-1U8_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-doc-2.4.7-1U8_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-templates-2.4.7-1U8_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-templates-2.4.7-1U8_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/8/SRPMS/squid-2.4.7-1U8_3cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/8/SRPMS/squid-2.4.7-1U8_3cl.src.rpm&lt;/a&gt; 
+Conectiva Linux version 6.0及以上版本的用户可以使用apt进行RPM包的更新： 
+- 把以下的文本行加入到/etc/apt/sources.list文件中： 
+ 
+rpm [cncbr] &lt;a href=&quot;ftp://atualizacoes.conectiva.com.br&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br&lt;/a&gt; 6.0/conectiva updates 
+(如果你不是使用6.0版本，用合适的版本号代替上面的6.0) 
+- 执行: apt-get update 
+- 更新以后，再执行: apt-get upgrade 
+National Science Foundation 
+--------------------------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+National Science Foundation Upgrade squid-2.4.STABLE7-src.tar.gz 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&lt;/a&gt; 
+RedHat 
+------ 
+RedHat已经为此发布了一个安全公告(RHSA-2002:051-16)以及相应补丁: 
+RHSA-2002:051-16：New Squid packages available 
+链接：&lt;a href=&quot;https://www.redhat.com/support/errata/RHSA-2002-051.html&quot; target=&quot;_blank&quot;&gt;https://www.redhat.com/support/errata/RHSA-2002-051.html&lt;/a&gt; 
+补丁下载： 
+Red Hat Linux 6.2: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/SRPMS/squid-2.4.STABLE6-6.6.2.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/SRPMS/squid-2.4.STABLE6-6.6.2.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/alpha/squid-2.4.STABLE6-6.6.2.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/alpha/squid-2.4.STABLE6-6.6.2.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/i386/squid-2.4.STABLE6-6.6.2.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/i386/squid-2.4.STABLE6-6.6.2.i386.rpm&lt;/a&gt; 
+sparc: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/sparc/squid-2.4.STABLE6-6.6.2.sparc.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/sparc/squid-2.4.STABLE6-6.6.2.sparc.rpm&lt;/a&gt; 
+Red Hat Linux 7.0: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/SRPMS/squid-2.4.STABLE6-6.7.0.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/SRPMS/squid-2.4.STABLE6-6.7.0.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/alpha/squid-2.4.STABLE6-6.7.0.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/alpha/squid-2.4.STABLE6-6.7.0.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/i386/squid-2.4.STABLE6-6.7.0.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/i386/squid-2.4.STABLE6-6.7.0.i386.rpm&lt;/a&gt; 
+Red Hat Linux 7.1: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/SRPMS/squid-2.4.STABLE6-6.7.1.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/SRPMS/squid-2.4.STABLE6-6.7.1.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/alpha/squid-2.4.STABLE6-6.7.1.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/alpha/squid-2.4.STABLE6-6.7.1.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/i386/squid-2.4.STABLE6-6.7.1.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/i386/squid-2.4.STABLE6-6.7.1.i386.rpm&lt;/a&gt; 
+ia64: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/ia64/squid-2.4.STABLE6-6.7.1.ia64.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/ia64/squid-2.4.STABLE6-6.7.1.ia64.rpm&lt;/a&gt; 
+Red Hat Linux 7.2: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.2/en/os/SRPMS/squid-2.4.STABLE6-6.7.3.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.2/en/os/SRPMS/squid-2.4.STABLE6-6.7.3.src.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.2/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.2/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.rpm&lt;/a&gt; 
+ia64: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.2/en/os/ia64/squid-2.4.STABLE6-6.7.3.ia64.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.2/en/os/ia64/squid-2.4.STABLE6-6.7.3.ia64.rpm&lt;/a&gt; 
+Red Hat Linux 7.3: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.3/en/os/SRPMS/squid-2.4.STABLE6-6.7.3.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.3/en/os/SRPMS/squid-2.4.STABLE6-6.7.3.src.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.3/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.3/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.rpm&lt;/a&gt; 
+可使用下列命令安装补丁： 
+rpm -Fvh [文件名]</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.4.STABLE7</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102703" id="102703" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理&amp;#39;gopherToHtml()&amp;#39;函数缓冲区溢出漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>因解析Gopher服务器响应时开展的不当边界检查，因此Squid代理服务器很容易受到缓冲区溢出漏洞的攻击。因此，若远程用户能够创建恶意的gopher服务协议，并使后来程序和该服务协议相连接，则用户能够获取访问后台程序进程的权限。</Description>      <cnnvd>CNNVD-200501-247</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0094</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.squid-cache.org/Versions/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <low>2.5.STABLE1</low>                     <high>2.5.STABLE8</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102704" id="102704" modifyDate="2012-07-31">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理LDAP登录绕过漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器不能正确解析有过度的尾随空格的LDAP登录。所有,可我完全利用和规避验证机制中的漏洞,让任何用户访问代理服务。</Description>      <cnnvd>CNNVD-200505-748</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0173</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://www.debian.org/security/2005/dsa-667</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <low>2.5.STABLE1</low>                     <high>2.5.STABLE8</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102705" id="102705" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理MSNT验证器缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Squid代理服务器易受到MSNT验证器模块中的缓冲区溢出影响，它负责Windows域内的认证代理客户端。远程攻击者可发送错误的验证数据并触发Squid服务器上的缓冲区溢出， 这将让他们在服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200207-093</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0713</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 暂时没有合适的临时解决方法。 
+厂商补丁： 
+Conectiva 
+--------- 
+Conectiva已经为此发布了一个安全公告(CLA-2002:506)以及相应补丁: 
+CLA-2002:506：squid 
+链接：&lt;a href=&quot; 
+http://distro.conectiva.com.br/atualizacoes/?id=a&amp;anuncio=000506&quot; target=&quot;_blank&quot;&gt; 
+http://distro.conectiva.com.br/atualizacoes/?id=a&amp;anuncio=000506&lt;/a&gt; 
+补丁下载： 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/squid-2.4.7-1U60_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/squid-2.4.7-1U60_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/6.0/SRPMS/squid-2.4.7-1U60_3cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/6.0/SRPMS/squid-2.4.7-1U60_3cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-2.4.7-1U70_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-2.4.7-1U70_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-auth-2.4.7-1U70_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-auth-2.4.7-1U70_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-doc-2.4.7-1U70_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-doc-2.4.7-1U70_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-templates-2.4.7-1U70_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-templates-2.4.7-1U70_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/SRPMS/squid-2.4.7-1U70_3cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/SRPMS/squid-2.4.7-1U70_3cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-2.4.7-1U8_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-2.4.7-1U8_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-auth-2.4.7-1U8_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-auth-2.4.7-1U8_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-doc-2.4.7-1U8_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-doc-2.4.7-1U8_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-templates-2.4.7-1U8_3cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/8/RPMS/squid-templates-2.4.7-1U8_3cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/8/SRPMS/squid-2.4.7-1U8_3cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/8/SRPMS/squid-2.4.7-1U8_3cl.src.rpm&lt;/a&gt; 
+Conectiva Linux version 6.0及以上版本的用户可以使用apt进行RPM包的更新： 
+- 把以下的文本行加入到/etc/apt/sources.list文件中： 
+ 
+rpm [cncbr] &lt;a href=&quot;ftp://atualizacoes.conectiva.com.br&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br&lt;/a&gt; 6.0/conectiva updates 
+(如果你不是使用6.0版本，用合适的版本号代替上面的6.0) 
+- 执行: apt-get update 
+- 更新以后，再执行: apt-get upgrade 
+National Science Foundation 
+--------------------------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+National Science Foundation Upgrade squid-2.4.STABLE7-src.tar.gz 
+&lt;a href=&quot;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.squid-cache.org/pub/squid-2/STABLE/squid-2.4.STABLE7-src.tar.gz&lt;/a&gt; 
+RedHat 
+------ 
+RedHat已经为此发布了一个安全公告(RHSA-2002:051-16)以及相应补丁: 
+RHSA-2002:051-16：New Squid packages available 
+链接：&lt;a href=&quot;https://www.redhat.com/support/errata/RHSA-2002-051.html&quot; target=&quot;_blank&quot;&gt;https://www.redhat.com/support/errata/RHSA-2002-051.html&lt;/a&gt; 
+补丁下载： 
+Red Hat Linux 6.2: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/SRPMS/squid-2.4.STABLE6-6.6.2.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/SRPMS/squid-2.4.STABLE6-6.6.2.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/alpha/squid-2.4.STABLE6-6.6.2.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/alpha/squid-2.4.STABLE6-6.6.2.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/i386/squid-2.4.STABLE6-6.6.2.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/i386/squid-2.4.STABLE6-6.6.2.i386.rpm&lt;/a&gt; 
+sparc: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/sparc/squid-2.4.STABLE6-6.6.2.sparc.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/sparc/squid-2.4.STABLE6-6.6.2.sparc.rpm&lt;/a&gt; 
+Red Hat Linux 7.0: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/SRPMS/squid-2.4.STABLE6-6.7.0.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/SRPMS/squid-2.4.STABLE6-6.7.0.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/alpha/squid-2.4.STABLE6-6.7.0.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/alpha/squid-2.4.STABLE6-6.7.0.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/i386/squid-2.4.STABLE6-6.7.0.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/i386/squid-2.4.STABLE6-6.7.0.i386.rpm&lt;/a&gt; 
+Red Hat Linux 7.1: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/SRPMS/squid-2.4.STABLE6-6.7.1.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/SRPMS/squid-2.4.STABLE6-6.7.1.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/alpha/squid-2.4.STABLE6-6.7.1.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/alpha/squid-2.4.STABLE6-6.7.1.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/i386/squid-2.4.STABLE6-6.7.1.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/i386/squid-2.4.STABLE6-6.7.1.i386.rpm&lt;/a&gt; 
+ia64: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/ia64/squid-2.4.STABLE6-6.7.1.ia64.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/ia64/squid-2.4.STABLE6-6.7.1.ia64.rpm&lt;/a&gt; 
+Red Hat Linux 7.2: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.2/en/os/SRPMS/squid-2.4.STABLE6-6.7.3.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.2/en/os/SRPMS/squid-2.4.STABLE6-6.7.3.src.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.2/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.2/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.rpm&lt;/a&gt; 
+ia64: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.2/en/os/ia64/squid-2.4.STABLE6-6.7.3.ia64.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.2/en/os/ia64/squid-2.4.STABLE6-6.7.3.ia64.rpm&lt;/a&gt; 
+Red Hat Linux 7.3: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.3/en/os/SRPMS/squid-2.4.STABLE6-6.7.3.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.3/en/os/SRPMS/squid-2.4.STABLE6-6.7.3.src.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.3/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.3/en/os/i386/squid-2.4.STABLE6-6.7.3.i386.rpm&lt;/a&gt; 
+可使用下列命令安装补丁： 
+rpm -Fvh [文件名]</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.4.STABLE7</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102706" id="102706" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理MSNT身份格式字符串</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器易受MSNT认证模块内存在的格式化字符串溢出漏洞的攻击,该模块负责对Windows域内的代理客户端进行验证。远程攻击者可发送存在漏洞的用户名(包含格式说明符)，并触发Squid服务器的溢出,这将允许他们在服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200210-208</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0916</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.4.STABLE7</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102707" id="102707" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid Proxy NTLM &amp;#39;fakeauth_auth&amp;#39;内存消耗拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器的NTLM&amp;quot;fakeauth_auth&amp;quot;模块容易受到内存消耗攻击，可被远程用户触发,造成拒绝服务。</Description>      <cnnvd>CNNVD-200501-275</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0096</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.squid-cache.org/Versions/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <low>2.5.STABLE1</low>                     <high>2.5.STABLE8</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-10-04" gvid="GVID-102708" id="102708" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理NTLM不正确的方案拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Squid代理服务器很容易出现拒绝服务，由于处理NTLM身份验证。所以如果在身份认证标头中错误显示NTLM方案远程攻击者可能会导致代理服务器崩溃。</Description>      <cnnvd>CNNVD-200509-309</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-2917</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.5.STABLE11</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102709" id="102709" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理NTLM 3型拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>因 NTLM 3型信息存在解析漏洞，Squid代理服务器容易受到拒绝服务攻击。因此,远程攻击者可使代理服务器崩溃。</Description>      <cnnvd>CNNVD-200501-233</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0097</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.squid-cache.org/Versions/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.5.STABLE8</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-04-27" gvid="GVID-102710" id="102710" modifyDate="2013-12-04">      <cvsscode>2.6</cvsscode>      <severity>Moderate</severity>      <name>Squid Proxy &amp;#39;Set Cookie&amp;#39;信息泄露</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>针对某些版本的Squid Proxy，攻击者可检索其他用户的cookie。因此,攻击者可使用所拦截的验证信息模仿外部网站的用户。</Description>      <cnnvd>CNNVD-200503-074</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0626</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+Squid Web Proxy Cache 2.5 .STABLE9 
+Squid squid-2.5.STABLE9-setcookie.patch 
+http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE9-setc ookie.patch 
+</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <low>2.5.STABLE1</low>                     <high>2.5.STABLE10</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102711" id="102711" modifyDate="2013-12-04">      <cvsscode>2.6</cvsscode>      <severity>Moderate</severity>      <name>Squid代理SNMP内存泄露，拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器经由SNMP接口易受到拒绝服务攻击的攻击
+。SNMP接口包含一个内存泄漏情况，
+这使得它容易受到拒绝服务攻击。一个遥远的
+攻击者可以重复直到squid服务器SNMP请求
+用尽所有可用的内存，导致它崩溃.</Description>      <cnnvd>CNNVD-200203-027</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0069</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 如果Squid不需要SNMP支持，在配置文件中设置如下选项： 
+snmp_port 0 
+* 如果有防火墙，对UDP 3401端口进行过滤，只允许可信主机访问。 
+厂商补丁： 
+Conectiva 
+--------- 
+Conectiva已经为此发布了一个安全公告(CLA-2002:464)以及相应补丁: 
+CLA-2002:464：squid 
+链接： 
+补丁下载： 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.0/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.0/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.0/i386/squid-2.3.5-1U50_1cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.0/i386/squid-2.3.5-1U50_1cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.1/SRPMS/squid-2.3.5-1U51_1cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.1/SRPMS/squid-2.3.5-1U51_1cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.1/i386/squid-2.3.5-1U51_1cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.1/i386/squid-2.3.5-1U51_1cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/6.0/SRPMS/squid-2.3.5-1U60_1cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/6.0/SRPMS/squid-2.3.5-1U60_1cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/squid-2.3.5-1U60_1cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/squid-2.3.5-1U60_1cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/SRPMS/squid-2.4.1-4U70_2cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/SRPMS/squid-2.4.1-4U70_2cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-templates-2.4.1-4U70_2cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-templates-2.4.1-4U70_2cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-doc-2.4.1-4U70_2cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-doc-2.4.1-4U70_2cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-auth-2.4.1-4U70_2cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-auth-2.4.1-4U70_2cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-2.4.1-4U70_2cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/squid-2.4.1-4U70_2cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/i386/squid-2.3.5-1U50_1cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/i386/squid-2.3.5-1U50_1cl.i386.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/SRPMS/squid-2.3.5-1U50_1cl.src.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/i386/squid-2.3.5-1U50_1cl.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/i386/squid-2.3.5-1U50_1cl.i386.rpm&lt;/a&gt; 
+FreeBSD 
+------- 
+FreeBSD已经为此发布了一个安全公告(FreeBSD-SA-02:12)以及相应补丁: 
+FreeBSD-SA-02:12：multiple security vulnerabilities in squid port 
+链接：&lt;a href=&quot;ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-02:12.squid.asc&quot; target=&quot;_blank&quot;&gt;ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-02:12.squid.asc&lt;/a&gt; 
+补丁下载： 
+&lt;a href=&quot;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-4-stable/www/squid-2.4_8.tgz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-4-stable/www/squid-2.4_8.tgz&lt;/a&gt; 
+&lt;a href=&quot;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-5-current/www/squid-2.4_8.tgz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-5-current/www/squid-2.4_8.tgz&lt;/a&gt; 
+MandrakeSoft 
+------------ 
+MandrakeSoft已经为此发布了一个安全公告(MDKSA-2002:016-1)以及相应补丁: 
+MDKSA-2002:016-1：squid 
+链接：&lt;a href=&quot; 
+http://www.linux-mandrake.com/en/security/2002/MDKSA-2002-016-1.php3&quot; target=&quot;_blank&quot;&gt; 
+http://www.linux-mandrake.com/en/security/2002/MDKSA-2002-016-1.php3&lt;/a&gt; 
+补丁下载： 
+_______________________________________________________________________ 
+Updated Packages: 
+Linux-Mandrake 7.1: 
+60bb70afa95f2b43727bc8c9794fb0f9 7.1/RPMS/squid-2.4.STABLE4-1.5mdk.i586.rpm 
+a46c4bf51883fcfee529de2812f55458 7.1/SRPMS/squid-2.4.STABLE4-1.5mdk.src.rpm 
+Linux-Mandrake 7.2: 
+0c3cfdf038650a8c85e703c8859df8d7 7.2/RPMS/squid-2.4.STABLE4-1.5mdk.i586.rpm 
+a46c4bf51883fcfee529de2812f55458 7.2/SRPMS/squid-2.4.STABLE4-1.5mdk.src.rpm 
+Mandrake Linux 8.0: 
+174eaf577cfde553ee0b8eb301792cba 8.0/RPMS/squid-2.4.STABLE4-1.6mdk.i586.rpm 
+e1d0df4fe930669e3ba12b90caefeca3 8.0/SRPMS/squid-2.4.STABLE4-1.6mdk.src.rpm 
+Mandrake Linux 8.0/ppc: 
+375ecbfec5947e9f47be3ada5084fc88 ppc/8.0/RPMS/squid-2.4.STABLE4-1.6mdk.ppc.rpm 
+e1d0df4fe930669e3ba12b90caefeca3 ppc/8.0/SRPMS/squid-2.4.STABLE4-1.6mdk.src.rpm 
+Corporate Server 1.0.1: 
+60bb70afa95f2b43727bc8c9794fb0f9 1.0.1/RPMS/squid-2.4.STABLE4-1.5mdk.i586.rpm 
+a46c4bf51883fcfee529de2812f55458 1.0.1/SRPMS/squid-2.4.STABLE4-1.5mdk.src.rpm 
+Single Network Firewall 7.2: 
+0c3cfdf038650a8c85e703c8859df8d7 snf7.2/RPMS/squid-2.4.STABLE4-1.5mdk.i586.rpm 
+a46c4bf51883fcfee529de2812f55458 snf7.2/SRPMS/squid-2.4.STABLE4-1.5mdk.src.rpm 
+________________________________________________________________________ 
+上述升级软件可以在下列地址中的任意一个镜像ftp服务器上下载： 
+&lt;a href=&quot; 
+http://www.mandrakesecure.net/en/ftp.php&quot; target=&quot;_blank&quot;&gt; 
+http://www.mandrakesecure.net/en/ftp.php&lt;/a&gt; 
+RedHat 
+------ 
+RedHat已经为此发布了一个安全公告(RHSA-2002:029-09)以及相应补丁: 
+RHSA-2002:029-09：New squid packages available 
+链接：&lt;a href=&quot;https://www.redhat.com/support/errata/RHSA-2002-029.html&quot; target=&quot;_blank&quot;&gt;https://www.redhat.com/support/errata/RHSA-2002-029.html&lt;/a&gt; 
+补丁下载： 
+Red Hat Linux 6.2: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/SRPMS/squid-2.4.STABLE3-1.6.2.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/SRPMS/squid-2.4.STABLE3-1.6.2.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/alpha/squid-2.4.STABLE3-1.6.2.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/alpha/squid-2.4.STABLE3-1.6.2.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/i386/squid-2.4.STABLE3-1.6.2.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/i386/squid-2.4.STABLE3-1.6.2.i386.rpm&lt;/a&gt; 
+sparc: 
+&lt;a href=&quot;ftp://updates.redhat.com/6.2/en/os/sparc/squid-2.4.STABLE3-1.6.2.sparc.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/6.2/en/os/sparc/squid-2.4.STABLE3-1.6.2.sparc.rpm&lt;/a&gt; 
+Red Hat Linux 7.0: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/SRPMS/squid-2.4.STABLE3-1.7.0.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/SRPMS/squid-2.4.STABLE3-1.7.0.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/alpha/squid-2.4.STABLE3-1.7.0.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/alpha/squid-2.4.STABLE3-1.7.0.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.0/en/os/i386/squid-2.4.STABLE3-1.7.0.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.0/en/os/i386/squid-2.4.STABLE3-1.7.0.i386.rpm&lt;/a&gt; 
+Red Hat Linux 7.1: 
+SRPMS: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/SRPMS/squid-2.4.STABLE3-1.7.1.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/SRPMS/squid-2.4.STABLE3-1.7.1.src.rpm&lt;/a&gt; 
+alpha: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/alpha/squid-2.4.STABLE3-1.7.1.alpha.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/alpha/squid-2.4.STABLE3-1.7.1.alpha.rpm&lt;/a&gt; 
+i386: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/i386/squid-2.4.STABLE3-1.7.1.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/i386/squid-2.4.STABLE3-1.7.1.i386.rpm&lt;/a&gt; 
+ia64: 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/ia64/squid-2.4.STABLE3-1.7.1.ia64.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/ia64/squid-2.4.STABLE3-1.7.1.ia64.rpm&lt;/a&gt; 
+Red Hat Linux 7.2: 
+SR</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.4.STABLE4</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-09-21" gvid="GVID-102712" id="102712" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理SSLConnectTimeout拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器容易受到拒绝服务攻击的影响是由于sslConnectTimeout函数的漏洞实现。因此,如果提出一系列奇怪的请求，远程攻击者可导致代理服务器崩溃。</Description>      <cnnvd>CNNVD-200509-054</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-2796</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.5.STABLE11</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102713" id="102713" modifyDate="2013-12-04">      <cvsscode>1.2</cvsscode>      <severity>Moderate</severity>      <name>Squid代理的/ tmp符号连接竞争条件</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>发送管理电子邮件时，Squid代理服务器以不安全的方式创建一个临时文件。存在的争用条件允许
+      本地攻击者创建具有相同文件名的符号链接，并
+      欺骗squid覆盖任意系统文件。如果Squidz作为根目录运行，则系统上的任何文件可被覆盖。如果将Squid
+      作为另一个用户运行，则只有该用户可写入的文件夹能够覆盖。</Description>      <cnnvd>CNNVD-200103-057</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-0142</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.3.STABLE5</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102714" id="102714" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>squid代理url_regex ACL绕过 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>由于Squid 代理服务器中的%Xx URL 解码例程中的漏洞，攻击者可插入 %00 (NULL) 字符到 URL 中而绕过 url_regex ACL 条目。这将允许未经身份验证的远程攻击者通过 Squid 代理服务器请求未经授权的页面或网站。</Description>      <cnnvd>CNNVD-200403-081</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-0189</id>      </AlternateIds>      <Solutions>厂商补丁： 
+Squid 
+----- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+Squid Upgrade squid-2.5.STABLE5.tar.gz 
+&lt;a href=&quot; 
+http://www.squid-cache.org/Versions/v2/2.5/squid-2.5.STABLE5.tar.gz&quot; target=&quot;_blank&quot;&gt; 
+http://www.squid-cache.org/Versions/v2/2.5/squid-2.5.STABLE5.tar.gz&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  <range>                     <high>2.5.STABLE5</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

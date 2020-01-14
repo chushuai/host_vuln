@@ -1,0 +1,5 @@
+<Vulns>   <Vulnerability addData="2007-07-09" gvid="GVID-102686" id="102686" modifyDate="2015-02-13">      <cvsscode>9.4</cvsscode>      <severity>Critical</severity>      <name>Caucho Resin World Readable DOS 设备</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当取用户提供的文件名时，Windows的Caucho Resin包含一个漏洞，从而攻击者可从系统中任何COM或LPT设备读取数据或调用服务器上的拒绝服务条件。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-2439</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Resin">               
+                        <version>                  <range>                     <high>3.1.1</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

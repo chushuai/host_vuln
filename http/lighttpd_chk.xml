@@ -1,0 +1,429 @@
+<Vulns>   <Vulnerability addData="2014-12-08" gvid="GVID-102425" id="102425" modifyDate="2016-11-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>lighttpd: CRLF解析中存在远程DoS (CVE-2007-1869)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.12版本和1.4.13版本允许远程攻击者通过在lighttpd解析CRLF序列时断开而导致拒绝服务（CPU和资源消耗），这将触发一个无限循环和文件描述符消耗。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-1869</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <low inclusive="1">1.4.12</low>                     
+                               <high inclusive="0">1.4.14</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102426" id="102426" modifyDate="2016-11-25">      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <name>lighttpd: 带有MTIME 0的文件的DOS (CVE-2007-1870)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.14之前版本允许攻击者通过申请到修改时间为0文件的请求导致拒绝服务（崩溃），这将导致空指针引用。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-1870</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.14</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102427" id="102427" modifyDate="2016-11-25">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>lighttpd: 默认不加载mod_auth (CVE-2007-3946)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd1.4.16及之前版本的mod_auth（http_auth.c，允许远程攻击者借助未知向量造成拒绝服务（守护进程崩溃）（1）中的内存泄漏，（2）没有cnonce使用MD5-SESS服务（3）base64编码字符串（4）尾随空白的验证文摘头。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-3946</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.16</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102428" id="102428" modifyDate="2016-11-25">      <cvsscode>8.3</cvsscode>      <severity>Critical</severity>      <name>lighttpd: URL访问限制绕过(CVE-2007-3949)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd1.4.15版本的mod_access.c忽略尾随/（斜杠）字符的URL，它允许远程攻击者绕过url.access-deny设置。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-3949</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.16</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102429" id="102429" modifyDate="2016-11-25">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>lighttpd: mod_fastcgi中的FastCGI标头溢出(CVE-2007-4727)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Lighttpd1.4.18之前版本中mod_fastcgi延伸中的mod_proxy_backend_fastcgi.c里fcgi_env_add函数中的缓冲区溢出允许远程攻击者通过带有长内容长度的HTTP请求覆盖任意CGI变量和执行任意代码，如被覆盖SCRIPT_FILENAME变量所证实,又名&amp;quot;header overflow.&amp;quot;。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-4727</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.18</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102430" id="102430" modifyDate="2016-11-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>lighttpd: 高负荷下的拒绝服务(CVE-2008-0983)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.18，可能还有其他1.5.0之前的版本，不能正确计算文件描述符阵列，它允许远程攻击者通过大量的连接，造成拒绝服务（崩溃），它出发了越界访问。</Description>      <cnnvd>CNNVD-200802-469</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-0983</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://trac.lighttpd.net/trac/attachment/ticket/1562/Fix-372-and-1562.patch</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.19</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102431" id="102431" modifyDate="2016-11-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>lighttpd: mod_cgi 信息披露(CVE-2008-1111)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.18中的mod_cgi，当fork发生故障时，发送CGI脚本源代码而不是500错误，这可能使远程攻击者获取敏感信息。</Description>      <cnnvd>CNNVD-200803-027</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-1111</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://www.lighttpd.net/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.19</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102432" id="102432" modifyDate="2016-11-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>lighttpd: mod_userdir 信息披露(CVE-2008-1270)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.18版本和更早版本中的mod_userdir，当userdir.path没有设置，使用默认的$ HOME，可能使远程攻击者读取任意文件，正如访问无人目录所证实。</Description>      <cnnvd>CNNVD-200803-148</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-1270</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+lighttpd lighttpd 1.4 
+lighttpd lighttpd-1.4.19.tar.gz 
+http://www.lighttpd.net/download/lighttpd-1.4.19.tar.gz</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.19</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102433" id="102433" modifyDate="2016-11-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>lighttpd: ssl连接的拒绝服务(CVE-2008-1531)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.19版本及早期版本和1.5.0至1.5.x 版本中的connection_state_machine函数(connections.c)允许远程攻击者触发一个SSL错误导致拒绝服务(活跃的SSL连接损失),例如在下载完成之前断开,这将导致所有活跃的SSL连接丢失。</Description>      <cnnvd>CNNVD-200803-453</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-1531</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://www.debian.org/security/2008/dsa-1540 
+</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.20</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102434" id="102434" modifyDate="2016-11-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>lighttpd: 请求标头处理中的内存泄露(CVE-2008-4298)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd1.4.20版本下request.c中的http_request_parse函数，允许远程攻击者通过包含大量重复请求头的请求导致拒绝服务（内存消耗）。</Description>      <cnnvd>CNNVD-200809-396</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-4298</id>      </AlternateIds>      <Solutions>&quot;目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+Debian Linux 4.0 arm 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1 
+.4.13-4etch11_all.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-c 
+ml_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-magnet_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m 
+agnet_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m 
+ysql-vhost_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-t 
+rigger-b4-dl_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-webdav_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-w 
+ebdav_1.4.13-4etch11_arm.deb 
+Debian lighttpd_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd_1.4.1 
+3-4etch11_arm.deb 
+Debian Linux 4.0 powerpc 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1 
+.4.13-4etch11_all.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-c 
+ml_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-magnet_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m 
+agnet_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m 
+ysql-vhost_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-t 
+rigger-b4-dl_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-webdav_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-w 
+ebdav_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd_1.4.1 
+3-4etch11_powerpc.deb 
+Debian Linux 4.0 m68k 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1 
+.4.13-4etch11_all.deb 
+Debian Linux 4.0 amd64 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1 
+.4.13-4etch11_all.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-c 
+ml_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-magnet_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m 
+agnet_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m 
+ysql-vhost_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-t 
+rigger-b4-dl_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-webdav_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-w 
+ebdav_1.4.13-4etch11_amd64.deb 
+Debian lighttpd_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd_1.4.1 
+3-4etch11_amd64.deb 
+Debian Linux 4.0 ia-32 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1 
+.4.13-4etch11_all.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch11_i386.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-c 
+ml_1.4.13-4etch11_i386.deb 
+Debian lighttpd-mod-magnet_1.4.13-4etch11_i386.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m 
+agnet_1.4.13-4etch11_i386.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch11_i386.deb 
+http://security.debian.org/pool/updates/mai</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.20</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102435" id="102435" modifyDate="2016-11-25">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>lighttpd: 用编码的url绕过重写/重定向规则(CVE-2008-4359)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd1.4.20之前的版本比较URI在（1）url.redirect之前进行URL解码（2）url.rewrite配置设置，这可能允许远程攻击者绕过预期访问限制，并获得敏感信息或可能修改数据。</Description>      <cnnvd>CNNVD-200810-028</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-4359</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+Debian Linux 4.0 arm 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1.4.13-4etch11_all.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-cml_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch3_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-cml_1.4.13-4etch3_arm.deb 
+Debian lighttpd-mod-magnet_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-magnet_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-mysql-vhost_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-webdav_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-webdav_1.4.13-4etch11_arm.deb 
+Debian lighttpd_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd_1.4.13-4etch11_arm.deb 
+Debian Linux 4.0 powerpc 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1.4.13-4etch11_all.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-cml_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-magnet_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-magnet_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-mysql-vhost_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch3_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-mysql-vhost_1.4.13-4etch3_powerpc.deb 
+Debian lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-webdav_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-webdav_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd_1.4.13-4etch11_powerpc.deb 
+Debian Linux 4.0 m68k 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1.4.13-4etch11_all.deb 
+Debian Linux 4.0 amd64 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1.4.13-4etch11_all.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-cml_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-magnet_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-magnet_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-mysql-vhost_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-trigger-b4-dl_1.4.13-4etch3_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-trigger-b4-dl_1.4.13-4etch3_amd64.deb 
+Debian lighttpd-mod-webdav_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-webdav_1.4.13-4etch11_amd64.deb 
+Debian lighttpd_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd_1.4.13-4etch11_amd64.deb 
+Debian Linux 4.0 ia-32 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.20</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102436" id="102436" modifyDate="2018-11-30">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>lighttpd: mod_userdir 信息披露(CVE-2008-4360)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在使用不区分大小写的操作系统或文件系统时，mod_userdir在lighttpd 1.4.20之前的版本，在配置选项未文件名组件中执行区分大小写时，可能允许远程攻击者绕过预期的访问限制的比较，如一个PHP文配置规则文件的.php文件请求所证实。</Description>      <cnnvd>CNNVD-200810-029</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-4360</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+Debian Linux 4.0 arm 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1 .4.13-4etch11_all.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-c ml_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-magnet_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m agnet_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m ysql-vhost_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-t rigger-b4-dl_1.4.13-4etch11_arm.deb 
+Debian lighttpd-mod-webdav_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-w ebdav_1.4.13-4etch11_arm.deb 
+Debian lighttpd_1.4.13-4etch11_arm.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd_1.4.1 3-4etch11_arm.deb 
+Debian Linux 4.0 powerpc 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1 .4.13-4etch11_all.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-c ml_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-magnet_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m agnet_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m ysql-vhost_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-t rigger-b4-dl_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd-mod-webdav_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-w ebdav_1.4.13-4etch11_powerpc.deb 
+Debian lighttpd_1.4.13-4etch11_powerpc.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd_1.4.1 3-4etch11_powerpc.deb 
+Debian Linux 4.0 m68k 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1 .4.13-4etch11_all.deb 
+Debian Linux 4.0 amd64 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1 .4.13-4etch11_all.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-c ml_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-magnet_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m agnet_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m ysql-vhost_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-trigger-b4-dl_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-t rigger-b4-dl_1.4.13-4etch11_amd64.deb 
+Debian lighttpd-mod-webdav_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-w ebdav_1.4.13-4etch11_amd64.deb 
+Debian lighttpd_1.4.13-4etch11_amd64.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd_1.4.1 3-4etch11_amd64.deb 
+Debian Linux 4.0 ia-32 
+Debian lighttpd-doc_1.4.13-4etch11_all.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-doc_1 .4.13-4etch11_all.deb 
+Debian lighttpd-mod-cml_1.4.13-4etch11_i386.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-c ml_1.4.13-4etch11_i386.deb 
+Debian lighttpd-mod-magnet_1.4.13-4etch11_i386.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m agnet_1.4.13-4etch11_i386.deb 
+Debian lighttpd-mod-mysql-vhost_1.4.13-4etch11_i386.deb 
+http://security.debian.org/pool/updates/main/l/lighttpd/lighttpd-mod-m ysql-vhost_1.4.13-4etch11_i38</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.20</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102437" id="102437" modifyDate="2016-11-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>lighttpd: 慢请求dos/oom攻击 (CVE-2010-0295)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.26之前的版本和1.5.x版本，为每个发生请求的读取操作分配一个缓冲区，允许远程攻击者以低速率发送造成拒绝服务的操作。</Description>      <cnnvd>CNNVD-201002-018</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2010-0295</id>      </AlternateIds>      <Solutions>目前厂商还没有提供补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+http://www.lighttpd.net/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.26</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102438" id="102438" modifyDate="2016-11-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>lighttpd: 签名错误导致越界读取(CVE-2011-4362)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4至1.4.30 和1.5至SVN调整2806版本上的HTTP authentication functionality (http_auth.c)中的base64_decode功能存在整数符号性错误,允许远程攻击者通过特制的base64输入触发超出边界的负指数导致拒绝服务(分段故障)。</Description>      <cnnvd>CNNVD-201111-503</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2011-4362</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.lighttpd.net/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.30</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102439" id="102439" modifyDate="2016-11-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>lighttpd: 拒绝服务 - 解析的连接标题发生无限循环(CVE-2012-5533)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.32之前版本的request.c的http_request_split_value函数，允许远程攻击者通过一个包含空令牌的请求头造成拒绝服务(无限循环),已通过使用&amp;quot;Connection: TE,,Keep-Alive&amp;quot;头证实。</Description>      <cnnvd>CNNVD-201211-424</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2012-5533</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2012_01.txt</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <low inclusive="1">1.4.31</low>                     
+                               <high inclusive="0">1.4.32</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102440" id="102440" modifyDate="2016-12-09">      <cvsscode>5.8</cvsscode>      <severity>Severe</severity>      <name>lighttpd: 使用可能易受攻击的密码套件与SNI(CVE-2013-4508)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当SNI启用时，lighttpd 1.4.34之前版本配置弱SSL密码，这使远程攻击者更容易通过将数据包到客户端-服务器的数据流劫持会话或通过嗅探网络获取敏感信息。</Description>      <cnnvd>CNNVD-201311-114</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2013-4508</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2013_01.txt</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <low inclusive="1">1.4.24</low>                     
+                               <high inclusive="0">1.4.34</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102441" id="102441" modifyDate="2016-11-25">      <cvsscode>7.6</cvsscode>      <severity>Critical</severity>      <name>lighttpd: 未检查setuid/setgid/setgroups返回值(CVE-2013-4559)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.33之前版本未检查（1）setuid（2）setgid或（3）setgroups功能的返回值，如果它被重启，这可能会导致lighttpd将以root身份运行并允许远程攻击者获取权限，正如当达到用户进程极限时，多次调用导致setuid失败的克隆函数所证实。</Description>      <cnnvd>CNNVD-201311-203</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2013-4559</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2013_02.txt</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.33</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102442" id="102442" modifyDate="2016-11-25">      <cvsscode>2.6</cvsscode>      <severity>Moderate</severity>      <name>lighttpd: 如果FAMMonitorDirectory失败会出现use after free漏洞(CVE-2013-4560)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.33之前版本中的use-after-free漏洞允许远程攻击者通过触发FAMMonitorDirectory故障的未明向量造成拒绝服务(段错误和崩溃)。</Description>      <cnnvd>CNNVD-201311-204</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2013-4560</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2013_03.txt</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.33</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102443" id="102443" modifyDate="2016-11-25">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>lighttpd: mod_mysql_vhost SQL注入和路径遍历 (CVE-2014-2323)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.35 之前版本的mod_mysql_vhost.c中的SQL注入漏洞允许远程攻击者凭主机名来执行任意SQL指令，这和request_check_hostname相关。</Description>      <cnnvd>CNNVD-201403-290</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-2323</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.lighttpd.net/2014/3/12/1.4.35/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.35</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102444" id="102444" modifyDate="2016-11-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>lighttpd: mod_mysql_vhost SQL注入和路径遍历 (CVE-2014-2324)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.35之前版本的(1) mod_evhost 和 (2) mod_simple_vhost上的多个目录遍历漏洞允许远程攻击者通过主机名上的 .. (点点)来读取任意文件，这与request_check_hostname有关。</Description>      <cnnvd>CNNVD-201403-291</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-2324</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.lighttpd.net/2014/3/12/1.4.35/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.35</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2016-11-25" gvid="GVID-102445" id="102445" modifyDate="2017-10-30">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>lighttpd: mod_auth的日志注入漏洞(CVE-2015-3200)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>lighttpd 1.4.36之前版本中的mod_auth允许远程攻击者注入任意日志条目通过没有一个冒号字符的基本HTTP身份验证字符串 ，正如包含NULL和新行字符的字符串所证实。</Description>      <cnnvd>CNNVD-201505-527</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-3200</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://redmine.lighttpd.net/issues/2646</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.36</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-02-25" gvid="GVID-102446" id="102446" modifyDate="2019-02-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>lighttpd：具有特定配置的潜在路径遍历（CVE-2018-19052）</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在1.4.50之前的lighttpd中的mod_alias.c中的mod_alias_physical_handler中发现了一个问题。 在别名目标上方存在单个目录的潜在../路径遍历，具有特定的mod_alias配置，其中匹配的别名缺少尾随的“/”字符，但别名目标文件系统路径确实具有尾随的“/”字符。</Description>      <cnnvd>CNNVD-201811-129</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-19052</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/lighttpd/lighttpd1.4/commit/2105dae0f9d7a964375ce681e53cb165375f84c1</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.50</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-04-16" gvid="GVID-102447" id="102447" modifyDate="2019-04-30">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>lighttpd：具有特定配置的潜在路径遍历（CVE-2019-11072）</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>** DISPUTED ** 1.4.54之前的lighttpd有一个有符号整数溢出，这可能允许远程攻击者通过恶意HTTP GET请求导致拒绝服务（应用程序崩溃）或可能具有未指定的其他影响，如 错误处理/％2F？ 在burl.c中的burl_normalize_2F_to_slash_fix中。 注意：开发人员声明“可以滥用导致崩溃的功能是lighttpd 1.4.50中的新功能，默认情况下不启用。 必须在配置文件中明确配置它（例如lighttpd.conf）。 启用该功能时，某些输入将触发lighttpd中的abort（）。 lighttpd检测到下溢或realloc（）将失败（在32位和64位可执行文件中），也在lighttpd中检测到。 要么通过lighttpd触发显式的abort（）。 除了在随后的应用程序退出时触发显式的abort（）之外，这是不可利用的。“</Description>      <cnnvd>CNNVD-201904-539</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11072</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://redmine.lighttpd.net/issues/2945</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <low inclusive="1">1.4.50</low>                     
+                               <high inclusive="0">1.4.54</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-03-26" gvid="GVID-102449" id="102449" modifyDate="2017-12-20">      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <name>Lighttpd过时的版本</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>早于 1.4.0 的 Lighttpd 版本是过时的。早期版本可能容易受到缓冲区溢出攻击以及源路径泄露攻击。 建议您将 Lighttpd 安装升级到最新版本。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+		            <Product name="lighttpd">               
+			               <version>                  
+				                  <range>                     <high>1.4.0</high>                  </range>                  
+			               </version>               
+		            </Product>            
+	         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102450" id="102450" modifyDate="2016-11-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>lighttpd: 折叠的标题崩溃(lighttpd_sa2007_03)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>如果一个客户端发送重复的标题，其中的第二次输入使用折叠，Lighttpd将试图引用一个空指针和崩溃。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">1.4.16</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2014-12-08" gvid="GVID-102451" id="102451" modifyDate="2016-11-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>lighttpd: URL访问限制绕过(lighttpd_sa2007_09)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>一个破碎的FastCGI应用程序可以将lighttpd带入一个无限循环,服务器使用100%的cpu时间。这可能是一个共享宿主环境中的问题,用户可以自定义fastcgi应用程序运行。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="lighttpd">               
+                     <version>                  
+                          <range>                     
+                               <low inclusive="1">1.4.14</low>                     
+                               <high inclusive="0">1.4.16</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability></Vulns>
