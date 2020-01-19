@@ -1,0 +1,49 @@
+<Vulns>   <Vulnerability added="2007-03-14" gvid="GVID-104690" id="104690" modified="2013-12-04" published="2004-07-05" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
+        <Tags>         
+             <tag>Denial of Service</tag>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="CVE">CVE-2004-0656</id>         
+             <id name="URL">http://www.gentoo.org/security/en/glsa/glsa-200407-04.xml</id>         
+             <id name="URL">http://www.pureftpd.org/</id>         
+             <id name="URL">http://www.securityfocus.com/bid/10664</id>         
+             <id name="URL">http://xforce.iss.net/xforce/xfdb/16611</id>         
+             <id name="XF">16611</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                     <Product name="Pure-FTPd">               
+                          <version>                  
+                                <range>                     <high>1.0.19</high>                  </range>                  
+                          </version>               
+                     </Product>            
+             </NetworkService>      </Check>      <Solutions>厂商补丁： 
+PureFTPd 
+-------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+PureFTPd Upgrade pure-ftpd-1.0.19.tar.gz 
+&lt;a href=&quot;ftp://ftp.pureftpd.org/pub/pure-ftpd/releases/pure-ftpd-1.0.19.tar.gz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.pureftpd.org/pub/pure-ftpd/releases/pure-ftpd-1.0.19.tar.gz&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200408-054</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>早于1.0.19版本的PureFTPD易受拒绝服务攻击。该漏洞是由于连接处理错误造成的，这可能会使内置的监听器在重连接/断开负载的情况下挂起或崩溃。</Description>      <name>Pure-FTPd拒绝服务攻击</name>   </Vulnerability>   <Vulnerability added="2007-03-15" gvid="GVID-104691" id="104691" modified="2017-12-18" published="2007-03-15" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:M/Au:N/C:C/I:C/A:C)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+             <tag>Obsolete Software</tag>         
+        </Tags>      
+        <AlternateIds>
+  </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+		            <Product name="Pure-FTPd">               
+			               <version>                  
+				                  <range>                     <high inclusive="0">1.0.44</high>                  </range>                  
+			               </version>               
+		            </Product>            
+	         </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <Description>早于 1.0.44 版本的Pure-FTPd 已经过时。建议您将Pure-FTPd安装升级到当前版本。</Description>      <name>Pure-FTPd过时版本</name>   </Vulnerability></Vulns>

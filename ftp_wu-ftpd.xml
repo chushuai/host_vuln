@@ -1,0 +1,309 @@
+<Vulns>   <Vulnerability added="2004-11-01" gvid="GVID-104702" id="104702" modified="2012-07-13" published="1999-12-20" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:P/I:P/A:P)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+             <tag>Remote Execution</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="CVE">CVE-1999-0997</id>         
+             <id name="DEBIAN">DSA-377</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="wu-ftpd">               
+                        <version>                  <range>                     <high>2.6</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 这种入侵技术要求可以上载文件，正确配置FTP Server，禁止用户上载文件。 
+* 配置FTP服务器，取消用户在服务器端执行压缩和解压的能力。 
+厂商补丁： 
+Washington University 
+--------------------- 
+目前厂商已经最新版本的软件中修复了这个安全问题，请到厂商的主页下载： 
+&lt;a href=&quot; 
+http://www.wu-ftpd.org/&quot; target=&quot;_blank&quot;&gt; 
+http://www.wu-ftpd.org/&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-199912-062</cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>在wu-ftpd &amp;lt; 2.6.0情况下，可能提供自定义的命令行参数到一个外部文件压缩或归档程序（如&quot;焦油&quot;）。分解析错误允许攻击者在FTP守护进程的权限下执行任意命令。</Description>      <name>wu-ftpd压缩参数远程执行</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104703" id="104703" modified="2013-12-04" published="2001-03-26" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
+        <Tags>         
+             <tag>DNS</tag>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">2296</id>         
+             <id name="CONECTIVA">CLA-2001:443</id>         
+             <id name="CVE">CVE-2001-0187</id>         
+             <id name="DEBIAN">DSA-016</id>         
+             <id name="URL">ftp://ftp.wu-ftpd.org/pub/wu-ftpd/patches/apply_to_current/missing_format_strings.patch</id>         
+             <id name="XF">6020</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="wu-ftpd">               
+                        <version>                  <range>                     <high>2.6.2</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd>CNNVD-200103-098</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>如果wu-ftpd &amp;lt;2.6.2版本在debug模式(-d flag option)下运行并且攻击者已经控制其主机，那么攻击者可能可能利用一个格式字符串缓冲区溢并且获取远程root权限。
+请注意服务器必须在debug模式下运行才能体现出这个漏洞，不适合在生产服务器上调试或者任何默认配置的UNIX。</Description>      <name>wu-ftpd调试模式的DNS名称字符串格式缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104704" id="104704" modified="2015-02-13" published="2003-08-27" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">8315</id>         
+             <id name="CERT-VN">743092</id>         
+             <id name="CVE">CVE-2003-0466</id>         
+             <id name="DEBIAN">DSA-357</id>         
+             <id name="MANDRAKE">MDKSA-2003:080</id>         
+             <id name="NETBSD">NetBSD-SA2003-011</id>         
+             <id name="OSVDB">6602</id>         
+             <id name="OVAL">OVAL1970</id>         
+             <id name="REDHAT">RHSA-2003:245</id>         
+             <id name="REDHAT">RHSA-2003:246</id>         
+             <id name="SUSE">SuSE-SA:2003:032</id>         
+             <id name="URL">http://archives.neohapsis.com/archives/vulnwatch/2003-q3/0065.html</id>         
+             <id name="URL">http://download.immunix.org/ImmunixOS/7+/Updates/errata/IMNX-2003-7+-019-01</id>         
+             <id name="URL">http://isec.pl/vulnerabilities/isec-0011-wu-ftpd.txt</id>         
+             <id name="URL">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=105967301604815&amp;w=2</id>         
+             <id name="URL">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=106001702232325&amp;w=2</id>         
+             <id name="URL">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=106002488209129&amp;w=2</id>         
+             <id name="URL">http://www.kb.cert.org/vuls/id/743092</id>         
+             <id name="URL">http://www.securityfocus.com/archive/1/424852/100/0/threaded</id>         
+             <id name="URL">http://www.securityfocus.com/archive/1/425061/100/0/threaded</id>         
+             <id name="XF">12785</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="wu-ftpd">               
+                        <version>                  
+                              <range>                     <low>2.5</low>                     <high>2.6.3</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>厂商补丁： 
+FreeBSD 
+------- 
+FreeBSD已经为此发布了一个安全公告(FreeBSD-SA-03:08)以及相应补丁: 
+FreeBSD-SA-03:08：Single byte buffer overflow in realpath(3) 
+链接：&lt;a href=&quot;ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-03:08.realpath.asc&quot; target=&quot;_blank&quot;&gt;ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-03:08.realpath.asc&lt;/a&gt; 
+补丁下载： 
+# fetch &lt;a href=&quot;ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/patches/SA-03:08/realpath.patch&quot; target=&quot;_blank&quot;&gt;ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/patches/SA-03:08/realpath.patch&lt;/a&gt; 
+# fetch &lt;a href=&quot;ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/patches/SA-03:08/realpath.patch.asc&quot; target=&quot;_blank&quot;&gt;ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/patches/SA-03:08/realpath.patch.asc&lt;/a&gt; 
+MandrakeSoft 
+------------ 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+Mandrake Upgrade wu-ftpd-2.6.2-1.1mdk.i586.rpm 
+&lt;a href=&quot; 
+http://www.mandrakesecure.net/en/ftp.php&quot; target=&quot;_blank&quot;&gt; 
+http://www.mandrakesecure.net/en/ftp.php&lt;/a&gt; 
+Mandrake Linux 8.2 Directory: 8.2/RPMS/ 
+Mandrake Upgrade wu-ftpd-2.6.2-1.1mdk.src.rpm 
+&lt;a href=&quot; 
+http://www.mandrakesecure.net/en/ftp.php&quot; target=&quot;_blank&quot;&gt; 
+http://www.mandrakesecure.net/en/ftp.php&lt;/a&gt; 
+Mandrake Linux 8.2 Directory: 8.2/SRPMS/ 
+Mandrake Upgrade wu-ftpd-2.6.2-1.1mdk.ppc.rpm 
+&lt;a href=&quot; 
+http://www.mandrakesecure.net/en/ftp.php&quot; target=&quot;_blank&quot;&gt; 
+http://www.mandrakesecure.net/en/ftp.php&lt;/a&gt; 
+Mandrake Linux 8.2/PPC Directory: ppc/8.2/RPMS/ 
+Mandrake Upgrade wu-ftpd-2.6.2-1.1mdk.src.rpm 
+&lt;a href=&quot; 
+http://www.mandrakesecure.net/en/ftp.php&quot; target=&quot;_blank&quot;&gt; 
+http://www.mandrakesecure.net/en/ftp.php&lt;/a&gt; 
+Mandrake Linux 8.2/PPC Directory: ppc/8.2/SRPMS/ 
+NetBSD 
+------ 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+NetBSD Patch SA2003-011-realpath.patch 
+&lt;a href=&quot;ftp://ftp.netbsd.org/pub/NetBSD/security/patches/SA2003-011-realpath.patch&quot; target=&quot;_blank&quot;&gt;ftp://ftp.netbsd.org/pub/NetBSD/security/patches/SA2003-011-realpath.patch&lt;/a&gt; 
+OpenBSD 
+------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+OpenBSD Patch 015_realpath.patch 
+&lt;a href=&quot;ftp://ftp.OpenBSD.org/pub/OpenBSD/patches/3.2/common/015_realpath.patch&quot; target=&quot;_blank&quot;&gt;ftp://ftp.OpenBSD.org/pub/OpenBSD/patches/3.2/common/015_realpath.patch&lt;/a&gt; 
+RedHat 
+------ 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+RedHat Upgrade wu-ftpd-2.6.2-11.71.1.i386.rpm 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/i386/wu-ftpd-2.6.2-11.71.1.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/i386/wu-ftpd-2.6.2-11.71.1.i386.rpm&lt;/a&gt; 
+RedHat wu-ftpd-2.6.1-18.i386.rpm : 
+RedHat Upgrade wu-ftpd-2.6.2-11.72.1.i386.rpm 
+&lt;a href=&quot;ftp://updates.redhat.com/7.2/en/os/i386/wu-ftpd-2.6.2-11.72.1.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.2/en/os/i386/wu-ftpd-2.6.2-11.72.1.i386.rpm&lt;/a&gt; 
+RedHat wu-ftpd-2.6.2-5.i386.rpm : 
+RedHat Upgrade wu-ftpd-2.6.2-11.73.1.i386.rpm 
+&lt;a href=&quot;ftp://updates.redhat.com/7.3/en/os/i386/wu-ftpd-2.6.2-11.73.1.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.3/en/os/i386/wu-ftpd-2.6.2-11.73.1.i386.rpm&lt;/a&gt; 
+RedHat wu-ftpd-2.6.2-8.i386.rpm : 
+RedHat Upgrade wu-ftpd-2.6.2-12.i386.rpm 
+&lt;a href=&quot;ftp://updates.redhat.com/8.0/en/os/i386/wu-ftpd-2.6.2-12.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/8.0/en/os/i386/wu-ftpd-2.6.2-12.i386.rpm&lt;/a&gt; 
+RedHat wu-ftpd-2.6.1-18.ia64.rpm : 
+RedHat Upgrade wu-ftpd-2.6.2-11.72.1.ia64.rpm 
+&lt;a href=&quot;ftp://updates.redhat.com/7.2/en/os/ia64/wu-ftpd-2.6.2-11.72.1.ia64.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.2/en/os/ia64/wu-ftpd-2.6.2-11.72.1.ia64.rpm&lt;/a&gt; 
+RedHat wu-ftpd-2.6.1-16.ppc.rpm : 
+RedHat Upgrade wu-ftpd-2.6.2-11.71.1.ppc.rpm 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/iSeries/ppc/wu-ftpd-2.6.2-11.71.1.ppc.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/iSeries/ppc/wu-ftpd-2.6.2-11.71.1.ppc.rpm&lt;/a&gt; 
+RedHat Upgrade wu-ftpd-2.6.2-11.71.1.ppc.rpm 
+&lt;a href=&quot;ftp://updates.redhat.com/7.1/en/os/pSeries/ppc/wu-ftpd-2.6.2-11.71.1.ppc.rpm&quot; target=&quot;_blank&quot;&gt;ftp://updates.redhat.com/7.1/en/os/pSeries/ppc/wu-ftpd-2.6.2-11.71.1.ppc.rpm&lt;/a&gt; 
+S.u.S.E. 
+-------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+SuSE Upgrade wuftpd-2.6.0-403.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/wuftpd-2.6.0-403.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.3/n2/wuftpd-2.6.0-403.i386.rpm&lt;/a&gt; 
+SuSE-7.3 Intel 
+SuSE Upgrade wuftpd-2.6.0-403.src.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.3/zq1/wuftpd-2.6.0-403.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.3/zq1/wuftpd-2.6.0-403.src.rpm&lt;/a&gt; 
+SuSE-7.3 Intel 
+SuSE Upgrade wuftpd-2.6.0-403.i386.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/wuftpd-2.6.0-403.i386.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.2/n2/wuftpd-2.6.0-403.i386.rpm&lt;/a&gt; 
+SuSE-7.2 Intel 
+SuSE Upgrade wuftpd-2.6.0-403.src.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/7.2/zq1/wuftpd-2.6.0-403.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/7.2/zq1/wuftpd-2.6.0-403.src.rpm&lt;/a&gt; 
+SuSE-7.2 Intel 
+SuSE Upgrade wuftpd-2.6.0-260.sparc.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/sparc/update/7.3/n2/wuftpd-2.6.0-260.sparc.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/sparc/update/7.3/n2/wuftpd-2.6.0-260.sparc.rpm&lt;/a&gt; 
+SuSE-7.3 Sparc 
+SuSE Upgrade wuftpd-2.6.0-260.src.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/sparc/update/7.3/zq1/wuftpd-2.6.0-260.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/sparc/update/7.3/zq1/wuftpd-2.6.0-260.src.rpm&lt;/a&gt; 
+SuSE-7.3 Sparc 
+SuSE Upgrade wuftpd-2.6.0-328.ppc.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/ppc/update/7.3/n2/wuftpd-2.6.0-328.ppc.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/ppc/update/7.3/n2/wuftpd-2.6.0-328.ppc.rpm&lt;/a&gt; 
+SuSE-7.3 PPC 
+SuSE Upgrade wuftpd-2.6.0-328.src.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/ppc/update/7.3/zq1/wuftpd-2.6.0-328.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/ppc/update/7.3/zq1/wuftpd-2.6.0-328.src.rpm&lt;/a&gt; 
+SuSE-7.3 PPC</Solutions>      <cnnvd>CNNVD-200308-136</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>wu-ftpd的某些版包含远程可利用的在&amp;#39;fb_realpath()&amp;#39;函数中的off-by-one缓冲区溢出。注意此漏洞在编译标志PATH_MAX和MAXPATHLEN定义为4095的平台上不显示。这些包括但不限于Linux v2.2.x和v2.4.x系列版本的更早版本)。</Description>      <name>wu-ftpd &amp;#39;fb_realpath()&amp;#39; Off-By-One 缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2005-01-25" gvid="GVID-104705" id="104705" modified="2015-02-13" published="2004-03-09" version="2.0">      
+        
+        
+        <cvss>(AV:L/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">9832</id>         
+             <id name="CVE">CVE-2004-0148</id>         
+             <id name="DEBIAN">DSA-457</id>         
+             <id name="OVAL">OVAL1147</id>         
+             <id name="OVAL">OVAL1636</id>         
+             <id name="OVAL">OVAL1637</id>         
+             <id name="OVAL">OVAL648</id>         
+             <id name="REDHAT">RHSA-2004:096</id>         
+             <id name="XF">15423</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="wu-ftpd">               
+                        <version>                  <range>                     <high>2.6.3</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>厂商补丁： 
+Debian 
+------ 
+&lt;a href=&quot; 
+http://www.debian.org/security/2004/dsa-457&quot; target=&quot;_blank&quot;&gt; 
+http://www.debian.org/security/2004/dsa-457&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200404-058</cnnvd>      <cvsscode>7.2</cvsscode>      <severity>Severe</severity>      <Description>如果 &amp;#39;restricted-gid&amp;#39;选项已启用，本地用户禁止访问自己的主目录，那么尽管拒绝此类访问，WU-FTPD中的bug会自动访问根目录。</Description>      <name>WU-FTPD GID现在绕过漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104706" id="104706" modified="2012-07-13" published="1999-10-01" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="CVE">CVE-1999-0879</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="wu-ftpd">               
+                        <version>                  <range>                     <high>2.6</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd>CNNVD-199910-001</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>wu-ftpd &amp;lt; 2.6.0中，在解析信息文件时，FTP守护程序产生缓冲区溢出。这可能导致远程根受损。</Description>      <name>wu-ftpd信息扩展缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104707" id="104707" modified="2012-07-13" published="1999-08-22" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">599</id>         
+             <id name="CVE">CVE-1999-0878</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="wu-ftpd">               
+                        <version>                  <range>                     <high>2.6</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>The WU-FTPD Development Group has made the following patch available for WU-FTPD 2.5.0: 
+ftp://ftp.wu-ftpd.org/pub/wu-ftpd/quickfixes/apply_to_2.5.0/mapped.path.overrun.patch 
+Users of BeroFTPD 1.3.4 can apply the same patch.</Solutions>      <cnnvd>CNNVD-199908-046</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>wu-ftpd &amp;lt; 2.6.0中，FTP守护程序在路径转换程序时使缓冲区溢出。这可能会用尽可能少的可写（即：进入）目录导致远程root权限受损。</Description>      <name>wu-ftpd路径转换缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104708" id="104708" modified="2012-07-13" published="1999-10-01" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
+        <Tags>         
+             <tag>Denial of Service</tag>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="CVE">CVE-1999-0880</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="wu-ftpd">               
+                        <version>                  <range>                     <high>2.6</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd>CNNVD-199910-007</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>处理合法站点的较新的请求后，早于V2.6.0的版本无法释放动态分配的内存。这允许攻击者消耗主机上的所有可用内存。</Description>      <name>wu-ftpd SITE NEWER 拒绝服务漏洞</name>   </Vulnerability>   <Vulnerability added="2007-03-20" gvid="GVID-104709" id="104709" modified="2017-12-18" published="2007-03-20" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:M/Au:N/C:C/I:C/A:C)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+             <tag>Obsolete Software</tag>         
+        </Tags>      
+        <AlternateIds>
+  </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+		            <Product name="wu-ftpd">               
+			               <version>                  
+				                  <range>                     <high>2.6.2</high>                  </range>                  
+			               </version>               
+		            </Product>            
+	         </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <Description>早于 2.6.2 的WU-FTPd版本是过时的。2.6.2之后的版本包含许多重要的安全性增强和修正，例如 S/key 堆栈溢出和 fb_realpath 函数缓冲区溢出的补丁。建议您将WU-FTPd安装升级到最新版本。</Description>      <name>WU-FTPd 过时版本</name>   </Vulnerability>   <Vulnerability added="2007-08-07" gvid="GVID-104710" id="104710" modified="2015-02-13" published="2003-09-24" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:M/Au:N/C:C/I:C/A:C)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+             <tag>Remote Execution</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">8668</id>         
+             <id name="CVE">CVE-2003-1327</id>         
+             <id name="OSVDB">2594</id>         
+             <id name="XF">13269</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+		            <Product name="wu-ftpd">               
+			               <version>                  
+				                  <range>                     <high inclusive="1">2.6.2</high>                  </range>                  
+			               </version>               
+		            </Product>            
+	         </NetworkService>      </Check>      <Solutions>厂商补丁： 
+Slackware 
+--------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+Updated package for Slackware 9.0: 
+&lt;a href=&quot;ftp://ftp.slackware.com/pub/slackware/slackware-9.0/pasture/dontuse/wu-ftpd/wu-ftpd-2.6.2-i386-3.tgz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.slackware.com/pub/slackware/slackware-9.0/pasture/dontuse/wu-ftpd/wu-ftpd-2.6.2-i386-3.tgz&lt;/a&gt; 
+Updated package for Slackware -current: 
+&lt;a href=&quot;ftp://ftp.slackware.com/pub/slackware/slackware-current/pasture/dontuse/wu-ftpd/wu-ftpd-2.6.2-i486-3.tgz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.slackware.com/pub/slackware/slackware-current/pasture/dontuse/wu-ftpd/wu-ftpd-2.6.2-i486-3.tgz&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200312-075</cnnvd>      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <Description>当使用系统上启用的MAIL_ADMIN选项编译时，wu-ftpd 2.6.2以及早前版本的SockPrintf函数中的缓冲区溢出支持长路径名,可能允许远程匿名用户在wu-ftpd向管理员构造通知消息时，通过上传一个长路径名的文件执行任意代码。</Description>      <name>WU-FTPd SockPrintf函数缓冲区溢出</name>   </Vulnerability></Vulns>

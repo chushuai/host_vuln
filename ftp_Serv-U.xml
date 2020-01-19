@@ -1,0 +1,111 @@
+<Vulns>   <Vulnerability added="2004-11-01" gvid="GVID-104692" id="104692" modified="2013-12-04" published="1997-07-01" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:C)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">269</id>         
+             <id name="CVE">CVE-1999-0219</id>         
+             <id name="XF">205</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="Serv-U">               
+                        <version>                  <range>                     <high>2.5a</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>Cat Soft has made an upgrade available which solves this and other issues. It can be obtained at: 
+http://www.ftpserv-u.com/download.cfm</Solutions>      <cnnvd>CNNVD-199707-011</cnnvd>      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <Description>SERV-U FTPv2.5a之前的版本包含当攻击者提供一个超长的CWD请求触发一个可利用的缓冲区溢出。</Description>      <name>Serv-U CWD 缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104693" id="104693" modified="2012-07-13" published="2000-02-29" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:P/I:N/A:N)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">1016</id>         
+             <id name="CVE">CVE-2000-0176</id>         
+             <id name="URL">http://archives.neohapsis.com/archives/bugtraq/2000-02/0417.html</id>         
+             <id name="URL">http://www.securityfocus.com/frames/?content=/templates/archive.pike%3Flist%3D1%26msg%3DPine.GSO.4.10.10002291933150.12831-100000@www.securityfocus.com</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="Serv-U">               
+                        <version>                  <range>                     <high>2.5e</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>There is an option to change the messages to a less informative format. 
+Directions for version 2.5b: 
+Start the user or Group Manager. Select a user or group. Click the 'Misc.' button and the second checkbox is 'Show path relative to homedir'. Enabling this causes the server to give out messages like: 
+550 /nonexist: No such file or directory. 
+ and 
+ 250 Directory changed to /exist 
+Note that this has to be done for each user or group.</Solutions>      <cnnvd>CNNVD-200002-085</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>SERV-U FTP&amp;lt; 2.5E通过简单的PWD请求随意披露完整路径信息。</Description>      <name>Serv-U FTP Server 路径披露漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104694" id="104694" modified="2012-07-13" published="2004-11-01" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:M/Au:S/C:N/I:N/A:C)</cvss>      
+        <Tags>         
+             <tag>Denial of Service</tag>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>
+  </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="Serv-U">               
+                        <version>                  <range>                     <high>4.1</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.3</cvsscode>      <severity>Severe</severity>      <Description>如果RhinoSoft Serv-U的v4.0.x充斥着MKD请求，那么服务器将停止接受连接，产生拒绝服务漏洞。攻击者必须首先通过一个匿名或指定帐户登录。</Description>      <name>Serv-U MKD 拒绝服务</name>   </Vulnerability>   <Vulnerability added="2005-01-25" gvid="GVID-104695" id="104695" modified="2015-02-13" published="2004-12-31" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:M/Au:S/C:C/I:C/A:C)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">9483</id>         
+             <id name="BID">9675</id>         
+             <id name="CVE">CVE-2004-2111</id>         
+             <id name="CVE">CVE-2004-2533</id>         
+             <id name="OSVDB">3713</id>         
+             <id name="URL">http://archives.neohapsis.com/archives/bugtraq/2004-01/0249.html</id>         
+             <id name="URL">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=107513654005840&amp;w=2</id>         
+             <id name="XF">14931</id>         
+             <id name="XF">15251</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="Serv-U">               
+                        <version>                  <range>                     <high>4.2.0</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>厂商补丁： 
+RhinoSoft 
+--------- 
+目前厂商已经在5.0及以上版本的软件中修复了这个安全问题，请到厂商的主页下载： 
+&lt;a href=&quot; 
+http://www.serv-u.com/&quot; target=&quot;_blank&quot;&gt; 
+http://www.serv-u.com/&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200412-440</cnnvd>      <cvsscode>8.5</cvsscode>      <severity>Critical</severity>      <Description>更新至v4.2.0或更高版本</Description>      <name>Serv-U SITE CHMOD缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104696" id="104696" modified="2012-07-13" published="1999-12-01" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
+        <Tags>         
+             <tag>Denial of Service</tag>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">859</id>         
+             <id name="CVE">CVE-1999-0838</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="Serv-U">               
+                        <version>                  <range>                     <high>2.5b</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>Version 2.5b has been released and is not susceptible to this attack. It is available from the Serv-U homepage: 
+http://ftpserv-u.deerfield.com/download.cfm</Solutions>      <cnnvd>CNNVD-199912-007</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>对于Serv-U2.5B之前的版本，长SITE PASS命令会导致守护进程崩溃，从而导致拒绝服务。</Description>      <name>Serv-U FTP Server SITE PASS DoS漏洞</name>   </Vulnerability></Vulns>

@@ -1,0 +1,87 @@
+<Vulns>   <Vulnerability added="2007-02-27" gvid="GVID-104666" id="104666" modified="2012-07-13" published="2005-03-22" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
+        <Tags>         
+             <tag>Denial of Service</tag>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">12865</id>         
+             <id name="CVE">CVE-2005-0851</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="FileZilla">               
+                        <version>                  <range>                     <high>0.9.6</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://prdownloads.sourceforge.net/filezilla/FileZilla_Server_0_9_6.exe?download</Solutions>      <cnnvd>CNNVD-200505-040</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>某些FileZilla Server版本包含一个在处理zlib压缩的传输模式时的漏洞，这可能允许经过身份验证的（匿名或其他）攻击者发动拒绝服务式攻击。</Description>      <name>FileZilla服务器&amp;#39;MODE Z&amp;#39;拒绝服务</name>   </Vulnerability>   <Vulnerability added="2007-02-23" gvid="GVID-104668" id="104668" modified="2015-02-13" published="2005-07-28" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
+        <Tags>         
+             <tag>Denial of Service</tag>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="APPLE">APPLE-SA-2005-08-15</id>         
+             <id name="APPLE">APPLE-SA-2005-08-17</id>         
+             <id name="BID">14340</id>         
+             <id name="CVE">CVE-2005-1849</id>         
+             <id name="DEBIAN">DSA-1026</id>         
+             <id name="DEBIAN">DSA-763</id>         
+             <id name="DEBIAN">DSA-797</id>         
+             <id name="OSVDB">18141</id>         
+             <id name="OVAL">OVAL11402</id>         
+             <id name="REDHAT">RHSA-2005:584</id>         
+             <id name="REDHAT">RHSA-2008:0629</id>         
+             <id name="SUSE">SUSE-SA:2005:043</id>         
+             <id name="URL">http://frontal2.mandriva.com/security/advisories?name=MDKSA-2005:196</id>         
+             <id name="URL">http://frontal2.mandriva.com/security/advisories?name=MDKSA-2006:070</id>         
+             <id name="URL">http://security.debian.org/pool/updates/main/z/zlib/zlib_1.2.2-4.sarge.2.diff.gz</id>         
+             <id name="URL">http://www.ubuntulinux.org/usn/usn-151-3</id>         
+             <id name="URL">https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=162680</id>         
+             <id name="XF">21456</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="FileZilla">               
+                        <version>                  <range>                     <high>0.9.3</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.zlib.net/</Solutions>      <cnnvd>CNNVD-200507-258</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>FileZilla Server的某些版本在zlib压缩库中存在一个漏洞，这允许攻击者发起拒绝服务攻击。
+此漏洞不存在FileZilla本身，但zlib库与该产品没有关联。</Description>      <name>FileZilla服务器/zlib拒绝服务</name>   </Vulnerability>   <Vulnerability added="2007-02-23" gvid="GVID-104669" id="104669" modified="2015-02-13" published="2005-07-28" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
+        <Tags>         
+             <tag>Denial of Service</tag>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="APPLE">APPLE-SA-2005-08-15</id>         
+             <id name="APPLE">APPLE-SA-2005-08-17</id>         
+             <id name="BID">14340</id>         
+             <id name="CVE">CVE-2005-1849</id>         
+             <id name="DEBIAN">DSA-1026</id>         
+             <id name="DEBIAN">DSA-763</id>         
+             <id name="DEBIAN">DSA-797</id>         
+             <id name="OSVDB">18141</id>         
+             <id name="OVAL">OVAL11402</id>         
+             <id name="REDHAT">RHSA-2005:584</id>         
+             <id name="REDHAT">RHSA-2008:0629</id>         
+             <id name="SUSE">SUSE-SA:2005:043</id>         
+             <id name="XF">21456</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="FileZilla">               
+                        <version>                  <range>                     <high>0.9.9</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.zlib.net/</Solutions>      <cnnvd>CNNVD-200507-258</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>FileZilla Server的某些版本在zlib压缩库中存在一个漏洞，这允许攻击者发起拒绝服务攻击。
+此漏洞不存在FileZilla本身，但zlib库与该产品没有关联。</Description>      <name>FileZilla服务器/zlib拒绝服务2</name>   </Vulnerability></Vulns>

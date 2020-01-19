@@ -1,0 +1,174 @@
+<Vulns>   <Vulnerability added="2005-03-09" gvid="GVID-104671" id="104671" modified="2013-12-04" published="2004-10-20" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:H/Au:N/C:P/I:P/A:P)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="CVE">CVE-2004-0794</id>         
+             <id name="DEBIAN">DSA-551</id>         
+             <id name="NETBSD">NetBSD-SA2004-009</id>         
+             <id name="URL">ftp://ftp.netbsd.org/pub/NetBSD/security/advisories/NetBSD-SA2004-009.txt.asc</id>         
+             <id name="URL">http://lists.grok.org.uk/pipermail/full-disclosure/2004-August/025418.html</id>         
+             <id name="URL">http://lists.netsys.com/pipermail/full-disclosure/2004-August/025418.html</id>         
+             <id name="URL">http://www.vuxml.org/freebsd/c4b025bb-f05d-11d8-9837-000c41e2cdad.html</id>         
+             <id name="XF">17020</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="lukemftpd-netbsd">               
+	                <version>                  <range>                     <low>1980101</low>                     <high>20040809</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>The vendor has released patches resolving these issues. 
+NetBSD has released advisory 2004-009 addressing this issue. Please see the referenced advisory for further information. Fixes are available from CVS for the NetBSD-current and NetBSD-2.0 branches. 
+Apple has released an advisory (APPLE-SA-0024-09-07) along with fixes to address this, and many other issues. Please see the referenced advisory for further information. 
+Heimdal has released an advisory (2004-09-13) along with version 0.6.3 to address this issue. Please see the referenced advisory for further information. 
+Gentoo Linux has released an advisory (GLSA 200409-19) to address this issue. Please see the referenced advisory for further information. Users of affected packages are urged to execute the following with superuser privileges: 
+ emerge sync 
+ emerge -pv &quot;&gt;=app-crypt/heimdal-0.6.3&quot; 
+ emerge &quot;&gt;=app-crypt/heimdal-0.6.3&quot; 
+Debian Linux has released an advisory (DSA 551-1) along with fixes dealing with this issue. Please the referenced advisory for more information. 
+Sun has released an advisory (Sun Alert ID: 57655) with fixes to address these issues in Sun Java Desktop System (JDS) 2003 and Release 2 for the Linux platform. Please see the advisory in Web references for more information. Users may carry out the following actions from the launch bar to download the patch: 
+Launch &gt;&gt; Applications &gt;&gt; System Tools &gt;&gt; Online Update 
+Luke Mewburn TNFTPD 20031217 
+&lt;ul&gt;&lt;li&gt; 
+Luke Mewburn tnftpd-20040810.tar.gz 
+&lt;a href=&quot;ftp://ftp.netbsd.org/pub/NetBSD/misc/tnftp/tnftpd-20040810.tar.gz&quot;&gt;ftp://ftp.netbsd.org/pub/NetBSD/misc/tnftp/tnftpd-20040810.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Sun Java Desktop System (JDS) 2003 
+&lt;ul&gt;&lt;li&gt; 
+Sun patch-9369 
+&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.3 f 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.4 b 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.4 d 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.4 c 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.4 a 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.4 e 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.5 .0 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.5.1 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.5.2 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.5.3 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.6 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.6.1 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Heimdal Heimdal 0.6.2 
+&lt;ul&gt;&lt;li&gt; 
+Heimdal heimdal-0.6.3.tar.gz 
+&lt;a href=&quot;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&quot;&gt;ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.6.3.tar.gz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Luke Mewburn lukemftp 1.1 
+&lt;ul&gt;&lt;li&gt; 
+Debian lukemftpd_1.1-1woody2_alpha.debDebian GNU/Linux 3.0 alias woody 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1-1woody2_alpha.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1 
+-1woody2_alpha.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Debian lukemftpd_1.1-1woody2_arm.debDebian GNU/Linux 3.0 alias woody 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1-1woody2_arm.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1 
+-1woody2_arm.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Debian lukemftpd_1.1-1woody2_hppa.debDebian GNU/Linux 3.0 alias woody 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1-1woody2_hppa.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1 
+-1woody2_hppa.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Debian lukemftpd_1.1-1woody2_i386.debDebian GNU/Linux 3.0 alias woody 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1-1woody2_i386.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1 
+-1woody2_i386.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Debian lukemftpd_1.1-1woody2_ia64.debDebian GNU/Linux 3.0 alias woody 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1-1woody2_ia64.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1 
+-1woody2_ia64.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Debian lukemftpd_1.1-1woody2_m68k.debDebian GNU/Linux 3.0 alias woody 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1-1woody2_m68k.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1 
+-1woody2_m68k.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Debian lukemftpd_1.1-1woody2_mips.debDebian GNU/Linux 3.0 alias woody 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1-1woody2_mips.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1 
+-1woody2_mips.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Debian lukemftpd_1.1-1woody2_mipsel.debDebian GNU/Linux 3.0 alias woody 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1-1woody2_mipsel.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1 
+-1woody2_mipsel.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Debian lukemftpd_1.1-1woody2_powerpc.debDebian GNU/Linux 3.0 alias woody 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1-1woody2_powerpc.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1 
+-1woody2_powerpc.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Debian lukemftpd_1.1-1woody2_s390.debDebian GNU/Linux 3.0 alias woody 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1-1woody2_s390.deb&quot;&gt; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1 
+-1woody2_s390.deb&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Debian lukemftpd_1.1-1woody2_sparc.debDebian GNU/Linux 3.0 alias woody 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/l/lukemftpd/lukemftpd_1.1</Solutions>      <cnnvd>CNNVD-200410-061</cnnvd>      <cvsscode>5.1</cvsscode>      <severity>Severe</severity>      <Description>在lukemftpd版本（也称为tnftpd和NetBSD-ftpd的）之前，20040810（为lukemftpd和tnftpd）或20040809（NetBSD-ftpd），而多个漏洞的存在可能允许远程攻击者获取root访问系统的权限。</Description>      <name>lukemftpd信号处理器竞态条件利用</name>   </Vulnerability></Vulns>

@@ -1,0 +1,51 @@
+<Vulns>   <Vulnerability added="2005-01-25" gvid="GVID-104700" id="104700" modified="2015-02-13" published="2004-12-31" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:P/I:P/A:P)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">9953</id>         
+             <id name="CVE">CVE-2004-1848</id>         
+             <id name="CVE">CVE-2004-1883</id>         
+             <id name="CVE">CVE-2004-1884</id>         
+             <id name="CVE">CVE-2004-1885</id>         
+             <id name="OSVDB">4542</id>         
+             <id name="URL">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=108006553222397&amp;w=2</id>         
+             <id name="URL">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=108006581418116&amp;w=2</id>         
+             <id name="URL">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=108006717731989&amp;w=2</id>         
+             <id name="URL">http://www.securityfocus.com/archive/1/358361</id>         
+             <id name="URL">http://www.securityfocus.com/archive/1/358363</id>         
+             <id name="XF">15558</id>         
+             <id name="XF">15560</id>         
+             <id name="XF">15561</id>         
+             <id name="XF">41831</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="WS_FTP Server">               
+                        <version>                  <range>                     <high>4.0.3</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd></cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>升级至v4.0.3或更高版本</Description>      <name>WS_FTP ALLO处理器存在漏洞</name>   </Vulnerability>   <Vulnerability added="2005-01-25" gvid="GVID-104701" id="104701" modified="2015-02-13" published="2004-08-29" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
+        <Tags>         
+             <tag>Denial of Service</tag>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">11065</id>         
+             <id name="CVE">CVE-2004-1643</id>         
+             <id name="URL">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=109389890712888&amp;w=2</id>         
+             <id name="XF">17155</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="WS_FTP Server">               
+                        <version>                  <range>                     <low>5.0.0</low>                     <high>5.0.3</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd></cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>采用恰当的解决方法</Description>      <name>WS_FTP大文件路径拒绝服务</name>   </Vulnerability></Vulns>

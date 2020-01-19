@@ -1,0 +1,27 @@
+<Vulns>   <Vulnerability added="2015-11-09" gvid="GVID-104697" id="104697" modified="2016-02-02" published="1999-11-22" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:P/I:P/A:P)</cvss>      
+        <Tags>         
+             <tag>Denial of Service</tag>         
+             <tag>FTP</tag>         
+             <tag>Remote Execution</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="XF">vermillion-ftp-cwd-overflow(3543)</id>         
+             <id name="BID">818</id>         
+             <id name="NVD">CVE-1999-1058</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="FTP Daemon" vendor="Vermillion">               
+                        <version>                  
+                             <range>                     
+                                  <low inclusive="1">1.23</low>                     
+                                  <high>1.24</high>                     
+                             </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>Vermillion FTP 守护进程VFTPD 1.23版本中的缓冲区溢出允许远程攻击者通过几个长CWD命令导致拒绝服务并可能执行任意命令。</Description>      <name>Vermillion FTP Daemon中的CWD DoS漏洞(CVE-1999-1058)</name>   </Vulnerability></Vulns>
