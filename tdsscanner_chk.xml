@@ -1,0 +1,1216 @@
+<Vulns>   <Vulnerability addData="2014-08-10" gvid="GVID-105287" id="105287" modifyDate="2019-07-09">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server过时版本</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>正在运行过时的Microsoft SQL数据库服务器版本。 注意：当Microsoft SQL Server产品的支持期结束时，即使出现严重的安全问题，也不会提供进一步的补丁。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server 2012" vendor="Microsoft">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">11.0.6020.0</high>                                           <!-- SP3 -->                     
+                          </range>                  
+                     </version>               
+                </Product>            <Product name="SQL Server 2014" vendor="Microsoft">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">12.0.5000.0</high>                                           <!-- SP2 -->                     
+                          </range>                  
+                     </version>               
+                </Product>            <Product name="SQL Server 2016" vendor="Microsoft">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="1">13.0.2216.0</high>                                           <!-- SQL Server 2016 RTM -->                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2008-07-08" gvid="GVID-105303" id="105303" modifyDate="2019-07-02">      <cvsscode>9.0</cvsscode>      <severity>Critical</severity>      <name>MS08-040: Microsoft SQL Server 中的漏洞可能允许特权提升 (941203)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此安全更新可消除四个秘密披露的漏洞。 更加严重的漏洞可能允许攻击者执行代码并完全控制受影响的系统。 经过身份验证的攻击者随后可安装程序；查看、更改或删除数据；或者创建拥有完全管理权限的新帐户。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-0107,CVE-2008-0106,CVE-2008-0086,CVE-2008-0085</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://www.microsoft.com/technet/security/bulletin/ms08-040.mspx?pf=true</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server 2000" vendor="Microsoft">               
+                     <version>                  <range>                     <low>8.00.2039</low>                     <high>8.00.2050</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>8.00.2150</low>                     <high>8.00.2273</high>                  </range>               </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2009-02-10" gvid="GVID-105306" id="105306" modifyDate="2019-07-02">      <cvsscode>9.0</cvsscode>      <severity>Critical</severity>      <name>MS09-004: Microsoft SQL Server 中的漏洞可能允许远程执行代码 (959420)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此安全更新解决了 Microsoft SQL Server 中一个秘密报告的漏洞。 如果不受信任的用户访问受影响的系统，或者受影响的系统受 SQL 注入攻击，则此漏洞可能允许远程执行代码。 具有 SQL Server 7.0 Service Pack 4、SQL Server 2005 Service Pack 3 和 SQL Server 2008 的系统不会受此问题影响。</Description>      <cnnvd>CNNVD-200812-170</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-5416</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题： 
+补丁下载链接：http://www.microsoft.com/technet/security/Bulletin/MS09-004.mspx?pf=true</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server 2000" vendor="Microsoft">               
+                     <version>                  <range>                     <low>8.00.2039</low>                     <high>8.00.2055</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>8.00.2150</low>                     <high>8.00.2282</high>                  </range>               </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2008-07-08" gvid="GVID-105303" id="105303" modifyDate="2019-07-02">      <cvsscode>9.0</cvsscode>      <severity>Critical</severity>      <name>MS08-040: Microsoft SQL Server 中的漏洞可能允许特权提升 (941203)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此安全更新可消除四个秘密披露的漏洞。 更加严重的漏洞可能允许攻击者执行代码并完全控制受影响的系统。 经过身份验证的攻击者随后可安装程序；查看、更改或删除数据；或者创建拥有完全管理权限的新帐户。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-0107,CVE-2008-0106,CVE-2008-0086,CVE-2008-0085</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://www.microsoft.com/technet/security/bulletin/ms08-040.mspx?pf=true</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server 2005" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3068</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3233</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Standard Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3068</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3233</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Enterprise Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3068</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3233</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Developer Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3068</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3233</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Workgroup Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3068</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3233</high>                  </range>               </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2008-09-09" gvid="GVID-105305" id="105305" modifyDate="2018-06-04">      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <name>MS08-052: GDI+ 中的漏洞可能允许远程执行代码 (954593)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此安全更新可解决 Microsoft Windows GDI+ 中许多秘密报告的漏洞。 如果用户使用受影响的软件查看特制图像文件或浏览包含特制内容的网站，则这些漏洞可能允许远程执行代码。 那些帐户被配置为拥有较少系统用户权限的用户比具有管理用户权限的用户受到的影响要小。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-3015,CVE-2008-3014,CVE-2008-3013,CVE-2008-3012,CVE-2007-5348</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.microsoft.com/technet/security/Bulletin/MS08-052.mspx</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server 2005" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3073</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3282</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Standard Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3073</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3282</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Enterprise Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3073</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3282</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Developer Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3073</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3282</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Workgroup Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3073</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3282</high>                  </range>               </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2009-02-10" gvid="GVID-105306" id="105306" modifyDate="2019-07-02">      <cvsscode>9.0</cvsscode>      <severity>Critical</severity>      <name>MS09-004: Microsoft SQL Server 中的漏洞可能允许远程执行代码 (959420)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此安全更新解决了 Microsoft SQL Server 中一个秘密报告的漏洞。 如果不受信任的用户访问受影响的系统，或者受影响的系统受 SQL 注入攻击，则此漏洞可能允许远程执行代码。 具有 SQL Server 7.0 Service Pack 4、SQL Server 2005 Service Pack 3 和 SQL Server 2008 的系统不会受此问题影响。</Description>      <cnnvd>CNNVD-200812-170</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2008-5416</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题： 
+补丁下载链接：http://www.microsoft.com/technet/security/Bulletin/MS09-004.mspx?pf=true</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server 2005" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3077</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3310</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Standard Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3077</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3310</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Enterprise Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3077</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3310</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Developer Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3077</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3310</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Workgroup Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3077</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3310</high>                  </range>               </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2009-10-13" gvid="GVID-102285" id="102285" modifyDate="2018-06-04">      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <name>MS09-062: GDI+ 中的漏洞可能允许远程执行代码 (957488)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此安全更新可解决 Microsoft Windows GDI+ 中许多秘密报告的漏洞。 如果用户使用受影响的软件查看特制图像文件或浏览包含特制内容的网站，则这些漏洞可能允许远程执行代码。 那些帐户被配置为拥有较少系统用户权限的用户比具有管理用户权限的用户受到的影响要小。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2009-3126,CVE-2009-2528,CVE-2009-2518,CVE-2009-2504,CVE-2009-2503,CVE-2009-2502,CVE-2009-2501,CVE-2009-2500</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+Microsoft Project 2002 SP1 
+Microsoft Security Update for Microsoft Office XP (KB974811) 
+http://www.microsoft.com/downloads/details.aspx?familyid=b4ac7fbe-dd19 -4940-a576-89a6b7ed602d&amp;displaylang=en 
+Microsoft Windows XP Media Center Edition SP2 
+Microsoft Security Update for Windows XP (KB958869) 
+http://www.microsoft.com/downloads/details.aspx?familyid=e2acde20-a6d3 -4135-b6eb-1214f743d474 
+Microsoft SQL Server 2005 Itanium Edition SP2 
+Microsoft Security Update for SQL Server 2005 Service Pack 2 (KB970895) 
+http://www.microsoft.com/downloads/details.aspx?familyid=d971a262-1dfb -498c-a4f3-59fdc1b85d23 
+Microsoft Security Update for SQL Server 2005 Service Pack 2 (KB970896) 
+http://www.microsoft.com/downloads/details.aspx?familyid=76d3d653-e9a0 -48bc-afae-d3553f7b9235&amp;displaylang=en 
+Microsoft Report Viewer 2005 SP1 
+Microsoft Report Viewer Redistributable 2005 Service Pack 1 GDIPLUS.DLL Security Update (KB971117) 
+http://www.microsoft.com/downloads/details.aspx?familyid=0dfaf300-2b53 -4678-a779-0d805ddfe538&amp;displaylang=en 
+Microsoft Word Viewer 2003 SP3 
+Microsoft Security Update for Microsoft Office 2003 (KB972580) 
+http://www.microsoft.com/downloads/details.aspx?familyid=48752ab4-5928 -476d-a8bc-e998d188b1f7&amp;displaylang=en 
+Microsoft Project 2002 0 
+Microsoft Security Update for Microsoft Office XP (KB974811) 
+http://www.microsoft.com/downloads/details.aspx?familyid=b4ac7fbe-dd19 -4940-a576-89a6b7ed602d&amp;displaylang=en 
+Microsoft Expression Web 2 
+Microsoft Security Update for the 2007 Microsoft Office System (KB972581) 
+http://www.microsoft.com/downloads/details.aspx?familyid=98d7c4ab-f8ca -4806-a609-453fb29b02ec&amp;displaylang=en 
+Microsoft Office XP SP1 
+Microsoft Security Update for Microsoft Office XP (KB974811) 
+http://www.microsoft.com/downloads/details.aspx?familyid=b4ac7fbe-dd19 -4940-a576-89a6b7ed602d&amp;displaylang=en 
+Microsoft Office Excel Viewer 2003 SP3 
+Microsoft Security Update for Microsoft Office 2003 (KB972580) 
+http://www.microsoft.com/downloads/details.aspx?familyid=48752ab4-5928 -476d-a8bc-e998d188b1f7&amp;displaylang=en 
+Microsoft SQL Server 2005 SP2 
+Microsoft Security Update for SQL Server 2005 Service Pack 2 (KB970895) 
+http://www.microsoft.com/downloads/details.aspx?familyid=d971a262-1dfb -498c-a4f3-59fdc1b85d23 
+Microsoft Visual FoxPro 8.0 
+Microsoft Visual FoxPro 8.0 Service Pack 1 GDIPLUS.DLL Security Update (KB971104) 
+http://www.microsoft.com/downloads/details.aspx?familyid=e5d0d515-4b36 -4025-bc6f-1c5cdf09e1af&amp;displaylang=en 
+Microsoft Office Excel Viewer 2003 0 
+Microsoft Security Update for Microsoft Office 2003 (KB972580) 
+http://www.microsoft.com/downloads/details.aspx?familyid=48752ab4-5928 -476d-a8bc-e998d188b1f7&amp;displaylang=en 
+Microsoft Visio 2002 Professional SP2 
+Microsoft Security Update for Microsoft Visio 2002 (KB975365) 
+http://www.microsoft.com/downloads/details.aspx?familyid=920ee70b-c5c1 -47b5-8f33-938ffe14eea4&amp;displaylang=en 
+Microsoft Windows XP Tablet PC Edition SP2 
+Microsoft Security Update for Windows XP (KB958869) 
+http://www.microsoft.com/downloads/details.aspx?familyid=e2acde20-a6d3 -4135-b6eb-1214f743d474 
+Microsoft Windows XP Media Center Edition SP3 
+Microsoft Security Update for Windows XP (KB958869) 
+http://www.microsoft.com/downloads/details.aspx?familyid=e2acde20-a6d3 -4135-b6eb-1214f743d474 
+Microsoft Office 2007 SP2 
+Microsoft Security Update for the 2007 Microsoft Office System (KB972581) 
+http://www.microsoft.com/downloads/details.aspx?familyid=98d7c4ab-f8ca -4806-a609-453fb29b02ec&amp;displaylang=en 
+Microsoft Word 2003 Viewer 
+Microsoft Security Update for Microsoft Office 2003 (KB972580) 
+http://www.microsoft.com/downloads/details.aspx?familyid=48752ab4-5928 -476d-a8bc-e998d188b1f7&amp;displaylang=en 
+Microsoft Office 2003 SP2 
+Microsoft Security Update for Microsoft Office 2003 (KB972580) 
+http://www.microsoft.com/downloads/details.aspx?familyid=48752ab4-5928 -476d-a8bc-e998d188b1f7&amp;displaylang=en 
+Microsoft Office Compatibility Pack 2007 SP2 
+Microsoft Security Update for the 2007 Microsoft</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server 2005" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3080</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3353</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Standard Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3080</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3353</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Enterprise Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3080</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3353</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Developer Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3080</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3353</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Workgroup Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.3042</low>                     <high>9.00.3080</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.3150</low>                     <high>9.00.3353</high>                  </range>               </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2009-10-13" gvid="GVID-102285" id="102285" modifyDate="2018-06-04">      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <name>MS09-062: GDI+ 中的漏洞可能允许远程执行代码 (957488)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>此安全更新可解决 Microsoft Windows GDI+ 中许多秘密报告的漏洞。 如果用户使用受影响的软件查看特制图像文件或浏览包含特制内容的网站，则这些漏洞可能允许远程执行代码。 那些帐户被配置为拥有较少系统用户权限的用户比具有管理用户权限的用户受到的影响要小。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2009-3126,CVE-2009-2528,CVE-2009-2518,CVE-2009-2504,CVE-2009-2503,CVE-2009-2502,CVE-2009-2501,CVE-2009-2500</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+Microsoft Project 2002 SP1 
+Microsoft Security Update for Microsoft Office XP (KB974811) 
+http://www.microsoft.com/downloads/details.aspx?familyid=b4ac7fbe-dd19 -4940-a576-89a6b7ed602d&amp;displaylang=en 
+Microsoft Windows XP Media Center Edition SP2 
+Microsoft Security Update for Windows XP (KB958869) 
+http://www.microsoft.com/downloads/details.aspx?familyid=e2acde20-a6d3 -4135-b6eb-1214f743d474 
+Microsoft SQL Server 2005 Itanium Edition SP2 
+Microsoft Security Update for SQL Server 2005 Service Pack 2 (KB970895) 
+http://www.microsoft.com/downloads/details.aspx?familyid=d971a262-1dfb -498c-a4f3-59fdc1b85d23 
+Microsoft Security Update for SQL Server 2005 Service Pack 2 (KB970896) 
+http://www.microsoft.com/downloads/details.aspx?familyid=76d3d653-e9a0 -48bc-afae-d3553f7b9235&amp;displaylang=en 
+Microsoft Report Viewer 2005 SP1 
+Microsoft Report Viewer Redistributable 2005 Service Pack 1 GDIPLUS.DLL Security Update (KB971117) 
+http://www.microsoft.com/downloads/details.aspx?familyid=0dfaf300-2b53 -4678-a779-0d805ddfe538&amp;displaylang=en 
+Microsoft Word Viewer 2003 SP3 
+Microsoft Security Update for Microsoft Office 2003 (KB972580) 
+http://www.microsoft.com/downloads/details.aspx?familyid=48752ab4-5928 -476d-a8bc-e998d188b1f7&amp;displaylang=en 
+Microsoft Project 2002 0 
+Microsoft Security Update for Microsoft Office XP (KB974811) 
+http://www.microsoft.com/downloads/details.aspx?familyid=b4ac7fbe-dd19 -4940-a576-89a6b7ed602d&amp;displaylang=en 
+Microsoft Expression Web 2 
+Microsoft Security Update for the 2007 Microsoft Office System (KB972581) 
+http://www.microsoft.com/downloads/details.aspx?familyid=98d7c4ab-f8ca -4806-a609-453fb29b02ec&amp;displaylang=en 
+Microsoft Office XP SP1 
+Microsoft Security Update for Microsoft Office XP (KB974811) 
+http://www.microsoft.com/downloads/details.aspx?familyid=b4ac7fbe-dd19 -4940-a576-89a6b7ed602d&amp;displaylang=en 
+Microsoft Office Excel Viewer 2003 SP3 
+Microsoft Security Update for Microsoft Office 2003 (KB972580) 
+http://www.microsoft.com/downloads/details.aspx?familyid=48752ab4-5928 -476d-a8bc-e998d188b1f7&amp;displaylang=en 
+Microsoft SQL Server 2005 SP2 
+Microsoft Security Update for SQL Server 2005 Service Pack 2 (KB970895) 
+http://www.microsoft.com/downloads/details.aspx?familyid=d971a262-1dfb -498c-a4f3-59fdc1b85d23 
+Microsoft Visual FoxPro 8.0 
+Microsoft Visual FoxPro 8.0 Service Pack 1 GDIPLUS.DLL Security Update (KB971104) 
+http://www.microsoft.com/downloads/details.aspx?familyid=e5d0d515-4b36 -4025-bc6f-1c5cdf09e1af&amp;displaylang=en 
+Microsoft Office Excel Viewer 2003 0 
+Microsoft Security Update for Microsoft Office 2003 (KB972580) 
+http://www.microsoft.com/downloads/details.aspx?familyid=48752ab4-5928 -476d-a8bc-e998d188b1f7&amp;displaylang=en 
+Microsoft Visio 2002 Professional SP2 
+Microsoft Security Update for Microsoft Visio 2002 (KB975365) 
+http://www.microsoft.com/downloads/details.aspx?familyid=920ee70b-c5c1 -47b5-8f33-938ffe14eea4&amp;displaylang=en 
+Microsoft Windows XP Tablet PC Edition SP2 
+Microsoft Security Update for Windows XP (KB958869) 
+http://www.microsoft.com/downloads/details.aspx?familyid=e2acde20-a6d3 -4135-b6eb-1214f743d474 
+Microsoft Windows XP Media Center Edition SP3 
+Microsoft Security Update for Windows XP (KB958869) 
+http://www.microsoft.com/downloads/details.aspx?familyid=e2acde20-a6d3 -4135-b6eb-1214f743d474 
+Microsoft Office 2007 SP2 
+Microsoft Security Update for the 2007 Microsoft Office System (KB972581) 
+http://www.microsoft.com/downloads/details.aspx?familyid=98d7c4ab-f8ca -4806-a609-453fb29b02ec&amp;displaylang=en 
+Microsoft Word 2003 Viewer 
+Microsoft Security Update for Microsoft Office 2003 (KB972580) 
+http://www.microsoft.com/downloads/details.aspx?familyid=48752ab4-5928 -476d-a8bc-e998d188b1f7&amp;displaylang=en 
+Microsoft Office 2003 SP2 
+Microsoft Security Update for Microsoft Office 2003 (KB972580) 
+http://www.microsoft.com/downloads/details.aspx?familyid=48752ab4-5928 -476d-a8bc-e998d188b1f7&amp;displaylang=en 
+Microsoft Office Compatibility Pack 2007 SP2 
+Microsoft Security Update for the 2007 Microsoft</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server 2005" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.4035</low>                     <high>9.00.4053</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.4150</low>                     <high>9.00.4262</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Standard Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.4035</low>                     <high>9.00.4053</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.4150</low>                     <high>9.00.4262</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Enterprise Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.4035</low>                     <high>9.00.4053</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.4150</low>                     <high>9.00.4262</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Developer Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.4035</low>                     <high>9.00.4053</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.4150</low>                     <high>9.00.4262</high>                  </range>               </version>               
+                </Product>            <Product name="SQL Server 2005, Workgroup Edition" vendor="Microsoft">               
+                     <version>                  <range>                     <low>9.00.4035</low>                     <high>9.00.4053</high>                  </range>               </version>               
+                     <version>                  <range>                     <low>9.00.4150</low>                     <high>9.00.4262</high>                  </range>               </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105288" id="105288" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server 7和SQL Server 2000多个存储过程缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Microsoft SQL Server 7和Microsoft SQL Server 2000易受多个存储过程内的缓冲区溢出漏洞的影响。这些漏洞可被经过身份认证的QL Server用户利用。
+登录后，该恶意用户可能以SQL服务器的帐户权限执行任意命令。这将允许用户完全控制服务器。</Description>      <cnnvd>CNNVD-200205-020</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0154</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 设置禁止xp_dirtree存储过程，并删除相关的DLL文件。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-020)以及相应补丁: 
+MS02-020：SQL Extended Procedure Functions Contain Unchecked Buffers (Q319507) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-020.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-020.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 7.0: 
+ The patch for this issue is available in the SQL 7.0 Cumulative 
+ Security patch at &lt;a href=&quot; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q318268&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q318268&lt;/a&gt; 
+ * Microsoft SQL Server 2000: The patch for this issue is available in 
+ the SQL Server 2000 Cumulative Security patch at &lt;a href=&quot; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.0</low>                     <high>7.0.1063</high>                  </range>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105288" id="105288" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server 7和SQL Server 2000多个存储过程缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Microsoft SQL Server 7和Microsoft SQL Server 2000易受多个存储过程内的缓冲区溢出漏洞的影响。这些漏洞可被经过身份认证的QL Server用户利用。
+登录后，该恶意用户可能以SQL服务器的帐户权限执行任意命令。这将允许用户完全控制服务器。</Description>      <cnnvd>CNNVD-200205-020</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0154</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 设置禁止xp_dirtree存储过程，并删除相关的DLL文件。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-020)以及相应补丁: 
+MS02-020：SQL Extended Procedure Functions Contain Unchecked Buffers (Q319507) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-020.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-020.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 7.0: 
+ The patch for this issue is available in the SQL 7.0 Cumulative 
+ Security patch at &lt;a href=&quot; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q318268&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q318268&lt;/a&gt; 
+ * Microsoft SQL Server 2000: The patch for this issue is available in 
+ the SQL Server 2000 Cumulative Security patch at &lt;a href=&quot; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.0</low>                     <high>7.0.1063</high>                  </range>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105308" id="105308" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>SQL Server Remote 数据源缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软SQL Server易受到即席查询支持里的缓冲区溢出条件的影响。通过在执行即席查询时指定长OLE-DB数据源，SQL Server服务可能会崩溃。用于即席查询的函数是OPENDATASOURCE和OPENROWSET。如果SQL代理正在运行，它会重启服务器。
+要利用此漏洞，用户必须先登录到SQL服务器。这需要一个有效的用户ID和密码的知识。一旦登录后，恶意用户可通过SQL服务器使用的账号权限执行任意命令。</Description>      <cnnvd>CNNVD-200203-026</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0056</id>      </AlternateIds>      <Solutions>Microsoft has released fixes: 
+Microsoft SQL Server 2000 SP2 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q316333 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microsoft.com/download/SQLSVR2000/Update/8.00.0578/W982KMeXP/EN-US/8.00.0578.exe&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microso 
+ft.com/download/SQLSVR2000/Update/8.00.0578/W982KMeXP/EN-US/8.00.0578. 
+exe&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 7.0 SP3 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q318268 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microsoft.com/download/sql70/Update/s71021i/WIN98MeXP/EN-US/s71021i.exe&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microso 
+ft.com/download/sql70/Update/s71021i/WIN98MeXP/EN-US/s71021i.exe&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 7.0 SP3 alpha 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q318268 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microsoft.com/download/sql70/Update/s71021a/ALPHA/EN-US/s71021a.exe&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microso 
+ft.com/download/sql70/Update/s71021a/ALPHA/EN-US/s71021a.exe&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.0</low>                     <high>7.0.1021</high>                  </range>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.578</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105308" id="105308" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>SQL Server Remote 数据源缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软SQL Server易受到即席查询支持里的缓冲区溢出条件的影响。通过在执行即席查询时指定长OLE-DB数据源，SQL Server服务可能会崩溃。用于即席查询的函数是OPENDATASOURCE和OPENROWSET。如果SQL代理正在运行，它会重启服务器。
+要利用此漏洞，用户必须先登录到SQL服务器。这需要一个有效的用户ID和密码的知识。一旦登录后，恶意用户可通过SQL服务器使用的账号权限执行任意命令。</Description>      <cnnvd>CNNVD-200203-026</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0056</id>      </AlternateIds>      <Solutions>Microsoft has released fixes: 
+Microsoft SQL Server 2000 SP2 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q316333 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microsoft.com/download/SQLSVR2000/Update/8.00.0578/W982KMeXP/EN-US/8.00.0578.exe&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microso 
+ft.com/download/SQLSVR2000/Update/8.00.0578/W982KMeXP/EN-US/8.00.0578. 
+exe&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 7.0 SP3 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q318268 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microsoft.com/download/sql70/Update/s71021i/WIN98MeXP/EN-US/s71021i.exe&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microso 
+ft.com/download/sql70/Update/s71021i/WIN98MeXP/EN-US/s71021i.exe&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 7.0 SP3 alpha 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q318268 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microsoft.com/download/sql70/Update/s71021a/ALPHA/EN-US/s71021a.exe&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid= 
+http://download.microso 
+ft.com/download/sql70/Update/s71021a/ALPHA/EN-US/s71021a.exe&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.0</low>                     <high>7.0.1021</high>                  </range>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.578</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105316" id="105316" modifyDate="2018-03-21">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>Microsoft SQL Server的xp_displayparamstmt缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>通过调用有长参数数据的程序xp_displayparamstmt，Microsoft SQL Server容易受到缓冲区溢出漏洞的攻击。此程序调用srv_paraminfo API，它不会在复制参数之前检查缓冲区长度。
+要利用此漏洞，用户必须先登录到SQL服务器。这需要知识一个有效的用户ID和密码。一旦登录，恶意用户可以执行任意命令同由SQL服务器的帐户的权限。</Description>      <cnnvd>CNNVD-200101-037</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2000-1081</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 数据库管理员应该限制这些有问题的存储过程的访问权限，只允许数据库管理员访问。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS00-092)以及相应补丁: 
+MS00-092：Patch Available for &quot;Extended Stored Procedure Parameter Parsing&quot; Vulnerability 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS00-092.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS00-092.asp&lt;/a&gt; 
+补丁下载： 
+&lt;a href=&quot; 
+http://support.microsoft.com/support/sql/xp_security.asp&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/sql/xp_security.asp&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.0</low>                     <high>7.0.918</high>                  </range>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.223</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105316" id="105316" modifyDate="2018-03-21">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>Microsoft SQL Server的xp_displayparamstmt缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>通过调用有长参数数据的程序xp_displayparamstmt，Microsoft SQL Server容易受到缓冲区溢出漏洞的攻击。此程序调用srv_paraminfo API，它不会在复制参数之前检查缓冲区长度。
+要利用此漏洞，用户必须先登录到SQL服务器。这需要知识一个有效的用户ID和密码。一旦登录，恶意用户可以执行任意命令同由SQL服务器的帐户的权限。</Description>      <cnnvd>CNNVD-200101-037</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2000-1081</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 数据库管理员应该限制这些有问题的存储过程的访问权限，只允许数据库管理员访问。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS00-092)以及相应补丁: 
+MS00-092：Patch Available for &quot;Extended Stored Procedure Parameter Parsing&quot; Vulnerability 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS00-092.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS00-092.asp&lt;/a&gt; 
+补丁下载： 
+&lt;a href=&quot; 
+http://support.microsoft.com/support/sql/xp_security.asp&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/sql/xp_security.asp&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.0</low>                     <high>7.0.918</high>                  </range>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.223</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105289" id="105289" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Microsoft SQL Server 2000 恶意 0x08 数据包缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软SQL Server 2000对传入的&amp;quot;解析服务&amp;quot;请求监听UDP端口1434。发送一个特定的格式不正确的请求将导致一个基于堆的缓冲区溢出和服务器上的拒绝服务。这种攻击并不需要有效身份证件。</Description>      <cnnvd>CNNVD-200208-046</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0729</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 在边界防火墙、网关设备或者SQL Server主机上限制对UDP/1434端口的访问。由于UDP报文的源地址很容易伪造，所以不能简单地限制只允许可信IP访问。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-039)以及相应补丁: 
+MS02-039：Buffer Overruns in SQL Server 2000 Resolution Service Could Enable Code Execution (Q323875) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-039.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-039.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 2000: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40602&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40602&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>                                     <!-- SP3 -->                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105290" id="105290" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server 2000 代理工作任意文件覆盖漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Microsoft SQL Server 2000 代理负责执行计划工作。工作应当在创建该工作的特权级别运行，但是他们在SQL Server 代理的特权下运行。这允许已认证的SQL Server用户创建的工作在服务器上创建或者覆盖文件。可在管理员&amp;#39;s启动文件夹创建可执行文件，这样程序会在管理员登陆的时候自动运行。攻击者可能仅能使用随机数据重写重要的系统文件并破坏或禁用系统。</Description>      <cnnvd>CNNVD-200210-275</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1138</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 数据库管理员应该禁止对MSDB数据库中的下列存储过程的公开(public)访问权限： 
+sp_add_job 
+sp_add_jobstep 
+sp_add_jobserver 
+sp_start_job 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-043)以及相应补丁: 
+MS02-043：Cumulative Patch for SQL Server (Q316333) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-043.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-043.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 7.0 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q327068&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q327068&lt;/a&gt; 
+ * Microsoft SQL Server 2000 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q316333&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q316333&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105325" id="105325" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server2000 DBCC缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>存在多个缓冲区溢出在Microsoft SQL Server2000&amp;#39;s的
+      数据库一致性检查程序（DBCC）。任何非特权帐户
+      可能利用此漏洞，导致权限升级到
+      SQL Server帐户的水平。</Description>      <cnnvd>CNNVD-200208-163</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0644</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 暂时没有合适的临时解决方法。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-038)以及相应补丁: 
+MS02-038：Unchecked Buffer in SQL Server 2000 Utilities Could Allow Code Execution(Q316333) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-038.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-038.asp&lt;/a&gt; 
+补丁下载： 
+ * SQL Server 2000: 
+ &lt;a href=&quot; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>                                     <!-- SP3 -->                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105291" id="105291" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server 2000数据库控制台命令资料库参数缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>由过长SourceDB参数引起的Microsoft SQL Server 2000的数据库一致性检验过程(DBCC)中存在一个缓冲区溢出。任何未经授权的帐户可能利用此漏洞,导致SQL服务器的帐户提权。
+请注意,虽然此漏洞是CAN-2002-0644内Microsoft SQL Server 2000 DBCC缓冲区溢出的一个变体,它后来被发现并影响不同版本的SQL Server。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1137,CVE-2002-0644</id>      </AlternateIds>      <Solutions>厂商补丁： 
+Microsoft 
+--------- 
+Microsoft对MS02-056号公告作为修订，发布了MS02-061号公告，Microsoft建议所有使用SQL 2000或MSDE 2000的用户打上MS02-061公告中给出的补丁： 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tech&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tech&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.679</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105327" id="105327" modifyDate="2018-03-21">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server 2000 Hello缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Microsoft SQL Server 2000中存在一个缓冲区溢出漏洞，该漏洞可通过发送简单的&amp;#39;hello&amp;#39; packet来获取访问远程STSTEM特权来得以利用。应当注意的是，服务器不需要有效的证件</Description>      <cnnvd>CNNVD-200209-058</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1123</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 在防火墙或者服务器上禁止不可信IP访问SQL Server服务端口 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-056)以及相应补丁: 
+MS02-056：Cumulative Patch for SQL Server (Q316333) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-056.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-056.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 7.0: 
+ &lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q327068&amp;sd=tech&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q327068&amp;sd=tech&lt;/a&gt; 
+ * Microsoft SQL Server 2000: 
+ &lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tech&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tech&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.679</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105329" id="105329" modifyDate="2012-07-30">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS02-020: SQL扩展程序函数包含未检查缓冲区(Q319507)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+若干微软提供的扩展存储程序中存在一个未经检查的缓冲区漏洞。利用该漏洞可以使攻击者能够导致SQL Server服务出现故障或使代码在SQL Server的安全上下文中运行。 SQL Server可以被配置为在不同的安全上下文中运行，并默认作为域用户运行。精确的权限攻击者可以将取决于服务运行在特定的安全上下文。</Description>      <cnnvd>CNNVD-200205-020</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0154</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 设置禁止xp_dirtree存储过程，并删除相关的DLL文件。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-020)以及相应补丁: 
+MS02-020：SQL Extended Procedure Functions Contain Unchecked Buffers (Q319507) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-020.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-020.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 7.0: 
+ The patch for this issue is available in the SQL 7.0 Cumulative 
+ Security patch at &lt;a href=&quot; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q318268&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q318268&lt;/a&gt; 
+ * Microsoft SQL Server 2000: The patch for this issue is available in 
+ the SQL Server 2000 Cumulative Security patch at &lt;a href=&quot; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  <range>                     <low>7.0</low>                     <high>7.0.1063</high>                  </range>               </version>               
+                        <version>                  <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>               </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105329" id="105329" modifyDate="2012-07-30">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS02-020: SQL扩展程序函数包含未检查缓冲区(Q319507)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+若干微软提供的扩展存储程序中存在一个未经检查的缓冲区漏洞。利用该漏洞可以使攻击者能够导致SQL Server服务出现故障或使代码在SQL Server的安全上下文中运行。 SQL Server可以被配置为在不同的安全上下文中运行，并默认作为域用户运行。精确的权限攻击者可以将取决于服务运行在特定的安全上下文。</Description>      <cnnvd>CNNVD-200205-020</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0154</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 设置禁止xp_dirtree存储过程，并删除相关的DLL文件。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-020)以及相应补丁: 
+MS02-020：SQL Extended Procedure Functions Contain Unchecked Buffers (Q319507) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-020.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-020.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 7.0: 
+ The patch for this issue is available in the SQL 7.0 Cumulative 
+ Security patch at &lt;a href=&quot; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q318268&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q318268&lt;/a&gt; 
+ * Microsoft SQL Server 2000: The patch for this issue is available in 
+ the SQL Server 2000 Cumulative Security patch at &lt;a href=&quot; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  <range>                     <low>7.0</low>                     <high>7.0.1063</high>                  </range>               </version>               
+                        <version>                  <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>               </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105331" id="105331" modifyDate="2012-07-30">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS02-030: SQLXML的未检查缓冲区可引起代码执行 (Q321911)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+SQLXML使得XML数据的转移和从SQL Server 2000的数据库的查询可以在XML文档然后可以存储或传送容易的形式返回。利用SQLXML，您可以通过浏览器通过HTTP访问SQL Server2000中使用XML。存在于SQLXML两个漏洞：一个未经检查的缓冲区漏洞的ISAPI扩展可能，在最坏的情况下，允许攻击者运行他们选择的Microsoft Internet信息服务（IIS）服务器上的代码。在一个函数指定XML标记，可能允许攻击者运行在用户&amp;#65533;脚本漏洞&amp;#65533;的计算机具有更高的特权。例如，一个脚本可能能够在Intranet区域而不是Internet区域中运行。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0187,CVE-2002-0186</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 禁止通过URL输入直接进行SQL查询。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-030)以及相应补丁: 
+MS02-030：Unchecked Buffer in SQLXML Could Lead to Code Execution (Q321911) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-030.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-030.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQLXML version shipping with SQL 2000 Gold: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=39547&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=39547&lt;/a&gt; 
+ * Microsoft SQLXML version 2: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=38480&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=38480&lt;/a&gt; 
+ * Microsoft SQLXML version 3: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=38481&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=38481&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105331" id="105331" modifyDate="2012-07-30">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS02-030: SQLXML的未检查缓冲区可引起代码执行 (Q321911)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+SQLXML使得XML数据的转移和从SQL Server 2000的数据库的查询可以在XML文档然后可以存储或传送容易的形式返回。利用SQLXML，您可以通过浏览器通过HTTP访问SQL Server2000中使用XML。存在于SQLXML两个漏洞：一个未经检查的缓冲区漏洞的ISAPI扩展可能，在最坏的情况下，允许攻击者运行他们选择的Microsoft Internet信息服务（IIS）服务器上的代码。在一个函数指定XML标记，可能允许攻击者运行在用户&amp;#65533;脚本漏洞&amp;#65533;的计算机具有更高的特权。例如，一个脚本可能能够在Intranet区域而不是Internet区域中运行。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0187,CVE-2002-0186</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 禁止通过URL输入直接进行SQL查询。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-030)以及相应补丁: 
+MS02-030：Unchecked Buffer in SQLXML Could Lead to Code Execution (Q321911) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-030.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-030.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQLXML version shipping with SQL 2000 Gold: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=39547&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=39547&lt;/a&gt; 
+ * Microsoft SQLXML version 2: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=38480&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=38480&lt;/a&gt; 
+ * Microsoft SQLXML version 3: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=38481&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=38481&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2006-08-06" gvid="GVID-105335" id="105335" modifyDate="2012-07-30">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>MS02-035: SQL服务器安装进程可在系统上留下密码(Q263968)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+一个安全漏洞，因为两个因素：这些文件保留在服务器上安装后完成。除了由SQL Server2000创建的setup.iss文件，该文件是由任何能够以交互方式登录到系统的用户访问的目录。存储在文件中的密码信息是明文或加密的使用（对于SQL Server 7.0 Service Pack 4前）相当薄弱的保护。恢复文件的攻击者可以对他们进行密码破解攻击学习密码，从而窃取sa密码和/或域帐户密码</Description>      <cnnvd>CNNVD-200207-074</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0643</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 删除setup.iss文件。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-035)以及相应补丁: 
+MS02-035：SQL Server Installation Process May Leave Passwords on System (Q263968) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-035.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-035.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL 7, MSDE 1.0, and Microsoft SQL Server 2000: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40205&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40205&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2006-08-06" gvid="GVID-105335" id="105335" modifyDate="2012-07-30">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>MS02-035: SQL服务器安装进程可在系统上留下密码(Q263968)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+一个安全漏洞，因为两个因素：这些文件保留在服务器上安装后完成。除了由SQL Server2000创建的setup.iss文件，该文件是由任何能够以交互方式登录到系统的用户访问的目录。存储在文件中的密码信息是明文或加密的使用（对于SQL Server 7.0 Service Pack 4前）相当薄弱的保护。恢复文件的攻击者可以对他们进行密码破解攻击学习密码，从而窃取sa密码和/或域帐户密码</Description>      <cnnvd>CNNVD-200207-074</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0643</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 删除setup.iss文件。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-035)以及相应补丁: 
+MS02-035：SQL Server Installation Process May Leave Passwords on System (Q263968) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-035.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-035.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL 7, MSDE 1.0, and Microsoft SQL Server 2000: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40205&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40205&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.0</low>                     <high>8.0</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105338" id="105338" modifyDate="2015-02-13">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS02-039: SQL服务器2000解析服务的缓冲区过溢可允许代码执行(Q323875)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+这里有三个安全漏洞。前两个是缓冲区溢出。通过发送一个精心制作的数据包发送到解析服务，攻击者可能会导致系统内存部分（在一种情况下堆，栈中的除外）被覆盖。用随机数据可能会导致SQL Server服务无法覆盖它;精心挑选的数据覆盖可能允许攻击者在SQL Server服务的安全上下文中运行代码。第三个漏洞是拒绝服务漏洞。 SQL使用保活机制，主动和被动的实例区分开来。有可能创造一个保活分组，当发送到解析服务，将导致SQL Server 2000，以用相同的信息作出响应。创建这样一个数据包的攻击者伪造源地址，以便它似乎来自一个SQL Server 2000系统，并把它交给邻近的SQL Server 2000系统可能会导致两个系统进入保持一个永无休止的循环-alive数据包交换。这将消耗两个系统上的资源，大大降低性能。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0650,CVE-2002-0649</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 在边界防火墙、网关设备或者SQL Server主机上限制对UDP/1434端口的访问。由于UDP报文的源地址很容易伪造，所以不能简单地限制只允许可信IP访问。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-039)以及相应补丁: 
+MS02-039：Buffer Overruns in SQL Server 2000 Resolution Service Could Enable Code Execution (Q323875) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-039.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-039.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 2000: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40602&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40602&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>               </version>                               <!-- fixed in sp3, which is 760 -->               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105338" id="105338" modifyDate="2015-02-13">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS02-039: SQL服务器2000解析服务的缓冲区过溢可允许代码执行(Q323875)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+这里有三个安全漏洞。前两个是缓冲区溢出。通过发送一个精心制作的数据包发送到解析服务，攻击者可能会导致系统内存部分（在一种情况下堆，栈中的除外）被覆盖。用随机数据可能会导致SQL Server服务无法覆盖它;精心挑选的数据覆盖可能允许攻击者在SQL Server服务的安全上下文中运行代码。第三个漏洞是拒绝服务漏洞。 SQL使用保活机制，主动和被动的实例区分开来。有可能创造一个保活分组，当发送到解析服务，将导致SQL Server 2000，以用相同的信息作出响应。创建这样一个数据包的攻击者伪造源地址，以便它似乎来自一个SQL Server 2000系统，并把它交给邻近的SQL Server 2000系统可能会导致两个系统进入保持一个永无休止的循环-alive数据包交换。这将消耗两个系统上的资源，大大降低性能。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0650,CVE-2002-0649</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 在边界防火墙、网关设备或者SQL Server主机上限制对UDP/1434端口的访问。由于UDP报文的源地址很容易伪造，所以不能简单地限制只允许可信IP访问。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-039)以及相应补丁: 
+MS02-039：Buffer Overruns in SQL Server 2000 Resolution Service Could Enable Code Execution (Q323875) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-039.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-039.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 2000: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40602&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40602&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>               </version>                               <!-- fixed in sp3, which is 760 -->               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105342" id="105342" modifyDate="2012-11-15">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS02-056: SQL服务器累积补丁(Q316333)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要一个或多个安全补丁或修补程序或者来自Microsoft的安装程序。
+这是一个累积修补程序，它包括所有以前发布的修补程序的SQL Server 7.0，SQL Server 2000和Microsoft数据引擎（MSDE）1.0的功能，Microsoft桌面引擎（MSDE）2000。此外，它消除了四个新发现的漏洞。一个缓冲区溢出的代码段与用户认证相关的SQL Server 2000（和MSDE 2000）。通过发送特制的包含恶意登录请求到受影响的 Server ，攻击者既可以导致 Server 出现故障或增加覆盖存储在 Server 上，从而有可能在SQL Server服务的安全上下文中 Server 上运行代码的能力。它没有必要为用户成功地验证到 Server 或能够发出直接命令到它才能利用的漏洞。出现在数据库控制台命令（DBCCs）该船舶与SQL Server 7.0和2000年在最严重的情况下，一部分的一个缓冲区溢出漏洞，利用此漏洞使攻击者能够在SQL Server的上下文中运行代码服务，从而使攻击者完全控制 Server 上的所有数据库。与调度作业在SQL Server 7.0和2000年的SQL Server相关的漏洞允许非特权用户可以创建一个由SQL Server代理执行计划的作业。按照设计，SQL Server代理只能执行工作步骤适用于请求用户&amp;#65533;&amp;#65533; S权限。然而，当一个作业步骤请求创建一个输出文件，SQL Server代理并因此在使用其自身的特权，而不是作业所有者的权限。这产生了一种情况，其中非特权用户可以提交，将创建一个包含在另一个用户&amp;#65533;有效的操作系统命令的文件工作&amp;#65533;启动文件夹，或简单地覆盖，以扰乱系统运行</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1138,CVE-2002-1137,CVE-2002-1123</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 数据库管理员应该禁止对MSDB数据库中的下列存储过程的公开(public)访问权限： 
+sp_add_job 
+sp_add_jobstep 
+sp_add_jobserver 
+sp_start_job 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-043)以及相应补丁: 
+MS02-043：Cumulative Patch for SQL Server (Q316333) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-043.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-043.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 7.0 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q327068&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q327068&lt;/a&gt; 
+ * Microsoft SQL Server 2000 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q316333&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q316333&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>               </version>                               <!-- SP3 -->               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105342" id="105342" modifyDate="2012-11-15">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS02-056: SQL服务器累积补丁(Q316333)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要一个或多个安全补丁或修补程序或者来自Microsoft的安装程序。
+这是一个累积修补程序，它包括所有以前发布的修补程序的SQL Server 7.0，SQL Server 2000和Microsoft数据引擎（MSDE）1.0的功能，Microsoft桌面引擎（MSDE）2000。此外，它消除了四个新发现的漏洞。一个缓冲区溢出的代码段与用户认证相关的SQL Server 2000（和MSDE 2000）。通过发送特制的包含恶意登录请求到受影响的 Server ，攻击者既可以导致 Server 出现故障或增加覆盖存储在 Server 上，从而有可能在SQL Server服务的安全上下文中 Server 上运行代码的能力。它没有必要为用户成功地验证到 Server 或能够发出直接命令到它才能利用的漏洞。出现在数据库控制台命令（DBCCs）该船舶与SQL Server 7.0和2000年在最严重的情况下，一部分的一个缓冲区溢出漏洞，利用此漏洞使攻击者能够在SQL Server的上下文中运行代码服务，从而使攻击者完全控制 Server 上的所有数据库。与调度作业在SQL Server 7.0和2000年的SQL Server相关的漏洞允许非特权用户可以创建一个由SQL Server代理执行计划的作业。按照设计，SQL Server代理只能执行工作步骤适用于请求用户&amp;#65533;&amp;#65533; S权限。然而，当一个作业步骤请求创建一个输出文件，SQL Server代理并因此在使用其自身的特权，而不是作业所有者的权限。这产生了一种情况，其中非特权用户可以提交，将创建一个包含在另一个用户&amp;#65533;有效的操作系统命令的文件工作&amp;#65533;启动文件夹，或简单地覆盖，以扰乱系统运行</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1138,CVE-2002-1137,CVE-2002-1123</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 数据库管理员应该禁止对MSDB数据库中的下列存储过程的公开(public)访问权限： 
+sp_add_job 
+sp_add_jobstep 
+sp_add_jobserver 
+sp_start_job 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-043)以及相应补丁: 
+MS02-043：Cumulative Patch for SQL Server (Q316333) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-043.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-043.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 7.0 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q327068&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q327068&lt;/a&gt; 
+ * Microsoft SQL Server 2000 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q316333&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q316333&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  <range>                     <low>7.0</low>                     <high>8.0</high>                  </range>               </version>                               <!-- All 7.x.x versions -->               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105342" id="105342" modifyDate="2012-11-15">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS02-056: SQL服务器累积补丁(Q316333)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要一个或多个安全补丁或修补程序或者来自Microsoft的安装程序。
+这是一个累积修补程序，它包括所有以前发布的修补程序的SQL Server 7.0，SQL Server 2000和Microsoft数据引擎（MSDE）1.0的功能，Microsoft桌面引擎（MSDE）2000。此外，它消除了四个新发现的漏洞。一个缓冲区溢出的代码段与用户认证相关的SQL Server 2000（和MSDE 2000）。通过发送特制的包含恶意登录请求到受影响的 Server ，攻击者既可以导致 Server 出现故障或增加覆盖存储在 Server 上，从而有可能在SQL Server服务的安全上下文中 Server 上运行代码的能力。它没有必要为用户成功地验证到 Server 或能够发出直接命令到它才能利用的漏洞。出现在数据库控制台命令（DBCCs）该船舶与SQL Server 7.0和2000年在最严重的情况下，一部分的一个缓冲区溢出漏洞，利用此漏洞使攻击者能够在SQL Server的上下文中运行代码服务，从而使攻击者完全控制 Server 上的所有数据库。与调度作业在SQL Server 7.0和2000年的SQL Server相关的漏洞允许非特权用户可以创建一个由SQL Server代理执行计划的作业。按照设计，SQL Server代理只能执行工作步骤适用于请求用户&amp;#65533;&amp;#65533; S权限。然而，当一个作业步骤请求创建一个输出文件，SQL Server代理并因此在使用其自身的特权，而不是作业所有者的权限。这产生了一种情况，其中非特权用户可以提交，将创建一个包含在另一个用户&amp;#65533;有效的操作系统命令的文件工作&amp;#65533;启动文件夹，或简单地覆盖，以扰乱系统运行</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1138,CVE-2002-1137,CVE-2002-1123</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 数据库管理员应该禁止对MSDB数据库中的下列存储过程的公开(public)访问权限： 
+sp_add_job 
+sp_add_jobstep 
+sp_add_jobserver 
+sp_start_job 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-043)以及相应补丁: 
+MS02-043：Cumulative Patch for SQL Server (Q316333) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-043.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-043.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 7.0 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q327068&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q327068&lt;/a&gt; 
+ * Microsoft SQL Server 2000 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q316333&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Release.asp?ReleaseID=Q316333&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>               </version>                               <!-- SP3 -->               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105347" id="105347" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server2000 OPENDATASOURCE缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>通过调用有长参数数据的函数OpenDataSource，Microsoft SQL Server容易受到缓冲区溢出漏洞的攻击，如下面的SQL查询：
+&lt;pre&gt;exec(SELECT * FROM OpenDataSource( &amp;#39;&amp;#39;Microsoft.Jet.OLEDB.4.0&amp;#39;&amp;#39;,&amp;#39;&amp;#39;Data Source=\&amp;quot;c:\&amp;#39;REPLICATE(&amp;#39;A&amp;#39;,2000);User ID=Admin;Password=;Extended properties=Excel 5.0&amp;#39;&amp;#39;)...xactions&amp;#39;)&lt;/pre&gt;
+要利用此漏洞，用户必须先登录到SQL服务器。这需要一个有效的用户ID和密码的知识。一旦登录，恶意用户可能能够执行与任意命令由SQL服务器的帐户的权限。</Description>      <cnnvd>CNNVD-200209-003</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0859</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 使用防火墙，对Microsoft SQL Server进行访问控制，只允许可信用户访问。 
+厂商补丁： 
+Microsoft 
+--------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+Microsoft Upgrade Q282010 
+&lt;a href=&quot; 
+http://www.microsoft.com/windows2000/downloads/recommended/q282010/default.asp?FinishURL=%2Fdownloads%2Frelease%2Easp%3FReleaseID%3D38002%26area%3Dsearch%26ordinal%3D2%26redirect%3Dno&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/windows2000/downloads/recommended/q282010/default.asp?FinishURL=%2Fdownloads%2Frelease%2Easp%3FReleaseID%3D38002%26area%3Dsearch%26ordinal%3D2%26redirect%3Dno&lt;/a&gt; 
+Microsoft Jet 4.0 Service Pack 6 (Windows 2000). 需要Microsoft Jet 4.0 Service Pack 5.</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  <range>                     <low>8.0</low>                     <high>9.0</high>                  </range>               </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105347" id="105347" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server2000 OPENDATASOURCE缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>通过调用有长参数数据的函数OpenDataSource，Microsoft SQL Server容易受到缓冲区溢出漏洞的攻击，如下面的SQL查询：
+&lt;pre&gt;exec(SELECT * FROM OpenDataSource( &amp;#39;&amp;#39;Microsoft.Jet.OLEDB.4.0&amp;#39;&amp;#39;,&amp;#39;&amp;#39;Data Source=\&amp;quot;c:\&amp;#39;REPLICATE(&amp;#39;A&amp;#39;,2000);User ID=Admin;Password=;Extended properties=Excel 5.0&amp;#39;&amp;#39;)...xactions&amp;#39;)&lt;/pre&gt;
+要利用此漏洞，用户必须先登录到SQL服务器。这需要一个有效的用户ID和密码的知识。一旦登录，恶意用户可能能够执行与任意命令由SQL服务器的帐户的权限。</Description>      <cnnvd>CNNVD-200209-003</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0859</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 使用防火墙，对Microsoft SQL Server进行访问控制，只允许可信用户访问。 
+厂商补丁： 
+Microsoft 
+--------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+Microsoft Upgrade Q282010 
+&lt;a href=&quot; 
+http://www.microsoft.com/windows2000/downloads/recommended/q282010/default.asp?FinishURL=%2Fdownloads%2Frelease%2Easp%3FReleaseID%3D38002%26area%3Dsearch%26ordinal%3D2%26redirect%3Dno&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/windows2000/downloads/recommended/q282010/default.asp?FinishURL=%2Fdownloads%2Frelease%2Easp%3FReleaseID%3D38002%26area%3Dsearch%26ordinal%3D2%26redirect%3Dno&lt;/a&gt; 
+Microsoft Jet 4.0 Service Pack 6 (Windows 2000). 需要Microsoft Jet 4.0 Service Pack 5.</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  <range>                     <low>8.0</low>                     <high>9.0</high>                  </range>               </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105349" id="105349" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server2000 pwdencrypt缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>通过调用有长参数数据的函数pwdencrypt，Microsoft SQL Server容易受到缓冲区溢出漏洞的攻击。如以下SQL查询：
+&lt;pre&gt;SELECT pwdencrypt(REPLICATE(&amp;#39;A&amp;#39;,1000))&lt;/pre&gt;
+    
+要利用此漏洞，用户必须先登录到SQL服务器。这需要一个有效的用户的知识ID和密码。一旦登录，恶意用户可以是能够执行任意命令的权限帐户使用的SQL服务器。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0642,CVE-2002-0641,CVE-2002-0624</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 严格控制对用户对SQL服务器的访问，只允许可信用户登录查询SQL服务。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-034)以及相应补丁: 
+MS02-034：Cumulative Patch for SQL Server (Q316333) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-034.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-034.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 2000: 
+ &lt;a href=&quot; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>                                     <!-- SP3 -->                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105349" id="105349" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server2000 pwdencrypt缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>通过调用有长参数数据的函数pwdencrypt，Microsoft SQL Server容易受到缓冲区溢出漏洞的攻击。如以下SQL查询：
+&lt;pre&gt;SELECT pwdencrypt(REPLICATE(&amp;#39;A&amp;#39;,1000))&lt;/pre&gt;
+    
+要利用此漏洞，用户必须先登录到SQL服务器。这需要一个有效的用户的知识ID和密码。一旦登录，恶意用户可以是能够执行任意命令的权限帐户使用的SQL服务器。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0642,CVE-2002-0641,CVE-2002-0624</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 严格控制对用户对SQL服务器的访问，只允许可信用户登录查询SQL服务。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-034)以及相应补丁: 
+MS02-034：Cumulative Patch for SQL Server (Q316333) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-034.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-034.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 2000: 
+ &lt;a href=&quot; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&quot; target=&quot;_blank&quot;&gt; 
+http://support.microsoft.com/support/misc/kblookup.asp?id=Q316333&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.760</high>                  </range>                                     <!-- SP3 -->                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105292" id="105292" modifyDate="2015-02-13">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server 2000 解析服务缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软SQL Server 2000对传入的&amp;quot;解析服务&amp;quot;请求的UDP端口1434进行监听。发送一个特定的格式不正确的请求将导致一个基于堆的缓冲区溢出和覆盖返回的地址，导致一个可远程利用的漏洞。这种攻击并不需要有效身份证件。</Description>      <cnnvd>CNNVD-200208-006</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0649</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 在边界防火墙、网关设备或者SQL Server主机上限制对UDP/1434端口的访问。由于UDP报文的源地址很容易伪造，所以不能简单地限制只允许可信IP访问。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-039)以及相应补丁: 
+MS02-039：Buffer Overruns in SQL Server 2000 Resolution Service Could Enable Code Execution (Q323875) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-039.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-039.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 2000: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40602&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40602&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.655</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105292" id="105292" modifyDate="2015-02-13">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Microsoft SQL Server 2000 解析服务缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>微软SQL Server 2000对传入的&amp;quot;解析服务&amp;quot;请求的UDP端口1434进行监听。发送一个特定的格式不正确的请求将导致一个基于堆的缓冲区溢出和覆盖返回的地址，导致一个可远程利用的漏洞。这种攻击并不需要有效身份证件。</Description>      <cnnvd>CNNVD-200208-006</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0649</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 在边界防火墙、网关设备或者SQL Server主机上限制对UDP/1434端口的访问。由于UDP报文的源地址很容易伪造，所以不能简单地限制只允许可信IP访问。 
+厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS02-039)以及相应补丁: 
+MS02-039：Buffer Overruns in SQL Server 2000 Resolution Service Could Enable Code Execution (Q323875) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS02-039.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS02-039.asp&lt;/a&gt; 
+补丁下载： 
+ * Microsoft SQL Server 2000: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40602&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=40602&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.0</low>                     <high>8.0.655</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105353" id="105353" modifyDate="2018-03-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>Microsoft SQL Server 7.0零头拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>发送3个或者更多的NULL字节到Microsoft SQL Server 7.0 将引起服务服务崩溃。</Description>      <cnnvd>CNNVD-199911-063</cnnvd>      <AlternateIds>         <id name="CVE">CVE-1999-0999</id>      </AlternateIds>      <Solutions>Microsoft has released patches which address this issue: 
+Microsoft SQL Server 7.0 SP1 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft S70761i.exeIntel 
+&lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16923&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16923&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 7.0 SP1 alpha 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft S70761a.exeAlpha 
+&lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16924&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16924&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 7.0 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft S70761i.exeIntel 
+&lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16923&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16923&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.0</low>                     <high>7.0.761</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-105353" id="105353" modifyDate="2018-03-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>Microsoft SQL Server 7.0零头拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>发送3个或者更多的NULL字节到Microsoft SQL Server 7.0 将引起服务服务崩溃。</Description>      <cnnvd>CNNVD-199911-063</cnnvd>      <AlternateIds>         <id name="CVE">CVE-1999-0999</id>      </AlternateIds>      <Solutions>Microsoft has released patches which address this issue: 
+Microsoft SQL Server 7.0 SP1 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft S70761i.exeIntel 
+&lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16923&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16923&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 7.0 SP1 alpha 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft S70761a.exeAlpha 
+&lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16924&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16924&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 7.0 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft S70761i.exeIntel 
+&lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16923&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=16923&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.0</low>                     <high>7.0.761</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105362" id="105362" modifyDate="2012-07-30">      <cvsscode>7.2</cvsscode>      <severity>Severe</severity>      <name>MS01-032: SQL查询方法允许重新使用缓冲管理员连接</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+SQL查询漏洞使另一个用户有可能使用sa账户的缓存链接来查询</Description>      <cnnvd>CNNVD-200107-149</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-0344</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.00.624</low>                     <high inclusive="0">7.00.996</high>                  </range>                  
+                        </version>               
+                  </Product>            <Product name="SQL Server 2000" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.00.195</low>                     <high inclusive="0">8.00.296</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105362" id="105362" modifyDate="2012-07-30">      <cvsscode>7.2</cvsscode>      <severity>Severe</severity>      <name>MS01-032: SQL查询方法允许重新使用缓冲管理员连接</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+SQL查询漏洞使另一个用户有可能使用sa账户的缓存链接来查询</Description>      <cnnvd>CNNVD-200107-149</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-0344</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.00.624</low>                     <high inclusive="0">7.00.996</high>                  </range>                  
+                        </version>               
+                  </Product>            <Product name="SQL Server 2000" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.00.195</low>                     <high inclusive="0">8.00.296</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105364" id="105364" modifyDate="2012-07-30">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS01-060: SQL服务器文本格式化函数包含未检查缓冲区</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+SQL Server 7.0和2000提供许多功能，使数据库查询生成文本消息。在某些情况下，这些函数创建一个文本消息并将其存储在变量;在其他情况下，函数直接显示该消息。与这些功能相关的两个漏洞被发现。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-0879,CVE-2001-0542</id>      </AlternateIds>      <Solutions>临时解决方法： 
+此问题没有有效的临时处理方法，您需要尽快安装补丁或者升级。 
+厂商补丁： 
+Microsoft 
+--------- 
+微软已经为此发布了一个安全公告(MS01-060)以及相应补丁程序： 
+&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS01-060.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS01-060.asp&lt;/a&gt; 
+补丁下载： 
+SQL Server: 
+ . SQL Server 7.0: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35066&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35066&lt;/a&gt; 
+ . SQL Server 2000: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35067&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35067&lt;/a&gt; 
+ 
+C 运行库: 
+ . Windows NT 4.0 and Windows 2000: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=33500&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=33500&lt;/a&gt; 
+ . Windows XP: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35023&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35023&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.00.623</low>                     <high inclusive="0">7.00.1020</high>                  </range>                  
+                        </version>               
+                  </Product>            <Product name="SQL Server 2000" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.00.311</low>                     <high inclusive="0">8.00.428</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105364" id="105364" modifyDate="2012-07-30">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>MS01-060: SQL服务器文本格式化函数包含未检查缓冲区</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从微软的一个或多个安全补丁或修补程序获取。
+SQL Server 7.0和2000提供许多功能，使数据库查询生成文本消息。在某些情况下，这些函数创建一个文本消息并将其存储在变量;在其他情况下，函数直接显示该消息。与这些功能相关的两个漏洞被发现。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-0879,CVE-2001-0542</id>      </AlternateIds>      <Solutions>临时解决方法： 
+此问题没有有效的临时处理方法，您需要尽快安装补丁或者升级。 
+厂商补丁： 
+Microsoft 
+--------- 
+微软已经为此发布了一个安全公告(MS01-060)以及相应补丁程序： 
+&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS01-060.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS01-060.asp&lt;/a&gt; 
+补丁下载： 
+SQL Server: 
+ . SQL Server 7.0: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35066&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35066&lt;/a&gt; 
+ . SQL Server 2000: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35067&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35067&lt;/a&gt; 
+ 
+C 运行库: 
+ . Windows NT 4.0 and Windows 2000: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=33500&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=33500&lt;/a&gt; 
+ . Windows XP: 
+ &lt;a href=&quot; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35023&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/Downloads/Release.asp?ReleaseID=35023&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.00.623</low>                     <high inclusive="0">7.00.1020</high>                  </range>                  
+                        </version>               
+                  </Product>            <Product name="SQL Server 2000" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.00.311</low>                     <high inclusive="0">8.00.428</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105366" id="105366" modifyDate="2012-07-30">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>MS02-061: SQL服务器Web任务权限提升(Q316333)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从Microsoft获取一个或多个安全补丁或补丁程序。
+SQL Server 7.0和2000提供存储过程，它是以名称存储并作为组处理的Transact-SQL语句的集合。 一个存储过程，扩展存储过程和对表的弱权限组合允许低特权用户具有运行，删除，插入或更新Web任务的能力。 能够对SQL服务器进行身份验证的攻击者可以删除，插入或更新其他用户创建的所有Web任务。 此外，攻击者可以在Web任务的创建者的上下文中运行已经创建的Web任务。 这通常在SQL Server代理服务帐户的上下文中运行。</Description>      <cnnvd>CNNVD-200210-306</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1145</id>      </AlternateIds>      <Solutions>Microsoft has released an updated cumulative patch for this and other security issues, which includes an installer. 
+Cisco has released an advisory. Information about obtaining and applying fixes is available in the referenced advisory. 
+Fixes available: 
+Microsoft SQL Server 2000 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft sql2ksp3 
+&lt;a href=&quot; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gssnb=1&quot;&gt; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gss 
+nb=1&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Cisco E-Mail Manager 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft sql2ksp3 
+&lt;a href=&quot; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gssnb=1&quot;&gt; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gss 
+nb=1&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 2000 SP1 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft sql2ksp3 
+&lt;a href=&quot; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gssnb=1&quot;&gt; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gss 
+nb=1&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 2000 SP2 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q316333Patch released in MS02-061. 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tech&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tec 
+h&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Microsoft Q316333Updated cumulative patch. 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tech&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tec 
+h&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Microsoft sql2ksp3 
+&lt;a href=&quot; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gssnb=1&quot;&gt; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gss 
+nb=1&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Cisco Call Manager 3.3 
+&lt;ul&gt;&lt;li&gt; 
+Cisco SQL2K-MS02-061.exe 
+&lt;a href=&quot; 
+http://www.cisco.com/tacpage/sw-center/telephony/crypto/voice-apps/&quot;&gt; 
+http://www.cisco.com/tacpage/sw-center/telephony/crypto/voice-apps/&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Cisco Intelligent Contact Manager 5.0 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft sql2ksp3 
+&lt;a href=&quot; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gssnb=1&quot;&gt; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gss 
+nb=1&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 7.0 SP4 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q327068Patch released in MS02-061. 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q327068&amp;sd=tech&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q327068&amp;sd=tec 
+h&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.00.623</low>                     <high inclusive="0">7.00.1077</high>                  </range>                  
+                        </version>               
+                  </Product>            <Product name="SQL Server 2000" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.00.311</low>                     <high inclusive="0">8.00.760</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105366" id="105366" modifyDate="2012-07-30">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>MS02-061: SQL服务器Web任务权限提升(Q316333)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从Microsoft获取一个或多个安全补丁或补丁程序。
+SQL Server 7.0和2000提供存储过程，它是以名称存储并作为组处理的Transact-SQL语句的集合。 一个存储过程，扩展存储过程和对表的弱权限组合允许低特权用户具有运行，删除，插入或更新Web任务的能力。 能够对SQL服务器进行身份验证的攻击者可以删除，插入或更新其他用户创建的所有Web任务。 此外，攻击者可以在Web任务的创建者的上下文中运行已经创建的Web任务。 这通常在SQL Server代理服务帐户的上下文中运行。</Description>      <cnnvd>CNNVD-200210-306</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1145</id>      </AlternateIds>      <Solutions>Microsoft has released an updated cumulative patch for this and other security issues, which includes an installer. 
+Cisco has released an advisory. Information about obtaining and applying fixes is available in the referenced advisory. 
+Fixes available: 
+Microsoft SQL Server 2000 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft sql2ksp3 
+&lt;a href=&quot; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gssnb=1&quot;&gt; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gss 
+nb=1&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Cisco E-Mail Manager 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft sql2ksp3 
+&lt;a href=&quot; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gssnb=1&quot;&gt; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gss 
+nb=1&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 2000 SP1 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft sql2ksp3 
+&lt;a href=&quot; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gssnb=1&quot;&gt; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gss 
+nb=1&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 2000 SP2 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q316333Patch released in MS02-061. 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tech&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tec 
+h&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Microsoft Q316333Updated cumulative patch. 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tech&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q316333&amp;sd=tec 
+h&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Microsoft sql2ksp3 
+&lt;a href=&quot; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gssnb=1&quot;&gt; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gss 
+nb=1&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Cisco Call Manager 3.3 
+&lt;ul&gt;&lt;li&gt; 
+Cisco SQL2K-MS02-061.exe 
+&lt;a href=&quot; 
+http://www.cisco.com/tacpage/sw-center/telephony/crypto/voice-apps/&quot;&gt; 
+http://www.cisco.com/tacpage/sw-center/telephony/crypto/voice-apps/&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Cisco Intelligent Contact Manager 5.0 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft sql2ksp3 
+&lt;a href=&quot; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gssnb=1&quot;&gt; 
+http://www.microsoft.com/sql/downloads/2000/sp3.asp?SD=GN&amp;LN=en-us&amp;gss 
+nb=1&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Microsoft SQL Server 7.0 SP4 
+&lt;ul&gt;&lt;li&gt; 
+Microsoft Q327068Patch released in MS02-061. 
+&lt;a href=&quot; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q327068&amp;sd=tech&quot;&gt; 
+http://support.microsoft.com/default.aspx?scid=kb;en-us;Q327068&amp;sd=tec 
+h&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.00.623</low>                     <high inclusive="0">7.00.1077</high>                  </range>                  
+                        </version>               
+                  </Product>            <Product name="SQL Server 2000" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.00.311</low>                     <high inclusive="0">8.00.760</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105368" id="105368" modifyDate="2014-03-21">      <cvsscode>7.2</cvsscode>      <severity>Severe</severity>      <name>MS03-031: Microsoft SQL服务器累积补丁(815495)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从Microsoft获取一个或多个安全补丁或补丁程序。
+这是一个累积修补程序，包括所有以前发布的修补程序SQL Server 7.0，SQL Server 2000和Microsoft数据引擎（MSDE）1.0，Microsoft SQL Server桌面引擎（MSDE 2000）的功能。此外，它消除了三个新发现的漏洞。命名管道劫持：在系统启动时，SQL Server创建和侦听特定命名管道，用于到服务器的传入连接。命名管道是用于管道服务器与一个或多个管道客户端之间的通信的专门命名的单向或双向通道。将检查SQL Server命名管道以验证到管道的哪个连接尝试可以登录到SQL Server以对存储在服务器上的数据执行查询。在用于命名管道的检查方法中存在缺陷，其可以允许SQL Server系统本地的攻击者&quot;劫持&quot;在另一个客户端的认证登录期间控制命名管道。这将允许攻击者在与用户尝试连接相同的特权级别获得对命名管道的控制。如果远程连接的用户具有比攻击者更高的访问权限，攻击者将在命名管道泄露时承担这些权限。命名管道拒绝服务：在上面提到的相同的命名管道场景中，一个未经身份验证的用户 - 内部网本地的 - 可能向SQL Server正在监听的特定命名管道发送一个非常大的数据包并使其变得无响应。此漏洞不允许攻击者运行任意代码或提升其权限，但仍然可能存在拒绝服务条件，这需要重新启动服务器以恢复功能。 SQL Server缓冲区溢出在特定的Windows函数中存在一个缺陷，可能允许经过身份验证的用户 - 直接访问登录到SQL Server - 能力创建一个特制的数据包，当发送到系统的侦听LPC端口时，可能导致缓冲区溢出。如果成功利用，这可能允许系统上有限权限的用户升级到SQL Server服务帐户的级别，或者导致任意代码运行。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0232,CVE-2003-0231,CVE-2003-0230</id>      </AlternateIds>      <Solutions>厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS03-031)以及相应补丁: 
+MS03-031：Cumulative Patch for Microsoft SQL Server (Q815495) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS03-031.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS03-031.asp&lt;/a&gt; 
+补丁下载： 
+Microsoft SQL Server 7.0： 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=FE5B0892-A5C9-44C2-9B42-0D291E9C1636&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=FE5B0892-A5C9-44C2-9B42-0D291E9C1636&amp;displaylang=en&lt;/a&gt; 
+Microsoft SQL 2000 32-bit Edition： 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=9814AE9D-BD44-40C5-ADD3-B8C99618E68D&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=9814AE9D-BD44-40C5-ADD3-B8C99618E68D&amp;displaylang=en&lt;/a&gt; 
+Microsoft SQL 2000 64-bit Edition： 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=72336508-057A-4E86-8F2E-CB1BD3A6A44B&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=72336508-057A-4E86-8F2E-CB1BD3A6A44B&amp;displaylang=en&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.00.623</low>                     <high inclusive="0">7.00.1094</high>                  </range>                  
+                        </version>               
+                  </Product>            <Product name="SQL Server 2000" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.00.311</low>                     <high inclusive="0">8.00.818</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-30" gvid="GVID-105368" id="105368" modifyDate="2014-03-21">      <cvsscode>7.2</cvsscode>      <severity>Severe</severity>      <name>MS03-031: Microsoft SQL服务器累积补丁(815495)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>您的系统可能需要从Microsoft获取一个或多个安全补丁或补丁程序。
+这是一个累积修补程序，包括所有以前发布的修补程序SQL Server 7.0，SQL Server 2000和Microsoft数据引擎（MSDE）1.0，Microsoft SQL Server桌面引擎（MSDE 2000）的功能。此外，它消除了三个新发现的漏洞。命名管道劫持：在系统启动时，SQL Server创建和侦听特定命名管道，用于到服务器的传入连接。命名管道是用于管道服务器与一个或多个管道客户端之间的通信的专门命名的单向或双向通道。将检查SQL Server命名管道以验证到管道的哪个连接尝试可以登录到SQL Server以对存储在服务器上的数据执行查询。在用于命名管道的检查方法中存在缺陷，其可以允许SQL Server系统本地的攻击者&quot;劫持&quot;在另一个客户端的认证登录期间控制命名管道。这将允许攻击者在与用户尝试连接相同的特权级别获得对命名管道的控制。如果远程连接的用户具有比攻击者更高的访问权限，攻击者将在命名管道泄露时承担这些权限。命名管道拒绝服务：在上面提到的相同的命名管道场景中，一个未经身份验证的用户 - 内部网本地的 - 可能向SQL Server正在监听的特定命名管道发送一个非常大的数据包并使其变得无响应。此漏洞不允许攻击者运行任意代码或提升其权限，但仍然可能存在拒绝服务条件，这需要重新启动服务器以恢复功能。 SQL Server缓冲区溢出在特定的Windows函数中存在一个缺陷，可能允许经过身份验证的用户 - 直接访问登录到SQL Server - 能力创建一个特制的数据包，当发送到系统的侦听LPC端口时，可能导致缓冲区溢出。如果成功利用，这可能允许系统上有限权限的用户升级到SQL Server服务帐户的级别，或者导致任意代码运行。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0232,CVE-2003-0231,CVE-2003-0230</id>      </AlternateIds>      <Solutions>厂商补丁： 
+Microsoft 
+--------- 
+Microsoft已经为此发布了一个安全公告(MS03-031)以及相应补丁: 
+MS03-031：Cumulative Patch for Microsoft SQL Server (Q815495) 
+链接：&lt;a href=&quot; 
+http://www.microsoft.com/technet/security/bulletin/MS03-031.asp&quot; target=&quot;_blank&quot;&gt; 
+http://www.microsoft.com/technet/security/bulletin/MS03-031.asp&lt;/a&gt; 
+补丁下载： 
+Microsoft SQL Server 7.0： 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=FE5B0892-A5C9-44C2-9B42-0D291E9C1636&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=FE5B0892-A5C9-44C2-9B42-0D291E9C1636&amp;displaylang=en&lt;/a&gt; 
+Microsoft SQL 2000 32-bit Edition： 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=9814AE9D-BD44-40C5-ADD3-B8C99618E68D&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=9814AE9D-BD44-40C5-ADD3-B8C99618E68D&amp;displaylang=en&lt;/a&gt; 
+Microsoft SQL 2000 64-bit Edition： 
+&lt;a href=&quot; 
+http://microsoft.com/downloads/details.aspx?FamilyId=72336508-057A-4E86-8F2E-CB1BD3A6A44B&amp;displaylang=en&quot; target=&quot;_blank&quot;&gt; 
+http://microsoft.com/downloads/details.aspx?FamilyId=72336508-057A-4E86-8F2E-CB1BD3A6A44B&amp;displaylang=en&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="SQL Server" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>7.00.623</low>                     <high inclusive="0">7.00.1094</high>                  </range>                  
+                        </version>               
+                  </Product>            <Product name="SQL Server 2000" vendor="Microsoft">               
+                        <version>                  
+                              <range>                     <low>8.00.311</low>                     <high inclusive="0">8.00.818</high>                  </range>                  
+                        </version>               
+                  </Product>         </NetworkService>      </Check>   </Vulnerability></Vulns>
