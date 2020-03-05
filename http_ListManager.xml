@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability addData="2008-03-21" gvid="GVID-102453" id="102453" modifyDate="2015-02-13">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Lyris Listmanager多重安全绕过漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Lyris ListManager 8.x到8.95d, 9.2到9.2c和9.3到9.3b版本中的多个未知漏洞允许远程攻击者（1）获取访问列表管理员特权或（2）修改有关客户端信息的未知向量访问存取任意邮件（3）允许远程身份验证管理员
+<Vulns>   <Vulnerability addData="2008-03-21" gvid="ID104628" id="104628" modifyDate="2015-02-13">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Lyris Listmanager多重安全绕过漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Lyris ListManager 8.x到8.95d, 9.2到9.2c和9.3到9.3b版本中的多个未知漏洞允许远程攻击者（1）获取访问列表管理员特权或（2）修改有关客户端信息的未知向量访问存取任意邮件（3）允许远程身份验证管理员
 通过创建与现有账户冲突的“新帐户”修改其他其他账户数据。</Description>      <cnnvd>CNNVD-200802-340</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-6319</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="ListManager">               
                         <version>                  
@@ -7,7 +7,7 @@
                               <range>                     <low>9.3</low>                     <high>9.3b</high>                  </range>                  
                         </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2008-03-21" gvid="GVID-102454" id="102454" modifyDate="2015-02-13">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>多个Lyris ListManager漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Lyris ListManager受多个漏洞的影响：
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2008-03-21" gvid="ID104629" id="104629" modifyDate="2015-02-13">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>多个Lyris ListManager漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Lyris ListManager受多个漏洞的影响：
 &lt;ul&gt;
 &lt;li&gt;当订阅邮件列表新用户时，通过&amp;quot;pw&amp;quot;参数注入管理命令(CVE-2005-4142)。&lt;/li&gt;
 &lt;li&gt;在URL中注入SQL来阅读附件(CVE-2005-4143)。&lt;/li&gt;
@@ -22,12 +22,12 @@
                   <Product name="ListManager">               
                         <version>                  <range>                     <low>5.0</low>                     <high>8.9c</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2008-03-21" gvid="GVID-102455" id="102455" modifyDate="2012-07-31">      <cvsscode>6.5</cvsscode>      <severity>Severe</severity>      <name>用户名中的Lyris listmanager SQL注入</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的 Lyris ListManager 允许远程验证的用户通过试图给用户在名称中添加一个&amp;#39;（单引号） 字符获取敏感信息，揭露基本的 SQL 查询细节，可能是因为强制的 SQL 错误或 SQL 注入。
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2008-03-21" gvid="ID104630" id="104630" modifyDate="2012-07-31">      <cvsscode>6.5</cvsscode>      <severity>Severe</severity>      <name>用户名中的Lyris listmanager SQL注入</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的 Lyris ListManager 允许远程验证的用户通过试图给用户在名称中添加一个&amp;#39;（单引号） 字符获取敏感信息，揭露基本的 SQL 查询细节，可能是因为强制的 SQL 错误或 SQL 注入。
 至少版本 8.95 是易受攻击的。旧的 8.9 版本也可能易受攻击。此漏洞假设在 8.95 d 版本中被修复，然而 Lyris 并没有提供详细的修复信息。</Description>      <cnnvd>CNNVD-200609-020</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2006-4547</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="ListManager">               
                         <version>                  <range>                     <low>8.9</low>                     <high>8.95d</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2008-03-21" gvid="GVID-102456" id="102456" modifyDate="2015-02-13">      <cvsscode>6.5</cvsscode>      <severity>Severe</severity>      <name>Lyris ListManager用户添加安全绕过漏洞 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Lyris ListManager允许远程验证的用户（列在服务器上至少有一个管理特权）通过修改的MEMBERS_.List_参数增加一个新的管理员到任意的列表上。
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2008-03-21" gvid="ID104631" id="104631" modifyDate="2015-02-13">      <cvsscode>6.5</cvsscode>      <severity>Severe</severity>      <name>Lyris ListManager用户添加安全绕过漏洞 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Lyris ListManager允许远程验证的用户（列在服务器上至少有一个管理特权）通过修改的MEMBERS_.List_参数增加一个新的管理员到任意的列表上。
 至少8.95版本是易受攻击的。8.9旧版本也很可能容易受到攻击。假设此漏洞在8.95d版本中被修复，但是Lyris并没有提供详细的修复信息。</Description>      <cnnvd>CNNVD-200609-015</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2006-4546</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="ListManager">               
                         <version>                  <range>                     <low>8.9</low>                     <high>8.95d</high>                  </range>               </version>               

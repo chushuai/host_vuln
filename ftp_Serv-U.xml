@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability added="2004-11-01" gvid="GVID-104692" id="104692" modified="2013-12-04" published="1997-07-01" version="2.0">      
+<Vulns>   <Vulnerability added="2004-11-01" gvid="ID101466" id="101466" modified="2013-12-04" published="1997-07-01" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:C)</cvss>      
@@ -17,7 +17,7 @@
                         <version>                  <range>                     <high>2.5a</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>Cat Soft has made an upgrade available which solves this and other issues. It can be obtained at: 
-http://www.ftpserv-u.com/download.cfm</Solutions>      <cnnvd>CNNVD-199707-011</cnnvd>      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <Description>SERV-U FTPv2.5a之前的版本包含当攻击者提供一个超长的CWD请求触发一个可利用的缓冲区溢出。</Description>      <name>Serv-U CWD 缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104693" id="104693" modified="2012-07-13" published="2000-02-29" version="2.0">      
+http://www.ftpserv-u.com/download.cfm</Solutions>      <cnnvd>CNNVD-199707-011</cnnvd>      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <Description>SERV-U FTPv2.5a之前的版本包含当攻击者提供一个超长的CWD请求触发一个可利用的缓冲区溢出。</Description>      <name>Serv-U CWD 缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101467" id="101467" modified="2012-07-13" published="2000-02-29" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:P/I:N/A:N)</cvss>      
@@ -42,7 +42,7 @@ Start the user or Group Manager. Select a user or group. Click the 'Misc.' butto
 550 /nonexist: No such file or directory. 
  and 
  250 Directory changed to /exist 
-Note that this has to be done for each user or group.</Solutions>      <cnnvd>CNNVD-200002-085</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>SERV-U FTP&amp;lt; 2.5E通过简单的PWD请求随意披露完整路径信息。</Description>      <name>Serv-U FTP Server 路径披露漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104694" id="104694" modified="2012-07-13" published="2004-11-01" version="2.0">      
+Note that this has to be done for each user or group.</Solutions>      <cnnvd>CNNVD-200002-085</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>SERV-U FTP&amp;lt; 2.5E通过简单的PWD请求随意披露完整路径信息。</Description>      <name>Serv-U FTP Server 路径披露漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101468" id="101468" modified="2012-07-13" published="2004-11-01" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:S/C:N/I:N/A:C)</cvss>      
@@ -59,7 +59,7 @@ Note that this has to be done for each user or group.</Solutions>      <cnnvd>CN
                         <version>                  <range>                     <high>4.1</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
-https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.3</cvsscode>      <severity>Severe</severity>      <Description>如果RhinoSoft Serv-U的v4.0.x充斥着MKD请求，那么服务器将停止接受连接，产生拒绝服务漏洞。攻击者必须首先通过一个匿名或指定帐户登录。</Description>      <name>Serv-U MKD 拒绝服务</name>   </Vulnerability>   <Vulnerability added="2005-01-25" gvid="GVID-104695" id="104695" modified="2015-02-13" published="2004-12-31" version="2.0">      
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.3</cvsscode>      <severity>Severe</severity>      <Description>如果RhinoSoft Serv-U的v4.0.x充斥着MKD请求，那么服务器将停止接受连接，产生拒绝服务漏洞。攻击者必须首先通过一个匿名或指定帐户登录。</Description>      <name>Serv-U MKD 拒绝服务</name>   </Vulnerability>   <Vulnerability added="2005-01-25" gvid="ID101469" id="101469" modified="2015-02-13" published="2004-12-31" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:S/C:C/I:C/A:C)</cvss>      
@@ -89,7 +89,7 @@ RhinoSoft
 目前厂商已经在5.0及以上版本的软件中修复了这个安全问题，请到厂商的主页下载： 
 &lt;a href=&quot; 
 http://www.serv-u.com/&quot; target=&quot;_blank&quot;&gt; 
-http://www.serv-u.com/&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200412-440</cnnvd>      <cvsscode>8.5</cvsscode>      <severity>Critical</severity>      <Description>更新至v4.2.0或更高版本</Description>      <name>Serv-U SITE CHMOD缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104696" id="104696" modified="2012-07-13" published="1999-12-01" version="2.0">      
+http://www.serv-u.com/&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200412-440</cnnvd>      <cvsscode>8.5</cvsscode>      <severity>Critical</severity>      <Description>更新至v4.2.0或更高版本</Description>      <name>Serv-U SITE CHMOD缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101470" id="101470" modified="2012-07-13" published="1999-12-01" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      

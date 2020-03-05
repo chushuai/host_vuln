@@ -1,0 +1,11 @@
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="ID104256" id="104256" modifyDate="2012-07-31">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>长的OmniHTTPd请求协议缓冲区溢出漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>OmniHTTPd &amp;lt;= 2.09包含一个缓冲区溢出漏洞，在通过长HTTP protocol字符串解析请求时可以利用该漏洞。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="OmniHTTPd">               
+                        <version>                  <range>                     <low>1.0</low>                     <high>2.10</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104256" id="104256" modifyDate="2012-07-31">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>长的OmniHTTPd请求协议缓冲区溢出漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>OmniHTTPd &amp;lt;= 2.09包含一个缓冲区溢出漏洞，在通过长HTTP protocol字符串解析请求时可以利用该漏洞。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="OmniHTTPd">               
+                        <version>                  <range>                     <low>1.0</low>                     <high>2.10</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

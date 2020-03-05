@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability addData="2004-11-01" gvid="GVID-102676" id="102676" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>QuickTime流媒体服务器的ID3标签整数溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Apple QuickTime流服务器存在整数溢出漏洞,如果用户损坏播放的MP3文件，则本地攻击者便可使用该漏洞。</Description>      <cnnvd>CNNVD-200312-258</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-1091</id>      </AlternateIds>      <Solutions>厂商补丁： 
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="ID104549" id="104549" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>QuickTime流媒体服务器的ID3标签整数溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Apple QuickTime流服务器存在整数溢出漏洞,如果用户损坏播放的MP3文件，则本地攻击者便可使用该漏洞。</Description>      <cnnvd>CNNVD-200312-258</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-1091</id>      </AlternateIds>      <Solutions>厂商补丁： 
 Apple 
 ----- 
 目前厂商还没有提供补丁或者升级程序，我们建议使用此软件的用户随时关注厂商的主页以获取最新版本： 

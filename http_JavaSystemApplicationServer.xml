@@ -1,0 +1,10 @@
+<Vulns>   <Vulnerability addData="2008-06-20" gvid="ID105307" id="105307" modifyDate="2015-02-13">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>Sun Java系统应用服务器JSP源代码公开漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Sun Java应用服务器系统会受到不明漏攻击媒介的影响，允许远程攻击者通过该媒介获取JSP源代码。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-4025</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <!-- 8.1, 8.2, 9.0 are affected. there is currently no known way to remotely know if
+      the patch has been applied, so report is as a potential vuln -->            
+                  <Product name="Java System Application Server">               
+                        <version>                  <range>                     <low>8.1</low>                     <high>9.1</high>                  </range>               </version>               
+                  </Product>            
+                  <Product name="Java System Application Server Platform Edition">               
+                        <version>                  <range>                     <low>8.1</low>                     <high>9.1</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

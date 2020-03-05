@@ -1,0 +1,364 @@
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="ID104228" id="104228" modifyDate="2012-07-31">      <cvsscode>4.9</cvsscode>      <severity>Severe</severity>      <name>mod_auth_oracle SQL查询操作的漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>mod_auth_oracle0.5.2之前的版本不正确检查用户输入，从而为远程攻击者修改传递到后端数据库的SQL查询。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="HTTPD" vendor="Apache">               <version>                  <range>                     <high>0.5.2</high>                  </range>               </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104229" id="104229" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>mod_auth_pgsql SQL查询操作的漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>mod_auth_pgsql0.9.9之前的某些版本不正确检查理用户输入，因此为远程攻击者修改传递到后端数据库的SQL查询。</Description>      <cnnvd>CNNVD-200108-149</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-1379</id>      </AlternateIds>      <Solutions>Version 0.9.6 was still found to be prone to remote SQL query manipulation, so the vendor has released 0.9.9 to address this. 
+Conectiva has also released upgrades. 
+Guiseppe Tanzilli and Matthias Eckermann mod_auth_pgsql 0.9.5 
+&lt;ul&gt;&lt;li&gt; 
+Conectiva 4.0 mod_auth_pgsql-0.8-4U40_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/4.0/i386/mod_auth_pgsql-0.8-4U40_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/4.0/i386/mod_auth_pgsql-0.8-4U40_3 
+cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 4.0es mod_auth_pgsql-0.8-4U40_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/4.0es/i386/mod_auth_pgsql-0.8-4U40_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/4.0es/i386/mod_auth_pgsql-0.8-4U40 
+_3cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 4.1 mod_auth_pgsql-0.8-4U41_3cl.i386.rpm 
+&lt;a href=&quot;tp://atualizacoes.conectiva.com.br/4.1/i386/mod_auth_pgsql-0.8-4U41_3cl.i386.rpm&quot;&gt;tp://atualizacoes.conectiva.com.br/4.1/i386/mod_auth_pgsql-0.8-4U41_3c 
+l.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 4.2 mod_auth_pgsql-0.8-4U42_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/4.2/i386/mod_auth_pgsql-0.8-4U42_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/4.2/i386/mod_auth_pgsql-0.8-4U42_3 
+cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 5.0 mod_auth_pgsql-0.8-4U50_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.0/i386/mod_auth_pgsql-0.8-4U50_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.0/i386/mod_auth_pgsql-0.8-4U50_3 
+cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 5.1 mod_auth_pgsql-0.8-4U51_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.1/i386/mod_auth_pgsql-0.8-4U51_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.1/i386/mod_auth_pgsql-0.8-4U51_3 
+cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 6.0 mod_auth_pgsql-0.8-4U60_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/mod_auth_pgsql-0.8-4U60_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/mod_auth_pgsql-0.8-4U60_3 
+cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 7.0 mod_auth_pgsql-0.9.6-1U70_2cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/mod_auth_pgsql-0.9.6-1U70_2cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/mod_auth_pgsql-0.9.6-1U70 
+_2cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva ecommerce mod_auth_pgsql-0.8-4U50_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/i386/mod_auth_pgsql-0.8-4U50_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/i386/mod_aut 
+h_pgsql-0.8-4U50_3cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva graficas mod_auth_pgsql-0.8-4U50_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/i386/mod_auth_pgsql-0.8-4U50_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/i386/mod_auth 
+_pgsql-0.8-4U50_3cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+FreeBSD ports-4 i386 mod_auth_pgsql-0.9.9.tgz 
+&lt;a href=&quot;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-4-stable/www/mod_auth_pgsql-0.9.9.tgz&quot;&gt;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-4-stable/www/mod 
+_auth_pgsql-0.9.9.tgz&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+FreeBSD ports-5 i386 mod_auth_pgsql-0.9.9.tgz 
+&lt;a href=&quot;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-5-current/www/mod_auth_pgsql-0.9.9.tgz&quot;&gt;ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-5-current/www/mo 
+d_auth_pgsql-0.9.9.tgz&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Guiseppe Tanzilli mod_auth_pgsql 0.9.6 
+&lt;a href=&quot; 
+http://www.giuseppetanzilli.it/mod_auth_pgsql/dist/&quot;&gt; 
+http://www.giuseppetanzilli.it/mod_auth_pgsql/dist/&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Guiseppe Tanzilli mod_auth_pgsql 0.9.9 
+&lt;a href=&quot; 
+http://www.giuseppetanzilli.it/mod_auth_pgsql/dist/&quot;&gt; 
+http://www.giuseppetanzilli.it/mod_auth_pgsql/dist/&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Guiseppe Tanzilli and Matthias Eckermann mod_auth_pgsql 0.9.6 
+&lt;ul&gt;&lt;li&gt; 
+Conectiva 4.0 mod_auth_pgsql-0.8-4U40_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/4.0/i386/mod_auth_pgsql-0.8-4U40_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/4.0/i386/mod_auth_pgsql-0.8-4U40_3 
+cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 4.0es mod_auth_pgsql-0.8-4U40_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/4.0es/i386/mod_auth_pgsql-0.8-4U40_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/4.0es/i386/mod_auth_pgsql-0.8-4U40 
+_3cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 4.1 mod_auth_pgsql-0.8-4U41_3cl.i386.rpm 
+&lt;a href=&quot;tp://atualizacoes.conectiva.com.br/4.1/i386/mod_auth_pgsql-0.8-4U41_3cl.i386.rpm&quot;&gt;tp://atualizacoes.conectiva.com.br/4.1/i386/mod_auth_pgsql-0.8-4U41_3c 
+l.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 4.2 mod_auth_pgsql-0.8-4U42_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/4.2/i386/mod_auth_pgsql-0.8-4U42_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/4.2/i386/mod_auth_pgsql-0.8-4U42_3 
+cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 5.0 mod_auth_pgsql-0.8-4U50_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.0/i386/mod_auth_pgsql-0.8-4U50_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.0/i386/mod_auth_pgsql-0.8-4U50_3 
+cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 5.1 mod_auth_pgsql-0.8-4U51_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/5.1/i386/mod_auth_pgsql-0.8-4U51_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/5.1/i386/mod_auth_pgsql-0.8-4U51_3 
+cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 6.0 mod_auth_pgsql-0.8-4U60_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/mod_auth_pgsql-0.8-4U60_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/6.0/RPMS/mod_auth_pgsql-0.8-4U60_3 
+cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva 7.0 mod_auth_pgsql-0.9.6-1U70_2cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/mod_auth_pgsql-0.9.6-1U70_2cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/mod_auth_pgsql-0.9.6-1U70 
+_2cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva ecommerce mod_auth_pgsql-0.8-4U50_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/i386/mod_auth_pgsql-0.8-4U50_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/ecommerce/i386/mod_aut 
+h_pgsql-0.8-4U50_3cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva graficas mod_auth_pgsql-0.8-4U50_3cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/i386/mod_auth_pgsql-0.8-4U50_3cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/ferramentas/graficas/i386/mod_auth 
+_pgsql-0.8-4U50_3cl.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Guiseppe Tanzilli mod_auth_pgsql 0.9.9 
+&lt;a href=&quot; 
+http://www.giuseppetanzilli.it/mod_auth_pgsql/dist/&quot;&gt; 
+http://www.giuseppetanzilli.it/mod_auth_pgsql/dist/&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="HTTPD" vendor="Apache">               <version>                  <range>                     <high>0.9.9</high>                  </range>               </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104230" id="104230" modifyDate="2013-12-04">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>改进的mod_frontpage缓冲区溢出漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>mod_frontpage &amp;lt;1.6.1中存在一个缓冲区溢出，这
+允许远程攻击者获取访问根权限。</Description>      <cnnvd>CNNVD-200208-065</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0427</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 不要使用Improved mod_frontpage模块。 
+厂商补丁： 
+MandrakeSoft 
+------------ 
+MandrakeSoft已经为此发布了一个安全公告(MDKSA-2002:021)以及相应补丁: 
+MDKSA-2002:021：mod_frontpage 
+链接：&lt;a href=&quot; 
+http://www.linux-mandrake.com/en/security/2002/MDKSA-2002-021.php3&quot; target=&quot;_blank&quot;&gt; 
+http://www.linux-mandrake.com/en/security/2002/MDKSA-2002-021.php3&lt;/a&gt; 
+补丁下载： 
+Mandrake Linux 8.0: 
+0b2760b21addbe6396be4abe6be97305 8.0/RPMS/mod_frontpage-1.6.1-3.1mdk.i586.rpm 
+2fb9a89afd1385ab60c894f6985284e7 8.0/SRPMS/mod_frontpage-1.6.1-3.1mdk.src.rpm 
+Mandrake Linux 8.0/ppc: 
+009635a52c08313eede64f30fff223f2 ppc/8.0/RPMS/mod_frontpage-1.6.1-3.1mdk.ppc.rpm 
+2fb9a89afd1385ab60c894f6985284e7 ppc/8.0/SRPMS/mod_frontpage-1.6.1-3.1mdk.src.rpm 
+Mandrake Linux 8.1: 
+8c2baeebb796353035f8816ed6cdfbed 8.1/RPMS/mod_frontpage-1.6.1-3.1mdk.i586.rpm 
+2fb9a89afd1385ab60c894f6985284e7 8.1/SRPMS/mod_frontpage-1.6.1-3.1mdk.src.rpm 
+Mandrake Linux 8.1/ia64: 
+9d175e164af2e6a39c2d4576e543752e ia64/8.1/RPMS/mod_frontpage-1.6.1-3.1mdk.ia64.rpm 
+2fb9a89afd1385ab60c894f6985284e7 ia64/8.1/SRPMS/mod_frontpage-1.6.1-3.1mdk.src.rpm 
+上述升级软件可以在下列地址中的任意一个镜像ftp服务器上下载： 
+&lt;a href=&quot; 
+http://www.mandrakesecure.net/en/ftp.php&quot; target=&quot;_blank&quot;&gt; 
+http://www.mandrakesecure.net/en/ftp.php&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="HTTPD" vendor="Apache">               <version>                  <range>                     <high>1.6.1</high>                  </range>               </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104232" id="104232" modifyDate="2012-07-31">      <cvsscode>7.1</cvsscode>      <severity>Severe</severity>      <name>mod_jk同步拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>通过发送一个格式错误的的分块传输编码要求，就有可能失去同步mod_jk和tomcat之间的通信链路。其结果是，该服务器将返回一个用户的响应，这是另一个用户的响应。此问题可能会导致泄露敏感信息，但这种副作用不被认为是故意利用。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="HTTPD" vendor="Apache">               <version>                  <range>                     <high>1.2.1</high>                  </range>               </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104232" id="104232" modifyDate="2012-07-31">      <cvsscode>7.1</cvsscode>      <severity>Severe</severity>      <name>mod_jk同步拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>通过发送一个格式错误的的分块传输编码要求，就有可能失去同步mod_jk和tomcat之间的通信链路。其结果是，该服务器将返回一个用户的响应，这是另一个用户的响应。此问题可能会导致泄露敏感信息，但这种副作用不被认为是故意利用。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="HTTPD" vendor="Apache">               <version>                  <range>                     <high>1.2.1</high>                  </range>               </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104233" id="104233" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>在mod_python中模块访问漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>mod_python  &amp;lt; v2.7.8允许远程用户访问在任何先前输入的脚本中访问任何功能。这允许执行远程代码并修改系统中的任何文件。</Description>      <cnnvd>CNNVD-200205-010</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0185</id>      </AlternateIds>      <Solutions>Javier Quinteros &lt;jquinte@fadu.uba.ar&gt; has suggested that including the following line at the top of sensitive modules will prevent direct access: 
+__auth__ = {} 
+An updated version is available: 
+Gregory Trubetskoy mod_python 2.7 
+&lt;ul&gt;&lt;li&gt; 
+Gregory Trubetskoy mod_python-2.7.8.tgz 
+&lt;a href=&quot; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&quot;&gt; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Gregory Trubetskoy mod_python 2.7.1 
+&lt;ul&gt;&lt;li&gt; 
+Gregory Trubetskoy mod_python-2.7.8.tgz 
+&lt;a href=&quot; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&quot;&gt; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Gregory Trubetskoy mod_python 2.7.2 
+&lt;ul&gt;&lt;li&gt; 
+Gregory Trubetskoy mod_python-2.7.8.tgz 
+&lt;a href=&quot; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&quot;&gt; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Gregory Trubetskoy mod_python 2.7.3 
+&lt;ul&gt;&lt;li&gt; 
+Gregory Trubetskoy mod_python-2.7.8.tgz 
+&lt;a href=&quot; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&quot;&gt; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Gregory Trubetskoy mod_python 2.7.4 
+&lt;ul&gt;&lt;li&gt; 
+Gregory Trubetskoy mod_python-2.7.8.tgz 
+&lt;a href=&quot; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&quot;&gt; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Gregory Trubetskoy mod_python 2.7.5 
+&lt;ul&gt;&lt;li&gt; 
+Conectiva mod_python-2.7.8-1U70_1cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/mod_python-2.7.8-1U70_1cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/7.0/RPMS/mod_python-2.7.8-1U70_1cl 
+.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Conectiva mod_python-2.7.8-1U8_1cl.i386.rpm 
+&lt;a href=&quot;ftp://atualizacoes.conectiva.com.br/8/RPMS/mod_python-2.7.8-1U8_1cl.i386.rpm&quot;&gt;ftp://atualizacoes.conectiva.com.br/8/RPMS/mod_python-2.7.8-1U8_1cl.i3 
+86.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Gregory Trubetskoy mod_python-2.7.8.tgz 
+&lt;a href=&quot; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&quot;&gt; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Gregory Trubetskoy mod_python 2.7.6 
+&lt;ul&gt;&lt;li&gt; 
+Gregory Trubetskoy mod_python-2.7.8.tgz 
+&lt;a href=&quot; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&quot;&gt; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat mod_python-2.7.8-1.i386.rpm 
+&lt;a href=&quot;ftp://updates.redhat.com/7.2/en/os/i386/mod_python-2.7.8-1.i386.rpm&quot;&gt;ftp://updates.redhat.com/7.2/en/os/i386/mod_python-2.7.8-1.i386.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt; 
+Red Hat mod_python-2.7.8-1.ia64.rpm 
+&lt;a href=&quot;ftp://updates.redhat.com/7.2/en/os/ia64/mod_python-2.7.8-1.ia64.rpm&quot;&gt;ftp://updates.redhat.com/7.2/en/os/ia64/mod_python-2.7.8-1.ia64.rpm&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+Gregory Trubetskoy mod_python 2.7.7 
+&lt;ul&gt;&lt;li&gt; 
+Gregory Trubetskoy mod_python-2.7.8.tgz 
+&lt;a href=&quot; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&quot;&gt; 
+http://www.modpython.org/dist/mod_python-2.7.8.tgz&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="HTTPD" vendor="Apache">               <version>                  <range>                     <high>2.7.8</high>                  </range>               </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104234" id="104234" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>远程利用缓冲区溢出mod_ssl</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当试图缓存SSL会话时，mod_ssl &amp;lt; 2.8.7容易受远程可利用的缓冲区溢出。这允许对于远程代码执行并在任何文件修改系统</Description>      <cnnvd>CNNVD-200203-036</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0082</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://www.debian.org/security/2002/dsa-120</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="HTTPD" vendor="Apache">               <version>                  <range>                     <high>2.8.7</high>                  </range>               </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104235" id="104235" modifyDate="2013-12-04">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>mod_ssl指令映射缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>兼容功能（指令映射）的mod_ssl &amp;lt; 2.8.10中存在一个缓冲区溢出漏洞。此漏洞的影响是未知。</Description>      <cnnvd>CNNVD-200207-065</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0653</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 不要设置&quot;AllowOverride&quot;选项。 
+厂商补丁： 
+Mod_SSL 
+------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+mod_ssl Upgrade mod_ssl-2.8.10-1.3.26.tar.gz 
+&lt;a href=&quot; 
+http://www.modssl.org/source/mod_ssl-2.8.10-1.3.26.tar.gz&quot; target=&quot;_blank&quot;&gt; 
+http://www.modssl.org/source/mod_ssl-2.8.10-1.3.26.tar.gz&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="HTTPD" vendor="Apache">               <version>                  <range>                     <high>2.8.10</high>                  </range>               </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-04-04" gvid="ID104236" id="104236" modifyDate="2013-01-04">      <cvsscode>7.1</cvsscode>      <severity>Severe</severity>      <name>Apache mod_ssl &amp;#39;ssl_io_filter_cleanup()&amp;#39;拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当远程用户意外终止SSL连接时，会触发Apache mod_ssl导致拒绝服务条件。因此,整个Apache进程将崩溃。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="HTTPD" vendor="Apache">               
+                        <version>                  <range>                     <low>2.0.0</low>                     <high>2.0.50</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104435" id="104435" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>发现漏洞的OpenSSL PRNG内部状态发现漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>OpenSSL0.9.6b之前版本包含有漏洞的设计，其中秘密的内部状态数据是部分来自用户输入。这可能会允许攻击者发现发电机的内部状态，并预测未来的输出。此漏洞的影响完全未知。</Description>      <cnnvd>CNNVD-200107-064</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-1141</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="HTTPD" vendor="Apache">               <version>                  <range>                     <high>0.9.6b</high>                  </range>               </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104441" id="104441" modifyDate="2012-07-31">      <cvsscode>5.8</cvsscode>      <severity>Severe</severity>      <name>OpenSSL Unseeded RNG 漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>初始化一个TLS或SSL握手时，OpenSSL &amp;lt; 0.9.5随机生成。这可能会导致
+产生可预测的输出，并导致依赖程序泄漏敏感信息。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="HTTPD" vendor="Apache">               <version>                  <range>                     <high>0.9.5</high>                  </range>               </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104544" id="104544" modifyDate="2013-12-04">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>Python的临时文件命令执行漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Python以不安全的方式创建临时文件。本地攻击者可在Python程序的权限范围内利用此漏洞执行任意指令。</Description>      <cnnvd>CNNVD-200210-213</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1119</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 暂时去掉Python脚本的执行属性，尽快打上补丁。 
+厂商补丁： 
+Debian 
+------ 
+Debian已经为此发布了一个安全公告(DSA-159)以及相应补丁: 
+DSA-159：New Python packages fix insecure temporary file use 
+链接：&lt;a href=&quot; 
+http://www.debian.org/security/2002/dsa-159&quot; target=&quot;_blank&quot;&gt; 
+http://www.debian.org/security/2002/dsa-159&lt;/a&gt; 
+补丁下载： 
+Source archives: 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python/python_1.5.2-10potato12.dsc&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python/python_1.5.2-10potato12.dsc&lt;/a&gt; 
+Size/MD5 checksum: 814 d4368a244ae130c0a879dc583d74ebb6 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python/python_1.5.2-10potato12.diff.gz&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python/python_1.5.2-10potato12.diff.gz&lt;/a&gt; 
+Size/MD5 checksum: 85380 cef4ee264c041385d26a6e7a914f66cf 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python/python_1.5.2.orig.tar.gz&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python/python_1.5.2.orig.tar.gz&lt;/a&gt; 
+Size/MD5 checksum: 2533053 e9d677ae6d5a3efc6937627ed8a3e752 
+Alpha architecture: 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_alpha.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_alpha.deb&lt;/a&gt; 
+Size/MD5 checksum: 928612 9cbc6a1fc341c7f5668da7f14ddfd336 
+ARM architecture: 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_arm.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_arm.deb&lt;/a&gt; 
+Size/MD5 checksum: 848442 778e22c98169028d94ba9fe3634dd113 
+Intel IA-32 architecture: 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_i386.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_i386.deb&lt;/a&gt; 
+Size/MD5 checksum: 825052 a2b34f89248287e5f61e1a9ae051b6ae 
+Motorola 680x0 architecture: 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_m68k.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_m68k.deb&lt;/a&gt; 
+Size/MD5 checksum: 837528 550655222273b7ed3b5f19ced5bb35cc 
+PowerPC architecture: 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_powerpc.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_powerpc.deb&lt;/a&gt; 
+Size/MD5 checksum: 872370 6e45dfbc1694e89f4707e1803f65943a 
+Sun Sparc architecture: 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_sparc.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python/python-base_1.5.2-10potato12_sparc.deb&lt;/a&gt; 
+Size/MD5 checksum: 854034 3ef80fbe6213c198d713046a4405cdff 
+Debian GNU/Linux 3.0 alias woody 
+- -------------------------------- 
+Source archives: 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2-23.1.dsc&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2-23.1.dsc&lt;/a&gt; 
+Size/MD5 checksum: 916 59cda94465a7108d34294050e141b0ba 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2-23.1.diff.gz&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2-23.1.diff.gz&lt;/a&gt; 
+Size/MD5 checksum: 147550 0246bc4b24874e3c0f8b6c6af47b262d 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2.orig.tar.gz&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2.orig.tar.gz&lt;/a&gt; 
+Size/MD5 checksum: 2533570 d9ade0d7613466e0353561d277ff02fe 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3-3.1.dsc&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3-3.1.dsc&lt;/a&gt; 
+Size/MD5 checksum: 1283 2193a191f73cac617edc851ce1dc0874 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3-3.1.diff.gz&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3-3.1.diff.gz&lt;/a&gt; 
+Size/MD5 checksum: 70192 eacc3d64dd0717ecf47fb2793a6b94c2 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3.orig.tar.gz&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3.orig.tar.gz&lt;/a&gt; 
+Size/MD5 checksum: 6194246 1ae739aa5824de263923df3516eeaf80 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1-4.1.dsc&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1-4.1.dsc&lt;/a&gt; 
+Size/MD5 checksum: 1150 029ee1aa079f8884283d57d765889d37 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1-4.1.diff.gz&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1-4.1.diff.gz&lt;/a&gt; 
+Size/MD5 checksum: 91682 de92eb806eea24f0a00289a9179cce7a 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1.orig.tar.gz&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1.orig.tar.gz&lt;/a&gt; 
+Size/MD5 checksum: 6536167 88aa07574673ccfaf35904253c78fc7d 
+Alpha architecture: 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2-23.1_alpha.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2-23.1_alpha.deb&lt;/a&gt; 
+Size/MD5 checksum: 993386 157f481ea4625e923668cf5bba1c7fe6 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3-3.1_alpha.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3-3.1_alpha.deb&lt;/a&gt; 
+Size/MD5 checksum: 1804142 e02a244d71cfbe2f17c6bdf615c0d75e 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1-4.1_alpha.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1-4.1_alpha.deb&lt;/a&gt; 
+Size/MD5 checksum: 2139238 ee19156d488c1362a0035b005b2479f0 
+ARM architecture: 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2-23.1_arm.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2-23.1_arm.deb&lt;/a&gt; 
+Size/MD5 checksum: 893284 b0f4521515c2fe08bddacea2ca58a6f1 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3-3.1_arm.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3-3.1_arm.deb&lt;/a&gt; 
+Size/MD5 checksum: 1646358 5d15c914dd3f0a6839357a40bd3badf7 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1-4.1_arm.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1-4.1_arm.deb&lt;/a&gt; 
+Size/MD5 checksum: 1952280 ec6986def88675cc6c341a10108c4b34 
+Intel IA-32 architecture: 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2-23.1_i386.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python1.5/python1.5_1.5.2-23.1_i386.deb&lt;/a&gt; 
+Size/MD5 checksum: 865684 475adc23a0cd7b706dfb50bd2beb4a61 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3-3.1_i386.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.1/python2.1_2.1.3-3.1_i386.deb&lt;/a&gt; 
+Size/MD5 checksum: 1592036 643613afe8b24e5cc808cfa6150cd15a 
+&lt;a href=&quot; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1-4.1_i386.deb&quot; target=&quot;_blank&quot;&gt; 
+http://security.debian.org/pool/updates/main/p/python2.2/python2.2_2.2.1-4.1_i386.deb&lt;/a&gt; 
+Size/MD5 checksum: &amp;nb</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="HTTPD" vendor="Apache">               <version>                  
+                                 <range>                     <low>1.5.2</low>                     <high>2.2.2</high>                  </range>                  
+                           </version>            </Product>         </NetworkService>      </Check>   </Vulnerability></Vulns>

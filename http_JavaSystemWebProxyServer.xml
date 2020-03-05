@@ -1,0 +1,7 @@
+<Vulns>   <Vulnerability addData="2008-01-18" gvid="ID105308" id="105308" modifyDate="2015-02-13">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>Sun Java系统Web代理服务器跨站点脚本漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>一些 Sun Java 系统 Web 代理服务器版本通过查看错误日志和查看 URL 数据库函数和其他未指定的向量受到多个跨站点脚本可利用漏洞的影响。在 Windows 上运行时，其中一些只影响产品。
+请注意，一些软件源错将CVE-2007-6572列为XSS（影响Sun Java 系统Web代理服务器）的其中之一。这是不正确的。CVE-2007-6572影响 Web 服务器产品，而不是Web代理服务器的产品。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-6571,CVE-2007-6570,CVE-2007-6569</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Java System Web Proxy Server">               
+                        <version>                  <range>                     <low>3</low>                     <high>3.6 SP11</high>                  </range>               </version>               
+                        <version>                  <range>                     <low>4</low>                     <high>4.0.6</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

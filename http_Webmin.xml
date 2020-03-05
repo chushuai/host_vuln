@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability addData="2004-11-01" gvid="GVID-102737" id="102737" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Webmin认证绕过漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>远程攻击者可规避Webmin的某些版本的认证机制；需要进行成功攻击的所有版本具有已知用户名和在服务器上设置密码超时选项。</Description>      <cnnvd>CNNVD-200208-159</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0757</id>      </AlternateIds>      <Solutions>临时解决方法： 
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="ID104606" id="104606" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Webmin认证绕过漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>远程攻击者可规避Webmin的某些版本的认证机制；需要进行成功攻击的所有版本具有已知用户名和在服务器上设置密码超时选项。</Description>      <cnnvd>CNNVD-200208-159</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0757</id>      </AlternateIds>      <Solutions>临时解决方法： 
 如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
 * 加强本地用户账号的管理，只允许可信用户使用访问。 
 厂商补丁： 
@@ -22,7 +22,7 @@ http://freshmeat.net/redir/usermin/28573/url_tgz/usermin-0.910.tar.gz&lt;/a&gt;<
                                  <high>0.97</high>                     
                            </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102738" id="102738" modifyDate="2013-12-04">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Webmin目录遍历漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Webmin的某些版本很容易受目录遍历攻击,可能产生权限升级。关于此漏洞的其它细节是已知。</Description>      <cnnvd>CNNVD-200112-107</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-1196</id>      </AlternateIds>      <Solutions>临时解决方法： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104607" id="104607" modifyDate="2013-12-04">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Webmin目录遍历漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Webmin的某些版本很容易受目录遍历攻击,可能产生权限升级。关于此漏洞的其它细节是已知。</Description>      <cnnvd>CNNVD-200112-107</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-1196</id>      </AlternateIds>      <Solutions>临时解决方法： 
 如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
 * 手工修改&quot;init/edit_action.cgi&quot;，在适当位置增加如下代码： 
  if ($file =~ /\./) { 
@@ -38,7 +38,7 @@ http://www.webmin.com/webmin/&lt;/a&gt;</Solutions>      <Check scope="endpoint"
                   <Product name="Webmin">               
                         <version>                  <range>                     <high>0.92</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102739" id="102739" modifyDate="2013-12-04">      <cvsscode>2.1</cvsscode>      <severity>Moderate</severity>      <name>Webmin RPM不安全漏洞权限</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当使用RPM安装Webmin时，v0.93版之前的Webmin未正确设置/ var/ webmin目录的访问权限。因此，本地攻击者可检索管理员的会话cookie和提升自身访问root的权限。</Description>      <cnnvd>CNNVD-200212-154</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1672</id>      </AlternateIds>      <Solutions>临时解决方法： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104608" id="104608" modifyDate="2013-12-04">      <cvsscode>2.1</cvsscode>      <severity>Moderate</severity>      <name>Webmin RPM不安全漏洞权限</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当使用RPM安装Webmin时，v0.93版之前的Webmin未正确设置/ var/ webmin目录的访问权限。因此，本地攻击者可检索管理员的会话cookie和提升自身访问root的权限。</Description>      <cnnvd>CNNVD-200212-154</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1672</id>      </AlternateIds>      <Solutions>临时解决方法： 
 如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
 * 设置正确的日志目录属性。 
 厂商补丁： 
@@ -51,7 +51,7 @@ http://www.webmin.com/download/webmin-0.93.tar.gz&lt;/a&gt;</Solutions>      <Ch
                   <Product name="Webmin">               
                         <version>                  <range>                     <high>0.93</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102740" id="102740" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Webmin登录跨站脚本漏洞 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Webmin易受登录页面中的跨站脚本漏洞的攻击。
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104609" id="104609" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Webmin登录跨站脚本漏洞 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Webmin易受登录页面中的跨站脚本漏洞的攻击。
 跨站脚本漏洞是基于客户端的攻击，它依赖于脆弱的CGI程序。CGI程序不充分过滤其动态输出，允许恶意用户通过注入脚本标签在您的网络服务器上滥用另一用户的信任。
 一个利用脚本可用来:
 &lt;ul&gt;
@@ -85,12 +85,12 @@ http://freshmeat.net/redir/usermin/28573/url_tgz/usermin-0.910.tar.gz&lt;/a&gt;<
                                  <high>0.97</high>                     
                            </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102742" id="102742" modifyDate="2012-07-31">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Webmin的明文密码存储漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Webmin存储在明文格式上的硬盘中储存身份凭据。因此，本地攻击者可能获取密码、冒充任何Webmin用户。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104611" id="104611" modifyDate="2012-07-31">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Webmin的明文密码存储漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Webmin存储在明文格式上的硬盘中储存身份凭据。因此，本地攻击者可能获取密码、冒充任何Webmin用户。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Webmin">               
                         <version>                  <range>                     <high>0.94</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102743" id="102743" modifyDate="2012-07-31">      <cvsscode>8.5</cvsscode>      <severity>Critical</severity>      <name>Webmin的RPC权限提升漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Webmin未通过RPC服务正确认证请求。因此，非特权的Webmin用户可以提升访问根目录的权限。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104612" id="104612" modifyDate="2012-07-31">      <cvsscode>8.5</cvsscode>      <severity>Critical</severity>      <name>Webmin的RPC权限提升漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Webmin未通过RPC服务正确认证请求。因此，非特权的Webmin用户可以提升访问根目录的权限。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Webmin">               
                         <version>                  <range>                     
@@ -98,7 +98,7 @@ https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <Net
                                  <high>1.0</high>                     
                            </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102744" id="102744" modifyDate="2013-12-04">      <cvsscode>3.6</cvsscode>      <severity>Severe</severity>      <name>Webmin脚本注入漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>通过web界面显示日志时，Webmin的某些版本不正确筛选文本。因此,远程攻击者可注入在Webmin权限(通常是根)下运行的代码。这类似于跨站点脚本(XSS),但并不仅限于Javascript的执行。因此这种漏洞性的影响更大。</Description>      <cnnvd>CNNVD-200212-191</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1673</id>      </AlternateIds>      <Solutions>临时解决方法： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104613" id="104613" modifyDate="2013-12-04">      <cvsscode>3.6</cvsscode>      <severity>Severe</severity>      <name>Webmin脚本注入漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>通过web界面显示日志时，Webmin的某些版本不正确筛选文本。因此,远程攻击者可注入在Webmin权限(通常是根)下运行的代码。这类似于跨站点脚本(XSS),但并不仅限于Javascript的执行。因此这种漏洞性的影响更大。</Description>      <cnnvd>CNNVD-200212-191</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1673</id>      </AlternateIds>      <Solutions>临时解决方法： 
 如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
 * 在漏洞修补之前不要浏览日志。 
 厂商补丁： 
@@ -111,7 +111,7 @@ http://www.webmin.com/download/webmin-0.93.tar.gz&lt;/a&gt;</Solutions>      <Ch
                   <Product name="Webmin">               
                         <version>                  <range>                     <high>0.93</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102745" id="102745" modifyDate="2015-02-13">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Webmin 会话欺骗漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Webmin的某些版本易受到会话欺骗。因此，远程攻击者可以冒充&amp;#39;admin&amp;#39; 用户和获取完全访问服务器。</Description>      <cnnvd>CNNVD-200303-005</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0101</id>      </AlternateIds>      <Solutions>临时解决方法： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104614" id="104614" modifyDate="2015-02-13">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Webmin 会话欺骗漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Webmin的某些版本易受到会话欺骗。因此，远程攻击者可以冒充&amp;#39;admin&amp;#39; 用户和获取完全访问服务器。</Description>      <cnnvd>CNNVD-200303-005</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0101</id>      </AlternateIds>      <Solutions>临时解决方法： 
 如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
 * 用户如果不需要此工具，可执行如下命令删除： 
 versions remove websetup 
@@ -172,7 +172,7 @@ http://support.sgi.com&lt;/a&gt;
                                  <high>1.60</high>                     
                            </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2006-09-04" gvid="GVID-102746" id="102746" modifyDate="2015-02-13">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>Webmin源代码公开漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Webmin的某些版本包含一个在URL请求的逻辑缺陷,允许远程用户查看服务器上的任何脚本的源代码。</Description>      <cnnvd>CNNVD-200609-041</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2006-4542</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2006-09-04" gvid="ID104615" id="104615" modifyDate="2015-02-13">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>Webmin源代码公开漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Webmin的某些版本包含一个在URL请求的逻辑缺陷,允许远程用户查看服务器上的任何脚本的源代码。</Description>      <cnnvd>CNNVD-200609-041</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2006-4542</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
 Webmin Webmin 1.210 
 Mandriva webmin-1.121-4.7.C30mdk.noarch.rpm 
 Corporate 3.0: 
@@ -191,7 +191,7 @@ http://www.mandriva.com/en/download</Solutions>      <Check scope="endpoint">   
                   <Product name="Webmin">               
                         <version>                  <range>                     <low>1.200</low>                     <high>1.296</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102747" id="102747" modifyDate="2013-12-04">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>Webmin静态SSL密钥漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Webmin在各个安装步骤中使用相同的SSL密钥。因此,因SSL私钥已公开，SSL通道被轻而易举的破坏掉。</Description>      <cnnvd>CNNVD-200212-407</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1947</id>      </AlternateIds>      <Solutions>厂商补丁： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104616" id="104616" modifyDate="2013-12-04">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>Webmin静态SSL密钥漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的Webmin在各个安装步骤中使用相同的SSL密钥。因此,因SSL私钥已公开，SSL通道被轻而易举的破坏掉。</Description>      <cnnvd>CNNVD-200212-407</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1947</id>      </AlternateIds>      <Solutions>厂商补丁： 
 FreeBSD 
 ------- 
 FreeBSD已经为此发布了一个安全公告(FreeBSD-SN-02:06)以及相应补丁: 
@@ -212,7 +212,7 @@ http://prdownloads.sourceforge.net/webadmin/webmin-1.020.tar.gz?download&lt;/a&g
                                  <high>1.20</high>                     
                            </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102748" id="102748" modifyDate="2012-07-31">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>Webmin的未指定漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Webmin的某些版本受泄露敏感配置数据影响到拒绝服务的未指定漏洞影响。需要注意的是，虽然无法立即知道如何触发这些漏洞，但由于Webmin的开源性质比较容易发现技巧。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104617" id="104617" modifyDate="2012-07-31">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>Webmin的未指定漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Webmin的某些版本受泄露敏感配置数据影响到拒绝服务的未指定漏洞影响。需要注意的是，虽然无法立即知道如何触发这些漏洞，但由于Webmin的开源性质比较容易发现技巧。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Webmin">               
                         <version>                  <range>                     <high>1.150</high>                  </range>               </version>               

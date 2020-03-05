@@ -1,0 +1,10 @@
+<Vulns>   <Vulnerability addData="2015-12-01" gvid="ID102090" id="102090" modifyDate="2017-12-01">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>JBoss InvokerTransformer反序列化过程中执行代码</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>发现在对涉及精心构造的类的对象进行反序列化时，Apache commons-collections库允许执行代码。远程攻击者以使用commons-collections库的应用程序权限利用此漏洞执行任意代码。</Description>      <cnnvd>CNNVD-201512-025</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-7501</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://access.redhat.com/solutions/2045023</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                <Product name="JBoss" vendor="Red Hat">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">8.0.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>            
+           </NetworkService>      </Check>   </Vulnerability></Vulns>

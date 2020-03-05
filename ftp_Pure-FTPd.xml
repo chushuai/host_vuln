@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability added="2007-03-14" gvid="GVID-104690" id="104690" modified="2013-12-04" published="2004-07-05" version="2.0">      
+<Vulns>   <Vulnerability added="2007-03-14" gvid="ID101473" id="101473" modified="2013-12-04" published="2004-07-05" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
@@ -27,7 +27,7 @@ PureFTPd
 -------- 
 目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
 PureFTPd Upgrade pure-ftpd-1.0.19.tar.gz 
-&lt;a href=&quot;ftp://ftp.pureftpd.org/pub/pure-ftpd/releases/pure-ftpd-1.0.19.tar.gz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.pureftpd.org/pub/pure-ftpd/releases/pure-ftpd-1.0.19.tar.gz&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200408-054</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>早于1.0.19版本的PureFTPD易受拒绝服务攻击。该漏洞是由于连接处理错误造成的，这可能会使内置的监听器在重连接/断开负载的情况下挂起或崩溃。</Description>      <name>Pure-FTPd拒绝服务攻击</name>   </Vulnerability>   <Vulnerability added="2007-03-15" gvid="GVID-104691" id="104691" modified="2017-12-18" published="2007-03-15" version="2.0">      
+&lt;a href=&quot;ftp://ftp.pureftpd.org/pub/pure-ftpd/releases/pure-ftpd-1.0.19.tar.gz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.pureftpd.org/pub/pure-ftpd/releases/pure-ftpd-1.0.19.tar.gz&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200408-054</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>早于1.0.19版本的PureFTPD易受拒绝服务攻击。该漏洞是由于连接处理错误造成的，这可能会使内置的监听器在重连接/断开负载的情况下挂起或崩溃。</Description>      <name>Pure-FTPd拒绝服务攻击</name>   </Vulnerability>   <Vulnerability added="2007-03-15" gvid="ID101474" id="101474" modified="2017-12-18" published="2007-03-15" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:N/C:C/I:C/A:C)</cvss>      

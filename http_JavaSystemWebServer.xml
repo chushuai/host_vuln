@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability addData="2007-08-04" gvid="GVID-102401" id="102401" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Netscape/Sun iPlanet存在错误的客户端证书拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>System Web Server 6.0 SP7及更早版本和System Web Server 6.1 SP1 以及更早版本，Application Server 7
+<Vulns>   <Vulnerability addData="2007-08-04" gvid="ID104173" id="104173" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Netscape/Sun iPlanet存在错误的客户端证书拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>System Web Server 6.0 SP7及更早版本和System Web Server 6.1 SP1 以及更早版本，Application Server 7
         Update 4以及更早版本内的未知漏洞，允许远程攻击者通过格式错误的客户端证书进行拒绝服务（崩溃）攻击。</Description>      <cnnvd>CNNVD-200412-695</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-2216</id>      </AlternateIds>      <Solutions>厂商补丁： 
 Sun 
 --- 
@@ -29,7 +29,7 @@ http://wwws.sun.com/software/download/products/4154c5a5.html&lt;/a&gt;</Solution
                               <range>                     <low>6.1</low>                     <high>6.1 SP2</high>                  </range>                  
                         </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-08-04" gvid="GVID-102402" id="102402" modifyDate="2015-02-13">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>Netscape/Sun iPlanet 跨站脚本漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Sun ONE Web服务器6.0 SP9及以下版本，Java系统Web服务器6.1 SP4及以下版本, Sun ONE应用程序服务器7平台和Standard Edition Update 6及以下版本, 和Java系统应用程序服务器7 2004Q2 Standard 和Enterprise Edition Update 2中的跨站脚本（XSS）允许远程攻击者通过涉及错误消息的未知攻击向量注入任意Web脚本或HTML。</Description>      <cnnvd>CNNVD-200605-358</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2006-2501</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-08-04" gvid="ID104174" id="104174" modifyDate="2015-02-13">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>Netscape/Sun iPlanet 跨站脚本漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Sun ONE Web服务器6.0 SP9及以下版本，Java系统Web服务器6.1 SP4及以下版本, Sun ONE应用程序服务器7平台和Standard Edition Update 6及以下版本, 和Java系统应用程序服务器7 2004Q2 Standard 和Enterprise Edition Update 2中的跨站脚本（XSS）允许远程攻击者通过涉及错误消息的未知攻击向量注入任意Web脚本或HTML。</Description>      <cnnvd>CNNVD-200605-358</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2006-2501</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
 Sun ONE Web Server 6.0 SP5 
 Sun Sun ONE Web Server 6.0 Service Pack 10 
 http://www.sun.com/download/products.xml?id=43a84f89 
@@ -124,7 +124,7 @@ http://www.sun.com/download/products.xml?id=42ae317c
                               <range>                     <low>6.1</low>                     <high>6.1 SP5</high>                  </range>                  
                         </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-08-04" gvid="GVID-102403" id="102403" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Netscape/Sun iPlanet修改Hello Message报文缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Netscape网络安全服务（NSS）库中基于堆的缓冲区溢出允许远程攻击者通过修改客户端的SSLv2 hello消息中的记录长度字段执行任意代码。</Description>      <cnnvd>CNNVD-200412-948</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-0826</id>      </AlternateIds>      <Solutions>厂商补丁： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-08-04" gvid="ID104175" id="104175" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Netscape/Sun iPlanet修改Hello Message报文缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Netscape网络安全服务（NSS）库中基于堆的缓冲区溢出允许远程攻击者通过修改客户端的SSLv2 hello消息中的记录长度字段执行任意代码。</Description>      <cnnvd>CNNVD-200412-948</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-0826</id>      </AlternateIds>      <Solutions>厂商补丁： 
 Netscape 
 -------- 
 供应商提供的NSS库可从如下地址获得： 
@@ -136,7 +136,7 @@ ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_9_2_RTM
                               <range>                     <low>6.1</low>                     <high>6.1 SP3</high>                  </range>                  
                         </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-08-03" gvid="GVID-102404" id="102404" modifyDate="2015-02-13">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>Netscape iPlanet /Sun iPlanet NSS SSLv2 2客户端密钥缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Sun iPlanet/Java Web服务器易受SSLv2（用于HTTPS）处理中的缓冲区溢出攻击。
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-08-03" gvid="ID104176" id="104176" modifyDate="2015-02-13">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>Netscape iPlanet /Sun iPlanet NSS SSLv2 2客户端密钥缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Sun iPlanet/Java Web服务器易受SSLv2（用于HTTPS）处理中的缓冲区溢出攻击。
 网络安全服务（NSS）库包含一个在解析
 SSL公钥中的整数下溢错误。整数下溢会造成基于堆的缓冲区溢出
 在服务器上执行任意代码。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2007-0009,CVE-2007-0008</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
@@ -145,7 +145,7 @@ SSL公钥中的整数下溢错误。整数下溢会造成基于堆的缓冲区�
                               <range>                     <low>6.0</low>                     <high>8.0</high>                  </range>                  
                         </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-07-25" gvid="GVID-102405" id="102405" modifyDate="2013-05-03">      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <name>Netscape/Sun iPlanet版本过时</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Sun不再支持iPlanet和Sun ONE。这些产品已更名为Sun Java System。
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-07-25" gvid="ID104177" id="104177" modifyDate="2013-05-03">      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <name>Netscape/Sun iPlanet版本过时</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Sun不再支持iPlanet和Sun ONE。这些产品已更名为Sun Java System。
 老版本的iPlanet和Netscape Enterprise Server容易出现很多的漏洞
 如缓冲区溢出攻击，HTML注入攻击，和跨站脚本攻击以及更多。
 不安全的iPlanet安装应该由Sun Java System分布的新
@@ -154,7 +154,7 @@ https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <Net
                   <Product name="Java System Web Server">               
                         <version>                  <range>                     <high>6.1</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-08-04" gvid="GVID-102406" id="102406" modifyDate="2015-02-13">      <cvsscode>4.0</cvsscode>      <severity>Severe</severity>      <name>Netscape/SuniPlanet远程验证拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>启用SSLv2时， 在SP 10之前的Sun Java System Web Server 6.0和 Update 3的 ONE Application Server 7的网络安全服务（NSS）中的不明漏洞允许远程身份验证的用户通过不明向量造成拒绝服务（应用程序崩溃）。</Description>      <cnnvd>CNNVD-200611-018</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2006-5654</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2007-08-04" gvid="ID104178" id="104178" modifyDate="2015-02-13">      <cvsscode>4.0</cvsscode>      <severity>Severe</severity>      <name>Netscape/SuniPlanet远程验证拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>启用SSLv2时， 在SP 10之前的Sun Java System Web Server 6.0和 Update 3的 ONE Application Server 7的网络安全服务（NSS）中的不明漏洞允许远程身份验证的用户通过不明向量造成拒绝服务（应用程序崩溃）。</Description>      <cnnvd>CNNVD-200611-018</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2006-5654</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
 Sun-Alert-102896：Directory Server May Hang Due to a Memory Leak in the Network Security Services (NSS) Software 
 http://sunsolve.sun.com/search/printfriendly.do?assetkey=1-26-102896-1 
 Sun-Alert-102670：A Vulnerability in Network Security Services (NSS) Affects Sun Java System Web Server and Sun ONE Application Server 
@@ -166,7 +166,7 @@ http://sunsolve.sun.com/search/printfriendly.do?assetkey=1-26-102461-1</Solution
                               <range>                     <high>6.0 SP10</high>                  </range>                  
                         </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2006-04-02" gvid="GVID-102408" id="102408" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Netscape/Sun iPlanet  搜索缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Netscape/Sun iPlanetWeb服务器搜索工具容易以向NS-rel-doc发送长数值的方式易受到基于堆栈溢出漏洞的攻击。此漏洞可被远程利用,允许在web服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200207-078</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0686</id>      </AlternateIds>      <Solutions>临时解决方法： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2006-04-02" gvid="ID104180" id="104180" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Netscape/Sun iPlanet  搜索缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Netscape/Sun iPlanetWeb服务器搜索工具容易以向NS-rel-doc发送长数值的方式易受到基于堆栈溢出漏洞的攻击。此漏洞可被远程利用,允许在web服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200207-078</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0686</id>      </AlternateIds>      <Solutions>临时解决方法： 
 如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
 * 暂时没有合适的临时解决方法。 
 厂商补丁： 
@@ -182,7 +182,7 @@ http://www.iplanet.com/&lt;/a&gt;</Solutions>      <Check scope="endpoint">     
                               <range>                     <low>6.0</low>                     <high inclusive="0">6.0 SP3</high>                  </range>                  
                         </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2006-04-02" gvid="GVID-102409" id="102409" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Netscape/Sun iPlanet 和 Sun ONE分块传输编码缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Netscape/Sun iPlanet和Sun ONE Web服务器易受堆栈的溢出漏洞的影响，这是由于分块传输编码的处理不当引起的。可远程利用此漏洞,允许在web服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200208-025</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0845</id>      </AlternateIds>      <Solutions>临时解决方法： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2006-04-02" gvid="ID104181" id="104181" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Netscape/Sun iPlanet 和 Sun ONE分块传输编码缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Netscape/Sun iPlanet和Sun ONE Web服务器易受堆栈的溢出漏洞的影响，这是由于分块传输编码的处理不当引起的。可远程利用此漏洞,允许在web服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200208-025</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0845</id>      </AlternateIds>      <Solutions>临时解决方法： 
 如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
 编译和安装下面的NSAPI SAF： 
 #include 
@@ -224,7 +224,7 @@ http://wwws.sun.com/software/download/download/5292.html&lt;/a&gt;</Solutions>  
                               <range>                     <low>6.0</low>                     <high inclusive="0">6.0 SP4</high>                  </range>                  
                         </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2006-04-02" gvid="GVID-102410" id="102410" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Netscape/Sun iPlanet和Sun ONE 未指定Windows DoS</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Netscape/Sun iPlanet和 Sun ONE Web Servers SP3到 SP5中存在一个不确定的拒绝服务漏洞。</Description>      <cnnvd>CNNVD-200312-188</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-1126</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2006-04-02" gvid="ID104182" id="104182" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Netscape/Sun iPlanet和Sun ONE 未指定Windows DoS</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Netscape/Sun iPlanet和 Sun ONE Web Servers SP3到 SP5中存在一个不确定的拒绝服务漏洞。</Description>      <cnnvd>CNNVD-200312-188</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-1126</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product minCertainty="0.9" name="Java System Web Server">               
                         <version>                  
                               <range>                     <low>6.0 SP3</low>                     <high inclusive="0">6.0 SP6</high>                  </range>                  

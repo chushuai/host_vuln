@@ -1,0 +1,23 @@
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="ID104445" id="104445" modifyDate="2013-12-04">      <cvsscode>7.2</cvsscode>      <severity>Severe</severity>      <name>    OPENWEBMAIL命令执行漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些Open WebMail版本，如果攻击者可在目标系统上创建文件，那么攻击者可作为root利用漏洞执行任意命令。</Description>      <cnnvd>CNNVD-200212-077</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-1385</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 把如下代码： 
+- --- 
+ $loginname =~ s/\-session\-0.*$//; # Grab loginname from sessionid 
+- --- 
+更改为： 
+- --- 
+ $loginname =~ s/\-session\-0.*$//; # Grab loginname from sessionid 
+ $loginname =~ s/[\.\/\;\|\'\&quot;\`\&amp;]//g; 
+- --- 
+厂商补丁： 
+Open Webmail 
+------------ 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+Open Webmail Patch Open Webmail Patch 
+&lt;a href=&quot; 
+http://sourceforge.net/forum/forum.php?thread_id=782605&amp;forum_id=108435&quot; target=&quot;_blank&quot;&gt; 
+http://sourceforge.net/forum/forum.php?thread_id=782605&amp;forum_id=108435&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Open WebMail">               
+                        <version>                  <range>                     <high>1.82</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

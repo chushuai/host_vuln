@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability added="2008-03-26" gvid="GVID-104711" id="104711" modified="2012-07-17" published="2007-07-23" version="2.0">      
+<Vulns>   <Vulnerability added="2008-03-26" gvid="ID105311" id="105311" modified="2012-07-17" published="2007-07-23" version="2.0">      
         
         
         <cvss>(AV:N/AC:H/Au:S/C:C/I:C/A:C)</cvss>      
@@ -20,7 +20,7 @@
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>7.1</cvsscode>      <severity>Severe</severity>      <Description>AUTH_LIST_GROUPS_FOR_AUTHID函数问题的利用可以使攻击者造成拒绝服务或在数据库服务器上执行任意代码系统。在Windows系统上,攻击者可以获得管理员特权。这个缺陷可以远程被任何用户利用，只要是可以建立一个远程数据库连接的都可以。这一缺陷影响在所有平台的DB2 9。这缺陷不存在于DB2 9之前的DB2版本。
-这一缺陷被应用程序安全公司的 Ariel Sanchez报告给IBM。</Description>      <name>DB2补丁IZ01828: AUTH_LIST_GROUPS_FOR_AUTHID中的安全漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104712" id="104712" modified="2013-12-04" published="2007-09-27" version="2.0">      
+这一缺陷被应用程序安全公司的 Ariel Sanchez报告给IBM。</Description>      <name>DB2补丁IZ01828: AUTH_LIST_GROUPS_FOR_AUTHID中的安全漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105312" id="105312" modified="2013-12-04" published="2007-09-27" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
@@ -45,7 +45,7 @@ http://www-1.ibm.com/support/docview.wss?uid=swg21255572</Solutions>      <cnnvd
 DAS服务器可能在操作中间崩溃,它会影响连接到DAS服务器上面客户端。使用DAS调度安排的工作程在崩溃后不会运行。
 如果我们启用故障监控守护进程重新启动DAS,崩溃的结果可以最小化。
 这个问题是由一个与 iDefense Vulnerability Contributor Program (VCP)和Joshua J. Drake of iDefense实验室.&amp;quot;工作的匿名研究者报告给IBM的。
-APAR在CVE.mitre.org中处理CVE-2007-3676所描述的问题。</Description>      <name>DB2补丁IZ05478:DAS服务器中的缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104713" id="104713" modified="2012-07-17" published="2007-04-13" version="2.0">      
+APAR在CVE.mitre.org中处理CVE-2007-3676所描述的问题。</Description>      <name>DB2补丁IZ05478:DAS服务器中的缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105313" id="105313" modified="2012-07-17" published="2007-04-13" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:S/C:C/I:C/A:C)</cvss>      
@@ -66,7 +66,7 @@ APAR在CVE.mitre.org中处理CVE-2007-3676所描述的问题。</Description>   
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>8.5</cvsscode>      <severity>Critical</severity>      <Description>DASPROF环境变量中存在着一个缓冲区溢出漏洞。溢出的缓冲区可能导致任意代码的执行和提升特权。这个问题不适用于 Windows系统。
-这个问题由与iDefense Vulnerability Contributor Program(VCP) 和 iDefense实验室的Joshua J. Drake一起工作的匿名研究者报告给IBM。</Description>      <name>DB2补丁IY97346: DASPROF 环境变量缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104714" id="104714" modified="2012-07-17" published="2007-08-23" version="2.0">      
+这个问题由与iDefense Vulnerability Contributor Program(VCP) 和 iDefense实验室的Joshua J. Drake一起工作的匿名研究者报告给IBM。</Description>      <name>DB2补丁IY97346: DASPROF 环境变量缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105314" id="105314" modified="2012-07-17" published="2007-08-23" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:S/C:P/I:P/A:P)</cvss>      
@@ -86,7 +86,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>8.5</c
                         <version>                  <range>                     <low>9.0</low>                     <high>9.1.4</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
-https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.0</cvsscode>      <severity>Severe</severity>      <Description>当运行db2dart工具时，在DB2设计中的本地利用错误可能允许攻击者对db2提升特权。</Description>      <name>DB2补丁IZ03646: db2dart允许用户像DB2实例所有者运行命令</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104715" id="104715" modified="2012-07-17" published="2007-02-12" version="2.0">      
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.0</cvsscode>      <severity>Severe</severity>      <Description>当运行db2dart工具时，在DB2设计中的本地利用错误可能允许攻击者对db2提升特权。</Description>      <name>DB2补丁IZ03646: db2dart允许用户像DB2实例所有者运行命令</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105315" id="105315" modified="2012-07-17" published="2007-02-12" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:S/C:P/I:P/A:P)</cvss>      
@@ -106,7 +106,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.0</c
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</cvsscode>      <severity>Severe</severity>      <Description>多个set-uid DB2二进制中存在漏洞,可以被本地用户利用。漏洞允许本地用户通过使用符号链接(也称为符号链接或软链接)编写系统上的任何文件。这问题并不影响Windows系统。
-这个问题被与 iDefense Vulnerability Contributor Program工作的匿名研究员报道在iDefense上。</Description>      <name>DB2补丁IY94817:db2diag.log的符号链接覆盖漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104716" id="104716" modified="2012-07-17" published="2007-08-29" version="2.0">      
+这个问题被与 iDefense Vulnerability Contributor Program工作的匿名研究员报道在iDefense上。</Description>      <name>DB2补丁IY94817:db2diag.log的符号链接覆盖漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105316" id="105316" modified="2012-07-17" published="2007-08-29" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:S/C:P/I:P/A:P)</cvss>      
@@ -126,7 +126,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</c
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</cvsscode>      <severity>Severe</severity>      <Description>db2licd产生不安全的目录,然后创建这个目录中的一个文件。
-恶意攻击者可以通过创建一个符号链接文件覆盖文件系统上的任何文件,然后执行db2licd(作为根用户运行)。</Description>      <name>DB2补丁IZ03881: db2licd创建不安全目录</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104717" id="104717" modified="2012-07-17" published="2007-05-01" version="2.0">      
+恶意攻击者可以通过创建一个符号链接文件覆盖文件系统上的任何文件,然后执行db2licd(作为根用户运行)。</Description>      <name>DB2补丁IZ03881: db2licd创建不安全目录</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105317" id="105317" modified="2012-07-17" published="2007-05-01" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:S/C:P/I:P/A:P)</cvss>      
@@ -148,7 +148,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</c
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</cvsscode>      <severity>Severe</severity>      <Description>当地开发DB2设计错误允许攻击者提升权限到根和/或创建或改变文件，当运行该工具db2licm或通过使用OSSEMEMDBG或TRC_LOG_FILE环境变量时，实例用户一般不会有访问权。这个问题并不适用于Windows系统。
 这个问题是由一个与iDefense Vulnerability Contributor Program (VCP) 和 iDefense实验室的Joshua J. Drake一起工作的匿名者报告给IBM的。
-如果没有这个APAR,攻击者可以利用这个安全漏洞提升特权和/或创建或更改的文件，实例用户通常不能正常访问。</Description>      <name>DB2 补丁 IY98011: db2licd中的权限升级</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104718" id="104718" modified="2012-07-17" published="2007-04-26" version="2.0">      
+如果没有这个APAR,攻击者可以利用这个安全漏洞提升特权和/或创建或更改的文件，实例用户通常不能正常访问。</Description>      <name>DB2 补丁 IY98011: db2licd中的权限升级</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105318" id="105318" modified="2012-07-17" published="2007-04-26" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:S/C:P/I:P/A:P)</cvss>      
@@ -169,7 +169,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</c
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</cvsscode>      <severity>Severe</severity>      <Description>当运行工具db2licm 或 db2pd时，DB2的设计错误允许攻击者提高根特权。这个问题不适用于Windows系统。
-这些问题是由一个与 iDefense Vulnerability Contributor Program (VCP) 和 iDefense实验室的Joshua J. Drake的匿名者报告给IBM的。</Description>      <name>DB2补丁IY97922:db2licm和db2pd中的权限升级</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104719" id="104719" modified="2012-07-17" published="2007-08-14" version="2.0">      
+这些问题是由一个与 iDefense Vulnerability Contributor Program (VCP) 和 iDefense实验室的Joshua J. Drake的匿名者报告给IBM的。</Description>      <name>DB2补丁IY97922:db2licm和db2pd中的权限升级</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105319" id="105319" modified="2012-07-17" published="2007-08-14" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:N/C:C/I:C/A:C)</cvss>      
@@ -193,7 +193,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</c
 http://www-1.ibm.com/support/docview.wss?uid=swg21256235 
 http://www-1.ibm.com/support/docview.wss?uid=swg21255572</Solutions>      <cnnvd>CNNVD-200802-199</cnnvd>      <cvsscode>6.9</cvsscode>      <severity>Severe</severity>      <Description>当运行db2pd工具时，db2pd设计错误中的本地利用可允许攻击者根特权。
 这些问题是由一个与 iDefense Vulnerability Contributor Program (VCP) 和 Joshua J. Drake of iDefense实验室的匿名者报告给IBM的。
-APAR处理了CVE.mitre.org中CVE-2007-5757描述的问题。</Description>      <name>DB2 补丁IZ03073:db2pd中本地root权限升级</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104720" id="104720" modified="2012-07-17" published="2007-08-23" version="2.0">      
+APAR处理了CVE.mitre.org中CVE-2007-5757描述的问题。</Description>      <name>DB2 补丁IZ03073:db2pd中本地root权限升级</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105320" id="105320" modified="2012-07-17" published="2007-08-23" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:S/C:P/I:P/A:P)</cvss>      
@@ -212,49 +212,7 @@ APAR处理了CVE.mitre.org中CVE-2007-5757描述的问题。</Description>      
                         <version>                  <range>                     <low>9.0</low>                     <high>9.1.4</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
-https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</cvsscode>      <severity>Severe</severity>      <Description>运行DB2watch和Db2freeze可能造成不明确的安全漏洞</Description>      <name>DB2补丁IZ03655: db2watch和db2freeze受到多个安全漏洞的影响</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104721" id="104721" modified="2015-02-13" published="2008-02-19" version="2.0">      
-        
-        
-        <cvss>(AV:N/AC:M/Au:S/C:N/I:N/A:C)</cvss>      
-        <Tags>         
-             <tag>Database</tag>         
-             <tag>Denial of Service</tag>         
-             <tag>IBM</tag>         
-             <tag>IBM DB2</tag>         
-        </Tags>      
-        <AlternateIds>         
-             <id name="BID">27681</id>         
-             <id name="BID">27870</id>         
-             <id name="BID">28835</id>         
-             <id name="BID">29601</id>         
-             <id name="BID">31058</id>         
-             <id name="OSVDB">41795</id>         
-             <id name="OSVDB">46268</id>         
-             <id name="OSVDB">46269</id>         
-             <id name="OSVDB">48428</id>         
-             <id name="URL">http://www-1.ibm.com/support/docview.wss?uid=swg1IZ07299</id>         
-             <id name="XF">ibm-db2-adminserver-privilege-escalation(42932)</id>         
-             <id name="XF">ibm-db2-baseservices-info-disclosure(45139)</id>         
-             <id name="XF">ibm-db2-clr-unspecified(42927)</id>         
-             <id name="XF">ibm-db2-clr-visualstudio-unspecified(44697)</id>         
-             <id name="XF">ibm-db2-connect-attach-dos2(45134)</id>         
-             <id name="XF">ibm-db2-das-bo(45141)</id>         
-             <id name="XF">ibm-db2-db2dasrrm-dasprof-bo(41847)</id>         
-             <id name="XF">ibm-db2-db2dasrrm-symlink(41848)</id>         
-             <id name="XF">ibm-db2-downlevel-db2rasupport-dos(45138)</id>         
-             <id name="XF">ibm-db2-infrastructure-unspecified(45140)</id>         
-             <id name="XF">ibm-db2-multiple-bo(42935)</id>         
-             <id name="XF">ibm-db2-recoverjar-removejar-dos(41955)</id>         
-             <id name="XF">ibm-db2-sqlrlaka-bo(42930)</id>         
-        </AlternateIds>      
-        
-        
-      <Check scope="endpoint">         <NetworkService type="DB2">            
-                  <Product name="DB2" vendor="IBM">               
-                        <version>                  <range>                     <low>9.0</low>                     <high>9.1.4</high>                  </range>               </version>               
-                  </Product>            
-            </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
-https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.3</cvsscode>      <severity>Severe</severity>      <Description>截至2008年3月26日，不提供详细的信息。</Description>      <name>DB2补丁IZ07299: 在连接/附接处理过程中的远程拒绝服务</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104722" id="104722" modified="2012-07-17" published="2007-06-15" version="2.0">      
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</cvsscode>      <severity>Severe</severity>      <Description>运行DB2watch和Db2freeze可能造成不明确的安全漏洞</Description>      <name>DB2补丁IZ03655: db2watch和db2freeze受到多个安全漏洞的影响</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105321" id="105321" modified="2012-07-17" published="2007-06-15" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:N/C:N/I:N/A:C)</cvss>      
@@ -274,7 +232,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.3</c
                         <version>                  <range>                     <low>9.0</low>                     <high>9.1.3</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
-https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.7</cvsscode>      <severity>Severe</severity>      <Description>在发送有效的凭据（用户ID /密码）前，DRDA请求EXCSAT和ACCSEC发送到DB2引擎以建立有效的连接。如果通过黑客网络流更改ACCSEC的长度字段，DB2引擎可能崩溃。在发送有效的凭据（用户ID /密码）前，DRDA请求EXCSAT和ACCSEC发送到DB2引擎以建立有效的连接。如果通过黑客网络流更改ACCSEC的长度字段，DB2引擎可能崩溃。连接请求期间，DRDA请求被发送至DB2服务器。如果以特定的、恶意的方式修改DRDA请求，DB2服务器可能会崩溃。问题说明（预防性）：一个格式错误的连接请求可能导致DB2服务器崩溃，导致拒绝服务。</Description>      <name>DB2补丁IZ00188: 如果DRDA流被黑客攻击DB2引擎崩溃</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104723" id="104723" modified="2012-07-17" published="2006-08-15" version="2.0">      
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.7</cvsscode>      <severity>Severe</severity>      <Description>在发送有效的凭据（用户ID /密码）前，DRDA请求EXCSAT和ACCSEC发送到DB2引擎以建立有效的连接。如果通过黑客网络流更改ACCSEC的长度字段，DB2引擎可能崩溃。在发送有效的凭据（用户ID /密码）前，DRDA请求EXCSAT和ACCSEC发送到DB2引擎以建立有效的连接。如果通过黑客网络流更改ACCSEC的长度字段，DB2引擎可能崩溃。连接请求期间，DRDA请求被发送至DB2服务器。如果以特定的、恶意的方式修改DRDA请求，DB2服务器可能会崩溃。问题说明（预防性）：一个格式错误的连接请求可能导致DB2服务器崩溃，导致拒绝服务。</Description>      <name>DB2补丁IZ00188: 如果DRDA流被黑客攻击DB2引擎崩溃</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105322" id="105322" modified="2012-07-17" published="2006-08-15" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:S/C:P/I:P/A:P)</cvss>      
@@ -293,7 +251,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.7</c
                         <version>                  <range>                     <low>9.0</low>                     <high>9.1.1</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
-https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.0</cvsscode>      <severity>Severe</severity>      <Description>撤销方法上的权限后，用户可能仍然能够执行所述方法，直到常规认证刷新缓存（数据库停用）。</Description>      <name>DB2补丁IY88158:执行权限可能在撤销后持续存在</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104724" id="104724" modified="2012-07-17" published="2006-07-31" version="2.0">      
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.0</cvsscode>      <severity>Severe</severity>      <Description>撤销方法上的权限后，用户可能仍然能够执行所述方法，直到常规认证刷新缓存（数据库停用）。</Description>      <name>DB2补丁IY88158:执行权限可能在撤销后持续存在</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105323" id="105323" modified="2012-07-17" published="2006-07-31" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:S/C:P/I:P/A:P)</cvss>      
@@ -314,7 +272,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.0</c
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</cvsscode>      <severity>Severe</severity>      <Description>多个set-uid DB2二进制中存在漏洞,可以被本地用户利用。漏洞允许本地用户通过使用符号链接(也称为符号链接或软链接)编写系统上的任何文件。这问题并不影响Windows系统。
-这个问题被与 iDefense Vulnerability Contributor Program工作的匿名研究员报道在iDefense上。</Description>      <name>DB2补丁IY87492:隔离userid错误能够访问目录</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104725" id="104725" modified="2015-02-13" published="2007-07-26" version="2.0">      
+这个问题被与 iDefense Vulnerability Contributor Program工作的匿名研究员报道在iDefense上。</Description>      <name>DB2补丁IY87492:隔离userid错误能够访问目录</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105324" id="105324" modified="2015-02-13" published="2007-07-26" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:N/C:C/I:C/A:C)</cvss>      
@@ -338,7 +296,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</c
                         <version>                  <range>                     <low>9.0</low>                     <high>9.1.3</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd></cnnvd>      <cvsscode>6.9</cvsscode>      <severity>Severe</severity>      <Description>当DB2实例或FMP启动时，DB2里的设计错误允许攻击者提高特权。这个问题仅适用于Linux和Solaris。
-这些问题是由一个与 iDefense Vulnerability Contributor Program (VCP) 和 iDefense实验室的Joshua J. Drake的匿名者报告给IBM的。此APAR处理了在CVE.mitre.org中CVE-2007-4275描述的问题。</Description>      <name>DB2补丁IZ01923:实例和FMP启动期间的权限升级</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104726" id="104726" modified="2012-07-17" published="2006-10-11" version="2.0">      
+这些问题是由一个与 iDefense Vulnerability Contributor Program (VCP) 和 iDefense实验室的Joshua J. Drake的匿名者报告给IBM的。此APAR处理了在CVE.mitre.org中CVE-2007-4275描述的问题。</Description>      <name>DB2补丁IZ01923:实例和FMP启动期间的权限升级</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105325" id="105325" modified="2012-07-17" published="2006-10-11" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:S/C:P/I:P/A:P)</cvss>      
@@ -369,7 +327,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.5</c
 &lt;/pre&gt;
 以上的命令应该启用行和列的保护。
 然而,只有列启用保护。允许
-用户可以看见表中所有的行。</Description>      <name>DB2补丁IY90532:LBAC行保护不总是有效</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104727" id="104727" modified="2012-07-17" published="2007-07-26" version="2.0">      
+用户可以看见表中所有的行。</Description>      <name>DB2补丁IY90532:LBAC行保护不总是有效</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105326" id="105326" modified="2012-07-17" published="2007-07-26" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:S/C:P/I:P/A:P)</cvss>      
@@ -389,7 +347,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.5</c
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</cvsscode>      <severity>Severe</severity>      <Description>当使用某些DB2环境变量时，DB2设计错误的当地开发允许攻击者提高根特权。这个缓冲区溢出脆弱性可发生在众多的DB2环境变量中。
-这些问题是由Joshua J. Drake (iDefense实验室)发现并报告给IBM的。</Description>      <name>DB2补丁IY94833:多个环境变量缓冲区溢出和符号链接漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104728" id="104728" modified="2012-07-17" published="2007-02-12" version="2.0">      
+这些问题是由Joshua J. Drake (iDefense实验室)发现并报告给IBM的。</Description>      <name>DB2补丁IY94833:多个环境变量缓冲区溢出和符号链接漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105327" id="105327" modified="2012-07-17" published="2007-02-12" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:S/C:P/I:P/A:P)</cvss>      
@@ -409,7 +367,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.1</c
                         <version>                  <range>                     <low>9.0</low>                     <high>9.1.2</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
-https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.0</cvsscode>      <severity>Severe</severity>      <Description>它有可能绕过DB2授权检查。该漏洞可以使拥有SELECT特权的用户在表上更新或删除该表中的内容，即使它们不持有所要求的更新和/或删除权限。</Description>      <name>DB2补丁JR25941:选择权限升级</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104729" id="104729" modified="2012-07-17" published="2007-10-22" version="2.0">      
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.0</cvsscode>      <severity>Severe</severity>      <Description>它有可能绕过DB2授权检查。该漏洞可以使拥有SELECT特权的用户在表上更新或删除该表中的内容，即使它们不持有所要求的更新和/或删除权限。</Description>      <name>DB2补丁JR25941:选择权限升级</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105328" id="105328" modified="2012-07-17" published="2007-10-22" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:S/C:C/I:C/A:C)</cvss>      
@@ -430,7 +388,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.0</c
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.6</cvsscode>      <severity>Severe</severity>      <Description>多个set-uid DB2二进制文件存在漏洞,可以被本地用户利用。漏洞允许本地用户在系统上通过符号连接的使用创建目录作为根。
-这个问题不影响Windows系统。</Description>      <name>DB2补丁IZ07018: 几个 Setuid DB2 二进制文件中的漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104730" id="104730" modified="2015-02-13" published="2007-05-03" version="2.0">      
+这个问题不影响Windows系统。</Description>      <name>DB2补丁IZ07018: 几个 Setuid DB2 二进制文件中的漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105329" id="105329" modified="2015-02-13" published="2007-05-03" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:N/C:C/I:C/A:C)</cvss>      
@@ -453,7 +411,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.6</c
                         <version>                  <range>                     <low>9.0</low>                     <high>9.1.3</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd></cnnvd>      <cvsscode>6.9</cvsscode>      <severity>Severe</severity>      <Description>当DB2 &amp;quot;execs&amp;quot;作为根运行时，DB2里的设计错误允许攻击者提高特权。这个问题不适用于Windows系统。
-这些问题是由一个与 iDefense Vulnerability Contributor Program (VCP) 和iDefense实验室的Joshua J. Drake的匿名者报告给IBM的。此APAR处理了在CVE.mitre.org中CVE-2007-4275描述的问题。</Description>      <name>DB2补丁IY98176: DB2 &quot;execs&quot;执行文件中的安全漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104731" id="104731" modified="2012-07-17" published="2007-05-04" version="2.0">      
+这些问题是由一个与 iDefense Vulnerability Contributor Program (VCP) 和iDefense实验室的Joshua J. Drake的匿名者报告给IBM的。此APAR处理了在CVE.mitre.org中CVE-2007-4275描述的问题。</Description>      <name>DB2补丁IY98176: DB2 &quot;execs&quot;执行文件中的安全漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105330" id="105330" modified="2012-07-17" published="2007-05-04" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:S/C:C/I:C/A:C)</cvss>      
@@ -473,7 +431,7 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.6</c
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
 https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>6.6</cvsscode>      <severity>Severe</severity>      <Description>当DB2 打开文件时，这可能会被符号连接但作为根运行，DB2设计错误的当地开发允许攻击者提高根特权。这个问题不适用于Windows系统。
-这些问题是由一个与 iDefense Vulnerability Contributor Program (VCP) 和 iDefense实验室的Joshua J. Drake的匿名者报告给IBM的。</Description>      <name>DB2补丁IY98210:打开DB2文件时的符号链接安全漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="GVID-104732" id="104732" modified="2012-07-17" published="2007-09-26" version="2.0">      
+这些问题是由一个与 iDefense Vulnerability Contributor Program (VCP) 和 iDefense实验室的Joshua J. Drake的匿名者报告给IBM的。</Description>      <name>DB2补丁IY98210:打开DB2文件时的符号链接安全漏洞</name>   </Vulnerability>   <Vulnerability added="2008-03-26" gvid="ID105331" id="105331" modified="2012-07-17" published="2007-09-26" version="2.0">      
         
         
         <cvss>(AV:L/AC:H/Au:S/C:C/I:C/A:C)</cvss>      

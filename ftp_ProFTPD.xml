@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability added="2004-11-01" gvid="GVID-104673" id="104673" modified="2015-02-13" published="2003-11-17" version="2.0">      
+<Vulns>   <Vulnerability added="2004-11-01" gvid="ID101477" id="101477" modified="2015-02-13" published="2003-11-17" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:S/C:C/I:C/A:C)</cvss>      
@@ -156,7 +156,7 @@ ProFTPD Project ProFTPD 1.2.9rc3
 &lt;a href=&quot; 
 http://proftpd.linux.co.uk/download.html&quot;&gt; 
 http://proftpd.linux.co.uk/download.html&lt;/a&gt;&lt;/li&gt; 
-&lt;/ul&gt;</Solutions>      <cnnvd>CNNVD-200311-044</cnnvd>      <cvsscode>9.0</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD 1.2.7到1.2.9rc2版本 (和可能较早版本) 处理换行符的FTP ASCII 翻译代码中存在一个缓冲区溢出漏洞。此漏洞不同于CAN-2003-0831，并由ISS和相关的换行符平移发现。此缓冲区溢出可能允许攻击者作为root用户执行任意代码 (即使proftpd服务器配置为删除特权，root访问据报道是可能的)。要触发此缓冲区溢出，攻击者需要在目录中放置一个巧尽心思构建的文本文件，然后通过FTP下载。</Description>      <name>ProFTPD ASCII翻译off-by-one缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2005-07-25" gvid="GVID-104674" id="104674" modified="2015-02-13" published="2004-08-18" version="2.0">      
+&lt;/ul&gt;</Solutions>      <cnnvd>CNNVD-200311-044</cnnvd>      <cvsscode>9.0</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD 1.2.7到1.2.9rc2版本 (和可能较早版本) 处理换行符的FTP ASCII 翻译代码中存在一个缓冲区溢出漏洞。此漏洞不同于CAN-2003-0831，并由ISS和相关的换行符平移发现。此缓冲区溢出可能允许攻击者作为root用户执行任意代码 (即使proftpd服务器配置为删除特权，root访问据报道是可能的)。要触发此缓冲区溢出，攻击者需要在目录中放置一个巧尽心思构建的文本文件，然后通过FTP下载。</Description>      <name>ProFTPD ASCII翻译off-by-one缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2005-07-25" gvid="ID101478" id="101478" modified="2015-02-13" published="2004-08-18" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:P/I:P/A:P)</cvss>      
@@ -194,7 +194,7 @@ To upgrade automatically use MandrakeUpdate or urpmi. The verification
 上述升级软件还可以在下列地址中的任意一个镜像ftp服务器上下载： 
 &lt;a href=&quot; 
 http://www.mandrakesecure.net/en/ftp.php&quot; target=&quot;_blank&quot;&gt; 
-http://www.mandrakesecure.net/en/ftp.php&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200408-148</cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD 1.2.9及更早版本存在一个安全漏洞，导致基于CIDR的ACL项充当AllowAll指令，有可能授予访问意想不到的主机。</Description>      <name>处理ACL漏洞的ProFTPD CIDR </name>   </Vulnerability>   <Vulnerability added="2007-02-26" gvid="GVID-104675" id="104675" modified="2015-02-13" published="2006-11-22" version="2.0">      
+http://www.mandrakesecure.net/en/ftp.php&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200408-148</cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD 1.2.9及更早版本存在一个安全漏洞，导致基于CIDR的ACL项充当AllowAll指令，有可能授予访问意想不到的主机。</Description>      <name>处理ACL漏洞的ProFTPD CIDR </name>   </Vulnerability>   <Vulnerability added="2007-02-26" gvid="ID101479" id="101479" modified="2015-02-13" published="2006-11-22" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
@@ -220,7 +220,7 @@ http://www.mandrakesecure.net/en/ftp.php&lt;/a&gt;</Solutions>      <cnnvd>CNNVD
                         <version>                  <range>                     <low>1.2.8rc1</low>                     <high>1.3.1rc1</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
-http://www.debian.org/security/2005/dsa-1218</Solutions>      <cnnvd>CNNVD-200611-144</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>某些版本的ProFTPD在解析ProFTPD配置文件中的&amp;#39;CommandBufferSize&amp;#39;属性时可能会出现一个错误，这可能会导致攻击者在目标机器上造成拒绝服务条件。注意：此漏洞受到厂商的质疑。</Description>      <name>ProFTPD CommandBufferSize 拒绝服务</name>   </Vulnerability>   <Vulnerability added="2019-07-31" gvid="GVID-104676" id="104676" modified="2019-07-31" published="2019-07-19" version="2.0">      
+http://www.debian.org/security/2005/dsa-1218</Solutions>      <cnnvd>CNNVD-200611-144</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>某些版本的ProFTPD在解析ProFTPD配置文件中的&amp;#39;CommandBufferSize&amp;#39;属性时可能会出现一个错误，这可能会导致攻击者在目标机器上造成拒绝服务条件。注意：此漏洞受到厂商的质疑。</Description>      <name>ProFTPD CommandBufferSize 拒绝服务</name>   </Vulnerability>   <Vulnerability added="2019-07-31" gvid="ID101480" id="101480" modified="2019-07-31" published="2019-07-19" version="2.0">      
         
         
         <cvss3>CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</cvss3>      
@@ -247,7 +247,7 @@ http://www.debian.org/security/2005/dsa-1218</Solutions>      <cnnvd>CNNVD-20061
                         </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
-http://bugs.proftpd.org/show_bug.cgi?id=4372</Solutions>      <cnnvd>CNNVD-201907-1142</cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>An arbitrary file copy vulnerability in mod_copy in ProFTPD versions 1.3.4 to 1.3.6 allows for remote code execution and information disclosure without authentication, a related issue to CVE-2015-3306.</Description>      <name>ProFTPD: CVE-2019-12815: 任意文件复制</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104677" id="104677" modified="2013-12-04" published="2001-06-02" version="2.0">      
+http://bugs.proftpd.org/show_bug.cgi?id=4372</Solutions>      <cnnvd>CNNVD-201907-1142</cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>An arbitrary file copy vulnerability in mod_copy in ProFTPD versions 1.3.4 to 1.3.6 allows for remote code execution and information disclosure without authentication, a related issue to CVE-2015-3306.</Description>      <name>ProFTPD: CVE-2019-12815: 任意文件复制</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101481" id="101481" modified="2013-12-04" published="2001-06-02" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:P/I:P/A:P)</cvss>      
@@ -359,7 +359,7 @@ ProFTPD Project
 --------------- 
 目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
 ProFTPD Project Upgrade proftpd-1.2.0rc3.tar.gz 
-&lt;a href=&quot;ftp://ftp.proftpd.org/distrib/proftpd-1.2.0rc3.tar.gz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.proftpd.org/distrib/proftpd-1.2.0rc3.tar.gz&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200106-025</cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD 1.2.0rc2以及早前版本的代码中存在格式字符串缺陷，此代码处理&amp;#39;cwd&amp;#39;命令。利用此漏洞会导致服务器上的拒绝服务，但排除以root权限执行任意代码的可能性。</Description>      <name>ProFTPD CWD 命令格式字符串漏洞</name>   </Vulnerability>   <Vulnerability added="2007-02-05" gvid="GVID-104678" id="104678" modified="2013-12-04" published="2001-11-07" version="2.0">      
+&lt;a href=&quot;ftp://ftp.proftpd.org/distrib/proftpd-1.2.0rc3.tar.gz&quot; target=&quot;_blank&quot;&gt;ftp://ftp.proftpd.org/distrib/proftpd-1.2.0rc3.tar.gz&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200106-025</cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD 1.2.0rc2以及早前版本的代码中存在格式字符串缺陷，此代码处理&amp;#39;cwd&amp;#39;命令。利用此漏洞会导致服务器上的拒绝服务，但排除以root权限执行任意代码的可能性。</Description>      <name>ProFTPD CWD 命令格式字符串漏洞</name>   </Vulnerability>   <Vulnerability added="2007-02-05" gvid="ID101482" id="101482" modified="2013-12-04" published="2001-11-07" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:P/I:P/A:P)</cvss>      
@@ -534,7 +534,7 @@ ProFTPD Project proftpd-1.2.4.tar.gz
 ProFTPD Project ProFTPD 1.2.2 rc3 
 &lt;ul&gt;&lt;li&gt; 
 ProFT</Solutions>      <cnnvd>CNNVD-200112-241</cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD的某些版本没有解析反向解析的主机名以验证客户端。攻击者可利用此漏洞欺骗服务器以为恶意客户端正在连接信任源。然后攻击者可访问服务器上的所有资源，这包含允许伪造主机的ACL。
-攻击者可能使用此漏洞有效伪造有关恶意客户端会话的日志消息。</Description>      <name>ProFTPD不足的主机名解析漏洞</name>   </Vulnerability>   <Vulnerability added="2009-03-27" gvid="GVID-104679" id="104679" modified="2015-02-13" published="2008-09-20" version="2.0">      
+攻击者可能使用此漏洞有效伪造有关恶意客户端会话的日志消息。</Description>      <name>ProFTPD不足的主机名解析漏洞</name>   </Vulnerability>   <Vulnerability added="2009-03-27" gvid="ID101483" id="101483" modified="2015-02-13" published="2008-09-20" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:N/C:P/I:P/A:P)</cvss>      
@@ -561,7 +561,7 @@ ProFT</Solutions>      <cnnvd>CNNVD-200112-241</cnnvd>      <cvsscode>7.5</cvssc
             </NetworkService>      </Check>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
 http://www.openbsd.org/cgi-bin/cvsweb/src/libexec/ftpd/ftpd.c 
 http://www.openbsd.org/cgi-bin/cvsweb/src/libexec/ftpd/extern.h 
-http://www.openbsd.org/cgi-bin/cvsweb/src/libexec/ftpd/ftpcmd.y</Solutions>      <cnnvd>CNNVD-200809-356</cnnvd>      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <Description>         1.3.2rc3之前的ProFTPD版本将FTP客户端的长命令解释为多个命令，这允许远程攻击者通过使用FTP客户端实现在Web浏览器中现有会话的长ftp：//URI执行跨站点请求伪造（CSRF）攻击和执行任意FTP命令。</Description>      <name>ProFTPD 长命令跨站点请求伪造漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104680" id="104680" modified="2012-07-13" published="1999-08-27" version="2.0">      
+http://www.openbsd.org/cgi-bin/cvsweb/src/libexec/ftpd/ftpcmd.y</Solutions>      <cnnvd>CNNVD-200809-356</cnnvd>      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <Description>         1.3.2rc3之前的ProFTPD版本将FTP客户端的长命令解释为多个命令，这允许远程攻击者通过使用FTP客户端实现在Web浏览器中现有会话的长ftp：//URI执行跨站点请求伪造（CSRF）攻击和执行任意FTP命令。</Description>      <name>ProFTPD 长命令跨站点请求伪造漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101484" id="101484" modified="2012-07-13" published="1999-08-27" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
@@ -623,7 +623,7 @@ SuSE-018：Security hole in ProFTPD
 补丁下载： 
 &lt;a href=&quot; 
 http://www.suse.de/patches/index.html&quot; target=&quot;_blank&quot;&gt; 
-http://www.suse.de/patches/index.html&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-199908-055</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD 1.2.0pre5和更早版本易受缓冲区溢出漏洞攻击，可通过创建深度嵌套序列的目录的远程客户端利用此漏洞。可利用服务器上的漏洞执行任意指令。</Description>      <name>ProFTPD嵌套的长路径缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104681" id="104681" modified="2012-07-13" published="1999-02-09" version="2.0">      
+http://www.suse.de/patches/index.html&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-199908-055</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD 1.2.0pre5和更早版本易受缓冲区溢出漏洞攻击，可通过创建深度嵌套序列的目录的远程客户端利用此漏洞。可利用服务器上的漏洞执行任意指令。</Description>      <name>ProFTPD嵌套的长路径缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101485" id="101485" modified="2012-07-13" published="1999-02-09" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
@@ -652,7 +652,7 @@ Washington University
 目前厂商已经在最新版本的软件中修复了这个安全问题，请到厂商的主页下载： 
 &lt;a href=&quot; 
 http://www.wu-ftpd.org/&quot; target=&quot;_blank&quot;&gt; 
-http://www.wu-ftpd.org/&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-199902-019</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD 1.2.0pre1和更早版本易受缓冲区溢出的攻击，此漏洞可被使用长路径名的远程客户端利用。它可被利用来在服务器上执行任意指令。</Description>      <name>ProFTPD长路径缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2007-01-31" gvid="GVID-104682" id="104682" modified="2015-02-13" published="2006-12-14" version="2.0">      
+http://www.wu-ftpd.org/&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-199902-019</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD 1.2.0pre1和更早版本易受缓冲区溢出的攻击，此漏洞可被使用长路径名的远程客户端利用。它可被利用来在服务器上执行任意指令。</Description>      <name>ProFTPD长路径缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2007-01-31" gvid="ID101486" id="101486" modified="2015-02-13" published="2006-12-14" version="2.0">      
         
         
         <cvss>(AV:L/AC:M/Au:S/C:C/I:C/A:C)</cvss>      
@@ -677,7 +677,7 @@ ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.0a.tar.bz2</Solutions>      <cn
 ProFTPD版本先于1.3.1rc1之前对于缓冲区溢出in mod_ctrls.c的;pr_ctrls_recv_request()&quot;;
 函数是很脆弱的。如果服务器用一个未指明的方式来配置,一个本地攻击者可以供应过度
 长&amp;quot;reqaction&amp;quot;参数在ctrl连接套接字进行堆栈缓冲区溢出,在用户ProFTPD守护进程的上下文下运行任意代码。
-成功开发要求&amp;quot;mod_ctrls&amp;quot; 模块被编译成ProFTPD。</Description>      <name>ProFTPD &quot;mod_ctrls&quot; 缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2007-01-31" gvid="GVID-104683" id="104683" modified="2015-02-13" published="2006-11-28" version="2.0">      
+成功开发要求&amp;quot;mod_ctrls&amp;quot; 模块被编译成ProFTPD。</Description>      <name>ProFTPD &quot;mod_ctrls&quot; 缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2007-01-31" gvid="ID101487" id="101487" modified="2015-02-13" published="2006-11-28" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:P/I:P/A:P)</cvss>      
@@ -708,7 +708,7 @@ ProFTPD版本先于1.3.1rc1之前对于缓冲区溢出in mod_ctrls.c的;pr_ctrls
             </NetworkService>      </Check>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
 http://www.debian.org/security/2005/dsa-1222 
 </Solutions>      <cnnvd>CNNVD-200611-482</cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>ProFTPD易受mod_tls.c的&amp;quot;tls_x509_name_oneline()&amp;quot;函数中缓冲区的影响，这可能允许攻击者在ProFTPD进程的语境下运行任意代码。
-成功利用此漏洞要求mod_tls编译进ProFTPD。</Description>      <name>ProFTPD &quot;mod_tls&quot; 缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2007-08-03" gvid="GVID-104684" id="104684" modified="2015-02-13" published="2007-04-16" version="2.0">      
+成功利用此漏洞要求mod_tls编译进ProFTPD。</Description>      <name>ProFTPD &quot;mod_tls&quot; 缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2007-08-03" gvid="ID101488" id="101488" modified="2015-02-13" published="2007-04-16" version="2.0">      
         
         
         <cvss>(AV:N/AC:H/Au:N/C:P/I:P/A:P)</cvss>      
@@ -729,7 +729,7 @@ http://www.debian.org/security/2005/dsa-1222
                         <version>                  <range>                     <high>1.3.1rc3</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd></cnnvd>      <cvsscode>5.1</cvsscode>      <severity>Severe</severity>      <Description>当多个同时执行授权API身份验证模块的配置时，ProFTPD 可能会允许远程攻击者能够绕过身份验证。
-问题是 ProFTPD 不需要检查身份验证模块和检索身份验证数据的模块相同。例如，可能其中一个身份验证模块提供用户数据 (例如 mod_auth_unix)，但然后另一个模块进行验证用户数据 (例如 mod_sql)。</Description>      <name>ProFTPD的多核认证模块安全问题</name>   </Vulnerability>   <Vulnerability added="2007-01-31" gvid="GVID-104685" id="104685" modified="2017-12-18" published="2007-01-31" version="2.0">      
+问题是 ProFTPD 不需要检查身份验证模块和检索身份验证数据的模块相同。例如，可能其中一个身份验证模块提供用户数据 (例如 mod_auth_unix)，但然后另一个模块进行验证用户数据 (例如 mod_sql)。</Description>      <name>ProFTPD的多核认证模块安全问题</name>   </Vulnerability>   <Vulnerability added="2007-01-31" gvid="ID101489" id="101489" modified="2017-12-18" published="2007-01-31" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:N/C:C/I:C/A:C)</cvss>      
@@ -748,7 +748,7 @@ http://www.debian.org/security/2005/dsa-1222
                         <version>                  <range>                     <high>1.3.5</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
-https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <Description>1.3.5之前的ProFTPD版本被认为是过时的。 建议您将ProFTPD安装升级到当前版本。</Description>      <name>过时ProFTPD安装</name>   </Vulnerability>   <Vulnerability added="2005-10-04" gvid="GVID-104686" id="104686" modified="2015-02-13" published="2005-07-27" version="2.0">      
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <Description>1.3.5之前的ProFTPD版本被认为是过时的。 建议您将ProFTPD安装升级到当前版本。</Description>      <name>过时ProFTPD安装</name>   </Vulnerability>   <Vulnerability added="2005-10-04" gvid="ID101490" id="101490" modified="2015-02-13" published="2005-07-27" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:P/I:N/A:P)</cvss>      
@@ -768,7 +768,26 @@ https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>9.3</c
                         <version>                  <range>                     <high>1.3.0rc2</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
-http://www.proftpd.org/</Solutions>      <cnnvd>CNNVD-200507-275</cnnvd>      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <Description>某些ProFTPd的版本包含在关机的消息处理程序中的漏洞。其结果是，如果一个验证的攻击者能够在文件系统中创建目录，则有可能使缓冲器溢出并控制ProFTPd过程。</Description>      <name>ProFTPD关闭消息格式存在字符串溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2005-10-05" gvid="GVID-104687" id="104687" modified="2015-02-13" published="2005-07-27" version="2.0">      
+http://www.proftpd.org/</Solutions>      <cnnvd>CNNVD-200507-275</cnnvd>      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <Description>某些ProFTPd的版本包含在关机的消息处理程序中的漏洞。其结果是，如果一个验证的攻击者能够在文件系统中创建目录，则有可能使缓冲器溢出并控制ProFTPd过程。</Description>      <name>ProFTPD关闭消息格式存在字符串溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2007-02-05" gvid="ID101491" id="101491" modified="2012-07-13" published="2003-06-19" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+             <tag>SQL Injection</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="CVE">CVE-2003-0500</id>         
+             <id name="DEBIAN">DSA-338</id>         
+             <id name="URL">http://lists.grok.org.uk/pipermail/full-disclosure/2003-June/005826.html</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="ProFTPD">               
+                        <version>                  <range>                     <high>1.2.9rc3</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd>CNNVD-200308-006</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>在mod_sql_postgres SQL身份验证模块中存在一个安全漏洞，它允许攻击者通过USER命令的SQL注入获取未经授权访问服务。</Description>      <name>ProFTPD mod_sql SQL注入</name>   </Vulnerability>   <Vulnerability added="2005-10-05" gvid="ID101492" id="101492" modified="2015-02-13" published="2005-07-27" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:P/I:N/A:P)</cvss>      
@@ -789,7 +808,37 @@ http://www.proftpd.org/</Solutions>      <cnnvd>CNNVD-200507-275</cnnvd>      <c
                         <version>                  <range>                     <high>1.3.0rc2</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
-http://www.proftpd.org/</Solutions>      <cnnvd>CNNVD-200507-275</cnnvd>      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <Description>某些附带mod_sql模块的ProFTPd版本易受格式字符串溢出的影响。所以，如果后台与SQLShowInfo指令一起配置且攻击者能访问后台解析的数据，那么攻击者可在ProFTPd进程下执行任意代码。</Description>      <name>ProFTPD SQLShowInfo缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104688" id="104688" modified="2013-12-04" published="2001-03-12" version="2.0">      
+http://www.proftpd.org/</Solutions>      <cnnvd>CNNVD-200507-275</cnnvd>      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <Description>某些附带mod_sql模块的ProFTPd版本易受格式字符串溢出的影响。所以，如果后台与SQLShowInfo指令一起配置且攻击者能访问后台解析的数据，那么攻击者可在ProFTPd进程下执行任意代码。</Description>      <name>ProFTPD SQLShowInfo缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2007-01-24" gvid="ID101493" id="101493" modified="2018-03-21" published="2006-11-10" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
+        <Tags>         
+             <tag>FTP</tag>         
+             <tag>Remote Execution</tag>         
+        </Tags>      
+        <AlternateIds>         
+             <id name="BID">20992</id>         
+             <id name="CVE">CVE-2006-5815</id>         
+             <id name="DEBIAN">DSA-1222</id>         
+             <id name="URL">http://bugs.proftpd.org/show_bug.cgi?id=2858</id>         
+             <id name="URL">http://frontal2.mandriva.com/security/advisories?name=MDKSA-2006:217</id>         
+             <id name="URL">http://gleg.net/vulndisco_meta.shtml</id>         
+             <id name="URL">http://www.frsirt.com/english/advisories/2006/4451</id>         
+             <id name="URL">http://www.mandriva.com/security/advisories?name=MDKSA-2006:217-1</id>         
+             <id name="URL">http://www.securityfocus.com/archive/1/archive/1/452760/100/200/threaded</id>         
+             <id name="URL">http://www.trustix.org/errata/2006/0066/</id>         
+             <id name="URL">http://www.trustix.org/errata/2006/0070</id>         
+             <id name="URL">https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=214820</id>         
+             <id name="XF">30147</id>         
+        </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="ProFTPD">               
+                        <version>                  <range>                     <high>1.3.0a</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+http://www.debian.org/security/2005/dsa-1218</Solutions>      <cnnvd>CNNVD-200611-144</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>2006年11月27日的ProFTPD发布版容易产生堆栈缓冲区溢出漏洞，可导致攻击者执行任意代码。漏洞倚赖于sreplace()函数，该函数被ProFTPD用来扩展内置令牌为有意义的字符串（如当前运行目录，用户名等等）。本漏洞的最常见攻击点在于多数ProFTPD安装时默认启动的DisplayFirstChdir指令。该指令指明一个文件名(通常为&amp;quot;.消息&amp;quot;）。当用户创建目录时，该文件名自动被处理。同时指令首次对其执行CHDIR。若DisplayFirstChdir指令所指明的文件被转至目录（通过PUT命令），则ProFTPD将自动读取文件并将数据传至存在漏洞的sreplace()函数。</Description>      <name>ProFTPD sreplace()堆溢出</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101494" id="101494" modified="2013-12-04" published="2001-03-12" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
@@ -813,7 +862,7 @@ http://www.proftpd.org/</Solutions>      <cnnvd>CNNVD-200507-275</cnnvd>      <c
                   <Product name="ProFTPD">               
                         <version>                  <range>                     <high>1.2.0rc3</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd>CNNVD-200103-038</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>ProFTPD 1.2.0rc2早期版本存在内存泄漏漏洞，通过重复发出USER命令（或大小命令）直到所有内存耗尽利用此漏洞。这将导致服务器上的拒绝服务。</Description>      <name>ProFTPD USER命令内存泄露拒绝服务</name>   </Vulnerability>   <Vulnerability added="2005-01-25" gvid="GVID-104689" id="104689" modified="2013-12-04" published="2004-10-15" version="2.0">      
+            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd>CNNVD-200103-038</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>ProFTPD 1.2.0rc2早期版本存在内存泄漏漏洞，通过重复发出USER命令（或大小命令）直到所有内存耗尽利用此漏洞。这将导致服务器上的拒绝服务。</Description>      <name>ProFTPD USER命令内存泄露拒绝服务</name>   </Vulnerability>   <Vulnerability added="2005-01-25" gvid="ID101495" id="101495" modified="2013-12-04" published="2004-10-15" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:P/I:N/A:N)</cvss>      

@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability added="2007-02-27" gvid="GVID-104666" id="104666" modified="2012-07-13" published="2005-03-22" version="2.0">      
+<Vulns>   <Vulnerability added="2007-02-27" gvid="ID101511" id="101511" modified="2012-07-13" published="2005-03-22" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
@@ -17,7 +17,7 @@
                         <version>                  <range>                     <high>0.9.6</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
-http://prdownloads.sourceforge.net/filezilla/FileZilla_Server_0_9_6.exe?download</Solutions>      <cnnvd>CNNVD-200505-040</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>某些FileZilla Server版本包含一个在处理zlib压缩的传输模式时的漏洞，这可能允许经过身份验证的（匿名或其他）攻击者发动拒绝服务式攻击。</Description>      <name>FileZilla服务器&amp;#39;MODE Z&amp;#39;拒绝服务</name>   </Vulnerability>   <Vulnerability added="2007-02-23" gvid="GVID-104668" id="104668" modified="2015-02-13" published="2005-07-28" version="2.0">      
+http://prdownloads.sourceforge.net/filezilla/FileZilla_Server_0_9_6.exe?download</Solutions>      <cnnvd>CNNVD-200505-040</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>某些FileZilla Server版本包含一个在处理zlib压缩的传输模式时的漏洞，这可能允许经过身份验证的（匿名或其他）攻击者发动拒绝服务式攻击。</Description>      <name>FileZilla服务器&amp;#39;MODE Z&amp;#39;拒绝服务</name>   </Vulnerability>   <Vulnerability added="2007-02-23" gvid="ID101512" id="101512" modified="2015-02-13" published="2005-07-28" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
@@ -53,7 +53,7 @@ http://prdownloads.sourceforge.net/filezilla/FileZilla_Server_0_9_6.exe?download
                   </Product>            
             </NetworkService>      </Check>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
 http://www.zlib.net/</Solutions>      <cnnvd>CNNVD-200507-258</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>FileZilla Server的某些版本在zlib压缩库中存在一个漏洞，这允许攻击者发起拒绝服务攻击。
-此漏洞不存在FileZilla本身，但zlib库与该产品没有关联。</Description>      <name>FileZilla服务器/zlib拒绝服务</name>   </Vulnerability>   <Vulnerability added="2007-02-23" gvid="GVID-104669" id="104669" modified="2015-02-13" published="2005-07-28" version="2.0">      
+此漏洞不存在FileZilla本身，但zlib库与该产品没有关联。</Description>      <name>FileZilla服务器/zlib拒绝服务</name>   </Vulnerability>   <Vulnerability added="2007-02-23" gvid="ID101513" id="101513" modified="2015-02-13" published="2005-07-28" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      

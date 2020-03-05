@@ -1,0 +1,6 @@
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="ID104067" id="104067" modifyDate="2012-07-31">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Greymatter远程命令执行漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本Greymatter未正确清理由gm-comments.cgi文件读入的数值。因此，远程攻击者可能会通过网络服务器进程权限范围内执行任意PHP代码。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Greymatter">               
+                        <version>                  <range>                     <high>1.2.1d</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

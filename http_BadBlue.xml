@@ -1,0 +1,5 @@
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="ID103745" id="103745" modifyDate="2012-07-31">      <cvsscode>7.6</cvsscode>      <severity>Critical</severity>      <name>BadBlue管理页面认证绕过漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的BadBlue利用弱身份验证机制确保管理页面仅从本地主机访问。通过编码管理页面URL中的某些字符,可能获取完全访问服务器的权限。</Description>      <cnnvd>CNNVD-200306-040</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0332</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="BadBlue">               
+                        <version>                  <range>                     <high>2.3</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

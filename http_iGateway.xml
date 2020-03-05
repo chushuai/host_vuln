@@ -1,0 +1,12 @@
+<Vulns>   <Vulnerability addData="2008-02-26" gvid="ID103760" id="103760" modifyDate="2015-02-13">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>计算机技术igateway服务HTTP内容长度的缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>计算机协会igateway服务是一个HTTP服务通常
+综合一些商业产品，用来监听5250加密和未加密的HTTP请求。如果使用无效（负）值，igateway不正确地检查用户提供的内容长度标头，导致一个堆缓冲区溢出。攻击者可在未经身份验证的请求中指定一个恶意URI和内容长度字段到igateway服务以写入任何数据任意程序存储器位置。由于igateway服务通常在系统级访问中运行，可能会使系统完全受损。</Description>      <cnnvd>CNNVD-200512-713</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-3653</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+ftp://ftp.ca.com/pub/iTech/downloads</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product name="iGateway" vendor="">               <version>                  
+                                 <!-- 
+                  Version range from: http://www.ca.com/us/securityadvisor/vulninfo/vuln.aspx?id=33778 
+                  (see "Affected Technologies")
+               -->                  
+                                 <range>                     
+                                       <low>4.0.041221</low>                     
+                                       <high>4.0.051230</high>                     
+                                 </range>                  
+                           </version>            </Product>         </NetworkService>      </Check>   </Vulnerability></Vulns>

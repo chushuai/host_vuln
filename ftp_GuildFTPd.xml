@@ -1,1 +1,20 @@
-<Vulns/>
+<Vulns>   <Vulnerability added="2004-11-01" gvid="ID101506" id="101506" modified="2013-12-04" published="2004-11-01" version="2.0">      
+        
+        
+        <cvss>(AV:N/AC:L/Au:S/C:P/I:N/A:N)</cvss>      
+        <Tags>         
+             <tag>Directory Traversal</tag>         
+             <tag>FTP</tag>         
+        </Tags>      
+        <AlternateIds>
+  </AlternateIds>      
+        
+        
+      <Check scope="endpoint">         <NetworkService type="FTP">            
+                  <Product name="GuildFTPd">               
+                        <version>                  
+                              <range>                     <high>0.999.6</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>4.0</cvsscode>      <severity>Severe</severity>      <Description>修复GuildFTPd的目录遍历攻击漏洞</Description>      <name>GuildFTPd 目录遍历漏洞</name>   </Vulnerability></Vulns>

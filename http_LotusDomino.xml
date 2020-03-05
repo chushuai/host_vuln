@@ -1,0 +1,133 @@
+<Vulns>   <Vulnerability addData="2005-09-21" gvid="ID104027" id="104027" modifyDate="2015-02-13">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>IBM Lotus Domino BaseTarget Src参数跨站脚本漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>写回给用户前，IBM Lotus Domino的某些版本不正确过滤用户输入。因此，攻击者可在另一个用户的上下文中执行脚本代码并偷取cookie和/或认证信息。</Description>      <cnnvd>CNNVD-200509-205</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-3015</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://www.ibm.com/us/en/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Lotus Domino">               
+                        <version>                  
+                              <range>                     
+                     <low>6.0</low>                     
+                     <high>6.5.4</high>                     
+                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104036" id="104036" modifyDate="2013-12-04">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Lotus Domino iNotes文件夹名的缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Lotus Domino容易受到缓冲区溢出的攻击，可由恶意制作的请求触发到一个特定的iNotes的Web邮件访问URL。
+这可被任何远程用户利用来引起Domino服务器崩溃并导致拒绝服务。理论上攻击者很可能利用此漏洞完全控制Domino服务器，尽管这尚未得到证实。</Description>      <cnnvd>CNNVD-200304-055</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0178</id>      </AlternateIds>      <Solutions>厂商补丁： 
+Lotus 
+----- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载补丁下载： 
+Lotus Domino 6.0: 
+IBM Upgrade Lotus Domino 6.0.1 Upgrade 
+&lt;a href=&quot; 
+http://www14.software.ibm.com/webapp/download/search.jsp?q=&amp;cat=&amp;pf=&amp;k=&amp;dt=&amp;go=y&amp;rs=ESD-DMNTSRVRi&amp;S_TACT=&amp;S_CMP=&amp;sb=r&quot; target=&quot;_blank&quot;&gt; 
+http://www14.software.ibm.com/webapp/download/search.jsp?q=&amp;cat=&amp;pf=&amp;k=&amp;dt=&amp;go=y&amp;rs=ESD-DMNTSRVRi&amp;S_TACT=&amp;S_CMP=&amp;sb=r&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Lotus Domino">               
+                        <version>                  
+                              <range>                     
+                     <low>5.0</low>                     
+                     <high>5.0.12</high>                     
+                  </range>                  
+                              <range>                     
+                     <low>6.0</low>                     
+                     <high>6.0.1</high>                     
+                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104036" id="104036" modifyDate="2013-12-04">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Lotus Domino iNotes文件夹名的缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Lotus Domino容易受到缓冲区溢出的攻击，可由恶意制作的请求触发到一个特定的iNotes的Web邮件访问URL。
+这可被任何远程用户利用来引起Domino服务器崩溃并导致拒绝服务。理论上攻击者很可能利用此漏洞完全控制Domino服务器，尽管这尚未得到证实。</Description>      <cnnvd>CNNVD-200304-055</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0178</id>      </AlternateIds>      <Solutions>厂商补丁： 
+Lotus 
+----- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载补丁下载： 
+Lotus Domino 6.0: 
+IBM Upgrade Lotus Domino 6.0.1 Upgrade 
+&lt;a href=&quot; 
+http://www14.software.ibm.com/webapp/download/search.jsp?q=&amp;cat=&amp;pf=&amp;k=&amp;dt=&amp;go=y&amp;rs=ESD-DMNTSRVRi&amp;S_TACT=&amp;S_CMP=&amp;sb=r&quot; target=&quot;_blank&quot;&gt; 
+http://www14.software.ibm.com/webapp/download/search.jsp?q=&amp;cat=&amp;pf=&amp;k=&amp;dt=&amp;go=y&amp;rs=ESD-DMNTSRVRi&amp;S_TACT=&amp;S_CMP=&amp;sb=r&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Lotus Domino">               
+                        <version>                  
+                              <range>                     
+                     <low>5.0</low>                     
+                     <high>5.0.12</high>                     
+                  </range>                  
+                              <range>                     
+                     <low>6.0</low>                     
+                     <high>6.0.1</high>                     
+                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104038" id="104038" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Lotus Domino iNotes Incomplete Post拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>LotusDomino易受到发给到特定iNotes URL的不完整、格式错误的POST请求造成的拒绝服务攻击  。此请求将关闭DominoWeb服务器。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0181,CVE-2003-0180</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Lotus Domino">               
+                        <version>                  
+                              <range>                     
+                     <low>5.0</low>                     
+                     <high>5.0.12</high>                     
+                  </range>                  
+                              <range>                     
+                     <low>6.0</low>                     
+                     <high>6.0.1</high>                     
+                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104038" id="104038" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Lotus Domino iNotes Incomplete Post拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>LotusDomino易受到发给到特定iNotes URL的不完整、格式错误的POST请求造成的拒绝服务攻击  。此请求将关闭DominoWeb服务器。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2003-0181,CVE-2003-0180</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Lotus Domino">               
+                        <version>                  
+                              <range>                     
+                     <low>5.0</low>                     
+                     <high>5.0.12</high>                     
+                  </range>                  
+                              <range>                     
+                     <low>6.0</low>                     
+                     <high>6.0.1</high>                     
+                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104040" id="104040" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Lotus Notes/ Domino的Windows设备名称拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Lotus Domino R5 5.0.7之前版本（适用于Windows和OS/2）都受到拒绝服务攻击。如果多次作出请求MS-DOS设备名称（例如/ COM），CGI httpd.exe处理不当，会造成系统资源的枯竭。</Description>      <cnnvd>CNNVD-200108-007</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-0602</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Lotus Domino">               
+                        <version>                  
+                              <range>                     
+                     <low>5.0</low>                     
+                     <high>5.0.7</high>                     
+                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104040" id="104040" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Lotus Notes/ Domino的Windows设备名称拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Lotus Domino R5 5.0.7之前版本（适用于Windows和OS/2）都受到拒绝服务攻击。如果多次作出请求MS-DOS设备名称（例如/ COM），CGI httpd.exe处理不当，会造成系统资源的枯竭。</Description>      <cnnvd>CNNVD-200108-007</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-0602</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Lotus Domino">               
+                        <version>                  
+                              <range>                     
+                     <low>5.0</low>                     
+                     <high>5.0.7</high>                     
+                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104042" id="104042" modifyDate="2012-07-19">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Lotus Domino的DOS设备拒绝服务（NUL.pif）</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Lotus Domino服务器是一个基于网络的协同软件的应用框架。它可以在多种平台运行，包括Windows和Unixo。  Windows 2000上运行的Lotus Domino Webserver 5.0.9a之前版本很容发生到拒绝服务的情况。如果DOS设备请求/ cgi-bin目录有220个字符的扩展，服务器将产生一个CMD.EXE会话运行nul.pif。服务器也将弹出一个窗口，要求程序运行nul.pif。如果这样做了大约400此，服务器会耗尽正在运行的线程。</Description>      <cnnvd>CNNVD-200212-221</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-2025</id>      </AlternateIds>      <Solutions>临时解决方法： 
+此问题没有合适的临时解决方法。 
+厂商补丁： 
+Lotus 
+----- 
+目前厂商已经在新版的5.0.9a软件中修复这个安全问题，请到厂商的主页下载： 
+&lt;a href=&quot; 
+http://notes.net/qmrdown.nsf&quot; target=&quot;_blank&quot;&gt; 
+http://notes.net/qmrdown.nsf&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Lotus Domino">               
+                        <version>                  
+                              <range>                     
+                     <low>5.0</low>                     
+                     <high>5.0.9a</high>                     
+                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104042" id="104042" modifyDate="2012-07-19">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Lotus Domino的DOS设备拒绝服务（NUL.pif）</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Lotus Domino服务器是一个基于网络的协同软件的应用框架。它可以在多种平台运行，包括Windows和Unixo。  Windows 2000上运行的Lotus Domino Webserver 5.0.9a之前版本很容发生到拒绝服务的情况。如果DOS设备请求/ cgi-bin目录有220个字符的扩展，服务器将产生一个CMD.EXE会话运行nul.pif。服务器也将弹出一个窗口，要求程序运行nul.pif。如果这样做了大约400此，服务器会耗尽正在运行的线程。</Description>      <cnnvd>CNNVD-200212-221</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-2025</id>      </AlternateIds>      <Solutions>临时解决方法： 
+此问题没有合适的临时解决方法。 
+厂商补丁： 
+Lotus 
+----- 
+目前厂商已经在新版的5.0.9a软件中修复这个安全问题，请到厂商的主页下载： 
+&lt;a href=&quot; 
+http://notes.net/qmrdown.nsf&quot; target=&quot;_blank&quot;&gt; 
+http://notes.net/qmrdown.nsf&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Lotus Domino">               
+                        <version>                  
+                              <range>                     
+                     <low>5.0</low>                     
+                     <high>5.0.9a</high>                     
+                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

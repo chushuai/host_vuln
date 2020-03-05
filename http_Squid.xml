@@ -1,4 +1,86 @@
-<Vulns>   <Vulnerability addData="2004-11-01" gvid="GVID-102693" id="102693" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理认证信息转发</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在某些条件下，Squid proxy服务器可能转发
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="ID104568" id="104568" modifyDate="2013-12-04">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>Squid代理NTLM验证缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Squid代理服务器很容易受到远程缓冲区溢出NTLM身份验证帮手的影响。 Squid支持客户端NTLM身份验证。如果客户端发送一个超长的密码或域名，服务器上将出现缓冲溢出。这可能会导致在Squid代理服务器中执行任意代码。</Description>      <cnnvd>CNNVD-200408-098</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-0541</id>      </AlternateIds>      <Solutions>厂商补丁： 
+MandrakeSoft 
+------------ 
+MandrakeSoft已经为此发布了一个安全公告(MDKSA-2004:059)以及相应补丁: 
+MDKSA-2004:059：Updated squid packages fix remotely exploitable vulnerability 
+链接：&lt;a href=&quot; 
+http://www.linux-mandrake.com/en/security/2004/2004-059.php&quot; target=&quot;_blank&quot;&gt; 
+http://www.linux-mandrake.com/en/security/2004/2004-059.php&lt;/a&gt; 
+补丁下载： 
+Updated Packages: 
+Mandrakelinux 10.0: 
+&lt;a href=&quot;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/10.0/RPMS/squid-2.5.STABLE4-1.2.100mdk.i586.rpm&quot; target=&quot;_blank&quot;&gt;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/10.0/RPMS/squid-2.5.STABLE4-1.2.100mdk.i586.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/10.0/SRPMS/squid-2.5.STABLE4-1.2.100mdk.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/10.0/SRPMS/squid-2.5.STABLE4-1.2.100mdk.src.rpm&lt;/a&gt; 
+Mandrakelinux 10.0/AMD64: 
+&lt;a href=&quot;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/amd64/10.0/RPMS/squid-2.5.STABLE4-1.2.100mdk.amd64.rpm&quot; target=&quot;_blank&quot;&gt;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/amd64/10.0/RPMS/squid-2.5.STABLE4-1.2.100mdk.amd64.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/amd64/10.0/SRPMS/squid-2.5.STABLE4-1.2.100mdk.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/amd64/10.0/SRPMS/squid-2.5.STABLE4-1.2.100mdk.src.rpm&lt;/a&gt; 
+Mandrakelinux 9.1: 
+&lt;a href=&quot;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/9.1/RPMS/squid-2.5.STABLE1-7.2.91mdk.i586.rpm&quot; target=&quot;_blank&quot;&gt;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/9.1/RPMS/squid-2.5.STABLE1-7.2.91mdk.i586.rpm&lt;/a&gt; 
+&lt;a href=&quot;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/9.1/SRPMS/squid-2.5.STABLE1-7.2.91mdk.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/9.1/SRPMS/squid-2.5.STABLE1-7.2.91mdk.src.rpm&lt;/a&gt; 
+Mandrakelinux 9.1/PPC: 
+&lt;a href=&quot;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/ppc/9.1/RPMS/squid-2.5.STABLE1-7.2.91mdk.ppc.rpm&quot; target=&quot;_blank&quot;&gt;ftp://download.sourceforge.net/pub/mirrors/mandrake/updates/ppc/9.1/RPMS/squid-2.5.STABLE1-7.2.91mdk.ppc.rpm&lt;/a&gt; 
+上述升级软件还可以在下列地址中的任意一个镜像ftp服务器上下载： 
+&lt;a href=&quot; 
+http://www.mandrakesecure.net/en/ftp.php&quot; target=&quot;_blank&quot;&gt; 
+http://www.mandrakesecure.net/en/ftp.php&lt;/a&gt; 
+S.u.S.E. 
+-------- 
+S.u.S.E.已经为此发布了一个安全公告(SuSE-SA:2004:016)以及相应补丁: 
+SuSE-SA:2004:016：squid 
+链接： 
+补丁下载： 
+SuSE Patch squid-2.4.STABLE6-9.i386.patch.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i386.patch.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.0/n2/squid-2.4.STABLE6-9.i386.patch.rpm&lt;/a&gt; 
+Intel i386 Platform 
+SuSE Upgrade squid-2.5.STABLE5-42.9.i586.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/9.1/rpm/i586/squid-2.5.STABLE5-42.9.i586.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/9.1/rpm/i586/squid-2.5.STABLE5-42.9.i586.rpm&lt;/a&gt; 
+Intel i386 Platform 
+SuSE Patch squid-2.5.STABLE5-42.9.i586.patch.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/9.1/rpm/i586/squid-2.5.STABLE5-42.9.i586.patch.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/9.1/rpm/i586/squid-2.5.STABLE5-42.9.i586.patch.rpm&lt;/a&gt; 
+Intel i386 Platform 
+SuSE Upgrade squid-2.5.STABLE5-42.9.x86_64.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/x86_64/update/9.1/rpm/x86_64/squid-2.5.STABLE5-42.9.x86_64.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/x86_64/update/9.1/rpm/x86_64/squid-2.5.STABLE5-42.9.x86_64.rpm&lt;/a&gt; 
+Opteron x86_64 Platform 
+SuSE Patch squid-2.5.STABLE5-42.9.x86_64.patch.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/x86_64/update/9.1/rpm/x86_64/squid-2.5.STABLE5-42.9.x86_64.patch.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/x86_64/update/9.1/rpm/x86_64/squid-2.5.STABLE5-42.9.x86_64.patch.rpm&lt;/a&gt; 
+Opteron x86_64 Platform 
+SuSE Upgrade squid-2.5.STABLE3-110.i586.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/9.0/rpm/i586/squid-2.5.STABLE3-110.i586.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/9.0/rpm/i586/squid-2.5.STABLE3-110.i586.rpm&lt;/a&gt; 
+Intel i386 Platform 
+SuSE Patch squid-2.5.STABLE3-110.i586.patch.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/9.0/rpm/i586/squid-2.5.STABLE3-110.i586.patch.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/9.0/rpm/i586/squid-2.5.STABLE3-110.i586.patch.rpm&lt;/a&gt; 
+Intel i386 Platform 
+SuSE Upgrade squid-2.5.STABLE3-110.x86_64.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/x86_64/update/9.0/rpm/x86_64/squid-2.5.STABLE3-110.x86_64.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/x86_64/update/9.0/rpm/x86_64/squid-2.5.STABLE3-110.x86_64.rpm&lt;/a&gt; 
+Opteron x86_64 Platform 
+SuSE Patch squid-2.5.STABLE3-110.x86_64.patch.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/x86_64/update/9.0/rpm/x86_64/squid-2.5.STABLE3-110.x86_64.patch.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/x86_64/update/9.0/rpm/x86_64/squid-2.5.STABLE3-110.x86_64.patch.rpm&lt;/a&gt; 
+Opteron x86_64 Platform 
+Squid Web Proxy Cache 2.5 STABLE1: 
+Squid Patch libntlmssp.c.patch 
+&lt;a href=&quot; 
+http://www.squid-cache.org/~wessels/patch/libntlmssp.c.patch&quot; target=&quot;_blank&quot;&gt; 
+http://www.squid-cache.org/~wessels/patch/libntlmssp.c.patch&lt;/a&gt; 
+SuSE Upgrade squid-2.5.STABLE1-98.i586.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.2/rpm/i586/squid-2.5.STABLE1-98.i586.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.2/rpm/i586/squid-2.5.STABLE1-98.i586.rpm&lt;/a&gt; 
+Intel i386 Platform 
+SuSE Patch squid-2.5.STABLE1-98.i586.patch.rpm 
+&lt;a href=&quot;ftp://ftp.suse.com/pub/suse/i386/update/8.2/rpm/i586/squid-2.5.STABLE1-98.i586.patch.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/i386/update/8.2/rpm/i586/squid-2.5.STABLE1-98.i586.patch.rpm&lt;/a&gt; 
+Intel i386 Platform 
+Squid 
+----- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+Squid Patch libntlmssp.c.patch 
+&lt;a href=&quot; 
+http://www.squid-cache.org/~wessels/patch/libntlmssp.c.patch&quot; target=&quot;_blank&quot;&gt; 
+http://www.squid-cache.org/~wessels/patch/libntlmssp.c.patch&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="Squid">               
+                        <version>                  
+                              <range>                     <low>2.5</low>                     <high>2.5.STABLE5</high>                  </range>                  
+                              <range>                     <low>3.0.PRE1</low>                     <high>3.0.PRE3</high>                  </range>                  
+                        </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID105285" id="105285" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理认证信息转发</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在某些条件下，Squid proxy服务器可能转发
       用户名和密码的代理访问远程网站。该认证
       信息是由客户端浏览器发送的HTTP标头当一个请求是
       通过代理进行。认证信息是指为代理
@@ -144,7 +226,7 @@ SuSE s</Solutions>      <Check scope="endpoint">         <NetworkService type="H
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.4.STABLE7</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-04-14" gvid="GVID-102694" id="102694" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理服务器连接中断拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>由于有缺陷的分析和发布请求，Squid 代理服务器很容易拒绝服务。因此，如果连接过早中止，远程攻击者可导致代理服务器崩溃。</Description>      <cnnvd>CNNVD-200504-039</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0718</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-04-14" gvid="ID105286" id="105286" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理服务器连接中断拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>由于有缺陷的分析和发布请求，Squid 代理服务器很容易拒绝服务。因此，如果连接过早中止，远程攻击者可导致代理服务器崩溃。</Description>      <cnnvd>CNNVD-200504-039</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0718</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
 Turbolinux Appliance Server Hosting Edition 1.0 
 Turbolinux squid-2.5.STABLE6-21.i586.rpm 
 Turbolinux Appliance Server 1.0 Hosting Edition 
@@ -225,13 +307,13 @@ ftp://ftp.turbolinux.co.jp/pub/TurboLinux/TurboLinux/ia32/Workstation/ 7/updates
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.5.STABLE8</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-09-21" gvid="GVID-102695" id="102695" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理连接中止拒绝服务漏洞2</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>由于有缺陷处理中止连接，Squid的代理服务器易受到拒绝服务攻击的攻击。
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-09-21" gvid="ID105287" id="105287" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理连接中止拒绝服务漏洞2</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>由于有缺陷处理中止连接，Squid的代理服务器易受到拒绝服务攻击的攻击。
 因此，如果连接到它的过早中止，
 如果过早中止连接，远程攻击者可导致代理服务器崩溃。</Description>      <cnnvd>CNNVD-200509-046</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-2794</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.5.STABLE11</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102696" id="102696" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>squid代理压缩DNS回复缓冲区溢出 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid 代理服务器易被恶意的远程 DNS 服务器利用的缓冲区溢出漏洞影响。如果Squid服务器接收特制的压缩DNS包作为主机名查找的响应，此缓冲区溢出可被触发并在Squid服务器上执行任意代码。这有可能使攻击者完全控制Squid服务器。</Description>      <cnnvd>CNNVD-200203-100</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0163</id>      </AlternateIds>      <Solutions>临时解决方法： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID105288" id="105288" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>squid代理压缩DNS回复缓冲区溢出 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid 代理服务器易被恶意的远程 DNS 服务器利用的缓冲区溢出漏洞影响。如果Squid服务器接收特制的压缩DNS包作为主机名查找的响应，此缓冲区溢出可被触发并在Squid服务器上执行任意代码。这有可能使攻击者完全控制Squid服务器。</Description>      <cnnvd>CNNVD-200203-100</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0163</id>      </AlternateIds>      <Solutions>临时解决方法： 
 如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
 * 以 --disable-internal-dns 参数重新编译Squid，使用外部DNS。 
 厂商补丁： 
@@ -258,12 +340,12 @@ http://www.squid-cache.org/Versions/v2/2.4/&lt;/a&gt;</Solutions>      <Check sc
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.4.STABLE6</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102697" id="102697" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>squid代理DNS解决拒绝服务漏洞 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>squid代理服务器容易受到拒绝服务攻击是由于有缺陷的解析完全限定域名(FQDN)。因此,远程攻击者可以控制其FQDN导致守护进程崩溃。</Description>      <cnnvd>CNNVD-200505-077</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0446</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="ID105289" id="105289" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>squid代理DNS解决拒绝服务漏洞 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>squid代理服务器容易受到拒绝服务攻击是由于有缺陷的解析完全限定域名(FQDN)。因此,远程攻击者可以控制其FQDN导致守护进程崩溃。</Description>      <cnnvd>CNNVD-200505-077</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0446</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
 http://download.fedora.redhat.com/pub/fedora/linux/core/updates/3/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Squid">               
                         <version>                  <range>                     <low>2.5.STABLE5</low>                     <high>2.5.STABLE9</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102698" id="102698" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid Proxy DNS请求失败内存泄漏</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>如果DNS系列请求失败，可通过Squid代理服务器可揭露释放内存。因此，远程攻击者可能会访问守护进程空间中的敏感信息。</Description>      <cnnvd>CNNVD-200412-1176</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-2479</id>      </AlternateIds>      <Solutions>Please see the referenced vendor advisories for more information and fixes. 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="ID105290" id="105290" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid Proxy DNS请求失败内存泄漏</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>如果DNS系列请求失败，可通过Squid代理服务器可揭露释放内存。因此，远程攻击者可能会访问守护进程空间中的敏感信息。</Description>      <cnnvd>CNNVD-200412-1176</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-2479</id>      </AlternateIds>      <Solutions>Please see the referenced vendor advisories for more information and fixes. 
  
 Squid Web Proxy Cache 2.5 .STABLE6 
 &lt;ul&gt;&lt;li&gt; 
@@ -334,7 +416,7 @@ ost.patch&lt;/a&gt;&lt;/li&gt;
                   <Product name="Squid">               
                         <version>                  <range>                     <low>2.5.STABLE1</low>                     <high>2.5.STABLE8</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102699" id="102699" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid Proxy FTP数据通道劫持</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器不执行足够的完整性检查传入的FTP数据连接的源地址远程FTP服务器。它可能允许远程攻击者劫持代理FTP的数据部分
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID105291" id="105291" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid Proxy FTP数据通道劫持</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器不执行足够的完整性检查传入的FTP数据连接的源地址远程FTP服务器。它可能允许远程攻击者劫持代理FTP的数据部分
 会话,以他自己的数据代替真正的服务器的数据。这将创建的代理用户下载木马病毒，而不是真正的文件。
 成功开发需要攻击者能够监控(&quot;sniff&quot;)即将离任的FTP连接从Squid代理。因为FTP不是一个加密的协议,任何访问中间路由器可能利用此漏洞。
 因为FTP数据连接入站,成功的开发可能会允许攻击者绕过你的代理，连接到您的网络。</Description>      <cnnvd>CNNVD-200207-090</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0714</id>      </AlternateIds>      <Solutions>Sanity checks have been introduced into Squid as a default configuration option. The checks will prevent any attempt to carry out these attacks. If support for different control/data addresses is required, disabling the ftp_sanitycheck directive will remove the sanity checking. 
@@ -467,7 +549,7 @@ pm&lt;/a&gt;&lt;/li&gt;
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.4.STABLE7</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-10-20" gvid="GVID-102700" id="102700" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid Proxy FTP拒绝响应服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的代理不妥善处理从FTP服务器产生的所有可能的反应。因此，用户可以连接到一个恶意服务器，使Squid守护进程崩溃。</Description>      <cnnvd>CNNVD-200510-159</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-3258</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-10-20" gvid="ID105292" id="105292" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid Proxy FTP拒绝响应服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>某些版本的代理不妥善处理从FTP服务器产生的所有可能的反应。因此，用户可以连接到一个恶意服务器，使Squid守护进程崩溃。</Description>      <cnnvd>CNNVD-200510-159</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-3258</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
 IPCop IPCop 1.4.1 
 IPCop ipcop-sources-1.4.10.tgz 
 http://prdownloads.sourceforge.net/ipcop/ipcop-sources-1.4.10.tgz?download 
@@ -508,7 +590,7 @@ ftp://atualizacoes.conectiva.com.br/10/RPMS/squid-2.5.5-77559U10_13cl.i386.rpm</
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.5.STABLE12</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102701" id="102701" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理FTP URL缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Squid代理服务器才会容易受到缓冲区溢出的
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID105293" id="105293" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理FTP URL缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Squid代理服务器才会容易受到缓冲区溢出的
       //网址：可通过一个过长的FTP触发。攻击者可能
       通过Squid代理并触发请求特制的FTP URL
       缓冲区溢出，这可能允许攻击者执行任意
@@ -614,7 +696,7 @@ ia64:
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.4.STABLE4</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102702" id="102702" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid Proxy Gopher的缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器很容易受到缓冲区溢出漏洞的攻击。远程、恶意gopher服务器可发送格式错误的gopher响应并在Squid服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200207-093</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0713</id>      </AlternateIds>      <Solutions>临时解决方法： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID105294" id="105294" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid Proxy Gopher的缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器很容易受到缓冲区溢出漏洞的攻击。远程、恶意gopher服务器可发送格式错误的gopher响应并在Squid服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200207-093</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0713</id>      </AlternateIds>      <Solutions>临时解决方法： 
 如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
 * 暂时没有合适的临时解决方法。 
 厂商补丁： 
@@ -698,17 +780,17 @@ rpm -Fvh [文件名]</Solutions>      <Check scope="endpoint">         <NetworkS
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.4.STABLE7</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102703" id="102703" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理&amp;#39;gopherToHtml()&amp;#39;函数缓冲区溢出漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>因解析Gopher服务器响应时开展的不当边界检查，因此Squid代理服务器很容易受到缓冲区溢出漏洞的攻击。因此，若远程用户能够创建恶意的gopher服务协议，并使后来程序和该服务协议相连接，则用户能够获取访问后台程序进程的权限。</Description>      <cnnvd>CNNVD-200501-247</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0094</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="ID105295" id="105295" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理&amp;#39;gopherToHtml()&amp;#39;函数缓冲区溢出漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>因解析Gopher服务器响应时开展的不当边界检查，因此Squid代理服务器很容易受到缓冲区溢出漏洞的攻击。因此，若远程用户能够创建恶意的gopher服务协议，并使后来程序和该服务协议相连接，则用户能够获取访问后台程序进程的权限。</Description>      <cnnvd>CNNVD-200501-247</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0094</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
 http://www.squid-cache.org/Versions/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Squid">               
                         <version>                  <range>                     <low>2.5.STABLE1</low>                     <high>2.5.STABLE8</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102704" id="102704" modifyDate="2012-07-31">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理LDAP登录绕过漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器不能正确解析有过度的尾随空格的LDAP登录。所有,可我完全利用和规避验证机制中的漏洞,让任何用户访问代理服务。</Description>      <cnnvd>CNNVD-200505-748</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0173</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="ID105296" id="105296" modifyDate="2012-07-31">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理LDAP登录绕过漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器不能正确解析有过度的尾随空格的LDAP登录。所有,可我完全利用和规避验证机制中的漏洞,让任何用户访问代理服务。</Description>      <cnnvd>CNNVD-200505-748</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0173</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
 http://www.debian.org/security/2005/dsa-667</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Squid">               
                         <version>                  <range>                     <low>2.5.STABLE1</low>                     <high>2.5.STABLE8</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102705" id="102705" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理MSNT验证器缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Squid代理服务器易受到MSNT验证器模块中的缓冲区溢出影响，它负责Windows域内的认证代理客户端。远程攻击者可发送错误的验证数据并触发Squid服务器上的缓冲区溢出， 这将让他们在服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200207-093</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0713</id>      </AlternateIds>      <Solutions>临时解决方法： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID105297" id="105297" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理MSNT验证器缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Squid代理服务器易受到MSNT验证器模块中的缓冲区溢出影响，它负责Windows域内的认证代理客户端。远程攻击者可发送错误的验证数据并触发Squid服务器上的缓冲区溢出， 这将让他们在服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200207-093</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0713</id>      </AlternateIds>      <Solutions>临时解决方法： 
 如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
 * 暂时没有合适的临时解决方法。 
 厂商补丁： 
@@ -792,25 +874,25 @@ rpm -Fvh [文件名]</Solutions>      <Check scope="endpoint">         <NetworkS
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.4.STABLE7</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102706" id="102706" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理MSNT身份格式字符串</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器易受MSNT认证模块内存在的格式化字符串溢出漏洞的攻击,该模块负责对Windows域内的代理客户端进行验证。远程攻击者可发送存在漏洞的用户名(包含格式说明符)，并触发Squid服务器的溢出,这将允许他们在服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200210-208</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0916</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID105298" id="105298" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Squid代理MSNT身份格式字符串</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器易受MSNT认证模块内存在的格式化字符串溢出漏洞的攻击,该模块负责对Windows域内的代理客户端进行验证。远程攻击者可发送存在漏洞的用户名(包含格式说明符)，并触发Squid服务器的溢出,这将允许他们在服务器上执行任意代码。</Description>      <cnnvd>CNNVD-200210-208</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0916</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.4.STABLE7</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102707" id="102707" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid Proxy NTLM &amp;#39;fakeauth_auth&amp;#39;内存消耗拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器的NTLM&amp;quot;fakeauth_auth&amp;quot;模块容易受到内存消耗攻击，可被远程用户触发,造成拒绝服务。</Description>      <cnnvd>CNNVD-200501-275</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0096</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="ID105299" id="105299" modifyDate="2013-12-04">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid Proxy NTLM &amp;#39;fakeauth_auth&amp;#39;内存消耗拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器的NTLM&amp;quot;fakeauth_auth&amp;quot;模块容易受到内存消耗攻击，可被远程用户触发,造成拒绝服务。</Description>      <cnnvd>CNNVD-200501-275</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0096</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
 http://www.squid-cache.org/Versions/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Squid">               
                         <version>                  <range>                     <low>2.5.STABLE1</low>                     <high>2.5.STABLE8</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-10-04" gvid="GVID-102708" id="102708" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理NTLM不正确的方案拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Squid代理服务器很容易出现拒绝服务，由于处理NTLM身份验证。所以如果在身份认证标头中错误显示NTLM方案远程攻击者可能会导致代理服务器崩溃。</Description>      <cnnvd>CNNVD-200509-309</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-2917</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-10-04" gvid="ID105300" id="105300" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理NTLM不正确的方案拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在Squid代理服务器很容易出现拒绝服务，由于处理NTLM身份验证。所以如果在身份认证标头中错误显示NTLM方案远程攻击者可能会导致代理服务器崩溃。</Description>      <cnnvd>CNNVD-200509-309</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-2917</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.5.STABLE11</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="GVID-102709" id="102709" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理NTLM 3型拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>因 NTLM 3型信息存在解析漏洞，Squid代理服务器容易受到拒绝服务攻击。因此,远程攻击者可使代理服务器崩溃。</Description>      <cnnvd>CNNVD-200501-233</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0097</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-02-17" gvid="ID105301" id="105301" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理NTLM 3型拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>因 NTLM 3型信息存在解析漏洞，Squid代理服务器容易受到拒绝服务攻击。因此,远程攻击者可使代理服务器崩溃。</Description>      <cnnvd>CNNVD-200501-233</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0097</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
 http://www.squid-cache.org/Versions/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.5.STABLE8</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-04-27" gvid="GVID-102710" id="102710" modifyDate="2013-12-04">      <cvsscode>2.6</cvsscode>      <severity>Moderate</severity>      <name>Squid Proxy &amp;#39;Set Cookie&amp;#39;信息泄露</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>针对某些版本的Squid Proxy，攻击者可检索其他用户的cookie。因此,攻击者可使用所拦截的验证信息模仿外部网站的用户。</Description>      <cnnvd>CNNVD-200503-074</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0626</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-04-27" gvid="ID105302" id="105302" modifyDate="2013-12-04">      <cvsscode>2.6</cvsscode>      <severity>Moderate</severity>      <name>Squid Proxy &amp;#39;Set Cookie&amp;#39;信息泄露</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>针对某些版本的Squid Proxy，攻击者可检索其他用户的cookie。因此,攻击者可使用所拦截的验证信息模仿外部网站的用户。</Description>      <cnnvd>CNNVD-200503-074</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-0626</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复这个安全问题，补丁下载链接： 
 Squid Web Proxy Cache 2.5 .STABLE9 
 Squid squid-2.5.STABLE9-setcookie.patch 
 http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE9-setc ookie.patch 
@@ -818,7 +900,7 @@ http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE9-setc ookie.pat
                   <Product name="Squid">               
                         <version>                  <range>                     <low>2.5.STABLE1</low>                     <high>2.5.STABLE10</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102711" id="102711" modifyDate="2013-12-04">      <cvsscode>2.6</cvsscode>      <severity>Moderate</severity>      <name>Squid代理SNMP内存泄露，拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器经由SNMP接口易受到拒绝服务攻击的攻击
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID105303" id="105303" modifyDate="2013-12-04">      <cvsscode>2.6</cvsscode>      <severity>Moderate</severity>      <name>Squid代理SNMP内存泄露，拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器经由SNMP接口易受到拒绝服务攻击的攻击
 。SNMP接口包含一个内存泄漏情况，
 这使得它容易受到拒绝服务攻击。一个遥远的
 攻击者可以重复直到squid服务器SNMP请求
@@ -926,18 +1008,18 @@ SR</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.4.STABLE4</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-09-21" gvid="GVID-102712" id="102712" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理SSLConnectTimeout拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器容易受到拒绝服务攻击的影响是由于sslConnectTimeout函数的漏洞实现。因此,如果提出一系列奇怪的请求，远程攻击者可导致代理服务器崩溃。</Description>      <cnnvd>CNNVD-200509-054</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-2796</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-09-21" gvid="ID105304" id="105304" modifyDate="2015-02-13">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Squid代理SSLConnectTimeout拒绝服务漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Squid代理服务器容易受到拒绝服务攻击的影响是由于sslConnectTimeout函数的漏洞实现。因此,如果提出一系列奇怪的请求，远程攻击者可导致代理服务器崩溃。</Description>      <cnnvd>CNNVD-200509-054</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2005-2796</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.5.STABLE11</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102713" id="102713" modifyDate="2013-12-04">      <cvsscode>1.2</cvsscode>      <severity>Moderate</severity>      <name>Squid代理的/ tmp符号连接竞争条件</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>发送管理电子邮件时，Squid代理服务器以不安全的方式创建一个临时文件。存在的争用条件允许
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID105305" id="105305" modifyDate="2013-12-04">      <cvsscode>1.2</cvsscode>      <severity>Moderate</severity>      <name>Squid代理的/ tmp符号连接竞争条件</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>发送管理电子邮件时，Squid代理服务器以不安全的方式创建一个临时文件。存在的争用条件允许
       本地攻击者创建具有相同文件名的符号链接，并
       欺骗squid覆盖任意系统文件。如果Squidz作为根目录运行，则系统上的任何文件可被覆盖。如果将Squid
       作为另一个用户运行，则只有该用户可写入的文件夹能够覆盖。</Description>      <cnnvd>CNNVD-200103-057</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2001-0142</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
                   <Product name="Squid">               
                         <version>                  <range>                     <high>2.3.STABLE5</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102714" id="102714" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>squid代理url_regex ACL绕过 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>由于Squid 代理服务器中的%Xx URL 解码例程中的漏洞，攻击者可插入 %00 (NULL) 字符到 URL 中而绕过 url_regex ACL 条目。这将允许未经身份验证的远程攻击者通过 Squid 代理服务器请求未经授权的页面或网站。</Description>      <cnnvd>CNNVD-200403-081</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-0189</id>      </AlternateIds>      <Solutions>厂商补丁： 
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID105306" id="105306" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>squid代理url_regex ACL绕过 </name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>由于Squid 代理服务器中的%Xx URL 解码例程中的漏洞，攻击者可插入 %00 (NULL) 字符到 URL 中而绕过 url_regex ACL 条目。这将允许未经身份验证的远程攻击者通过 Squid 代理服务器请求未经授权的页面或网站。</Description>      <cnnvd>CNNVD-200403-081</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2004-0189</id>      </AlternateIds>      <Solutions>厂商补丁： 
 Squid 
 ----- 
 目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 

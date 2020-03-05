@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability added="2007-03-13" gvid="GVID-104698" id="104698" modified="2015-02-13" published="2004-05-21" version="2.0">      
+<Vulns>   <Vulnerability added="2007-03-13" gvid="ID101475" id="101475" modified="2015-02-13" published="2004-05-21" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
@@ -29,7 +29,7 @@ Vsftpd
 ------ 
 目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
 Vsftpd Upgrade vsftpd-1.2.2.tar.gz 
-&lt;a href=&quot;ftp://vsftpd.beasts.org/users/cevans/vsftpd-1.2.2.tar.gz&quot; target=&quot;_blank&quot;&gt;ftp://vsftpd.beasts.org/users/cevans/vsftpd-1.2.2.tar.gz&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200412-458</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>早于1.2.2的VSFTPD版本易受拒绝服务攻击。该漏洞是由于连接处理错误而造成的，这可能会使内置的监听器在重连接/断开负载的情况下挂起或崩溃。</Description>      <name>VSFTPD拒绝服务攻击</name>   </Vulnerability>   <Vulnerability added="2007-03-13" gvid="GVID-104699" id="104699" modified="2017-12-18" published="2007-03-13" version="2.0">      
+&lt;a href=&quot;ftp://vsftpd.beasts.org/users/cevans/vsftpd-1.2.2.tar.gz&quot; target=&quot;_blank&quot;&gt;ftp://vsftpd.beasts.org/users/cevans/vsftpd-1.2.2.tar.gz&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200412-458</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>早于1.2.2的VSFTPD版本易受拒绝服务攻击。该漏洞是由于连接处理错误而造成的，这可能会使内置的监听器在重连接/断开负载的情况下挂起或崩溃。</Description>      <name>VSFTPD拒绝服务攻击</name>   </Vulnerability>   <Vulnerability added="2007-03-13" gvid="ID101476" id="101476" modified="2017-12-18" published="2007-03-13" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:N/C:C/I:C/A:C)</cvss>      

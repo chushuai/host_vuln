@@ -1,0 +1,19 @@
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="ID104619" id="104619" modifyDate="2012-07-31">      <cvsscode>7.1</cvsscode>      <severity>Severe</severity>      <name>Deerfield VisNetic WebSite long OPTIONS请求缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Deerfield/Visnetic WebSite Pro (formerly O&amp;#39;Reilly Software WebSitePro)3.5.14及以下版本易受缓冲区溢出攻击，使用一个过长的选项要求。
+使用一个过长的选项请求，远程攻击者可以在服务器上溢出缓冲区并在服务器上执行任意代码（有系统权限）。缓冲区溢出经常会通过导致web服务器崩溃导致拒绝服务。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="WebSite">               
+                        <version>                  <range>                     <high>3.5.15</high>                  </range>               </version>               
+                  </Product>            
+                  <Product name="WebSitePro">               
+                        <version>                  <range>                     <high>3.5.15</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104619" id="104619" modifyDate="2012-07-31">      <cvsscode>7.1</cvsscode>      <severity>Severe</severity>      <name>Deerfield VisNetic WebSite long OPTIONS请求缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Deerfield/Visnetic WebSite Pro (formerly O&amp;#39;Reilly Software WebSitePro)3.5.14及以下版本易受缓冲区溢出攻击，使用一个过长的选项要求。
+使用一个过长的选项请求，远程攻击者可以在服务器上溢出缓冲区并在服务器上执行任意代码（有系统权限）。缓冲区溢出经常会通过导致web服务器崩溃导致拒绝服务。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="WebSite">               
+                        <version>                  <range>                     <high>3.5.15</high>                  </range>               </version>               
+                  </Product>            
+                  <Product name="WebSitePro">               
+                        <version>                  <range>                     <high>3.5.15</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

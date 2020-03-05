@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability added="2005-01-25" gvid="GVID-104700" id="104700" modified="2015-02-13" published="2004-12-31" version="2.0">      
+<Vulns>   <Vulnerability added="2005-01-25" gvid="ID101471" id="101471" modified="2015-02-13" published="2004-12-31" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:P/I:P/A:P)</cvss>      
@@ -28,7 +28,7 @@
                   <Product name="WS_FTP Server">               
                         <version>                  <range>                     <high>4.0.3</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd></cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>升级至v4.0.3或更高版本</Description>      <name>WS_FTP ALLO处理器存在漏洞</name>   </Vulnerability>   <Vulnerability added="2005-01-25" gvid="GVID-104701" id="104701" modified="2015-02-13" published="2004-08-29" version="2.0">      
+            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd></cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>升级至v4.0.3或更高版本</Description>      <name>WS_FTP ALLO处理器存在漏洞</name>   </Vulnerability>   <Vulnerability added="2005-01-25" gvid="ID101472" id="101472" modified="2015-02-13" published="2004-08-29" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      

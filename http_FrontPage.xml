@@ -1,0 +1,23 @@
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="ID104098" id="104098" modifyDate="2012-07-31">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Microsoft首页服务器扩展MS-DOS设备名DoS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>可能远程导致运行Microsoft FrontPage Server Extensions的系统崩溃，其方式是通过shtml.exe对MS-DOS设备执行URL请求。比如，以下URL请求将导致FrontPage Server Extensions崩溃：&lt;ul&gt;
+&lt;li&gt;http://target/_vti_bin/shtml.exe/comX.htm (X称为1, 2 ,3或4其中的一个; 设备必须在目标机器上)&lt;/li&gt;
+&lt;li&gt;http://target/_vti_bin/shtml.exe/prn.htm&lt;/li&gt;
+&lt;li&gt;http://target/_vti_bin/shtml.exe/aux.htm&lt;/li&gt;&lt;/ul&gt;
+    
+设备名必须添加扩展使利用生效。除了HTML扩展之外，ASP也将运行。重启IIS或要求的系统来恢复正常功能。测试表明它可能要求固定的请求流来渲染无效的服务器。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2000-0710,CVE-2000-0709</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="FrontPage">               
+                        <version>                  <range>                     
+                                 <high>4.0.2.4317</high>                     
+                           </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="ID104098" id="104098" modifyDate="2012-07-31">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Microsoft首页服务器扩展MS-DOS设备名DoS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>可能远程导致运行Microsoft FrontPage Server Extensions的系统崩溃，其方式是通过shtml.exe对MS-DOS设备执行URL请求。比如，以下URL请求将导致FrontPage Server Extensions崩溃：&lt;ul&gt;
+&lt;li&gt;http://target/_vti_bin/shtml.exe/comX.htm (X称为1, 2 ,3或4其中的一个; 设备必须在目标机器上)&lt;/li&gt;
+&lt;li&gt;http://target/_vti_bin/shtml.exe/prn.htm&lt;/li&gt;
+&lt;li&gt;http://target/_vti_bin/shtml.exe/aux.htm&lt;/li&gt;&lt;/ul&gt;
+    
+设备名必须添加扩展使利用生效。除了HTML扩展之外，ASP也将运行。重启IIS或要求的系统来恢复正常功能。测试表明它可能要求固定的请求流来渲染无效的服务器。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2000-0710,CVE-2000-0709</id>      </AlternateIds>      <Solutions></Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="FrontPage">               
+                        <version>                  <range>                     
+                                 <high>4.0.2.4317</high>                     
+                           </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>

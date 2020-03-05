@@ -1,4 +1,4 @@
-<Vulns>   <Vulnerability added="2004-11-01" gvid="GVID-104702" id="104702" modified="2012-07-13" published="1999-12-20" version="2.0">      
+<Vulns>   <Vulnerability added="2004-11-01" gvid="ID101496" id="101496" modified="2012-07-13" published="1999-12-20" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:P/I:P/A:P)</cvss>      
@@ -26,7 +26,7 @@ Washington University
 目前厂商已经最新版本的软件中修复了这个安全问题，请到厂商的主页下载： 
 &lt;a href=&quot; 
 http://www.wu-ftpd.org/&quot; target=&quot;_blank&quot;&gt; 
-http://www.wu-ftpd.org/&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-199912-062</cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>在wu-ftpd &amp;lt; 2.6.0情况下，可能提供自定义的命令行参数到一个外部文件压缩或归档程序（如&quot;焦油&quot;）。分解析错误允许攻击者在FTP守护进程的权限下执行任意命令。</Description>      <name>wu-ftpd压缩参数远程执行</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104703" id="104703" modified="2013-12-04" published="2001-03-26" version="2.0">      
+http://www.wu-ftpd.org/&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-199912-062</cnnvd>      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <Description>在wu-ftpd &amp;lt; 2.6.0情况下，可能提供自定义的命令行参数到一个外部文件压缩或归档程序（如&quot;焦油&quot;）。分解析错误允许攻击者在FTP守护进程的权限下执行任意命令。</Description>      <name>wu-ftpd压缩参数远程执行</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101497" id="101497" modified="2013-12-04" published="2001-03-26" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
@@ -49,7 +49,7 @@ http://www.wu-ftpd.org/&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-199912-062</cnnv
                         <version>                  <range>                     <high>2.6.2</high>                  </range>               </version>               
                   </Product>            
             </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd>CNNVD-200103-098</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>如果wu-ftpd &amp;lt;2.6.2版本在debug模式(-d flag option)下运行并且攻击者已经控制其主机，那么攻击者可能可能利用一个格式字符串缓冲区溢并且获取远程root权限。
-请注意服务器必须在debug模式下运行才能体现出这个漏洞，不适合在生产服务器上调试或者任何默认配置的UNIX。</Description>      <name>wu-ftpd调试模式的DNS名称字符串格式缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104704" id="104704" modified="2015-02-13" published="2003-08-27" version="2.0">      
+请注意服务器必须在debug模式下运行才能体现出这个漏洞，不适合在生产服务器上调试或者任何默认配置的UNIX。</Description>      <name>wu-ftpd调试模式的DNS名称字符串格式缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101498" id="101498" modified="2015-02-13" published="2003-08-27" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
@@ -177,7 +177,7 @@ SuSE Upgrade wuftpd-2.6.0-328.ppc.rpm
 SuSE-7.3 PPC 
 SuSE Upgrade wuftpd-2.6.0-328.src.rpm 
 &lt;a href=&quot;ftp://ftp.suse.com/pub/suse/ppc/update/7.3/zq1/wuftpd-2.6.0-328.src.rpm&quot; target=&quot;_blank&quot;&gt;ftp://ftp.suse.com/pub/suse/ppc/update/7.3/zq1/wuftpd-2.6.0-328.src.rpm&lt;/a&gt; 
-SuSE-7.3 PPC</Solutions>      <cnnvd>CNNVD-200308-136</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>wu-ftpd的某些版包含远程可利用的在&amp;#39;fb_realpath()&amp;#39;函数中的off-by-one缓冲区溢出。注意此漏洞在编译标志PATH_MAX和MAXPATHLEN定义为4095的平台上不显示。这些包括但不限于Linux v2.2.x和v2.4.x系列版本的更早版本)。</Description>      <name>wu-ftpd &amp;#39;fb_realpath()&amp;#39; Off-By-One 缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2005-01-25" gvid="GVID-104705" id="104705" modified="2015-02-13" published="2004-03-09" version="2.0">      
+SuSE-7.3 PPC</Solutions>      <cnnvd>CNNVD-200308-136</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>wu-ftpd的某些版包含远程可利用的在&amp;#39;fb_realpath()&amp;#39;函数中的off-by-one缓冲区溢出。注意此漏洞在编译标志PATH_MAX和MAXPATHLEN定义为4095的平台上不显示。这些包括但不限于Linux v2.2.x和v2.4.x系列版本的更早版本)。</Description>      <name>wu-ftpd &amp;#39;fb_realpath()&amp;#39; Off-By-One 缓冲区溢出</name>   </Vulnerability>   <Vulnerability added="2005-01-25" gvid="ID101499" id="101499" modified="2015-02-13" published="2004-03-09" version="2.0">      
         
         
         <cvss>(AV:L/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
@@ -206,7 +206,7 @@ Debian
 ------ 
 &lt;a href=&quot; 
 http://www.debian.org/security/2004/dsa-457&quot; target=&quot;_blank&quot;&gt; 
-http://www.debian.org/security/2004/dsa-457&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200404-058</cnnvd>      <cvsscode>7.2</cvsscode>      <severity>Severe</severity>      <Description>如果 &amp;#39;restricted-gid&amp;#39;选项已启用，本地用户禁止访问自己的主目录，那么尽管拒绝此类访问，WU-FTPD中的bug会自动访问根目录。</Description>      <name>WU-FTPD GID现在绕过漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104706" id="104706" modified="2012-07-13" published="1999-10-01" version="2.0">      
+http://www.debian.org/security/2004/dsa-457&lt;/a&gt;</Solutions>      <cnnvd>CNNVD-200404-058</cnnvd>      <cvsscode>7.2</cvsscode>      <severity>Severe</severity>      <Description>如果 &amp;#39;restricted-gid&amp;#39;选项已启用，本地用户禁止访问自己的主目录，那么尽管拒绝此类访问，WU-FTPD中的bug会自动访问根目录。</Description>      <name>WU-FTPD GID现在绕过漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101500" id="101500" modified="2012-07-13" published="1999-10-01" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
@@ -222,7 +222,7 @@ http://www.debian.org/security/2004/dsa-457&lt;/a&gt;</Solutions>      <cnnvd>CN
                   <Product name="wu-ftpd">               
                         <version>                  <range>                     <high>2.6</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd>CNNVD-199910-001</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>wu-ftpd &amp;lt; 2.6.0中，在解析信息文件时，FTP守护程序产生缓冲区溢出。这可能导致远程根受损。</Description>      <name>wu-ftpd信息扩展缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104707" id="104707" modified="2012-07-13" published="1999-08-22" version="2.0">      
+            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd>CNNVD-199910-001</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>wu-ftpd &amp;lt; 2.6.0中，在解析信息文件时，FTP守护程序产生缓冲区溢出。这可能导致远程根受损。</Description>      <name>wu-ftpd信息扩展缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101501" id="101501" modified="2012-07-13" published="1999-08-22" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:C/I:C/A:C)</cvss>      
@@ -241,7 +241,7 @@ http://www.debian.org/security/2004/dsa-457&lt;/a&gt;</Solutions>      <cnnvd>CN
                   </Product>            
             </NetworkService>      </Check>      <Solutions>The WU-FTPD Development Group has made the following patch available for WU-FTPD 2.5.0: 
 ftp://ftp.wu-ftpd.org/pub/wu-ftpd/quickfixes/apply_to_2.5.0/mapped.path.overrun.patch 
-Users of BeroFTPD 1.3.4 can apply the same patch.</Solutions>      <cnnvd>CNNVD-199908-046</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>wu-ftpd &amp;lt; 2.6.0中，FTP守护程序在路径转换程序时使缓冲区溢出。这可能会用尽可能少的可写（即：进入）目录导致远程root权限受损。</Description>      <name>wu-ftpd路径转换缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="GVID-104708" id="104708" modified="2012-07-13" published="1999-10-01" version="2.0">      
+Users of BeroFTPD 1.3.4 can apply the same patch.</Solutions>      <cnnvd>CNNVD-199908-046</cnnvd>      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <Description>wu-ftpd &amp;lt; 2.6.0中，FTP守护程序在路径转换程序时使缓冲区溢出。这可能会用尽可能少的可写（即：进入）目录导致远程root权限受损。</Description>      <name>wu-ftpd路径转换缓冲区溢出漏洞</name>   </Vulnerability>   <Vulnerability added="2004-11-01" gvid="ID101502" id="101502" modified="2012-07-13" published="1999-10-01" version="2.0">      
         
         
         <cvss>(AV:N/AC:L/Au:N/C:N/I:N/A:P)</cvss>      
@@ -258,7 +258,7 @@ Users of BeroFTPD 1.3.4 can apply the same patch.</Solutions>      <cnnvd>CNNVD-
                   <Product name="wu-ftpd">               
                         <version>                  <range>                     <high>2.6</high>                  </range>               </version>               
                   </Product>            
-            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd>CNNVD-199910-007</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>处理合法站点的较新的请求后，早于V2.6.0的版本无法释放动态分配的内存。这允许攻击者消耗主机上的所有可用内存。</Description>      <name>wu-ftpd SITE NEWER 拒绝服务漏洞</name>   </Vulnerability>   <Vulnerability added="2007-03-20" gvid="GVID-104709" id="104709" modified="2017-12-18" published="2007-03-20" version="2.0">      
+            </NetworkService>      </Check>      <Solutions></Solutions>      <cnnvd>CNNVD-199910-007</cnnvd>      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <Description>处理合法站点的较新的请求后，早于V2.6.0的版本无法释放动态分配的内存。这允许攻击者消耗主机上的所有可用内存。</Description>      <name>wu-ftpd SITE NEWER 拒绝服务漏洞</name>   </Vulnerability>   <Vulnerability added="2007-03-20" gvid="ID101503" id="101503" modified="2017-12-18" published="2007-03-20" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:N/C:C/I:C/A:C)</cvss>      
@@ -277,7 +277,7 @@ Users of BeroFTPD 1.3.4 can apply the same patch.</Solutions>      <cnnvd>CNNVD-
 			               </version>               
 		            </Product>            
 	         </NetworkService>      </Check>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
-https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <Description>早于 2.6.2 的WU-FTPd版本是过时的。2.6.2之后的版本包含许多重要的安全性增强和修正，例如 S/key 堆栈溢出和 fb_realpath 函数缓冲区溢出的补丁。建议您将WU-FTPd安装升级到最新版本。</Description>      <name>WU-FTPd 过时版本</name>   </Vulnerability>   <Vulnerability added="2007-08-07" gvid="GVID-104710" id="104710" modified="2015-02-13" published="2003-09-24" version="2.0">      
+https://www.alice-dsl.de/</Solutions>      <cnnvd></cnnvd>      <cvsscode>9.3</cvsscode>      <severity>Critical</severity>      <Description>早于 2.6.2 的WU-FTPd版本是过时的。2.6.2之后的版本包含许多重要的安全性增强和修正，例如 S/key 堆栈溢出和 fb_realpath 函数缓冲区溢出的补丁。建议您将WU-FTPd安装升级到最新版本。</Description>      <name>WU-FTPd 过时版本</name>   </Vulnerability>   <Vulnerability added="2007-08-07" gvid="ID101504" id="101504" modified="2015-02-13" published="2003-09-24" version="2.0">      
         
         
         <cvss>(AV:N/AC:M/Au:N/C:C/I:C/A:C)</cvss>      
