@@ -1,0 +1,1180 @@
+<Vulns>   <Vulnerability addData="2017-06-30" gvid="ID106078" id="106078" modifyDate="2017-08-25">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>pfSense: CVE-2011-4197: 任意主题的子证书</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>etc/inc/certs.inc in the PKI implementation in pfSense before 2.0.1 creates each X.509 certificate with a true value for the CA basic constraint, which allows remote attackers to create sub-certificates for arbitrary subjects by leveraging the private key.</Description>      <cnnvd>CNNVD-201112-428</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2011-4197</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://blog.pfsense.org/?p=633</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                <high inclusive="0">2.0.1</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106079" id="106079" modifyDate="2017-08-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2011-5047: 任意网页脚本或HTML注入</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site scripting (XSS) vulnerability in status_rrd_graph.php in pfSense before 2.0.1 allows remote attackers to inject arbitrary web script or HTML via the style parameter.</Description>      <cnnvd>CNNVD-201201-462</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2011-5047</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://blog.pfsense.org/?p=633</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.0.1</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106080" id="106080" modifyDate="2017-08-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2014-4687: 多个跨站点脚本漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple cross-site scripting (XSS) vulnerabilities in pfSense before 2.1.4 allow remote attackers to inject arbitrary web script or HTML via (1) the starttime0 parameter to firewall_schedule.php, (2) the rssfeed parameter to rss.widget.php, (3) the servicestatusfilter parameter to services_status.widget.php, (4) the txtRecallBuffer parameter to exec.php, or (5) the HTTP Referer header to log.widget.php.</Description>      <cnnvd>CNNVD-201407-069</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-4687</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://pfsense.org/security/advisories/pfSense-SA-14_09.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.4</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106081" id="106081" modifyDate="2017-08-25">      <cvsscode>6.5</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2014-4688: 远程代码执行漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>pfSense before 2.1.4 allows remote authenticated users to execute arbitrary commands via (1) the hostname value to diag_dns.php in a Create Alias action, (2) the smartmonemail value to diag_smart.php, or (3) the database value to status_rrd_graph_img.php.</Description>      <cnnvd>CNNVD-201407-070</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-4688</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://pfsense.org/security/advisories/pfSense-SA-14_10.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.4</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106082" id="106082" modifyDate="2017-08-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2014-4689: 可以读取任意 XML 文件</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Absolute path traversal vulnerability in pkg_edit.php in pfSense before 2.1.4 allows remote attackers to read arbitrary XML files via a full pathname in the xml parameter.</Description>      <cnnvd>CNNVD-201407-071</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-4689</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://pfsense.org/security/advisories/pfSense-SA-14_11.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.4</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106083" id="106083" modifyDate="2017-08-25">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2014-4690: 可以读取任意文件</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple directory traversal vulnerabilities in pfSense before 2.1.4 allow (1) remote attackers to read arbitrary .info files via a crafted path in the pkg parameter to pkg_mgr_install.php and allow (2) remote authenticated users to read arbitrary files via the downloadbackup parameter to system_firmware_restorefullbackup.php.</Description>      <cnnvd>CNNVD-201407-072</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-4690</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://pfsense.org/security/advisories/pfSense-SA-14_11.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.4</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106084" id="106084" modifyDate="2017-08-25">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2014-4691: Web 会话劫持</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Session fixation vulnerability in pfSense before 2.1.4 allows remote attackers to hijack web sessions via a firewall login cookie.</Description>      <cnnvd>CNNVD-201407-073</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-4691</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://pfsense.org/security/advisories/pfSense-SA-14_12.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.4</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106085" id="106085" modifyDate="2017-08-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2014-4692: 潜在的敏感信息访问</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>pfSense before 2.1.4, when HTTP is used, does not include the HTTPOnly flag in a Set-Cookie header for the session cookie, which makes it easier for remote attackers to obtain potentially sensitive information via script access to this cookie.</Description>      <cnnvd>CNNVD-201407-074</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-4692</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://pfsense.org/security/advisories/pfSense-SA-14_12.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.4</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106086" id="106086" modifyDate="2017-08-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2015-2294: WebGUI中的跨站点脚本漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple cross-site scripting (XSS) vulnerabilities in the WebGUI in pfSense before 2.2.1 allow remote attackers to inject arbitrary web script or HTML via the (1) zone parameter to status_captiveportal.php; (2) if or (3) dragtable parameter to firewall_rules.php; (4) queue parameter in an add action to firewall_shaper.php; (5) id parameter in an edit action to services_unbound_acls.php; or (6) filterlogentries_time, (7) filterlogentries_sourceipaddress, (8) filterlogentries_sourceport, (9) filterlogentries_destinationipaddress, (10) filterlogentries_interfaces, (11) filterlogentries_destinationport, (12) filterlogentries_protocolflags, or (13) filterlogentries_qty parameter to diag_logs_filter.php.</Description>      <cnnvd>CNNVD-201504-019</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-2294</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://www.pfsense.org/security/advisories/pfSense-SA-15_03.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.1</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106087" id="106087" modifyDate="2017-08-25">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2015-2295: 远程攻击者可以劫持管理员的身份验证</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site request forgery (CSRF) vulnerability in system_firmware_restorefullbackup.php in the WebGUI in pfSense before 2.2.1 allows remote attackers to hijack the authentication of administrators for requests that delete arbitrary files via the deletefile parameter.</Description>      <cnnvd>CNNVD-201504-176</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-2295</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://www.pfsense.org/security/advisories/pfSense-SA-15_04.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.1</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106088" id="106088" modifyDate="2017-08-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2015-4029: 任意网页脚本或HTML注入</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site scripting (XSS) vulnerability in the WebGUI in pfSense before 2.2.3 allows remote attackers to inject arbitrary web script or HTML via the zone parameter in a del action to services_captiveportal_zones.php.</Description>      <cnnvd>CNNVD-201507-677</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-4029</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://www.pfsense.org/security/advisories/pfSense-SA-15_06.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106089" id="106089" modifyDate="2017-08-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2015-6508: 任意网页脚本或HTML注入</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site scripting (XSS) vulnerability in pfSense before 2.2.3 allows remote attackers to inject arbitrary web script or HTML via the descr parameter in a &amp;quot;new&amp;quot; action to system_authservers.php.</Description>      <cnnvd>CNNVD-201508-409</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-6508</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://www.pfsense.org/security/advisories/pfSense-SA-15_06.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106090" id="106090" modifyDate="2017-08-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2015-6509: 任意网页脚本或HTML注入</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple cross-site scripting (XSS) vulnerabilities in pfSense before 2.2.3 allow remote attackers to inject arbitrary web script or HTML via the (1) proxypass parameter to system_advanced_misc.php; (2) adaptiveend, (3) adaptivestart, (4) maximumstates, (5) maximumtableentries, or (6) aliasesresolveinterval parameter to system_advanced_firewall.php; (7) proxyurl, (8) proxyuser, or (9) proxyport parameter to system_advanced_misc.php; or (10) name, (11) notification_name, (12) ipaddress, (13) password, (14) smtpipaddress, (15) smtpport, (16) smtpfromaddress, (17) smtpnotifyemailaddress, (18) smtpusername, or (19) smtppassword parameter to system_advanced_notifications.php.</Description>      <cnnvd>CNNVD-201508-410</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-6509</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://www.pfsense.org/security/advisories/pfSense-SA-15_06.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106091" id="106091" modifyDate="2017-08-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2015-6510: 任意网页脚本或HTML注入</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple cross-site scripting (XSS) vulnerabilities in pfSense before 2.2.3 allow remote attackers to inject arbitrary web script or HTML via the (1) srctrack, (2) use_mfs_tmp_size, or (3) use_mfs_var_size parameter to system_advanced_misc.php; the (4) port, (5) snaplen, or (6) count parameter to diag_packet_capture.php; the (7) pppoe_resethour, (8) pppoe_resetminute, (9) wpa_group_rekey, or (10) wpa_gmk_rekey parameter to interfaces.php; the (11) pppoe_resethour or (12) pppoe_resetminute parameter to interfaces_ppps_edit.php; the (13) member[] parameter to interfaces_qinq_edit.php; the (14) port or (15) retry parameter to load_balancer_pool_edit.php; the (16) pkgrepourl parameter to pkg_mgr_settings.php; the (17) zone parameter to services_captiveportal.php; the port parameter to (18) services_dnsmasq.php or (19) services_unbound.php; the (20) cache_max_ttl or (21) cache_min_ttl parameter to services_unbound_advanced.php; the (22) sshport parameter to system_advanced_admin.php; the (23) id, (24) tunable, (25) descr, or (26) value parameter to system_advanced_sysctl.php; the (27) firmwareurl, (28) repositoryurl, or (29) branch parameter to system_firmware_settings.php; the (30) pfsyncpeerip, (31) synchronizetoip, (32) username, or (33) passwordfld parameter to system_hasync.php; the (34) maxmss parameter to vpn_ipsec_settings.php; the (35) ntp_server1, (36) ntp_server2, (37) wins_server1, or (38) wins_server2 parameter to vpn_openvpn_csc.php; or unspecified parameters to (39) load_balancer_relay_action.php, (40) load_balancer_relay_action_edit.php, (41) load_balancer_relay_protocol.php, or (42) load_balancer_relay_protocol_edit.php.</Description>      <cnnvd>CNNVD-201508-411</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-6510</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://www.pfsense.org/security/advisories/pfSense-SA-15_06.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-06-30" gvid="ID106092" id="106092" modifyDate="2017-08-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>pfSense: CVE-2015-6511: 任意网页脚本或HTML注入</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site scripting (XSS) vulnerability in pfSense before 2.2.3 allows remote attackers to inject arbitrary web script or HTML via the server[] parameter to services_ntpd.php.</Description>      <cnnvd>CNNVD-201508-412</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-6511</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://www.pfsense.org/security/advisories/pfSense-SA-15_06.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106094" id="106094" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-14_02.webgui: 任意代码执行</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A command-injection vulnerability exists in firewall_aliases_edit.php. This
+      allows authenticated WebGUI users with privileges for firewall_aliases_edit.php
+      to execute commands in the context of the root user.
+
+
+      A user granted limited access to the pfSense web configurator GUI including
+      access to firewall_aliases_edit.php via the &amp;quot;WebCfg - Firewall:
+      Alias: Edit page&amp;quot; permission, could leverage this vulnerability to gain
+      increased privileges, read other files, execute commands, or perform other
+      alterations.
+      
+      This is not relevant for admin-level users as there are other deliberate means
+      by which an administrator could run commands.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.1</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106095" id="106095" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-14_03.webgui: 反射XSS</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A reflected XSS attack is possible using the id paramter on vpn_pppoe_edit.php and
+      other similar pages. This allows injection of arbitrary HTML or scripting code to
+      be presented to the user&amp;#39;s browser for execution.
+
+
+      If a user is logged into their firewall and they follow a link which points
+      to an affected page on their firewall including an attack, they could be subjected
+      to an XSS or other similar attack which relies on arbitrary injected code.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.1</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106096" id="106096" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-14_08.webgui: 任意代码执行</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A command-injection vulnerability exists in status_services.php. This allows
+      authenticated WebGUI users with privileges for status_services.php to
+      execute commands in the context of the root user.
+      
+      A logged-in user could also be deceived into loading a specially-crafted
+      URL, permitting a command supplied by a remote attacker to be executed.
+
+
+      A user granted limited access to the pfSense web GUI including access to
+      status_services.php via the &amp;quot;WebCfg - Firewall: Status: Services&amp;quot;
+      permission, could leverage this vulnerability to gain increased privileges,
+      read arbitrary files, execute commands, or perform other alterations.
+      
+      Because the parameter in question is passed by GET, it can bypass other
+      protections and be triggered via a malicious iframe or other, similarly
+      styled attack. This attack vector is viable only if the administrator is
+      logged into the firewall while loading the malicious page in the same
+      browser and the remote attacker can guess, or otherwise obtain the local IP
+      address or hostname of the firewall.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.4</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106097" id="106097" modifyDate="2019-01-31">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-14_15.webgui: pfSense WebGUI中的多个命令注入漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>发现了多个命令注入漏洞
+       安全审核期间的pfSense WebGUI。
+      * Command Injection in diag_testport.php
+      * Command Injection in services_dnsmasq.php
+
+       用户授予对pfSense WebGUI的有限访问权限，包括访问权限
+       受影响的页面可以利用这些漏洞来增加权限，读取任意文件，执行命令或执行其他操作改变。
+      
+       在diag_testport.php上通过POST传递的srcport值不正确验证或消毒。 一个特制的字符串作为“srcport”发送值可以触发漏洞。
+      
+       services_dnsmasq.php页面上的高级选项将传递给dnsmasq
+       作为命令行参数，它们未经过适当的验证或清理。
+       作为“custom_options”发送的特制字符串值可以触发漏洞。</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-6305</id>      </AlternateIds>      <Solutions framework="1" xml:lang="zh-hk">         
+           
+           
+         目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载,下载并安装更新:https://www.pfsense.org/security/advisories/pfSense-SA-15_04.webgui.asc      </Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106098" id="106098" modifyDate="2019-01-31">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-14_16.webgui: pfSense WebGUI中的多个XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple Persistent Cross-Site Scripting (XSS) vulnerabilities were
+      discovered in the pfSense WebGUI during a security audit.
+      
+      * Persistent XSS in firewall_aliases_edit.php
+      * Persistent XSS in firewall_virtual_ip_edit.php / services_ntpd.php
+        + interfaces_gre_edit.php and interfaces_gif_edit.php
+
+
+      Due to the lack of proper encoding on the affected variables and pages,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.
+      
+      Characters sent via POST in the &amp;quot;detail&amp;quot; variable on
+      firewall_aliases_edit.php are not properly encoded and the value is saved in
+      the firewall configuration.
+      
+      The &amp;quot;descr&amp;quot; parameter for a Virtual IP address on
+      firewall_virtual_ip_edit.php script is not properly validated or sanitized
+      before display on certain pages and its value is stored in the firewall
+      configuration.</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-6306</id>      </AlternateIds>      <Solutions framework="1" xml:lang="zh-hk">         
+           
+           
+         目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载,下载并安装更新:https://www.pfsense.org/security/advisories/pfSense-SA-15_04.webgui.asc      </Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106099" id="106099" modifyDate="2019-01-31">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-14_17.webgui: pfSense WebGUI中多个跨站点请求伪造防护绕过的漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple Cross-Site Request Forgery protection bypass vulnerabilities were
+      discovered in the pfSense WebGUI during a security audit.
+      
+      * DNS queries and alias creation are executed with a GET request that lacks
+        CSRF protection on diag_dns.php
+      * Configuration restore and deletion actions on diag_confbak.php are
+        executed with a GET request that lacks CSRF protection.
+
+
+      Due to the lack of CSRF validation on the affected actions and pages, a CSRF
+      attack could executed in the user&amp;#39;s browser to trigger an unwanted action.
+      
+      Loading the diag_dns.php page with the &amp;quot;host&amp;quot; parameter defined performs a
+      DNS request via GET request. This may cause unintended network activity, a
+      DNS host lookup of the supplied name.
+      
+      When a site returns multiple hosts in a DNS result on diag_dns.php, a
+      feature is activated that allows the creation of a firewall alias from the
+      result. This alias is created by following a GET link that does not have any
+      CSRF protection. A CSRF attack could lead to the creation of this alias
+      unintentionally.
+      
+      When selecting a configuration to restore or delete from diag_confbak.php
+      the request was handled via GET and was not protected against CSRF. An
+      attacker could cause the user to follow a link which would restore an older
+      firewall configuration or delete an older configuration backup
+      unintentionally.</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-6307</id>      </AlternateIds>      <Solutions framework="1" xml:lang="zh-hk">         
+           
+           
+         目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载,下载并安装更新:https://www.pfsense.org/security/advisories/pfSense-SA-15_04.webgui.asc      </Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106100" id="106100" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-15_01.webgui: pfSense WebGUI中多个跨站点请求伪造防护绕过的漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple Cross-Site Scripting vulnerabilities were discovered in the pfSense 
+      WebGUI during a security audit.
+      
+      * Multiple XSS in System &amp;gt; Advanced, Notifications page. 
+      * XSS in captive portal status widget
+      * XSS in edit.php
+
+
+      Due to the lack of encoding on the affected actions and pages, an attacker 
+      could cause an administrator&amp;#39;s browser session to trigger an unwanted 
+      action by getting them to browse to a crafted URL.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.1.6</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-05-07" gvid="ID106101" id="106101" modifyDate="2018-05-07">      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <name>pfSense:pfSense-SA-15_02.igmp:IGMP协议中的整数溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Integer overflow in FreeBSD before 8.4 p24, 9.x before 9.3 p10. 10.0 before p18, and 10.1 before p6 allows remote attackers to cause a denial of service (crash) via a crafted IGMP packet, which triggers an incorrect size calculation and allocation of insufficient memory.</Description>      <cnnvd>CNNVD-201502-465</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-1414</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://www.freebsd.org/security/advisories/FreeBSD-SA-15:04.igmp.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.1</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106102" id="106102" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-15_03.webgui: pfSense WebGUI中的多个XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple Cross-Site Scripting (XSS) vulnerabilities were discovered in the
+      pfSense WebGUI.
+      
+      * XSS via the &amp;quot;zone&amp;quot; parameter in status_captiveportal.php
+      * XSS via the &amp;quot;if&amp;quot; and &amp;quot;dragtable&amp;quot; parameters in /firewall_rules.php
+      * XSS via the &amp;quot;queue&amp;quot; parameter in firewall_shaper.php
+      * XSS via the &amp;quot;id&amp;quot; parameter in services_unbound_acls.php
+      * XSS via the &amp;quot;filterlogentries_time&amp;quot;, &amp;quot;filterlogentries_sourceipaddress&amp;quot;,
+        &amp;quot;filterlogentries_sourceport&amp;quot;, &amp;quot;filterlogentries_destinationipaddress&amp;quot;,
+        &amp;quot;filterlogentries_interfaces&amp;quot;, &amp;quot;filterlogentries_destinationport&amp;quot;,
+        &amp;quot;filterlogentries_protocolflags&amp;quot; and &amp;quot;filterlogentries_qty&amp;quot; parameters
+        on /diag_logs_filter.php
+
+
+      Due to the lack of proper encoding on the affected variables and pages,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.
+      
+      - From the original report:
+      Input passed via the &amp;quot;zone&amp;quot; HTTP GET parameter to &amp;quot;/status_captiveportal.php&amp;quot;
+      script is not properly sanitized before being returned to the user. A remote
+      attacker can trick a logged-in administrator to open a specially crafted link
+      and execute arbitrary HTML and script code in browser in context of the
+      vulnerable website.
+      
+      Input passed via the &amp;quot;if&amp;quot; and &amp;quot;dragtable&amp;quot; HTTP GET parameters to
+      &amp;quot;/firewall_rules.php&amp;quot; script is not properly sanitized before being returned to
+      the user. A remote attacker can trick a logged-in administrator to open a
+      specially crafted link and execute arbitrary HTML and script code in browser in
+      context of the vulnerable website.
+      
+      Input passed via the &amp;quot;queue&amp;quot; HTTP GET parameter to &amp;quot;/firewall_shaper.php&amp;quot;
+      script is not properly sanitized before being returned to the user. A remote
+      attacker can trick a logged-in administrator to open a specially crafted link
+      and execute arbitrary HTML and script code in browser in context of the
+      vulnerable website.
+      
+      Input passed via the &amp;quot;id&amp;quot; HTTP GET parameter to &amp;quot;/services_unbound_acls.php&amp;quot;
+      script is not properly sanitized before being returned to the user. A remote
+      attacker can trick a logged-in administrator to open a specially crafted link
+      and execute arbitrary HTML and script code in browser in context of the
+      vulnerable website.
+      
+      Input passed via the &amp;quot;filterlogentries_time&amp;quot;,
+      &amp;quot;filterlogentries_sourceipaddress&amp;quot;, &amp;quot;filterlogentries_sourceport&amp;quot;,
+      &amp;quot;filterlogentries_destinationipaddress&amp;quot;, &amp;quot;filterlogentries_interfaces&amp;quot;,
+      &amp;quot;filterlogentries_destinationport&amp;quot;, &amp;quot;filterlogentries_protocolflags&amp;quot; and
+      &amp;quot;filterlogentries_qty&amp;quot; HTTP GET parameters to &amp;quot;/diag_logs_filter.php&amp;quot; script is
+      not properly sanitized before being returned to the user. A remote attacker can
+      trick a logged-in administrator to open a specially crafted link and execute
+      arbitrary HTML and script code in browser in context of the vulnerable website.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.2</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106103" id="106103" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-15_04.webgui: pfSense WebGUI中的任意文件删除漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A vulnerability was discovered in the pfSense WebGUI that could lead to
+      arbitrary file deletion.
+      
+      Insufficient validation of the HTTP request origin and the &amp;quot;deletefile&amp;quot; HTTP
+      GET parameter in the &amp;quot;/system_firmware_restorefullbackup.php&amp;quot; script can lead
+      to arbitrary file deletion. A remote attacker can trick a log-in administrator
+      into visiting a malicious page with CSRF exploit and delete arbitrary files
+      on the target system with root privileges.
+
+
+      Due to the lack of validation on the affected actions and pages, a CSRF
+      attack could executed in the user&amp;#39;s browser to trigger an unwanted action.
+      
+      Loading the &amp;quot;/system_firmware_restorefullbackup.php&amp;quot; page with the &amp;quot;deletefile&amp;quot;
+      HTTP GET parameter defined deletes the specified file without CSRF protection,
+      sanitizing the path, or other verification. Passing a relative path in the
+      variable would allow deletion of an arbitrary file.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.2</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106104" id="106104" modifyDate="2019-01-31">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-15_05.webgui: pfSense WebGUI中的多个XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple Cross-Site Scripting (XSS) vulnerabilities were found in the pfSense
+      WebGUI after receiving a tip from Nicholas Starke about
+      load_balancer_pool_edit.php which lead to further discoveries in related areas
+      during our internal investigation.
+      
+      * Stored XSS via the &amp;quot;name&amp;quot; and &amp;quot;descr&amp;quot; parameters in
+        /usr/local/www/load_balancer_pool_edit.php
+      * Stored XSS via the &amp;quot;name&amp;quot; and &amp;quot;descr&amp;quot; parameters in
+        /usr/local/www/load_balancer_monitor_edit.php
+      * Stored XSS via the &amp;quot;monitor&amp;quot; parameter in
+        /usr/local/www/load_balancer_pool.php
+      * Stored XSS via the &amp;quot;poolname&amp;quot; and &amp;quot;sitedown&amp;quot; parameters in
+        /usr/local/www/load_balancer_virtual_server.php
+      * Stored XSS via the &amp;quot;name&amp;quot; parameter in
+        /usr/local/www/load_balancer_virtual_server_edit.php
+      * Stored XSS via the configuration revision description in
+        /usr/local/www/diag_confbak.php
+
+
+      Due to the lack of proper encoding on the affected variables and pages,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.
+      
+      To take advantage of this vulnerability a user with privileges to edit the
+      values on the affected pages is required.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.2</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106105" id="106105" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-15_06.webgui: pfSense WebGUI中的多个XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在pfSense WebGUI中发现了多个跨站点脚本（XSS）漏洞。由于受影响的变量和页面缺乏正确的编码，因此可以在用户的浏览器中执行任意JavaScript。 用户的会话cookie或会话中的其他信息可能会受到损害。
+
+
+      * Stored XSS via the &amp;quot;descr&amp;quot; parameter in
+        /usr/local/www/system_authservers.php (Found by Nicholas Starke)
+      
+      * Stored XSS via the &amp;quot;proxypass&amp;quot; parameter in
+        /usr/local/www/system_advanced_misc.php (Found by Nicholas Starke)
+      
+      * Stored XSS via the &amp;quot;smtpport&amp;quot; parameter in
+        /usr/local/www/system_advanced_notifications.php (Found by Nicholas Starke)
+      
+      * Reflected XSS via the &amp;quot;zone&amp;quot; parameter in
+        /usr/local/www/services_captiveportal_zones.php when deleting a zone
+        (Found by William Costa)
+      
+      * Reflected XSS via the &amp;quot;adaptiveend&amp;quot;, &amp;quot;adaptivestart&amp;quot;, &amp;quot;maximumstates&amp;quot;,
+          &amp;quot;maximumtableentries&amp;quot;, and &amp;quot;aliasesresolveinterval&amp;quot; parameters in
+        /usr/local/www/system_advanced_firewall.php (Found by Nicholas Starke)
+      
+      * Reflected XSS via the &amp;quot;proxyurl&amp;quot;, &amp;quot;proxyuser&amp;quot;, and &amp;quot;proxyport&amp;quot; parameters in
+        /usr/local/www/system_advanced_misc.php (Found by Nicholas Starke)
+      
+      * Reflected XSS via the &amp;quot;srctrack&amp;quot;, &amp;quot;use_mfs_tmp_size&amp;quot;, &amp;quot;use_mfs_var_size&amp;quot;
+          parameters in
+        /usr/local/www/system_advanced_misc.php (Found internally)
+      
+      * Reflected XSS via the &amp;quot;name&amp;quot;, &amp;quot;notification_name&amp;quot;, &amp;quot;ipaddress&amp;quot;,
+          &amp;quot;password&amp;quot;, &amp;quot;smtpipaddress&amp;quot;, &amp;quot;smtpport&amp;quot;, &amp;quot;smtpfromaddress&amp;quot;,
+          &amp;quot;smtpnotifyemailaddress&amp;quot;, &amp;quot;smtpusername&amp;quot;, and &amp;quot;smtppassword&amp;quot; parameters in
+        /usr/local/www/system_advanced_notifications.php (Found by Nicholas Starke)
+      
+      * XSS via the &amp;quot;port&amp;quot;, &amp;quot;snaplen&amp;quot;, &amp;quot;count&amp;quot; parameters in
+        /usr/local/www/diag_packet_capture.php (Found internally)
+      
+      * XSS via the &amp;quot;pppoe_resethour&amp;quot;, &amp;quot;pppoe_resetminute&amp;quot;, &amp;quot;wpa_group_rekey&amp;quot;,
+        &amp;quot;wpa_gmk_rekey&amp;quot; parameters in
+        /usr/local/www/interfaces.php (Found internally)
+      
+      * XSS via the &amp;quot;pppoe_resethour&amp;quot;, &amp;quot;pppoe_resetminute&amp;quot; parameters in
+        /usr/local/www/interfaces_ppps_edit.php (Found internally)
+      
+      * XSS via the &amp;quot;member&amp;quot; array parameter in
+        /usr/local/www/interfaces_qinq_edit.php (Found internally)
+      
+      * XSS via the &amp;quot;port&amp;quot;, &amp;quot;retry&amp;quot; parameter in
+        /usr/local/www/load_balancer_pool_edit.php (Found internally)
+      
+      * XSS via the &amp;quot;pkgrepourl&amp;quot; parameter in
+        /usr/local/www/pkg_mgr_settings.php (Found internally)
+      
+      * XSS via the &amp;quot;zone&amp;quot; parameter in
+        /usr/local/www/services_captiveportal.php (Found internally)
+      
+      * XSS via the &amp;quot;port&amp;quot; parameter in
+        /usr/local/www/services_dnsmasq.php (Found internally)
+      
+      * XSS via the &amp;quot;server&amp;quot; array parameter in
+        /usr/local/www/services_ntpd.php
+      
+      * XSS via the &amp;quot;port&amp;quot; parameter in
+        /usr/local/www/services_unbound.php (Found internally)
+      
+      * XSS via the &amp;quot;cache_max_ttl&amp;quot;, &amp;quot;cache_min_ttl&amp;quot; parameters in
+        /usr/local/www/services_unbound_advanced.php (Found internally)
+      
+      * XSS via the &amp;quot;sshport&amp;quot; parameter in
+        /usr/local/www/system_advanced_admin.php (Found internally)
+      
+      * XSS via the &amp;quot;id&amp;quot;, &amp;quot;tunable&amp;quot;, &amp;quot;descr&amp;quot;, &amp;quot;value&amp;quot; parameters in
+        /usr/local/www/system_advanced_sysctl.php (Found internally)
+      
+      * XSS via the &amp;quot;firmwareurl&amp;quot;, &amp;quot;repositoryurl&amp;quot;, &amp;quot;branch&amp;quot; parameters in
+        /usr/local/www/system_firmware_settings.php (Found internally)
+      
+      * XSS via the &amp;quot;pfsyncpeerip&amp;quot;, &amp;quot;synchronizetoip&amp;quot;, &amp;quot;username&amp;quot;, &amp;quot;passwordfld&amp;quot;
+        parameters in
+        /usr/local/www/system_hasync.php (Found internally)
+      
+      * XSS via the &amp;quot;maxmss&amp;quot; parameter in
+        /usr/local/www/vpn_ipsec_settings.php (Found internally)
+      
+      * XSS via the &amp;quot;ntp_server1&amp;quot;, &amp;quot;ntp_server2&amp;quot;, &amp;quot;wins_server1&amp;quot;, &amp;quot;wins_server2&amp;quot;
+        parameters in
+        /usr/local/www/vpn_openvpn_csc.php (Found internally)
+      
+      * Multiple XSS issues were identified in obsolete/unused files. These have been
+        removed:
+        /usr/local/www/load_balancer_relay_action.php
+        /usr/local/www/load_balancer_relay_action_edit.php
+        /usr/local/www/load_balancer_relay_protocol.php
+        /usr/local/www/load_balancer_relay_protocol_edit.php  (Found internally)</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106106" id="106106" modifyDate="2019-01-31">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-15_07.webgui: pfSense WebGUI中存在多个存储式XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple Stored Cross-Site Scripting (XSS) vulnerabilities were found in the
+      pfSense WebGUI.
+      
+      The &amp;quot;Descriptive Name&amp;quot; field of Certificate Authorities, Certificates, and
+      Certificate Revocation Lists were not being sanitized or encoded properly in
+      certain cases. As a result stored XSS was possible when values entered in these
+      fields were displayed to the user.
+      
+      List of affected pages:
+         usr/local/www/system_certmanager.php (Discovered by Hari Hara Subramani)
+         usr/local/www/vpn_openvpn_server.php (Discovered by Hari Hara Subramani)
+         usr/local/www/system_camanager.php (Discovered Internally)
+         usr/local/www/system_crlmanager.php (Discovered Internally)
+         usr/local/www/vpn_openvpn_client.php (Discovered Internally)
+         usr/local/www/vpn_ipsec_phase1.php (Discovered Internally)
+         usr/local/www/system_authservers.php (Discovered Internally)
+         usr/local/www/system_usermanager.php (Discovered Internally)
+         usr/local/www/system_advanced_admin.php (Discovered Internally)
+         usr/local/www/services_captiveportal.php (Discovered Internally)
+         usr/local/www/wizards/openvpn_wizard.inc (Discovered Internally)
+
+
+      Due to the lack of proper encoding on the affected variables and pages,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.4</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106107" id="106107" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-15_08.webgui: pfSense WebGUI中存在多个存储型XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple Stored Cross-Site Scripting (XSS) vulnerabilities were found in the
+      pfSense WebGUI.
+      
+      The &amp;quot;Descriptive Name&amp;quot; field of Limiters, Layer 7 Containers, and ALTQ Traffic
+      Shaper queues were not encoded properly in certain cases. As a result, stored
+      XSS was possible when values entered in these fields were displayed to the user.
+      
+      The stored &amp;quot;Current Category&amp;quot; selection for RRD Graphs was not encoded before
+      being displayed to the user. As a result, stored XSS was possible.
+      
+      The stored description values of OpenVPN instances (clients and servers) were
+      not encoded before being displayed to the user. As a result, stored XSS was
+      possible.
+      
+      The stored Description field on Aliases, along with their detailed item
+      descriptions were not encoded before being displayed to the user. As a result,
+      pages that included Alias detail tooltips such as Firewall Rule and NAT Rule
+      lists had a potential for stored XSS.
+      
+      When attempting to delete an alias, the Description of a firewall rule was not
+      encoded before being displayed to the user. As a result, stored XSS was
+      possible.
+      
+      The text of GUI notifications was not being sanitized before being displayed to
+      the user. As a result, stored XSS was possible via notification text, such as a
+      rule description when an alias cannot be resolved.
+      
+      The descriptive name of an authentication server entry was not being sanitized
+      before being displayed to the user. As a result, stored XSS was possible on
+      several pages that utilized authentication server entries.
+      
+      The description of Load Balancer pools and virtual servers was not being
+      sanitized before being displayed to the user. As a result, stored XSS was
+      possible on several pages that displayed the description.
+      
+      The mode parameter of a Load Balancer Pool entry was not being validated before
+      being stored or sanitized before being displayed to the user. As a result,
+      stored XSS was possible on pages that displayed the mode.
+      
+      The relay_protocol parameter of a Load Balancer Virtual Server entry was not
+      being validated before being stored or sanitized before being displayed to the
+      user. As a result, stored XSS was possible on pages that displayed the
+      relay_protocol text.
+      
+      List of affected pages for pfSense 2.2.x:
+        In usr/local/www/
+          firewall_shaper_vinterface.php       (Discovered by Nicholas Starke)
+          firewall_shaper_layer7.php           (Nicholas Starke)
+          firewall_shaper.php                  (Internal)
+          status_rrd_graph.php                 (Dhinesh Kumar)
+          guiconfig.inc [Alias Tooltip]        (Hari Hara Subramani, Internal)
+          system_usermanager_settings.php      (Sivathmican Sivakumaran)
+          diag_authentication.php              (Internal)
+          vpn_ipsec_mobile.php                 (Internal)
+          vpn_openvpn_server.php               (Internal)
+      
+      List of affected pages on both pfSense 2.2.x and 2.3:
+        In usr/local/www (2.2.x) or src/usr/local/www/ (2.3):
+          status_openvpn.php                    (Dhinesh Kumar, Internal)
+          firewall_aliases.php                  (Hari Hara Subramani)
+          system_usermanager_settings_test.php  (Internal)
+          widgets/widgets/openvpn.widget.php    (Dhinesh Kumar)
+          load_balancer_pool.php                (Dhinesh Kumar)
+          load_balancer_pool_edit.php           (Dhinesh Kumar)
+          load_balancer_virtual_server.php      (Dhinesh Kumar)
+          load_balancer_virtual_server_edit.php (Dhinesh Kumar)
+          status_lb_pool.php                    (Dhinesh Kumar)
+          status_lb_vs.php                      (Dhinesh Kumar)
+          widgets/widgets/load_balancer_status.widget.php (Dhinesh Kumar)
+      
+        In etc/inc/ (2.2.x) or src/etc/inc/ (2.3):
+          etc/inc/functions.inc [GUI Notices]  (Hari Hara Subramani)
+
+
+      Due to the lack of proper encoding on the affected variables and pages,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106108" id="106108" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-15_09.webgui: pfSense WebGUI中的本地文件包含漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>在pfSense WebGUI中发现了本地文件包含漏洞。
+具有有限管理权限的用户有权限将文件写入文件系统，以及访问pkg.php或wizard.php页面，能将其权限升级为完全管理员的权限。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.6</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106109" id="106109" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-15_10.captiveportal: pfSense Captive Portal 注销中的SQL注入漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The sessionid in the captive portal logout function was not properly sanitized.
+
+
+      Users on a local network with captive portal enabled can manipulate captive 
+      portal&amp;#39;s session database with a specially crafted logout POST.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.6</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106110" id="106110" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-15_11.webgui: pfSense WebGUI中的多个XSS和CSRF漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple Cross-Site Scripting (XSS) vulnerabilities were found in the pfSense
+      WebGUI, and one CSRF issue.
+      
+      The &amp;quot;DNS Servers&amp;quot; fields on system.php were validated but not encoded before
+      display. A bad value entered into a field was put back in the field unencoded
+      while displaying input validation errors, resulting in a reflected XSS. The
+      value was not stored.
+      
+      The &amp;quot;bandwidth&amp;quot; and &amp;quot;qlimit&amp;quot; fields on firewall_shaper.php were validated but
+      not encoded before display. A bad value entered into a field was put back in the
+      field unencoded while displaying input validation errors, resulting in a
+      reflected XSS. The value was not stored.
+      
+      On status_gateways.php and system_gateways.php, some stored gateway parameters
+      such as the Description were being printed without encoding, leading to a
+      potential stored XSS under some conditions.
+      
+      The page diag_backup.php had CSRF checking disabled for all functions, including
+      the restore function. As a result, a specially crafted attacker page could cause
+      a logged-in administrator to upload a config.xml crafted by the attacker.
+
+
+      Due to the lack of proper encoding on the affected variables and pages,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.
+      
+      On diag_backup.php, the firewall configuration could be altered or replaced if
+      the administrator could be tricked into loading a specially crafted page while
+      also logged into the firewall with the same browser session.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2.6</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106111" id="106111" modifyDate="2018-05-07">      <cvsscode>9.0</cvsscode>      <severity>Critical</severity>      <name>pfSense: pfSense-SA-16_01.webgui: 任意代码执行</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>pfSense before 2.3 allows remote authenticated users to execute arbitrary OS commands via a &amp;#39;|&amp;#39; character in the status_rrd_graph_img.php graph parameter, related to _rrd_graph_img.php.</Description>      <cnnvd>CNNVD-201801-862</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-10709</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://www.pfsense.org/security/advisories/pfSense-SA-16_01.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.0</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106112" id="106112" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-16_02.webgui: pfSense WebGUI中的多个XSS和CSRF漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple Cross-Site Scripting (XSS) vulnerabilities were found in the pfSense
+      WebGUI on pfSense 2.2.6 and earlier versions.
+      
+      On system_gateway_groups_edit.php, a gateway Description (&amp;quot;descr&amp;quot;) was being
+      printed without encoding, leading to a potential stored XSS.
+      
+      Multiple limiter parameters referenced on firewall_shaper_vinterface.php on
+      pfSense 2.2.6 and earlier were printed without encoding when rejected by input
+      validation, leading to a reflected XSS. The redesigned GUI used on pfSense 2.3
+      is not affected.
+      
+      The &amp;quot;container&amp;quot; parameter referenced on firewall_shaper_layer7.php on pfSense
+      2.2.6 and earleir was printed without encoding when rejected by input
+      validation, leading to a reflected XSS. The Layer 7 feature is deprecated and
+      had already been removed from the master branch (2.3), thus it is not affected.
+
+
+      Due to the lack of proper encoding on the affected variables and pages,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.0</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106113" id="106113" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-16_03.webgui: pfSense WebGUI中的存储式XSS</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in pkg.php, part of the
+      pfSense WebGUI, on pfSense 2.3 and earlier versions. pkg.php is used to display
+      and manage lists of items used by packages. Items in these lists were displayed
+      without encoding, which could result in a stored XSS if the package did not
+      validate or sanitize the data when values were stored.
+      
+      A Cross-Site Scripting (XSS) vulnerability was found in Notice handling, part of
+      the pfSense WebGUI, affecting pfSense 2.3 only. The firewall displays notices
+      formed by various areas of the system to notify the user of problems or
+      significant events. The text of the notices was not encoded before display,
+      leading to a potential persistent XSS.
+
+
+      Due to the lack of proper encoding on the affected variables and pages,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.
+      
+      In the case of the potential Notices XSS vector, the notice text is not directly
+      controllable by the user, but in certain cases it was filled with an HTML
+      response from a remote server controlled by the pfSense project.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.1</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106114" id="106114" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-16_04.filterlog: 数据包中由于格式错误的SCPS选项导致的filterlog中的拒绝服务。</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A deliberately malformed TCP SYN packet with option 20 (0x14) can cause the
+      filterlog daemon to crash with a segmentation fault, which causes all logging of
+      packets from firewall rules to cease.
+      
+      Option 20 is SCPS-TP, which is a space communications version of TCP and not an
+      option typically found on the Internet in general. The SCPS Capabilities Option
+      should be sent in a TCP SYN packet and contain four fields of one byte each and
+      begin with 0x14 0x04 (Kind=20, Length=4).
+      
+      A malformed packet that causes a segmentation fault in filterlog omits the two
+      mandatory fields &amp;quot;Capabilities Option Bit-Vector&amp;quot; and &amp;quot;Connection ID&amp;quot; and have
+      changes the option length to 0x02, which breaks the SCPS-TP standard but follows
+      the TCP Options standard in general. The packet passes TCP option parsers that
+      don&amp;#39;t specifically care about SCPS-TP.
+      
+      The packet processing code in filterlog, which comes directly from tcpdump,
+      incorrectly defines TCPOPT_AUTH to the wrong option. The switch case for
+      TCPOPT_AUTH in filterlog incorrectly subtracts from the option length, resulting
+      in a segmentation fault when next option is read.
+      
+      A packet with the SCPS Capabilities option adhering to the standard should be 4
+      bytes long and will not trigger this bug. A shortened SPCS option must be
+      crafted deliberately.
+
+
+      An affected version of filterlog which receives this malformed packet will crash,
+      which stops further logging, potentially denying access to information about a
+      later attack.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <low>2.2.0</low>                     
+                                 <high inclusive="0">2.3.1</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106115" id="106115" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-16_05.webgui: 任意代码执行</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Command-injection vulnerabilities exist in diag_smart.php and diag_routes.php.
+      These allow authenticated WebGUI users with privileges for diag_smart.php or
+      diag_routes.php to execute commands in the context of the root user.
+
+
+      A user on pfSense version 2.3.1 or earlier, granted limited access to the
+      pfSense web configurator GUI including access to diag_smart.php and
+      diag_routes.php via their associated privileges: &amp;quot;WebCfg - Diagnostics:
+      S.M.A.R.T. Status&amp;quot; and &amp;quot;WebCfg - Diagnostics: Routing Tables&amp;quot; respectively,
+      could leverage these vulnerabilities to gain increased privileges, read other
+      files, execute commands, or perform other alterations.
+      
+      This is not relevant for admin-level users as there are other deliberate means
+      by which an administrator could run commands.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.2</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106116" id="106116" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-16_07.webgui: 任意代码执行</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A command-injection vulnerability exists in pkg_mgr_install.php using the &amp;#39;id&amp;#39;
+      parameter. This allows an authenticated WebGUI user with privileges for
+      pkg_mgr_install.php to execute commands in the context of the root user.
+
+
+      A user on pfSense version 2.3.1_1 or earlier, granted limited access to the
+      pfSense web configurator GUI including access to pkg_mgr_install.php could
+      leverage these vulnerabilities to gain increased privileges, read other files,
+      execute commands, or perform other alterations.
+      
+      Some characters, such as &amp;#39;/&amp;#39; and &amp;#39;-&amp;#39; were filtered, which limits the number of
+      commands which could be executed using this vulnerability.
+      
+      This is not relevant for admin-level users as there are other deliberate means
+      by which an administrator could run commands.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.2</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106117" id="106117" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-16_08.webgui: 任意代码执行</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A command-injection vulnerability exists in auth.inc via system_groupmanager.php
+      using the &amp;#39;members&amp;#39; parameter. This allows an authenticated WebGUI user with
+      privileges for system_groupmanager.php to execute commands in the context of the
+      root user.
+
+
+      A user on pfSense version 2.3.1_1 or earlier, granted limited access to the
+      pfSense web configurator GUI including access to system_groupmanager.php could
+      leverage these vulnerabilities to gain increased privileges, read other files,
+      execute commands, or perform other alterations.
+      
+      Note users with access to the group manager almost always have full admin rights,
+      and can grant themselves such rights if they do not already have them.
+      
+      This is not relevant for admin-level users as there are other deliberate means
+      by which an administrator could run commands.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.2</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106118" id="106118" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-17_01.webgui: WebGUI中的多个Captive Portal XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple Cross-Site Scripting (XSS) vulnerabilities were found in the Captive
+      Portal area of the pfSense software WebGUI on version 2.3.2_1 and earlier.
+      
+      List of parameters vulnerable to reflected XSS:
+      * status_captiveportal.php: &amp;quot;order&amp;quot;, &amp;quot;zone&amp;quot;
+      * status_captiveportal_expire.php: &amp;quot;zone&amp;quot;
+      * status_captiveportal_test.php: &amp;quot;zone&amp;quot;
+      * status_captiveportal_voucher_rolls.php: &amp;quot;zone&amp;quot;
+      * status_captiveportal_vouchers.php: &amp;quot;zone&amp;quot;
+
+
+      Due to the lack of proper encoding on the affected variables and pages
+      succeptible to XSS, arbitrary JavaScript can be executed in the user&amp;#39;s browser.
+      The user&amp;#39;s session cookie or other information from the session may be
+      compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106119" id="106119" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-17_02.webgui: 任意代码执行</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A command-injection vulnerability exists in wizard.php via update_config_field()
+      due to its passing user input through eval(), especially in its handling of
+      interfaces_selection type fields. This allows an authenticated WebGUI user with
+      privileges for wizard.php to execute commands in the context of the root user.
+
+
+      A user on version 2.3.2_1 or earlier of the pfSense software, granted limited
+      access to the pfSense software WebGUI including access to wizard.php, could
+      leverage these vulnerabilities to gain increased privileges, read other files,
+      execute commands, or perform other alterations.
+      
+      This is not relevant for admin-level users as there are other deliberate means
+      by which an administrator could run commands.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106120" id="106120" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-17_03.webgui: WebGUI中的多个XSS和CSRF漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Multiple Cross-Site Scripting (XSS) vulnerabilities and one CSRF issue were
+      found in the pfSense software WebGUI on version 2.3.2_1 and earlier.
+      
+      On pkg_mgr_install.php, the &amp;quot;from&amp;quot; and &amp;quot;to&amp;quot; parameter are vulnerable to
+      reflected XSS when performing a reinstall action.
+      
+      On pkg.php, the &amp;quot;pkg_filter&amp;quot; parameter is vulnerable to reflected XSS when a
+      package XML file contains a field type of &amp;quot;sorting&amp;quot; which also has
+      &amp;quot;include_filtering_inputbox&amp;quot; active. Currently the only affected package is
+      FreeRADIUS ( freeradius.xml and freeradiusauthorizedmacs.xml both meet these
+      conditions ).
+      
+      The easyrule.php script uses GET variables to, making it possible to add new
+      firewall rules via CSRF.
+
+
+      Due to the lack of proper encoding on the affected variables and pages
+      succeptible to XSS, arbitrary JavaScript can be executed in the user&amp;#39;s browser.
+      The user&amp;#39;s session cookie or other information from the session may be
+      compromised.
+      
+      Due to the use of GET on easyrule.php, a firewall administrator could
+      unknowingly create an unwanted firewall rule if they are the victim of a CSRF
+      attack.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106121" id="106121" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-17_04.webgui: WebGUI中的DHCP租约XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in the DHCP lease display
+      in the pfSense software WebGUI on version 2.3.3-p1 and earlier.
+      
+      If a malicious client submits a hostname containing HTML, it is displayed to
+      the user viewing the DHCP leases without encoding.
+
+
+      Due to the lack of proper encoding on the affected variable succeptible to XSS,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s session
+      cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.4</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106122" id="106122" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-17_05.webgui: WebGUI中存在多个XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-Site Scripting (XSS) vulnerabilities were found in three pages of the
+      pfSense software WebGUI on version 2.3.4 and earlier.
+      
+      * On vendor/filebrowser/browser.php, which is part of the &amp;quot;Browse&amp;quot; function on
+        diag_edit.php, the &amp;quot;filename&amp;quot; parameter can be used to trigger an XSS if a
+        file exists with a specially-crafted name.
+      
+        In order to exploit this, a user must be able to write files with arbitrary
+        names to the firewall and then coerce an administrator with GUI access to load
+        that same file in diag_edit.php through the file browser.
+      
+      * On firewall_nat_edit.php, the &amp;quot;interface&amp;quot; parameter was not validated on save,
+        so a specially-crafted submission could store an interface with a name that
+        could trigger an XSS through the dst_change() JavaScript function on the page.
+      
+      * On diag_tables.php, the &amp;quot;type&amp;quot; parameter which contains the table name to
+        display was not being validated against a list of current tables. The
+        unvalidated parameter was submitted back via AJAX to load the invalid table,
+        and was presented to the user unencoded.
+
+
+      Due to the lack of proper encoding on the affected variable susceptible to XSS,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s session
+      cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.4_1</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-08-25" gvid="ID106123" id="106123" modifyDate="2017-08-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-17_06.webgui: WebGUI中暴力登录防护弱点</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Malicious clients attempting to repeatedly authenticate to the pfSense WebGUI
+      are added to a lockout table which prevents new connections. Existing
+      connections are not dropped, however, so if a browser or malicious client holds
+      open an existing connection and continues to send requests, those attempts are
+      not stopped.
+
+
+      Due to the connections not being dropped, a malicious client can send numerous
+      brute force login attempts beyond the expected cut-off limit. If firewall
+      accounts have weak passwords, an attacker could potentially gain access.
+      
+      This problem does not affect ssh logins in the same way because the ssh daemon
+      itself will terminate a connection after repeated failures, and due to the
+      lockout table, a malicious client will not be able to reconnect to send
+      additional attempts once that happens.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.4_1</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-11-22" gvid="ID106124" id="106124" modifyDate="2017-11-22">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-17_08.webgui: WebGUI中的XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in diag_dns.php, a part of
+      the pfSense software WebGUI, on version 2.3.4 and earlier (2.3.x branch) and on
+      version 2.4.1 and earlier (2.4.x branch).
+      
+      On diag_dns.php, the &amp;quot;hostname&amp;quot; parameter was being utilized without encoding in
+      a JavaScript variable which could be used as an XSS vector.
+
+
+      Due to the lack of proper encoding on the affected variable susceptible to XSS,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s session
+      cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.2</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-11-22" gvid="ID106125" id="106125" modifyDate="2017-11-22">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-17_09.webgui: WebGUI仪表板中存在多个XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-Site Scripting (XSS) vulnerabilities were found in the dashboard and
+      widgets, components of the pfSense software WebGUI, on version 2.4.1 and earlier
+      of the 2.4.x release branch.
+      
+      * On index.php, the &amp;quot;sequence&amp;quot; parameter component for multiple widget instance
+        counters was not validated and it was echoed back to the user directly without
+        encoding. A specially-crafted submission could store an invalid widget
+        sequence which could be used as an XSS vector.
+      
+      * On numerous widgets which support multiple instances, the widgetkey parameter
+        was taken from $_REQUEST and echoed back to the user directly without
+        encoding, which could be used as an XSS vector.
+
+
+      Due to the lack of proper encoding on the affected variable susceptible to XSS,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s session
+      cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.2</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-12-18" gvid="ID106126" id="106126" modifyDate="2017-12-18">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-17_10.webgui: 任意代码执行</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>On pfSense 2.4.x, a command-injection vulnerability exists in
+      system_camanager.php and system_certmanager.php via cert_get_publickey() from
+      certs.inc due to its passing user certificate and key input through a shell
+      command pipe This allows an authenticated WebGUI user with privileges for either
+      of the affected pages to execute commands in the context of the root user.
+      
+      A similar issue exists on pfSense 2.3.x in the cert_get_modulus() function from
+      certs.inc, but it is only used on system_certmanager.php.
+
+
+      A user on version 2.4.2, 2.3.5 or earlier of the pfSense software, granted
+      limited access to the pfSense software WebGUI including access to
+      system_camanager.php (2.4.x) or system_certmanager.php (2.3.x, 2.4.x), could
+      leverage these vulnerabilities to gain increased privileges, read arbitrary
+      files, execute commands, or perform other alterations.
+      
+      This is not relevant for admin-level users as there are other deliberate means
+      by which an administrator could run commands.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-12-18" gvid="ID106127" id="106127" modifyDate="2017-12-18">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-17_11.webgui: WebGUI中的XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in
+      status_filter_reload.php, a part of the pfSense software WebGUI, on version
+      2.3.5 and earlier (2.3.x branch) and on version 2.4.2 and earlier (2.4.x
+      branch).
+      
+      On status_filter_reload.php, the &amp;quot;user&amp;quot; parameter was being utilized without
+      encoding in JavaScript which could be used as an XSS vector.
+
+
+      Due to the lack of proper encoding on the affected variable susceptible to XSS,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s session
+      cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-04-02" gvid="ID106128" id="106128" modifyDate="2018-04-02">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-18_02.webgui:WebGUI中的XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in
+      diag_system_activity.php, a part of the pfSense software WebGUI, on version
+      2.3.5-p1 and earlier (2.3.x branch) and on version 2.4.2-p1 and earlier (2.4.x
+      branch).
+      
+      On diag_system_activity.php, the output of the &amp;quot;top&amp;quot; command was printed to the
+      user without encoding, which could be used as an XSS vector.
+
+
+      Due to the lack of proper encoding on the affected output susceptible to XSS,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s session
+      cookie or other information from the session may be compromised.
+      
+      Exploiting this requires that the attacker already have sufficient access to the
+      firewall to run arbitrary processes at the command prompt (console or ssh) or
+      via diag_command.php, which makes this attack impractical, but the possibility
+      remains that such a process could be triggered by other means.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-04-02" gvid="ID106129" id="106129" modifyDate="2018-04-02">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-18_03.webgui:WebGUI中的XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in
+      traffic_graphs.widget.php, a part of the pfSense software WebGUI, on version
+      2.4.2-p1 and earlier (2.4.x branch).
+      
+      On traffic_graphs.widget.php, the values of the widget settings were not
+      validated nor encoded before being printed to the user, which could be used as
+      a stored XSS vector.
+
+
+      Due to the lack of proper encoding on the affected variables susceptible to XSS,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s session
+      cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.3</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-05-15" gvid="ID106130" id="106130" modifyDate="2018-05-15">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-18_04.webgui:pfSense WebGUI中的LFI漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Local File Include (LFI) vulnerability was discovered in pkg_mgr_install.php,
+      a part of the pfSense WebGUI, via the logfilename parameter.
+      
+      The logfilename parameter on pkg_mgr_install.php in an AJAX request was used to
+      specify a file to read, ending in .txt. This file name was not sanitized or
+      restricted to a specific path.
+
+
+      An authenticated user sending a specially crafted POST request could read any
+      file on the filesystem with a name ending in &amp;#39;.txt&amp;#39;.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.6</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-05-15" gvid="ID106131" id="106131" modifyDate="2018-05-15">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-18_05.webgui:WebGUI中的XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in pkg_mgr_install.php, a
+      part of the pfSense software WebGUI, on version 2.4.3 and earlier.
+      
+      On pkg_mgr_install.php, the value of the output parameter was not validated nor
+      encoded before being printed to the user, which could be used as an XSS vector.
+
+
+      Due to the lack of proper encoding on the affected variable susceptible to XSS,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s session
+      cookie or other information from the session may be compromised.
+      
+      Due to the fact that this can only be exploited via custom POST data submitted
+      by an authenticated user with a valid CSRF token, the impact is lower than most
+      similar issues.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.6</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-09-25" gvid="ID106132" id="106132" modifyDate="2018-09-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-18_06.webgui:WebGUI中的XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in the firewall and NAT
+      rule separator feature, a part of the pfSense software WebGUI, on version
+      2.4.3-p1 and earlier.
+      
+      On firewall_rules.php and firewall_nat.php, the value of the $separator[&amp;#39;text&amp;#39;]
+      variable was not encoded before being printed to the user, which could be used
+      as an XSS vector.
+
+
+      Due to the lack of proper encoding on the affected variable susceptible to XSS,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s session
+      cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.6</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-09-25" gvid="ID106133" id="106133" modifyDate="2018-09-25">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-18_07.webgui:WebGUI中的XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in the &amp;quot;dashboardcolumns&amp;quot;
+      user-customizable Dashboard settings, a part of the pfSense software WebGUI, on
+      version 2.4.3-p1 and earlier.
+      
+      On the Dashboard (index.php) the contents of the dashboardcolumns user setting
+      was not validated on POST and was not encoded before being printed to the user,
+      which could be used as an XSS vector.
+
+
+      Due to the lack of proper encoding on the affected variable susceptible to XSS,
+      arbitrary JavaScript can be executed in the user&amp;#39;s browser. The user&amp;#39;s session
+      cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.6</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-09-25" gvid="ID106134" id="106134" modifyDate="2018-12-21">      <cvsscode>9.0</cvsscode>      <severity>Critical</severity>      <name>pfSense:pfSense-SA-18_08.webgui:经过身份验证的任意代码执行</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>An authenticated command injection vulnerability exists in status_interfaces.php via dhcp_relinquish_lease() in pfSense before 2.4.4 due to its passing user input from the $_POST parameters &amp;quot;ifdescr&amp;quot; and &amp;quot;ipv&amp;quot; to a shell without escaping the contents of the variables. This allows an authenticated WebGUI user with privileges for the affected page to execute commands in the context of the root user when submitting a request to relinquish a DHCP lease for an interface which is configured to obtain its address via DHCP.</Description>      <cnnvd>CNNVD-201809-1193</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-16055</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://www.pfsense.org/security/advisories/pfSense-SA-18_08.webgui.asc</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.3.6</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-12-03" gvid="ID106135" id="106135" modifyDate="2019-01-02">      <cvsscode>6.5</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-18_09.webgui:经过身份验证的任意代码执行</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>An exploitable command injection vulnerability exists in the way Netgate pfSense CE 2.4.4-RELEASE processes the parameters of a specific POST request. The attacker can exploit this and gain the ability to execute arbitrary commands on the system. An attacker needs to be able to send authenticated POST requests to the administration web interface. Command injection is possible in the `powerd_battery_mode` POST parameter.</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-4021,CVE-2018-4020,CVE-2018-4019</id>      </AlternateIds>      <Solutions framework="1" xml:lang="zh-hk">         
+           
+           
+         目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载,下载并安装更新:https://www.pfsense.org/security/advisories/pfSense-SA-15_04.webgui.asc      </Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-21" gvid="ID106136" id="106136" modifyDate="2019-05-21">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-19_01.webgui: Multiple XSS vulnerabilities in the WebGUI</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-Site Scripting (XSS) vulnerabilities were found in several pages of the
+      pfSense software WebGUI on version 2.4.4-p2 and earlier.
+      
+      * On system_advanced_admin.php, a reflected XSS was possible via the
+        &amp;quot;webguiproto&amp;quot; parameter.
+      * On interfaces_assign.php, a reflected XSS was possible via interface
+        parameters such as &amp;quot;wan&amp;quot;.
+      * On firewall_rules.php, stored XSS was possible due to a lack of encoding in
+        firewall_check_for_advanced_options(), and a lack of validation on
+        firewall_rules_edit.php, in the &amp;quot;dscp&amp;quot;, &amp;quot;tag&amp;quot;, &amp;quot;tagged&amp;quot;, &amp;quot;statetype&amp;quot;,
+        &amp;quot;vlanprio&amp;quot;, &amp;quot;vlanprioset&amp;quot;, &amp;quot;dnpipe&amp;quot;, and &amp;quot;defaultqueue&amp;quot; parameters.
+      * On firewall_shaper.php, a reflected XSS was possible via the &amp;quot;name&amp;quot; parameter.
+      * On services_igmpproxy.php, a stored XSS was possible due to a lack of encoding
+        of the &amp;quot;address&amp;quot; parameter and a lack of validation on the same parameter in
+        services_igmpproxy_edit.php
+      * On services_ntpd_gps.php, a stored XSS was possible via the &amp;quot;gpstype&amp;quot;
+        parameter.
+      * On diag_traceroute.php, a reflected XSS was possible via the &amp;quot;host&amp;quot; parameter.
+
+
+      Due to the lack of proper encoding on the affected parameters susceptible to
+      XSS, arbitrary JavaScript could be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-21" gvid="ID106137" id="106137" modifyDate="2019-05-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-19_02.sshguard:防暴力保护旁路</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In pfSense 2.4.4_1, blocking of source IP addresses on the basis of failed HTTPS authentication is inconsistent with blocking of source IP addresses on the basis of failed SSH authentication (the behavior does not match the sshguard documentation), which might make it easier for attackers to bypass intended access restrictions.</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-20799,CVE-2018-20798</id>      </AlternateIds>      <Solutions framework="1" xml:lang="zh-hk">         
+           
+           
+         目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载,下载并安装更新:https://www.pfsense.org/security/advisories/pfSense-SA-15_04.webgui.asc      </Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-21" gvid="ID106138" id="106138" modifyDate="2019-05-21">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-19_03.webgui:WebGUI中的XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in
+      status_filter_reload.php, a page in the pfSense software WebGUI, on version
+      2.4.4-p2 and earlier.
+      
+      The page did not encode output from the filter reload process, and a stored XSS
+      was possible via the descr (description) parameter on NAT rules.
+
+
+      Due to the lack of proper encoding on the affected parameters susceptible to
+      XSS, arbitrary JavaScript could be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-21" gvid="ID106139" id="106139" modifyDate="2019-05-21">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-19_04.webgui:WebGUI中的XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in
+      widgets/widgets/wake_on_lan_widget.php, a component of the pfSense software
+      WebGUI, on version 2.4.4-p2 and earlier.
+      
+      The widget did not encode the descr (description) parameter of wake-on-LAN
+      entries in its output, leading to a possible stored XSS.
+
+
+      Due to the lack of proper encoding on the affected parameters susceptible to
+      XSS, arbitrary JavaScript could be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-21" gvid="ID106140" id="106140" modifyDate="2019-05-21">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-19_05.webgui:WebGUI中的XSS漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>A Cross-Site Scripting (XSS) vulnerability was found in services_acb.php, a page
+      in the pfSense software WebGUI, on version 2.4.4-p2 and earlier.
+      
+      The page did not encode the download parameter in its output, and a reflected
+      XSS was possible.
+
+
+      Due to the lack of proper encoding on the affected parameters susceptible to
+      XSS, arbitrary JavaScript could be executed in the user&amp;#39;s browser. The user&amp;#39;s
+      session cookie or other information from the session may be compromised.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-21" gvid="ID106141" id="106141" modifyDate="2019-05-21">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense: pfSense-SA-19_06.webgui: Authenticated Arbitrary Code Execution in the WebGUI</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The OpenVPN server (vpn_openvpn_server.php), client (vpn_openvpn_client.php),
+      and client-specific override (vpn_openvpn_csc.php) pages on pfSense allow
+      authenticated administrators to enter custom advanced options which are passed
+      through as-is to the OpenVPN configuration file. These parameters can include
+      directives such as &amp;quot;up&amp;quot; which are able to run arbitrary binaries when specific
+      events occur in OpenVPN.
+
+
+      Allowing these advanced parameters is an intended feature. However, an
+      administrator may not expect that by allowing a lower-privilege user access to
+      these pages that the lower-privilege user may use the advanced options to
+      execute arbitrary code.
+      
+      An authenticated user granted access to these pages via their associated
+      privileges, either directly or via group membership, could leverage these
+      directives to gain elevated privileges and make arbitrary changes to the
+      firewall.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-21" gvid="ID106142" id="106142" modifyDate="2019-05-21">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-19_07.webgui:WebGUI中的权限提升</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The privileges for access to the dashboard (page-dashboard-all) and for direct
+      access to dashboard widgets (page-dashboard-widgets) contained a match clause
+      for widget files with a leading wildcard. This allowed the URL to be manipulated
+      in a way which could have been used to gain elevated privileges.
+
+
+      Authenticated users with these privileges could access pages for which they had
+      not been granted access by appending a string to the URL ending in
+      &amp;quot;.widget.php&amp;quot;, for example: https://x.x.x.x/diag_backup.php?a.widget.php
+      
+      Authenticated users could have used this behavior to gain elevated privileges
+      and perform actions allowed by any page in the WebGUI.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-21" gvid="ID106143" id="106143" modifyDate="2019-05-21">      <cvsscode>4.4</cvsscode>      <severity>Severe</severity>      <name>pfSense:pfSense-SA-19_08.webgui:WebGUI中的权限提升</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>When testing if a privilege matches a requested page, the path to the filename
+      was not fully resolved before the check was performed. This allowed a directory
+      traversal style attack to bypass privilege checks and gain elevated privileges.
+
+
+      An authenticated user with access to a page in the WebGUI could have used a
+      directory traversal style attack to access other pages for which they did not
+      have access, gaining elevated privileges.
+      
+      For example, a user granted access to &amp;quot;a.php&amp;quot; could have gained access to
+      &amp;quot;b.php&amp;quot; by submitting a request for &amp;quot;a.php/../b.php&amp;quot;. The privilege system
+      matched &amp;quot;a.php&amp;quot; but the WebGUI served &amp;quot;b.php&amp;quot; to the client.
+      
+      Note that most browsers and HTTP clients will not allow this type of URL, so
+      attacks are limited to clients such as cURL (using --path-as-is) or special
+      purpose proxies which allow these requests.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.4.5</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2017-07-04" gvid="ID106144" id="106144" modifyDate="2017-08-25">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>pfSense 过时版本</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>旧版本的pfSense（2.2之前）不再正式支持。 这些版本可能存在未报告的漏洞。 应该升级到最新版本以减轻这些未知风险。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService>            <Product>               <version>                  
+                            <range>                     
+                                 <high inclusive="0">2.2</high>                     
+                            </range>                  
+                       </version>            </Product>         </NetworkService>      </Check>   </Vulnerability></Vulns>
