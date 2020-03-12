@@ -1,0 +1,585 @@
+<Vulns>   <Vulnerability addData="2018-06-14" gvid="ID106460" id="106460" modifyDate="2018-06-14">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>Kubernetes:CVE-2015-5305:目录遍历漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Directory traversal vulnerability in Kubernetes, as used in Red Hat OpenShift Enterprise 3.0, allows attackers to write to arbitrary files via a crafted object type name, which is not properly handled before passing it to etcd.</Description>      <cnnvd>CNNVD-201511-109</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-5305</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://access.redhat.com/errata/RHSA-2015:1945</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.0</low>                     
+                               <high inclusive="0">1.2.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-06-14" gvid="ID106461" id="106461" modifyDate="2018-06-14">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes:CVE-2015-7528:远程信息泄露漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Kubernetes before 1.2.0-alpha.5 allows remote attackers to read arbitrary pod logs via a container name.</Description>      <cnnvd>CNNVD-201604-185</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-7528</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/releases/tag/v1.2.0-alpha.5</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.2</low>                     
+                               <high inclusive="0">1.2.0-alpha.5</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-06-14" gvid="ID106462" id="106462" modifyDate="2018-06-14">      <cvsscode>4.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes:CVE-2016-1905:访问控制漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The API server in Kubernetes does not properly check admission control, which allows remote authenticated users to access additional resources via a crafted patched object.</Description>      <cnnvd>CNNVD-201602-102</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-1905</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，详情请关注厂商主页： 
+http://kubernetes.io</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.0</low>                     
+                               <high inclusive="0">1.2.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-11-23" gvid="ID106463" id="106463" modifyDate="2018-11-23">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2016-7075:api服务器无法正确验证客户端提供的中间证书
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>It was found that Kubernetes as used by Openshift Enterprise 3 did not correctly validate X.509 client intermediate certificate host name fields. An attacker could use this flaw to bypass authentication requirements by using a specially crafted X.509 certificate.</Description>      <cnnvd>CNNVD-201611-042</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-7075</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://access.redhat.com/errata/RHBA-2016:2065</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.4.3</low>                     
+                               <high inclusive="0">1.10.10</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-11-23" gvid="ID106464" id="106464" modifyDate="2018-11-23">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2016-7075:api服务器无法正确验证客户端提供的中间证书
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>It was found that Kubernetes as used by Openshift Enterprise 3 did not correctly validate X.509 client intermediate certificate host name fields. An attacker could use this flaw to bypass authentication requirements by using a specially crafted X.509 certificate.</Description>      <cnnvd>CNNVD-201611-042</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-7075</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://access.redhat.com/errata/RHBA-2016:2065</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.2</low>                     
+                               <high inclusive="0">1.2.7</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-11-23" gvid="ID106465" id="106465" modifyDate="2018-11-23">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2016-7075:api服务器无法正确验证客户端提供的中间证书
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>It was found that Kubernetes as used by Openshift Enterprise 3 did not correctly validate X.509 client intermediate certificate host name fields. An attacker could use this flaw to bypass authentication requirements by using a specially crafted X.509 certificate.</Description>      <cnnvd>CNNVD-201611-042</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-7075</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://access.redhat.com/errata/RHBA-2016:2065</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.3</low>                     
+                               <high inclusive="0">1.3.9</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-06-14" gvid="ID106466" id="106466" modifyDate="2018-06-14">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Kubernetes:CVE-2017-1000056:权限升级漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Kubernetes version 1.5.0-1.5.4 is vulnerable to a privilege escalation in the PodSecurityPolicy admission plugin resulting in the ability to make use of any existing PodSecurityPolicy object.</Description>      <cnnvd>CNNVD-201707-806</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-1000056</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/43459</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.5</low>                     
+                               <high inclusive="0">1.5.4</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-06-14" gvid="ID106467" id="106467" modifyDate="2018-06-14">      <cvsscode>4.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes:CVE-2017-1002100:Azure持久性磁盘漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Default access permissions for Persistent Volumes (PVs) created by the Kubernetes Azure cloud provider in versions 1.6.0 to 1.6.5 are set to &amp;quot;container&amp;quot; which exposes a URI that can be accessed without authentication on the public internet. Access to the URI string requires privileged access to the Kubernetes cluster or authenticated access to the Azure portal.</Description>      <cnnvd>CNNVD-201709-635</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-1002100</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/47611</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.6</low>                     
+                               <high inclusive="0">1.6.6</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-06-14" gvid="ID106468" id="106468" modifyDate="2018-06-14">      <cvsscode>5.5</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2017-1002101:子路径卷装载处理允许在主机文件系统中任意访问文件
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.3.x, 1.4.x, 1.5.x, 1.6.x and prior to versions 1.7.14, 1.8.9 and 1.9.4 containers using subpath volume mounts with any volume type (including non-privileged pods, subject to file permissions) can access files/directories outside of the volume, including the host&amp;#39;s filesystem.</Description>      <cnnvd>CNNVD-201712-310</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-1002101</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/60813</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.10</low>                     
+                               <high inclusive="0">1.10.0-beta.3</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-06-14" gvid="ID106469" id="106469" modifyDate="2018-06-14">      <cvsscode>5.5</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2017-1002101:子路径卷装载处理允许在主机文件系统中任意访问文件
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.3.x, 1.4.x, 1.5.x, 1.6.x and prior to versions 1.7.14, 1.8.9 and 1.9.4 containers using subpath volume mounts with any volume type (including non-privileged pods, subject to file permissions) can access files/directories outside of the volume, including the host&amp;#39;s filesystem.</Description>      <cnnvd>CNNVD-201712-310</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-1002101</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/60813</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.3</low>                     
+                               <high inclusive="0">1.7.14</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-06-14" gvid="ID106470" id="106470" modifyDate="2018-06-14">      <cvsscode>5.5</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2017-1002101:子路径卷装载处理允许在主机文件系统中任意访问文件
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.3.x, 1.4.x, 1.5.x, 1.6.x and prior to versions 1.7.14, 1.8.9 and 1.9.4 containers using subpath volume mounts with any volume type (including non-privileged pods, subject to file permissions) can access files/directories outside of the volume, including the host&amp;#39;s filesystem.</Description>      <cnnvd>CNNVD-201712-310</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-1002101</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/60813</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.8</low>                     
+                               <high inclusive="0">1.8.9</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-06-14" gvid="ID106471" id="106471" modifyDate="2018-06-14">      <cvsscode>5.5</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2017-1002101:子路径卷装载处理允许在主机文件系统中任意访问文件
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.3.x, 1.4.x, 1.5.x, 1.6.x and prior to versions 1.7.14, 1.8.9 and 1.9.4 containers using subpath volume mounts with any volume type (including non-privileged pods, subject to file permissions) can access files/directories outside of the volume, including the host&amp;#39;s filesystem.</Description>      <cnnvd>CNNVD-201712-310</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-1002101</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/60813</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.9</low>                     
+                               <high inclusive="0">1.9.4</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-11-13" gvid="ID106472" id="106472" modifyDate="2018-11-13">      <cvsscode>6.3</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2017-1002102: Malicious containers can delete any file from the node</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.3.x, 1.4.x, 1.5.x, 1.6.x and prior to versions 1.7.14, 1.8.9 and 1.9.4 containers using a secret, configMap, projected or downwardAPI volume can trigger deletion of arbitrary files/directories from the nodes where they are running.</Description>      <cnnvd>CNNVD-201712-309</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-1002102</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/60814</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.3</low>                     
+                               <high inclusive="0">1.7.14</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-11-13" gvid="ID106473" id="106473" modifyDate="2018-11-13">      <cvsscode>6.3</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2017-1002102: Malicious containers can delete any file from the node</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.3.x, 1.4.x, 1.5.x, 1.6.x and prior to versions 1.7.14, 1.8.9 and 1.9.4 containers using a secret, configMap, projected or downwardAPI volume can trigger deletion of arbitrary files/directories from the nodes where they are running.</Description>      <cnnvd>CNNVD-201712-309</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-1002102</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/60814</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.8</low>                     
+                               <high inclusive="0">1.8.9</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-11-13" gvid="ID106474" id="106474" modifyDate="2018-11-13">      <cvsscode>6.3</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2017-1002102: Malicious containers can delete any file from the node</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.3.x, 1.4.x, 1.5.x, 1.6.x and prior to versions 1.7.14, 1.8.9 and 1.9.4 containers using a secret, configMap, projected or downwardAPI volume can trigger deletion of arbitrary files/directories from the nodes where they are running.</Description>      <cnnvd>CNNVD-201712-309</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-1002102</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/60814</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.9</low>                     
+                               <high inclusive="0">1.9.4</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-14" gvid="ID106475" id="106475" modifyDate="2019-05-14">      <cvsscode>6.5</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2018-1000400: Privilege Context Switching Error (CWE-270) vulnerability</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Kubernetes CRI-O version prior to 1.9 contains a Privilege Context Switching Error (CWE-270) vulnerability in the handling of ambient capabilities that can result in containers running with elevated privileges, allowing users abilities they should not have. This attack appears to be exploitable via container execution. This vulnerability appears to have been fixed in 1.9.</Description>      <cnnvd>CNNVD-201805-668</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-1000400</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes-incubator/cri-o/pull/1558/files</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.0</low>                     
+                               <high inclusive="0">1.9.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-11-13" gvid="ID106476" id="106476" modifyDate="2018-11-13">      <cvsscode>3.6</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2018-1002100:kubectl copy不检查目标目录之外的路径
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.5.x, 1.6.x, 1.7.x, 1.8.x, and prior to version 1.9.6, the kubectl cp command insecurely handles tar data returned from the container, and can be caused to overwrite arbitrary local files.</Description>      <cnnvd>CNNVD-201806-060</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-1002100</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/61297</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.5</low>                     
+                               <high inclusive="0">1.9.6</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-02-19" gvid="ID106477" id="106477" modifyDate="2019-02-19">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Kubernetes:CVE-2018-1002101:命令注入漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.9.0-1.9.9, 1.10.0-1.10.5, and 1.11.0-1.11.1, user input was handled insecurely while setting up volume mounts on Windows nodes, which could lead to command line argument injection.</Description>      <cnnvd>CNNVD-201812-183</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-1002101</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/65750</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.10</low>                     
+                               <high inclusive="0">1.10.6</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-02-19" gvid="ID106478" id="106478" modifyDate="2019-02-19">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Kubernetes:CVE-2018-1002101:命令注入漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.9.0-1.9.9, 1.10.0-1.10.5, and 1.11.0-1.11.1, user input was handled insecurely while setting up volume mounts on Windows nodes, which could lead to command line argument injection.</Description>      <cnnvd>CNNVD-201812-183</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-1002101</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/65750</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.11</low>                     
+                               <high inclusive="0">1.11.2</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-02-19" gvid="ID106479" id="106479" modifyDate="2019-02-19">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Kubernetes:CVE-2018-1002101:命令注入漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.9.0-1.9.9, 1.10.0-1.10.5, and 1.11.0-1.11.1, user input was handled insecurely while setting up volume mounts on Windows nodes, which could lead to command line argument injection.</Description>      <cnnvd>CNNVD-201812-183</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-1002101</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/65750</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.12</low>                     
+                               <high inclusive="0">1.12</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-02-19" gvid="ID106480" id="106480" modifyDate="2019-02-19">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>Kubernetes:CVE-2018-1002101:命令注入漏洞</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes versions 1.9.0-1.9.9, 1.10.0-1.10.5, and 1.11.0-1.11.1, user input was handled insecurely while setting up volume mounts on Windows nodes, which could lead to command line argument injection.</Description>      <cnnvd>CNNVD-201812-183</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-1002101</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/65750</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.9</low>                     
+                               <high inclusive="0">1.9.10</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="" gvid="ID106481" id="106481" modifyDate="">      <cvsscode></cvsscode>      <severity></severity>      <name></name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description></Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.10.0</low>                     
+                               <high inclusive="0">1.14.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-14" gvid="ID106482" id="106482" modifyDate="2019-05-14">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2018-1002103: 仪表板易受DNS重新绑定攻击</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Minikube versions 0.3.0-0.29.0, minikube exposes the Kubernetes Dashboard listening on the VM IP at port 30000. In VM environments where the IP is easy to predict, the attacker can use DNS rebinding to indirectly make requests to the Kubernetes Dashboard, create a new Kubernetes Deployment running arbitrary code. If minikube mount is in use, the attacker could also directly access the host filesystem.</Description>      <cnnvd>CNNVD-201812-182</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-1002103</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/minikube/issues/3208</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>0.3.0</low>                     
+                               <high inclusive="0">0.29</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-12-04" gvid="ID106483" id="106483" modifyDate="2019-01-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>kubernetes:cve-2018-1002105:kube apiserver中的代理请求处理可能会留下易受攻击的TCP连接
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In all Kubernetes versions prior to v1.10.11, v1.11.5, and v1.12.3, incorrect handling of error responses to proxied upgrade requests in the kube-apiserver allowed specially crafted requests to establish a connection through the Kubernetes API server to backend servers, then send arbitrary requests over the same connection directly to the backend, authenticated with the Kubernetes API server&amp;#39;s TLS credentials used to establish the backend connection.</Description>      <cnnvd>CNNVD-201812-064</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-1002105</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://access.redhat.com/errata/RHSA-2018:3624</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.10</low>                     
+                               <high inclusive="0">1.10.11</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-12-04" gvid="ID106484" id="106484" modifyDate="2019-01-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>kubernetes:cve-2018-1002105:kube apiserver中的代理请求处理可能会留下易受攻击的TCP连接
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In all Kubernetes versions prior to v1.10.11, v1.11.5, and v1.12.3, incorrect handling of error responses to proxied upgrade requests in the kube-apiserver allowed specially crafted requests to establish a connection through the Kubernetes API server to backend servers, then send arbitrary requests over the same connection directly to the backend, authenticated with the Kubernetes API server&amp;#39;s TLS credentials used to establish the backend connection.</Description>      <cnnvd>CNNVD-201812-064</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-1002105</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://access.redhat.com/errata/RHSA-2018:3624</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.11</low>                     
+                               <high inclusive="0">1.11.5</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-12-04" gvid="ID106485" id="106485" modifyDate="2019-01-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>kubernetes:cve-2018-1002105:kube apiserver中的代理请求处理可能会留下易受攻击的TCP连接
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In all Kubernetes versions prior to v1.10.11, v1.11.5, and v1.12.3, incorrect handling of error responses to proxied upgrade requests in the kube-apiserver allowed specially crafted requests to establish a connection through the Kubernetes API server to backend servers, then send arbitrary requests over the same connection directly to the backend, authenticated with the Kubernetes API server&amp;#39;s TLS credentials used to establish the backend connection.</Description>      <cnnvd>CNNVD-201812-064</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-1002105</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://access.redhat.com/errata/RHSA-2018:3624</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.12</low>                     
+                               <high inclusive="0">1.12.3</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2018-12-04" gvid="ID106486" id="106486" modifyDate="2019-01-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>kubernetes:cve-2018-1002105:kube apiserver中的代理请求处理可能会留下易受攻击的TCP连接
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In all Kubernetes versions prior to v1.10.11, v1.11.5, and v1.12.3, incorrect handling of error responses to proxied upgrade requests in the kube-apiserver allowed specially crafted requests to establish a connection through the Kubernetes API server to backend servers, then send arbitrary requests over the same connection directly to the backend, authenticated with the Kubernetes API server&amp;#39;s TLS credentials used to establish the backend connection.</Description>      <cnnvd>CNNVD-201812-064</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-1002105</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://access.redhat.com/errata/RHSA-2018:3624</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.0-rc.1</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-14" gvid="ID106487" id="106487" modifyDate="2019-05-14">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2018-18264:kubernetes dashboard before 1.10.1允许攻击者绕过身份验证
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Kubernetes Dashboard before 1.10.1 allows attackers to bypass authentication and use Dashboard&amp;#39;s Service Account for reading secrets within the cluster.</Description>      <cnnvd>CNNVD-201901-029</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-18264</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/dashboard/releases/tag/v1.10.1</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.0</low>                     
+                               <high inclusive="0">1.10.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-04-16" gvid="ID106488" id="106488" modifyDate="2019-10-31">      <cvsscode>4.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2019-1002100: json-patch requests can exhaust apiserver resources</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In all Kubernetes versions prior to v1.11.8, v1.12.6, and v1.13.4, users that are authorized to make patch requests to the Kubernetes API Server can send a specially crafted patch of type &amp;quot;json-patch&amp;quot; (e.g. `kubectl patch --type json` or `&amp;quot;Content-Type: application/json-patch+json&amp;quot;`) that consumes excessive resources while processing, causing a Denial of Service on the API Server.</Description>      <cnnvd>CNNVD-201903-042</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-1002100</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://discuss.kubernetes.io/t/kubernetes-security-announcement-v1-11-8-1-12-6-1-13-4-released-to-address-medium-severity-cve-2019-1002100/5147</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.11</low>                     
+                               <high inclusive="0">1.11.8</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-04-16" gvid="ID106489" id="106489" modifyDate="2019-10-31">      <cvsscode>4.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2019-1002100: json-patch requests can exhaust apiserver resources</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In all Kubernetes versions prior to v1.11.8, v1.12.6, and v1.13.4, users that are authorized to make patch requests to the Kubernetes API Server can send a specially crafted patch of type &amp;quot;json-patch&amp;quot; (e.g. `kubectl patch --type json` or `&amp;quot;Content-Type: application/json-patch+json&amp;quot;`) that consumes excessive resources while processing, causing a Denial of Service on the API Server.</Description>      <cnnvd>CNNVD-201903-042</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-1002100</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://discuss.kubernetes.io/t/kubernetes-security-announcement-v1-11-8-1-12-6-1-13-4-released-to-address-medium-severity-cve-2019-1002100/5147</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.12</low>                     
+                               <high inclusive="0">1.12.6</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-04-16" gvid="ID106490" id="106490" modifyDate="2019-10-31">      <cvsscode>4.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2019-1002100: json-patch requests can exhaust apiserver resources</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In all Kubernetes versions prior to v1.11.8, v1.12.6, and v1.13.4, users that are authorized to make patch requests to the Kubernetes API Server can send a specially crafted patch of type &amp;quot;json-patch&amp;quot; (e.g. `kubectl patch --type json` or `&amp;quot;Content-Type: application/json-patch+json&amp;quot;`) that consumes excessive resources while processing, causing a Denial of Service on the API Server.</Description>      <cnnvd>CNNVD-201903-042</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-1002100</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://discuss.kubernetes.io/t/kubernetes-security-announcement-v1-11-8-1-12-6-1-13-4-released-to-address-medium-severity-cve-2019-1002100/5147</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.4</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-04-16" gvid="ID106491" id="106491" modifyDate="2019-06-21">      <cvsscode>5.8</cvsscode>      <severity>Severe</severity>      <name>Kubernetes:CVE-2019-1002101:kubectl修复潜在目录遍历</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The kubectl cp command allows copying files between containers and the user machine. To copy files from a container, Kubernetes creates a tar inside the container, copies it over the network, and kubectl unpacks it on the user?s machine. If the tar binary in the container is malicious, it could run any code and output unexpected, malicious results. An attacker could use this to write files to any path on the user?s machine when kubectl cp is called, limited only by the system permissions of the local user. The untar function can both create and follow symbolic links. The issue is resolved in kubectl v1.11.9, v1.12.7, v1.13.5, and v1.14.0.</Description>      <cnnvd>CNNVD-201904-002</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-1002101</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/commit/b1f85e2dfec6e64d8e1bc272251277df0058ab20</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.11</low>                     
+                               <high inclusive="0">1.11.9</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-04-16" gvid="ID106492" id="106492" modifyDate="2019-06-21">      <cvsscode>5.8</cvsscode>      <severity>Severe</severity>      <name>Kubernetes:CVE-2019-1002101:kubectl修复潜在目录遍历</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The kubectl cp command allows copying files between containers and the user machine. To copy files from a container, Kubernetes creates a tar inside the container, copies it over the network, and kubectl unpacks it on the user?s machine. If the tar binary in the container is malicious, it could run any code and output unexpected, malicious results. An attacker could use this to write files to any path on the user?s machine when kubectl cp is called, limited only by the system permissions of the local user. The untar function can both create and follow symbolic links. The issue is resolved in kubectl v1.11.9, v1.12.7, v1.13.5, and v1.14.0.</Description>      <cnnvd>CNNVD-201904-002</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-1002101</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/commit/b1f85e2dfec6e64d8e1bc272251277df0058ab20</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.12</low>                     
+                               <high inclusive="0">1.12.7</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-04-16" gvid="ID106493" id="106493" modifyDate="2019-06-21">      <cvsscode>5.8</cvsscode>      <severity>Severe</severity>      <name>Kubernetes:CVE-2019-1002101:kubectl修复潜在目录遍历</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The kubectl cp command allows copying files between containers and the user machine. To copy files from a container, Kubernetes creates a tar inside the container, copies it over the network, and kubectl unpacks it on the user?s machine. If the tar binary in the container is malicious, it could run any code and output unexpected, malicious results. An attacker could use this to write files to any path on the user?s machine when kubectl cp is called, limited only by the system permissions of the local user. The untar function can both create and follow symbolic links. The issue is resolved in kubectl v1.11.9, v1.12.7, v1.13.5, and v1.14.0.</Description>      <cnnvd>CNNVD-201904-002</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-1002101</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/commit/b1f85e2dfec6e64d8e1bc272251277df0058ab20</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.5</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-09" gvid="ID106494" id="106494" modifyDate="2019-05-09">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2019-11243:rest.anonymousClientConfig（）不会从rest.inclusterConfig（）创建的配置中删除服务帐户凭据。
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes v1.12.0-v1.12.4 and v1.13.0, the rest.AnonymousClientConfig() method returns a copy of the provided config, with credentials removed (bearer token, username/password, and client certificate/key data). In the affected versions, rest.AnonymousClientConfig() did not effectively clear service account credentials loaded using rest.InClusterConfig()</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11243</id>      </AlternateIds>      <Solutions time="15m">         
+           
+           <Supercedes>            
+                <SolutionRef id="kubernetes-upgrade-0_29"/>            
+                <SolutionRef id="kubernetes-upgrade-1_16_2"/>            
+           </Supercedes>         
+           <rollup src="https://kubernetes.io/docs/getting-started-guides/ubuntu/upgrades/"/>         
+           
+         更新Kubernetes到最新版本.,      </Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.12.0</low>                     
+                               <high inclusive="0">1.12.4</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-09" gvid="ID106495" id="106495" modifyDate="2019-05-09">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2019-11243:rest.anonymousClientConfig（）不会从rest.inclusterConfig（）创建的配置中删除服务帐户凭据。
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes v1.12.0-v1.12.4 and v1.13.0, the rest.AnonymousClientConfig() method returns a copy of the provided config, with credentials removed (bearer token, username/password, and client certificate/key data). In the affected versions, rest.AnonymousClientConfig() did not effectively clear service account credentials loaded using rest.InClusterConfig()</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11243</id>      </AlternateIds>      <Solutions time="15m">         
+           
+           <Supercedes>            
+                <SolutionRef id="kubernetes-upgrade-0_29"/>            
+                <SolutionRef id="kubernetes-upgrade-1_16_2"/>            
+           </Supercedes>         
+           <rollup src="https://kubernetes.io/docs/getting-started-guides/ubuntu/upgrades/"/>         
+           
+         更新Kubernetes到最新版本.,      </Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-09" gvid="ID106496" id="106496" modifyDate="2019-05-09">      <cvsscode>1.9</cvsscode>      <severity>Moderate</severity>      <name>Kubernetes: CVE-2019-11244: `kubectl --http-cache=&lt;world-accessible dir&gt;` creates world-writeable cached schema files</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In Kubernetes v1.8.x-v1.14.x, schema info is cached by kubectl in the location specified by --cache-dir (defaulting to $HOME/.kube/http-cache), written with world-writeable permissions (rw-rw-rw-). If --cache-dir is specified and pointed at a different location accessible to other users/groups, the written files may be modified by other users/groups and disrupt the kubectl invocation.</Description>      <cnnvd></cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11244</id>      </AlternateIds>      <Solutions time="15m">         
+           
+           <Supercedes>            
+                <SolutionRef id="kubernetes-upgrade-0_29"/>            
+                <SolutionRef id="kubernetes-upgrade-1_16_2"/>            
+           </Supercedes>         
+           <rollup src="https://kubernetes.io/docs/getting-started-guides/ubuntu/upgrades/"/>         
+           
+         更新Kubernetes到最新版本.,      </Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.8.0</low>                     
+                               <high inclusive="0">1.14.1</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106497" id="106497" modifyDate="2019-09-11">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11245 :  非root容器权限升级</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In kubelet v1.13.6 and v1.14.2, containers for pods that do not specify an explicit runAsUser attempt to run as uid 0 (root) on container restart, or if the image was previously pulled to the node. If the pod specified mustRunAsNonRoot: true, the kubelet will refuse to start the container as root. If the pod did not specify mustRunAsNonRoot: true, the kubelet will run the container as uid 0.</Description>      <cnnvd>CNNVD-201908-2175</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11245</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/78308</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.7</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106498" id="106498" modifyDate="2019-09-11">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11245 :  非root容器权限升级</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>In kubelet v1.13.6 and v1.14.2, containers for pods that do not specify an explicit runAsUser attempt to run as uid 0 (root) on container restart, or if the image was previously pulled to the node. If the pod specified mustRunAsNonRoot: true, the kubelet will refuse to start the container as root. If the pod did not specify mustRunAsNonRoot: true, the kubelet will run the container as uid 0.</Description>      <cnnvd>CNNVD-201908-2175</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11245</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/78308</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.14</low>                     
+                               <high inclusive="0">1.14.3</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106499" id="106499" modifyDate="2019-09-11">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11246 :  kubectl cp 潜在目录遍历</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The kubectl cp command allows copying files between containers and the user machine. To copy files from a container, Kubernetes runs tar inside the container to create a tar archive, copies it over the network, and kubectl unpacks it on the user?s machine. If the tar binary in the container is malicious, it could run any code and output unexpected, malicious results. An attacker could use this to write files to any path on the user?s machine when kubectl cp is called, limited only by the system permissions of the local user. Kubernetes affected versions include versions prior to 1.12.9, versions prior to 1.13.6, versions prior to 1.14.2, and versions 1.1, 1.2, 1.4, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11.</Description>      <cnnvd>CNNVD-201906-853</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11246</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/pull/76788</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.12</low>                     
+                               <high inclusive="0">1.12.9</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106500" id="106500" modifyDate="2019-09-11">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11246 :  kubectl cp 潜在目录遍历</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The kubectl cp command allows copying files between containers and the user machine. To copy files from a container, Kubernetes runs tar inside the container to create a tar archive, copies it over the network, and kubectl unpacks it on the user?s machine. If the tar binary in the container is malicious, it could run any code and output unexpected, malicious results. An attacker could use this to write files to any path on the user?s machine when kubectl cp is called, limited only by the system permissions of the local user. Kubernetes affected versions include versions prior to 1.12.9, versions prior to 1.13.6, versions prior to 1.14.2, and versions 1.1, 1.2, 1.4, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11.</Description>      <cnnvd>CNNVD-201906-853</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11246</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/pull/76788</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.6</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106501" id="106501" modifyDate="2019-09-11">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11246 :  kubectl cp 潜在目录遍历</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The kubectl cp command allows copying files between containers and the user machine. To copy files from a container, Kubernetes runs tar inside the container to create a tar archive, copies it over the network, and kubectl unpacks it on the user?s machine. If the tar binary in the container is malicious, it could run any code and output unexpected, malicious results. An attacker could use this to write files to any path on the user?s machine when kubectl cp is called, limited only by the system permissions of the local user. Kubernetes affected versions include versions prior to 1.12.9, versions prior to 1.13.6, versions prior to 1.14.2, and versions 1.1, 1.2, 1.4, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11.</Description>      <cnnvd>CNNVD-201906-853</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11246</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/pull/76788</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.14</low>                     
+                               <high inclusive="0">1.14.2</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106502" id="106502" modifyDate="2019-10-28">      <cvsscode>6.5</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11247 :  API服务器允许通过错误的范围访问自定义资源</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The Kubernetes kube-apiserver mistakenly allows access to a cluster-scoped custom resource if the request is made as if the resource were namespaced. Authorizations for the resource accessed in this manner are enforced using roles and role bindings within the namespace, meaning that a user with access only to a resource in one namespace could create, view update or delete the cluster-scoped resource (according to their namespace role privileges). Kubernetes affected versions include versions prior to 1.13.9, versions prior to 1.14.5, versions prior to 1.15.2, and versions 1.7, 1.8, 1.9, 1.10, 1.11, 1.12.</Description>      <cnnvd>CNNVD-201908-372</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11247</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/80983</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.9</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106503" id="106503" modifyDate="2019-10-28">      <cvsscode>6.5</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11247 :  API服务器允许通过错误的范围访问自定义资源</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The Kubernetes kube-apiserver mistakenly allows access to a cluster-scoped custom resource if the request is made as if the resource were namespaced. Authorizations for the resource accessed in this manner are enforced using roles and role bindings within the namespace, meaning that a user with access only to a resource in one namespace could create, view update or delete the cluster-scoped resource (according to their namespace role privileges). Kubernetes affected versions include versions prior to 1.13.9, versions prior to 1.14.5, versions prior to 1.15.2, and versions 1.7, 1.8, 1.9, 1.10, 1.11, 1.12.</Description>      <cnnvd>CNNVD-201908-372</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11247</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/80983</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.14</low>                     
+                               <high inclusive="0">1.14.5</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106504" id="106504" modifyDate="2019-10-28">      <cvsscode>6.5</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11247 :  API服务器允许通过错误的范围访问自定义资源</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The Kubernetes kube-apiserver mistakenly allows access to a cluster-scoped custom resource if the request is made as if the resource were namespaced. Authorizations for the resource accessed in this manner are enforced using roles and role bindings within the namespace, meaning that a user with access only to a resource in one namespace could create, view update or delete the cluster-scoped resource (according to their namespace role privileges). Kubernetes affected versions include versions prior to 1.13.9, versions prior to 1.14.5, versions prior to 1.15.2, and versions 1.7, 1.8, 1.9, 1.10, 1.11, 1.12.</Description>      <cnnvd>CNNVD-201908-372</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11247</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/80983</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.15</low>                     
+                               <high inclusive="0">1.15.2</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106505" id="106505" modifyDate="2019-09-11">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11248 :  /debug/pprof 在kubelet的healthz端口上公开</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The debugging endpoint /debug/pprof is exposed over the unauthenticated Kubelet healthz port. The go pprof endpoint is exposed over the Kubelet&amp;#39;s healthz port. This debugging endpoint can potentially leak sensitive information such as internal Kubelet memory addresses and configuration, or for limited denial of service. Versions prior to 1.15.0, 1.14.4, 1.13.8, and 1.12.10 are affected. The issue is of medium severity, but not exposed by the default configuration.</Description>      <cnnvd>CNNVD-201908-550</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11248</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/81023</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.12</low>                     
+                               <high inclusive="0">1.12.10</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106506" id="106506" modifyDate="2019-09-11">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11248 :  /debug/pprof 在kubelet的healthz端口上公开</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The debugging endpoint /debug/pprof is exposed over the unauthenticated Kubelet healthz port. The go pprof endpoint is exposed over the Kubelet&amp;#39;s healthz port. This debugging endpoint can potentially leak sensitive information such as internal Kubelet memory addresses and configuration, or for limited denial of service. Versions prior to 1.15.0, 1.14.4, 1.13.8, and 1.12.10 are affected. The issue is of medium severity, but not exposed by the default configuration.</Description>      <cnnvd>CNNVD-201908-550</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11248</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/81023</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.8</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106507" id="106507" modifyDate="2019-09-11">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11248 :  /debug/pprof 在kubelet的healthz端口上公开</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The debugging endpoint /debug/pprof is exposed over the unauthenticated Kubelet healthz port. The go pprof endpoint is exposed over the Kubelet&amp;#39;s healthz port. This debugging endpoint can potentially leak sensitive information such as internal Kubelet memory addresses and configuration, or for limited denial of service. Versions prior to 1.15.0, 1.14.4, 1.13.8, and 1.12.10 are affected. The issue is of medium severity, but not exposed by the default configuration.</Description>      <cnnvd>CNNVD-201908-550</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11248</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/81023</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.14</low>                     
+                               <high inclusive="0">1.14.4</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106508" id="106508" modifyDate="2019-09-11">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11248 :  /debug/pprof 在kubelet的healthz端口上公开</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The debugging endpoint /debug/pprof is exposed over the unauthenticated Kubelet healthz port. The go pprof endpoint is exposed over the Kubelet&amp;#39;s healthz port. This debugging endpoint can potentially leak sensitive information such as internal Kubelet memory addresses and configuration, or for limited denial of service. Versions prior to 1.15.0, 1.14.4, 1.13.8, and 1.12.10 are affected. The issue is of medium severity, but not exposed by the default configuration.</Description>      <cnnvd>CNNVD-201908-550</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11248</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/81023</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.15</low>                     
+                               <high inclusive="0">1.15.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106509" id="106509" modifyDate="2019-11-11">      <cvsscode>5.8</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11249 :  kubectl cp 潜在目录遍历</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The kubectl cp command allows copying files between containers and the user machine. To copy files from a container, Kubernetes runs tar inside the container to create a tar archive, copies it over the network, and kubectl unpacks it on the user?s machine. If the tar binary in the container is malicious, it could run any code and output unexpected, malicious results. An attacker could use this to write files to any path on the user?s machine when kubectl cp is called, limited only by the system permissions of the local user. Kubernetes affected versions include versions prior to 1.13.9, versions prior to 1.14.5, versions prior to 1.15.2, and versions 1.1, 1.2, 1.4, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12.</Description>      <cnnvd>CNNVD-201908-373</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11249</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/80984</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.9</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106510" id="106510" modifyDate="2019-11-11">      <cvsscode>5.8</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11249 :  kubectl cp 潜在目录遍历</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The kubectl cp command allows copying files between containers and the user machine. To copy files from a container, Kubernetes runs tar inside the container to create a tar archive, copies it over the network, and kubectl unpacks it on the user?s machine. If the tar binary in the container is malicious, it could run any code and output unexpected, malicious results. An attacker could use this to write files to any path on the user?s machine when kubectl cp is called, limited only by the system permissions of the local user. Kubernetes affected versions include versions prior to 1.13.9, versions prior to 1.14.5, versions prior to 1.15.2, and versions 1.1, 1.2, 1.4, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12.</Description>      <cnnvd>CNNVD-201908-373</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11249</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/80984</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.14</low>                     
+                               <high inclusive="0">1.14.5</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106511" id="106511" modifyDate="2019-11-11">      <cvsscode>5.8</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11249 :  kubectl cp 潜在目录遍历</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The kubectl cp command allows copying files between containers and the user machine. To copy files from a container, Kubernetes runs tar inside the container to create a tar archive, copies it over the network, and kubectl unpacks it on the user?s machine. If the tar binary in the container is malicious, it could run any code and output unexpected, malicious results. An attacker could use this to write files to any path on the user?s machine when kubectl cp is called, limited only by the system permissions of the local user. Kubernetes affected versions include versions prior to 1.13.9, versions prior to 1.14.5, versions prior to 1.15.2, and versions 1.1, 1.2, 1.4, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12.</Description>      <cnnvd>CNNVD-201908-373</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11249</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/80984</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.15</low>                     
+                               <high inclusive="0">1.15.2</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106512" id="106512" modifyDate="2019-09-11">      <cvsscode>3.5</cvsscode>      <severity>Severe</severity>      <name>Kubernetes :  CVE-2019-11250 :  持有人令牌在日志中显示</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The Kubernetes client-go library logs request headers at verbosity levels of 7 or higher. This can disclose credentials to unauthorized users via logs or command output. Kubernetes components (such as kube-apiserver) prior to v1.16.0, which make use of basic or bearer token authentication, and run at high verbosity levels, are affected.</Description>      <cnnvd>CNNVD-201908-941</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11250</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/81114</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.15</low>                     
+                               <high inclusive="0">1.15.3</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-10-28" gvid="ID106513" id="106513" modifyDate="2019-11-11">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2019-11253: Improper input validation in the Kubernetes API server</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Improper input validation in the Kubernetes API server in versions v1.0-1.12 and versions prior to v1.13.12, v1.14.8, v1.15.5, and v1.16.2 allows authorized users to send malicious YAML or JSON payloads, causing the API server to consume excessive CPU or memory, potentially crashing and becoming unavailable. Prior to v1.14.0, default RBAC policy authorized anonymous users to submit requests that could trigger this vulnerability. Clusters upgraded from a version prior to v1.14.0 keep the more permissive policy by default for backwards compatibility.</Description>      <cnnvd>CNNVD-201910-1096</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11253</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/83253</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.1.0</low>                     
+                               <high inclusive="0">1.13.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-10-28" gvid="ID106514" id="106514" modifyDate="2019-11-11">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2019-11253: Improper input validation in the Kubernetes API server</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Improper input validation in the Kubernetes API server in versions v1.0-1.12 and versions prior to v1.13.12, v1.14.8, v1.15.5, and v1.16.2 allows authorized users to send malicious YAML or JSON payloads, causing the API server to consume excessive CPU or memory, potentially crashing and becoming unavailable. Prior to v1.14.0, default RBAC policy authorized anonymous users to submit requests that could trigger this vulnerability. Clusters upgraded from a version prior to v1.14.0 keep the more permissive policy by default for backwards compatibility.</Description>      <cnnvd>CNNVD-201910-1096</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11253</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/83253</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.12</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-10-28" gvid="ID106515" id="106515" modifyDate="2019-11-11">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2019-11253: Improper input validation in the Kubernetes API server</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Improper input validation in the Kubernetes API server in versions v1.0-1.12 and versions prior to v1.13.12, v1.14.8, v1.15.5, and v1.16.2 allows authorized users to send malicious YAML or JSON payloads, causing the API server to consume excessive CPU or memory, potentially crashing and becoming unavailable. Prior to v1.14.0, default RBAC policy authorized anonymous users to submit requests that could trigger this vulnerability. Clusters upgraded from a version prior to v1.14.0 keep the more permissive policy by default for backwards compatibility.</Description>      <cnnvd>CNNVD-201910-1096</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11253</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/83253</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.14</low>                     
+                               <high inclusive="0">1.14.8</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-10-28" gvid="ID106516" id="106516" modifyDate="2019-11-11">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2019-11253: Improper input validation in the Kubernetes API server</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Improper input validation in the Kubernetes API server in versions v1.0-1.12 and versions prior to v1.13.12, v1.14.8, v1.15.5, and v1.16.2 allows authorized users to send malicious YAML or JSON payloads, causing the API server to consume excessive CPU or memory, potentially crashing and becoming unavailable. Prior to v1.14.0, default RBAC policy authorized anonymous users to submit requests that could trigger this vulnerability. Clusters upgraded from a version prior to v1.14.0 keep the more permissive policy by default for backwards compatibility.</Description>      <cnnvd>CNNVD-201910-1096</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11253</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/83253</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.15</low>                     
+                               <high inclusive="0">1.15.5</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-10-28" gvid="ID106517" id="106517" modifyDate="2019-11-11">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes: CVE-2019-11253: Improper input validation in the Kubernetes API server</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Improper input validation in the Kubernetes API server in versions v1.0-1.12 and versions prior to v1.13.12, v1.14.8, v1.15.5, and v1.16.2 allows authorized users to send malicious YAML or JSON payloads, causing the API server to consume excessive CPU or memory, potentially crashing and becoming unavailable. Prior to v1.14.0, default RBAC policy authorized anonymous users to submit requests that could trigger this vulnerability. Clusters upgraded from a version prior to v1.14.0 keep the more permissive policy by default for backwards compatibility.</Description>      <cnnvd>CNNVD-201910-1096</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-11253</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://github.com/kubernetes/kubernetes/issues/83253</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.16</low>                     
+                               <high inclusive="0">1.16.2</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-05-14" gvid="ID106518" id="106518" modifyDate="2019-05-14">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>kubernetes:cve-2019-3818:通过弱配置的TLS连接发送的流量可能会破坏加密
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The kube-rbac-proxy container before version 0.4.1 as used in Red Hat OpenShift Container Platform does not honor TLS configurations, allowing for use of insecure ciphers and TLS 1.0. An attacker could target traffic sent over a TLS connection with a weak configuration and potentially break the encryption.</Description>      <cnnvd>CNNVD-201901-925</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-3818</id>      </AlternateIds>      <Solutions>目前厂商暂未发布修复措施解决此安全问题，建议使用此软件的用户随时关注厂商主页或参考网址以获取解决办法： 
+https://www.kernel.org/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>0.1.0</low>                     
+                               <high inclusive="0">0.4.0</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106519" id="106519" modifyDate="2019-11-01">      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <name>Kubernetes :  CVE-2019-9512 :  HTTP/2 重置flood导致 DoS</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Some HTTP/2 implementations are vulnerable to ping floods, potentially leading to a denial of service. The attacker sends continual pings to an HTTP/2 peer, causing the peer to build an internal queue of responses. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both.</Description>      <cnnvd>CNNVD-201908-925</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-9512</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，详情请关注厂商主页： 
+https://http2.github.io/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.10</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106520" id="106520" modifyDate="2019-11-01">      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <name>Kubernetes :  CVE-2019-9512 :  HTTP/2 重置flood导致 DoS</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Some HTTP/2 implementations are vulnerable to ping floods, potentially leading to a denial of service. The attacker sends continual pings to an HTTP/2 peer, causing the peer to build an internal queue of responses. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both.</Description>      <cnnvd>CNNVD-201908-925</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-9512</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，详情请关注厂商主页： 
+https://http2.github.io/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.14</low>                     
+                               <high inclusive="0">1.14.6</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106521" id="106521" modifyDate="2019-11-01">      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <name>Kubernetes :  CVE-2019-9512 :  HTTP/2 重置flood导致 DoS</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Some HTTP/2 implementations are vulnerable to ping floods, potentially leading to a denial of service. The attacker sends continual pings to an HTTP/2 peer, causing the peer to build an internal queue of responses. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both.</Description>      <cnnvd>CNNVD-201908-925</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-9512</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，详情请关注厂商主页： 
+https://http2.github.io/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.15</low>                     
+                               <high inclusive="0">1.15.3</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106522" id="106522" modifyDate="2019-11-01">      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <name>Kubernetes :  CVE-2019-9514 :  HTTP/2 重置flood导致 DoS</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Some HTTP/2 implementations are vulnerable to a reset flood, potentially leading to a denial of service. The attacker opens a number of streams and sends an invalid request over each stream that should solicit a stream of RST_STREAM frames from the peer. Depending on how the peer queues the RST_STREAM frames, this can consume excess memory, CPU, or both.</Description>      <cnnvd>CNNVD-201908-931</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-9514</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，详情请关注厂商主页： 
+https://http2.github.io/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.10</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106523" id="106523" modifyDate="2019-11-01">      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <name>Kubernetes :  CVE-2019-9514 :  HTTP/2 重置flood导致 DoS</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Some HTTP/2 implementations are vulnerable to a reset flood, potentially leading to a denial of service. The attacker opens a number of streams and sends an invalid request over each stream that should solicit a stream of RST_STREAM frames from the peer. Depending on how the peer queues the RST_STREAM frames, this can consume excess memory, CPU, or both.</Description>      <cnnvd>CNNVD-201908-931</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-9514</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，详情请关注厂商主页： 
+https://http2.github.io/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.14</low>                     
+                               <high inclusive="0">1.14.6</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-11" gvid="ID106524" id="106524" modifyDate="2019-11-01">      <cvsscode>7.8</cvsscode>      <severity>Critical</severity>      <name>Kubernetes :  CVE-2019-9514 :  HTTP/2 重置flood导致 DoS</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Some HTTP/2 implementations are vulnerable to a reset flood, potentially leading to a denial of service. The attacker opens a number of streams and sends an invalid request over each stream that should solicit a stream of RST_STREAM frames from the peer. Depending on how the peer queues the RST_STREAM frames, this can consume excess memory, CPU, or both.</Description>      <cnnvd>CNNVD-201908-931</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-9514</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，详情请关注厂商主页： 
+https://http2.github.io/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.15</low>                     
+                               <high inclusive="0">1.15.3</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-04-16" gvid="ID106525" id="106525" modifyDate="2019-06-03">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes：CVE-2019-946:云本地计算基金会（CNCF）CNI（集装箱联网接口）网络防火墙配置错误
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cloud Native Computing Foundation (CNCF) CNI (Container Networking Interface) 0.7.4 has a network firewall misconfiguration which affects Kubernetes. The CNI &amp;#39;portmap&amp;#39; plugin, used to setup HostPorts for CNI, inserts rules at the front of the iptables nat chains; which take precedence over the KUBE- SERVICES chain. Because of this, the HostPort/portmap rule could match incoming traffic even if there were better fitting, more specific service definition rules like NodePorts later in the chain. The issue is fixed in CNI 0.7.5 and Kubernetes 1.11.9, 1.12.7, 1.13.5, and 1.14.0.</Description>      <cnnvd>CNNVD-201903-1234</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-9946</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://kubernetes.io/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.11</low>                     
+                               <high inclusive="0">1.11.9</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-04-16" gvid="ID106526" id="106526" modifyDate="2019-06-03">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes：CVE-2019-946:云本地计算基金会（CNCF）CNI（集装箱联网接口）网络防火墙配置错误
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cloud Native Computing Foundation (CNCF) CNI (Container Networking Interface) 0.7.4 has a network firewall misconfiguration which affects Kubernetes. The CNI &amp;#39;portmap&amp;#39; plugin, used to setup HostPorts for CNI, inserts rules at the front of the iptables nat chains; which take precedence over the KUBE- SERVICES chain. Because of this, the HostPort/portmap rule could match incoming traffic even if there were better fitting, more specific service definition rules like NodePorts later in the chain. The issue is fixed in CNI 0.7.5 and Kubernetes 1.11.9, 1.12.7, 1.13.5, and 1.14.0.</Description>      <cnnvd>CNNVD-201903-1234</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-9946</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://kubernetes.io/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.12</low>                     
+                               <high inclusive="0">1.12.7</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-04-16" gvid="ID106527" id="106527" modifyDate="2019-06-03">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>Kubernetes：CVE-2019-946:云本地计算基金会（CNCF）CNI（集装箱联网接口）网络防火墙配置错误
+</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cloud Native Computing Foundation (CNCF) CNI (Container Networking Interface) 0.7.4 has a network firewall misconfiguration which affects Kubernetes. The CNI &amp;#39;portmap&amp;#39; plugin, used to setup HostPorts for CNI, inserts rules at the front of the iptables nat chains; which take precedence over the KUBE- SERVICES chain. Because of this, the HostPort/portmap rule could match incoming traffic even if there were better fitting, more specific service definition rules like NodePorts later in the chain. The issue is fixed in CNI 0.7.5 and Kubernetes 1.11.9, 1.12.7, 1.13.5, and 1.14.0.</Description>      <cnnvd>CNNVD-201903-1234</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-9946</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://kubernetes.io/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="Kubernetes">               
+                     <version>                  
+                          <range>                     
+                               <low>1.13</low>                     
+                               <high inclusive="0">1.13.5</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability></Vulns>
