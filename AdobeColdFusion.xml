@@ -1,0 +1,681 @@
+<Vulns>   <Vulnerability addData="2019-06-21" gvid="ID106528" id="106528" modifyDate="2019-06-21">      <cvsscode>6.8</cvsscode>      <severity>Severe</severity>      <name>APSB14-23: 安全更新: ColdFusion可用的修补程序 (CVE-2014-0570)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site request forgery (CSRF) vulnerability in Adobe ColdFusion 9.0 before Update 13, 9.0.1 before Update 12, 9.0.2 before Update 7, 10 before Update 14, and 11 before Update 2 allows remote attackers to hijack the authentication of unspecified victims via unknown vectors.</Description>      <cnnvd>CNNVD-201410-273</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-0570</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://helpx.adobe.com/security/products/coldfusion/apsb14-23.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.02</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106529" id="106529" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB14-23: 安全更新: ColdFusion可用的修补程序 (CVE-2014-0571)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site scripting (XSS) vulnerability in Adobe ColdFusion 9.0 before Update 13, 9.0.1 before Update 12, 9.0.2 before Update 7, 10 before Update 14, and 11 before Update 2 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.</Description>      <cnnvd>CNNVD-201410-274</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-0571</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://helpx.adobe.com/security/products/coldfusion/apsb14-23.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.02</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106530" id="106530" modifyDate="2019-06-21">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>APSB14-23: 安全更新: ColdFusion可用的修补程序 (CVE-2014-0572)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion 9.0 before Update 13, 9.0.1 before Update 12, 9.0.2 before Update 7, 10 before Update 14, and 11 before Update 2 allows local users to bypass intended IP-based access restrictions via unspecified vectors.</Description>      <cnnvd>CNNVD-201410-275</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-0572</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://helpx.adobe.com/security/products/coldfusion/apsb14-23.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.02</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106531" id="106531" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB14-29: 安全更新: ColdFusion可用的修补程序 (CVE-2014-9166)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion 10 before Update 15 and 11 before Update 3 allows attackers to cause a denial of service (resource consumption) via unspecified vectors.</Description>      <cnnvd>CNNVD-201412-243</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2014-9166</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+http://helpx.adobe.com/security/products/coldfusion/apsb14-29.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.03</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106532" id="106532" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB15-07: 安全更新: ColdFusion可用的修补程序 (CVE-2015-0345)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site scripting (XSS) vulnerability in Adobe ColdFusion 10 before Update 16 and 11 before Update 5 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.</Description>      <cnnvd>CNNVD-201504-272</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2015-0345</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb15-07.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.05</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106533" id="106533" modifyDate="2019-09-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB16-16: 安全更新: ColdFusion可用的修补程序 (CVE-2016-1113)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site scripting (XSS) vulnerability in Adobe ColdFusion 10 before Update 19, 11 before Update 8, and 2016 before Update 1 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.</Description>      <cnnvd>CNNVD-201605-330</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-1113</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb16-16.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.08</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106534" id="106534" modifyDate="2019-09-25">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>APSB16-16: 安全更新: ColdFusion可用的修补程序 (CVE-2016-1114)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion 10 before Update 19, 11 before Update 8, and 2016 before Update 1 allows remote attackers to execute arbitrary commands via a crafted serialized Java object, related to the Apache Commons Collections library.</Description>      <cnnvd>CNNVD-201605-329</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-1114</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb16-16.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.08</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106535" id="106535" modifyDate="2019-09-25">      <cvsscode>5.8</cvsscode>      <severity>Severe</severity>      <name>APSB16-16: 安全更新: ColdFusion可用的修补程序 (CVE-2016-1115)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion 10 before Update 19, 11 before Update 8, and 2016 before Update 1 mishandles wildcards in name fields of X.509 certificates, which might allow man-in-the-middle attackers to spoof servers via a crafted certificate.</Description>      <cnnvd>CNNVD-201605-328</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-1115</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb16-16.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.08</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106536" id="106536" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB16-22: 安全更新: ColdFusion可用的修补程序 (CVE-2016-4159)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site scripting (XSS) vulnerability in Adobe ColdFusion 10 before Update 20, 11 before Update 9, and 2016 before Update 2 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.</Description>      <cnnvd>CNNVD-201606-342</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-4159</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb16-22.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.09</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106537" id="106537" modifyDate="2019-06-21">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>APSB16-30: 安全更新: ColdFusion可用的修补程序 (CVE-2016-4264)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>The Office Open XML (OOXML) feature in Adobe ColdFusion 10 before Update 21 and 11 before Update 10 allows remote attackers to read arbitrary files or send TCP requests to intranet servers via a crafted OOXML spreadsheet containing an external entity declaration in conjunction with an entity reference, related to an XML External Entity (XXE) issue.</Description>      <cnnvd>CNNVD-201608-525</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-4264</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb16-30.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.10</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106538" id="106538" modifyDate="2019-06-21">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>APSB17-30: 可用于ColdFusion的安全更新 | APSB17-30 (CVE-2017-11283)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion has an Untrusted Data Deserialization vulnerability. This affects Update 4 and earlier versions for ColdFusion 2016, and Update 12 and earlier versions for ColdFusion 11.</Description>      <cnnvd>CNNVD-201709-513</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-11283</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-30.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.13</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106539" id="106539" modifyDate="2019-06-21">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>APSB17-30: 可用于ColdFusion的安全更新 | APSB17-30 (CVE-2017-11284)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion has an Untrusted Data Deserialization vulnerability. This affects Update 4 and earlier versions for ColdFusion 2016, and Update 12 and earlier versions for ColdFusion 11.</Description>      <cnnvd>CNNVD-201709-514</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-11284</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-30.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.13</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106540" id="106540" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB17-30: 可用于ColdFusion的安全更新 | APSB17-30 (CVE-2017-11285)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion has a cross-site scripting (XSS) vulnerability. This affects Update 4 and earlier versions for ColdFusion 2016, and Update 12 and earlier versions for ColdFusion 11.</Description>      <cnnvd>CNNVD-201709-510</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-11285</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-30.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.13</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106541" id="106541" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB17-30: 可用于ColdFusion的安全更新 | APSB17-30 (CVE-2017-11286)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion has an XML external entity (XXE) injection vulnerability. This affects Update 4 and earlier versions for ColdFusion 2016, and Update 12 and earlier versions for ColdFusion 11.</Description>      <cnnvd>CNNVD-201709-509</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-11286</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-30.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.13</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106542" id="106542" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB17-14: 安全更新: ColdFusion可用的修补程序 (CVE-2017-3008)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion 2016 Update 3 and earlier, ColdFusion 11 update 11 and earlier, ColdFusion 10 Update 22 and earlier have a reflected cross-site scripting vulnerability.</Description>      <cnnvd>CNNVD-201704-1419</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-3008</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.12</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106543" id="106543" modifyDate="2019-06-21">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>APSB17-14: 安全更新: ColdFusion可用的修补程序 (CVE-2017-3066)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion 2016 Update 3 and earlier, ColdFusion 11 update 11 and earlier, ColdFusion 10 Update 22 and earlier have a Java deserialization vulnerability in the Apache BlazeDS library. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201704-1418</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-3066</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.12</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106544" id="106544" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15957)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-487</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15957</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.15</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106545" id="106545" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15958)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-488</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15958</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.15</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106546" id="106546" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15959)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-489</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15959</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.15</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106547" id="106547" modifyDate="2019-06-21">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15960)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a use of a component with a known vulnerability vulnerability. Successful exploitation could lead to arbitrary file overwrite.</Description>      <cnnvd>CNNVD-201809-482</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15960</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.15</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106548" id="106548" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15961)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have an unrestricted file upload vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-485</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15961</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.15</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106549" id="106549" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15962)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a directory listing vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201809-481</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15962</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.15</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106550" id="106550" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15963)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a security bypass vulnerability. Successful exploitation could lead to arbitrary folder creation.</Description>      <cnnvd>CNNVD-201809-491</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15963</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.15</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106551" id="106551" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15964)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a use of a component with a known vulnerability vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201809-490</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15964</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.15</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106552" id="106552" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15965)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-486</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15965</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.15</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106553" id="106553" modifyDate="2019-06-21">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>APSB18-14: 可用于ColdFusion的安全更新 | APSB18-14 (CVE-2018-4938)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Insecure Library Loading vulnerability. Successful exploitation could lead to local privilege escalation.</Description>      <cnnvd>CNNVD-201805-648</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-4938</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.14</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106554" id="106554" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-14: 可用于ColdFusion的安全更新 | APSB18-14 (CVE-2018-4939)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Deserialization of Untrusted Data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201805-647</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-4939</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.14</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106555" id="106555" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB18-14: 可用于ColdFusion的安全更新 | APSB18-14 (CVE-2018-4940)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Cross-Site Scripting vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201805-646</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-4940</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.14</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106556" id="106556" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB18-14: 可用于ColdFusion的安全更新 | APSB18-14 (CVE-2018-4941)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Cross-Site Scripting vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201805-645</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-4941</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.14</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106557" id="106557" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB18-14: 可用于ColdFusion的安全更新 | APSB18-14 (CVE-2018-4942)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Unsafe XML External Entity Processing vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201805-644</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-4942</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.14</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106558" id="106558" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-14: 可用于ColdFusion的安全更新 | APSB19-14 (CVE-2019-7816)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 2 and earlier, Update 9 and earlier, and Update 17 and earlier have a file upload restriction bypass vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201903-023</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7816</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.18</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106559" id="106559" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-27: 可用于ColdFusion的安全更新 | APSB19-27 (CVE-2019-7838)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 3 and earlier, Update 10 and earlier, and Update 18 and earlier have a file extension blacklist bypass vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201906-520</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7838</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-27.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.19</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106560" id="106560" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-27: 可用于ColdFusion的安全更新 | APSB19-27 (CVE-2019-7839)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 3 and earlier, Update 10 and earlier, and Update 18 and earlier have a command injection vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201906-514</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7839</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-27.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.19</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106561" id="106561" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-27: 可用于ColdFusion的安全更新 | APSB19-27 (CVE-2019-7840)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 3 and earlier, Update 10 and earlier, and Update 18 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201906-518</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7840</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-27.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>11.0</low>                     
+                               <high inclusive="0">11.0.19</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106562" id="106562" modifyDate="2019-09-25">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB16-16: 安全更新: ColdFusion可用的修补程序 (CVE-2016-1113)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site scripting (XSS) vulnerability in Adobe ColdFusion 10 before Update 19, 11 before Update 8, and 2016 before Update 1 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.</Description>      <cnnvd>CNNVD-201605-330</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-1113</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb16-16.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.13</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106563" id="106563" modifyDate="2019-09-25">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>APSB16-16: 安全更新: ColdFusion可用的修补程序 (CVE-2016-1114)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion 10 before Update 19, 11 before Update 8, and 2016 before Update 1 allows remote attackers to execute arbitrary commands via a crafted serialized Java object, related to the Apache Commons Collections library.</Description>      <cnnvd>CNNVD-201605-329</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-1114</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb16-16.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.13</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106564" id="106564" modifyDate="2019-09-25">      <cvsscode>5.8</cvsscode>      <severity>Severe</severity>      <name>APSB16-16: 安全更新: ColdFusion可用的修补程序 (CVE-2016-1115)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion 10 before Update 19, 11 before Update 8, and 2016 before Update 1 mishandles wildcards in name fields of X.509 certificates, which might allow man-in-the-middle attackers to spoof servers via a crafted certificate.</Description>      <cnnvd>CNNVD-201605-328</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-1115</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb16-16.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.13</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106565" id="106565" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB16-22: 安全更新: ColdFusion可用的修补程序 (CVE-2016-4159)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Cross-site scripting (XSS) vulnerability in Adobe ColdFusion 10 before Update 20, 11 before Update 9, and 2016 before Update 2 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.</Description>      <cnnvd>CNNVD-201606-342</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2016-4159</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb16-22.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.02</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106566" id="106566" modifyDate="2019-06-21">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>APSB17-30: 可用于ColdFusion的安全更新 | APSB17-30 (CVE-2017-11283)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion has an Untrusted Data Deserialization vulnerability. This affects Update 4 and earlier versions for ColdFusion 2016, and Update 12 and earlier versions for ColdFusion 11.</Description>      <cnnvd>CNNVD-201709-513</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-11283</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-30.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.05</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106567" id="106567" modifyDate="2019-06-21">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>APSB17-30: 可用于ColdFusion的安全更新 | APSB17-30 (CVE-2017-11284)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion has an Untrusted Data Deserialization vulnerability. This affects Update 4 and earlier versions for ColdFusion 2016, and Update 12 and earlier versions for ColdFusion 11.</Description>      <cnnvd>CNNVD-201709-514</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-11284</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-30.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.05</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106568" id="106568" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB17-30: 可用于ColdFusion的安全更新 | APSB17-30 (CVE-2017-11285)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion has a cross-site scripting (XSS) vulnerability. This affects Update 4 and earlier versions for ColdFusion 2016, and Update 12 and earlier versions for ColdFusion 11.</Description>      <cnnvd>CNNVD-201709-510</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-11285</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-30.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.05</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106569" id="106569" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB17-30: 可用于ColdFusion的安全更新 | APSB17-30 (CVE-2017-11286)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion has an XML external entity (XXE) injection vulnerability. This affects Update 4 and earlier versions for ColdFusion 2016, and Update 12 and earlier versions for ColdFusion 11.</Description>      <cnnvd>CNNVD-201709-509</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-11286</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-30.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.05</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106570" id="106570" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB17-14: 安全更新: ColdFusion可用的修补程序 (CVE-2017-3008)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion 2016 Update 3 and earlier, ColdFusion 11 update 11 and earlier, ColdFusion 10 Update 22 and earlier have a reflected cross-site scripting vulnerability.</Description>      <cnnvd>CNNVD-201704-1419</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-3008</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.04</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106571" id="106571" modifyDate="2019-06-21">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>APSB17-14: 安全更新: ColdFusion可用的修补程序 (CVE-2017-3066)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion 2016 Update 3 and earlier, ColdFusion 11 update 11 and earlier, ColdFusion 10 Update 22 and earlier have a Java deserialization vulnerability in the Apache BlazeDS library. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201704-1418</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2017-3066</id>      </AlternateIds>      <Solutions>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb17-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.04</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106572" id="106572" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15957)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-487</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15957</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.07</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106573" id="106573" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15958)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-488</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15958</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.07</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106574" id="106574" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15959)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-489</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15959</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.07</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106575" id="106575" modifyDate="2019-06-21">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15960)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a use of a component with a known vulnerability vulnerability. Successful exploitation could lead to arbitrary file overwrite.</Description>      <cnnvd>CNNVD-201809-482</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15960</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.07</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106576" id="106576" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15961)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have an unrestricted file upload vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-485</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15961</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.07</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106577" id="106577" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15962)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a directory listing vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201809-481</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15962</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.07</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106578" id="106578" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15963)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a security bypass vulnerability. Successful exploitation could lead to arbitrary folder creation.</Description>      <cnnvd>CNNVD-201809-491</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15963</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.07</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106579" id="106579" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15964)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a use of a component with a known vulnerability vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201809-490</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15964</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.07</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106580" id="106580" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15965)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-486</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15965</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.07</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106581" id="106581" modifyDate="2019-06-21">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>APSB18-14: 可用于ColdFusion的安全更新 | APSB18-14 (CVE-2018-4938)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Insecure Library Loading vulnerability. Successful exploitation could lead to local privilege escalation.</Description>      <cnnvd>CNNVD-201805-648</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-4938</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.06</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106582" id="106582" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-14: 可用于ColdFusion的安全更新 | APSB18-14 (CVE-2018-4939)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Deserialization of Untrusted Data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201805-647</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-4939</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.06</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106583" id="106583" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB18-14: 可用于ColdFusion的安全更新 | APSB18-14 (CVE-2018-4940)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Cross-Site Scripting vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201805-646</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-4940</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.06</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106584" id="106584" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB18-14: 可用于ColdFusion的安全更新 | APSB18-14 (CVE-2018-4941)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Cross-Site Scripting vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201805-645</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-4941</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.06</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106585" id="106585" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB18-14: 可用于ColdFusion的安全更新 | APSB18-14 (CVE-2018-4942)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Unsafe XML External Entity Processing vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201805-644</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-4942</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.06</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106586" id="106586" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-14: 可用于ColdFusion的安全更新 | APSB19-14 (CVE-2019-7816)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 2 and earlier, Update 9 and earlier, and Update 17 and earlier have a file upload restriction bypass vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201903-023</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7816</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.10</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106587" id="106587" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-27: 可用于ColdFusion的安全更新 | APSB19-27 (CVE-2019-7838)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 3 and earlier, Update 10 and earlier, and Update 18 and earlier have a file extension blacklist bypass vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201906-520</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7838</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-27.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.11</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106588" id="106588" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-27: 可用于ColdFusion的安全更新 | APSB19-27 (CVE-2019-7839)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 3 and earlier, Update 10 and earlier, and Update 18 and earlier have a command injection vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201906-514</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7839</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-27.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.11</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106589" id="106589" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-27: 可用于ColdFusion的安全更新 | APSB19-27 (CVE-2019-7840)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 3 and earlier, Update 10 and earlier, and Update 18 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201906-518</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7840</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-27.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.11</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-25" gvid="ID106590" id="106590" modifyDate="2019-10-03">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB19-47: Security updates available for ColdFusion | APSB19-47 (CVE-2019-8072)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion 2018- update 4 and earlier and ColdFusion 2016- update 11 and earlier have a Security bypass vulnerability. Successful exploitation could lead to Information Disclosure in the context of the current user.</Description>      <cnnvd>CNNVD-201909-1107</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-8072</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-47.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.12</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-25" gvid="ID106591" id="106591" modifyDate="2019-10-03">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-47: Security updates available for ColdFusion | APSB19-47 (CVE-2019-8073)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion 2018- update 4 and earlier and ColdFusion 2016- update 11 and earlier have a Command Injection via Vulnerable component vulnerability. Successful exploitation could lead to Arbitrary code execution in the context of the current user.</Description>      <cnnvd>CNNVD-201909-1103</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-8073</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-47.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.12</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-25" gvid="ID106592" id="106592" modifyDate="2019-10-03">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-47: Security updates available for ColdFusion | APSB19-47 (CVE-2019-8074)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion 2018- update 4 and earlier and ColdFusion 2016- update 11 and earlier have a Path Traversal vulnerability. Successful exploitation could lead to Access Control Bypass in the context of the current user.</Description>      <cnnvd>CNNVD-201909-1100</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-8074</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-47.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2016.0</low>                     
+                               <high inclusive="0">2016.0.12</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106593" id="106593" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15957)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-487</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15957</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.01</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106594" id="106594" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15958)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-488</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15958</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.01</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106595" id="106595" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15959)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-489</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15959</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.01</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106596" id="106596" modifyDate="2019-06-21">      <cvsscode>6.4</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15960)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a use of a component with a known vulnerability vulnerability. Successful exploitation could lead to arbitrary file overwrite.</Description>      <cnnvd>CNNVD-201809-482</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15960</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.01</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106597" id="106597" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15961)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have an unrestricted file upload vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-485</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15961</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.01</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106598" id="106598" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15962)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a directory listing vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201809-481</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15962</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.01</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106599" id="106599" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15963)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a security bypass vulnerability. Successful exploitation could lead to arbitrary folder creation.</Description>      <cnnvd>CNNVD-201809-491</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15963</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.01</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106600" id="106600" modifyDate="2019-06-21">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15964)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a use of a component with a known vulnerability vulnerability. Successful exploitation could lead to information disclosure.</Description>      <cnnvd>CNNVD-201809-490</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15964</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.01</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106601" id="106601" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB18-33: 可用于ColdFusion的安全更新 | APSB18-33 (CVE-2018-15965)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201809-486</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2018-15965</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接: 
+https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.01</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106602" id="106602" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-10: 可用于ColdFusion的安全更新 | APSB19-10 (CVE-2019-7091)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 1 and earlier, Update 7 and earlier, and Update 15 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201902-411</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7091</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-10.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.02</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106603" id="106603" modifyDate="2019-06-21">      <cvsscode>4.3</cvsscode>      <severity>Severe</severity>      <name>APSB19-10: 可用于ColdFusion的安全更新 | APSB19-10 (CVE-2019-7092)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 1 and earlier, Update 7 and earlier, and Update 15 and earlier have a cross site scripting vulnerability. Successful exploitation could lead to information disclosure .</Description>      <cnnvd>CNNVD-201902-514</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7092</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-10.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.02</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106604" id="106604" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-14: 可用于ColdFusion的安全更新 | APSB19-14 (CVE-2019-7816)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 2 and earlier, Update 9 and earlier, and Update 17 and earlier have a file upload restriction bypass vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201903-023</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7816</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-14.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.03</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106605" id="106605" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-27: 可用于ColdFusion的安全更新 | APSB19-27 (CVE-2019-7838)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 3 and earlier, Update 10 and earlier, and Update 18 and earlier have a file extension blacklist bypass vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201906-520</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7838</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-27.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.04</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106606" id="106606" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-27: 可用于ColdFusion的安全更新 | APSB19-27 (CVE-2019-7839)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 3 and earlier, Update 10 and earlier, and Update 18 and earlier have a command injection vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201906-514</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7839</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-27.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.04</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-21" gvid="ID106607" id="106607" modifyDate="2019-06-21">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-27: 可用于ColdFusion的安全更新 | APSB19-27 (CVE-2019-7840)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion versions Update 3 and earlier, Update 10 and earlier, and Update 18 and earlier have a deserialization of untrusted data vulnerability. Successful exploitation could lead to arbitrary code execution.</Description>      <cnnvd>CNNVD-201906-518</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-7840</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-27.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.04</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-25" gvid="ID106608" id="106608" modifyDate="2019-10-03">      <cvsscode>5.0</cvsscode>      <severity>Severe</severity>      <name>APSB19-47: Security updates available for ColdFusion | APSB19-47 (CVE-2019-8072)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion 2018- update 4 and earlier and ColdFusion 2016- update 11 and earlier have a Security bypass vulnerability. Successful exploitation could lead to Information Disclosure in the context of the current user.</Description>      <cnnvd>CNNVD-201909-1107</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-8072</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-47.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.05</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-25" gvid="ID106609" id="106609" modifyDate="2019-10-03">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-47: Security updates available for ColdFusion | APSB19-47 (CVE-2019-8073)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion 2018- update 4 and earlier and ColdFusion 2016- update 11 and earlier have a Command Injection via Vulnerable component vulnerability. Successful exploitation could lead to Arbitrary code execution in the context of the current user.</Description>      <cnnvd>CNNVD-201909-1103</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-8073</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-47.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.05</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-09-25" gvid="ID106610" id="106610" modifyDate="2019-10-03">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>APSB19-47: Security updates available for ColdFusion | APSB19-47 (CVE-2019-8074)</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>ColdFusion 2018- update 4 and earlier and ColdFusion 2016- update 11 and earlier have a Path Traversal vulnerability. Successful exploitation could lead to Access Control Bypass in the context of the current user.</Description>      <cnnvd>CNNVD-201909-1100</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2019-8074</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://helpx.adobe.com/security/products/coldfusion/apsb19-47.html</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.05</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="" gvid="ID106611" id="106611" modifyDate="">      <cvsscode></cvsscode>      <severity></severity>      <name></name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description></Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <low>2018.0</low>                     
+                               <high inclusive="0">2018.0.07</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2019-06-24" gvid="ID106612" id="106612" modifyDate="2019-06-26">      <cvsscode>10.0</cvsscode>      <severity>Critical</severity>      <name>过时的Adobe ColdFusion版本</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>This release has passed its End of Life. There may be unpatched security vulnerabilities. Please check with Adobe&amp;#39;s 
+&lt;a href=&quot;https://helpx.adobe.com/support/programs/eol-matrix.html&quot;&gt;Products and techincal support periods&lt;/a&gt; for supported versions.</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="node">         <NetworkService>            <Product name="ColdFusion" vendor="Adobe">               
+                     <version>                  
+                          <range>                     
+                               <high inclusive="0">11</high>                     
+                          </range>                  
+                     </version>               
+                </Product>         </NetworkService>      </Check>   </Vulnerability></Vulns>
