@@ -1,0 +1,37 @@
+<Vulns>   <Vulnerability addData="2004-11-01" gvid="GVID-102463" id="102463" modifyDate="2013-12-04">      <cvsscode>7.5</cvsscode>      <severity>Critical</severity>      <name>远程利用缓冲区溢出mod_ssl</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当试图缓存SSL会话时，mod_ssl &amp;lt; 2.8.7容易受远程可利用的缓冲区溢出。这允许对于远程代码执行并在任何文件修改系统</Description>      <cnnvd>CNNVD-200203-036</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0082</id>      </AlternateIds>      <Solutions>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： 
+https://www.debian.org/security/2002/dsa-120</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="HTTPD" vendor="Apache">               
+                        <Component name="mod_ssl">                  
+                              <version>                     <range>                        <high>2.8.7</high>                     </range>                  </version>                  
+                        </Component>               
+                        <!-- the mod_ssl version scheme changed between Apache1 and Apache2 (e.g. Apache1's
+         mod_ssl 2.8.4 is *older* than Apache2's mod_ssl 2.2.3), therefore it is imperative
+         to specify the Apache version when interpreting the mod_ssl version number. -->               
+                        <version>                  <range>                     <low>1.0</low>                     <high>2.0</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2004-11-01" gvid="GVID-102464" id="102464" modifyDate="2013-12-04">      <cvsscode>4.6</cvsscode>      <severity>Severe</severity>      <name>mod_ssl指令映射缓冲区溢出</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>兼容功能（指令映射）的mod_ssl &amp;lt; 2.8.10中存在一个缓冲区溢出漏洞。此漏洞的影响是未知。</Description>      <cnnvd>CNNVD-200207-065</cnnvd>      <AlternateIds>         <id name="CVE">CVE-2002-0653</id>      </AlternateIds>      <Solutions>临时解决方法： 
+如果您不能立刻安装补丁或者升级，CNNVD建议您采取以下措施以降低威胁： 
+* 不要设置&quot;AllowOverride&quot;选项。 
+厂商补丁： 
+Mod_SSL 
+------- 
+目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： 
+mod_ssl Upgrade mod_ssl-2.8.10-1.3.26.tar.gz 
+&lt;a href=&quot; 
+http://www.modssl.org/source/mod_ssl-2.8.10-1.3.26.tar.gz&quot; target=&quot;_blank&quot;&gt; 
+http://www.modssl.org/source/mod_ssl-2.8.10-1.3.26.tar.gz&lt;/a&gt;</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="HTTPD" vendor="Apache">               
+                        <Component name="mod_ssl">                  
+                              <version>                     <range>                        <high>2.8.10</high>                     </range>                  </version>                  
+                        </Component>               
+                        <!-- the mod_ssl version scheme changed between Apache1 and Apache2 (e.g. Apache1's
+         mod_ssl 2.8.4 is *older* than Apache2's mod_ssl 2.2.3), therefore it is imperative
+         to specify the Apache version when interpreting the mod_ssl version number. -->               
+                        <version>                  <range>                     <low>1.0</low>                     <high>2.0</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability>   <Vulnerability addData="2005-04-04" gvid="GVID-102465" id="102465" modifyDate="2013-01-04">      <cvsscode>7.1</cvsscode>      <severity>Severe</severity>      <name>Apache mod_ssl &amp;#39;ssl_io_filter_cleanup()&amp;#39;拒绝服务</name>      <Tags>         <tag></tag>      </Tags>      <cvss></cvss>      <Description>当远程用户意外终止SSL连接时，会触发Apache mod_ssl导致拒绝服务条件。因此,整个Apache进程将崩溃。</Description>      <AlternateIds>         <id name="CVE"></id>      </AlternateIds>      <Solutions>目前厂商还没有提供此漏洞的相关补丁或者升级程序，建议使用此软件的用户随时关注厂商的主页以获取最新版本： 
+https://www.alice-dsl.de/</Solutions>      <Check scope="endpoint">         <NetworkService type="HTTP|HTTPS">            
+                  <Product name="HTTPD" vendor="Apache">               
+                        <version>                  <range>                     <low>2.0.0</low>                     <high>2.0.50</high>                  </range>               </version>               
+                  </Product>            
+            </NetworkService>      </Check>   </Vulnerability></Vulns>
