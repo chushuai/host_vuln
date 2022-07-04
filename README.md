@@ -1,4 +1,4 @@
-# trule
+# host vuln database
 host vuln scan rule
 
 主机漏洞或系统漏洞扫描规则
